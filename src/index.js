@@ -1,7 +1,9 @@
 export {default as Anico} from './anico';
-export {ErrorBoundary,HandleError} from './errorBoundary';
+export {default as ErrorBoundary} from './errorBoundary';
+export {default as HandleError} from './handleError';
 export {default as FullPage} from './fullPage';
-export {default as Row,Col} from './grid';
+export {default as Row} from './row';
+export {default as Col} from './col';
 export {default as Mask} from './mask';
 export {default as MaxSize} from './maxSize';
 export {default as Modal} from './modal';
