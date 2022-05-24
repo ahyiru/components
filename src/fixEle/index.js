@@ -1,2 +1,126 @@
-/*! For license information please see index.js.LICENSE.txt */
-!function(e,r){"object"==typeof exports&&"object"==typeof module?module.exports=r(require("react")):"function"==typeof define&&define.amd?define("components",["react"],r):"object"==typeof exports?exports.components=r(require("react")):e.components=r(e.React)}(this,(function(e){return function(){"use strict";var r={1837:function(e,r,t){var o=t(3899),n=Symbol.for("react.element"),f=Symbol.for("react.fragment"),u=Object.prototype.hasOwnProperty,i=o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,c={key:!0,ref:!0,__self:!0,__source:!0};function p(e,r,t){var o,f={},p=null,s=null;for(o in void 0!==t&&(p=""+t),void 0!==r.key&&(p=""+r.key),void 0!==r.ref&&(s=r.ref),r)u.call(r,o)&&!c.hasOwnProperty(o)&&(f[o]=r[o]);if(e&&e.defaultProps)for(o in r=e.defaultProps)void 0===f[o]&&(f[o]=r[o]);return{$$typeof:n,type:e,key:p,ref:s,props:f,_owner:i.current}}r.jsx=p},2322:function(e,r,t){e.exports=t(1837)},3899:function(r){r.exports=e}},t={};function o(e){var n=t[e];if(void 0!==n)return n.exports;var f=t[e]={exports:{}};return r[e](f,f.exports,o),f.exports}o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})};var n={};return function(){o.r(n);var e=o(2322);n.default=function(r){var t=r||{},o=t.list,n=t.Value;if("function"==typeof n||"function"==typeof(null==n?void 0:n.render))return(0,e.jsx)(n,{});if("string"==typeof n){var f=null==o?void 0:o[n];return f?(0,e.jsx)(f,{}):(0,e.jsx)("i",{className:n})}return n||null}}(),n}()}));
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"));
+	else if(typeof define === 'function' && define.amd)
+		define("components", ["react"], factory);
+	else if(typeof exports === 'object')
+		exports["components"] = factory(require("react"));
+	else
+		root["components"] = factory(root["React"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
+return /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 837:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+var __webpack_unused_export__;
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+var f=__webpack_require__(899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
+
+
+/***/ }),
+
+/***/ 322:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+
+
+if (true) {
+  module.exports = __webpack_require__(837);
+} else {}
+
+
+/***/ }),
+
+/***/ 899:
+/***/ (function(module) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+!function() {
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(322);
+
+
+const fixEle = props => {
+  const {
+    list,
+    Value
+  } = props || {};
+
+  if (typeof Value === 'function' || typeof (Value == null ? void 0 : Value.render) === 'function') {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Value, {});
+  }
+
+  if (typeof Value === 'string') {
+    const Comp = list == null ? void 0 : list[Value];
+    return Comp ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Comp, {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("i", {
+      className: Value
+    })
+    /* <i>{Value}</i> */
+    ;
+  }
+
+  return Value || null;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (fixEle);
+}();
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+});

@@ -1,0 +1,114 @@
+/*@height:2px;
+@width:18px;
+// @bgcolor:currentColor;
+@bgcolor:#00b4cf;
+
+@ratio:1.4142;
+@rotate:45deg;
+@scale:@ratio / (@ratio + 1);
+@maigin:@height * 3;
+@ty:@width / 4 - @height / @ratio;
+@tx:@width / 4 + @height / @ratio;
+@anitime:.3s;
+*/
+.nstud {
+  --height: 2px;
+  --width: 18px;
+  --ratio: 1.4142;
+  --rotate: 45deg;
+  --anitime: 0.3s;
+  --scale: calc(var(--ratio) / (var(--ratio) + 1));
+  --maigin: calc(var(--height) * 3);
+  --ty: calc(var(--width) / 4 - var(--height) / var(--ratio));
+  --tx: calc(var(--width) / 4 + var(--height) / var(--ratio));
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: var(--width);
+}
+.nstud .IZUmD, .nstud .IZUmD::before, .nstud .IZUmD::after {
+  position: absolute;
+  background-color: var(--linkHoverColor);
+  border-radius: 2px;
+  transform: translateZ(0);
+}
+.nstud .IZUmD {
+  width: var(--width);
+  height: var(--height);
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform var(--anitime), background-color var(--anitime);
+}
+.nstud .IZUmD::before, .nstud .IZUmD::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: transform var(--anitime);
+}
+.nstud .IZUmD::before {
+  transform: translateY(calc(0px - var(--maigin)));
+}
+.nstud .IZUmD::after {
+  transform: translateY(var(--maigin));
+}
+.nstud .IZUmD.ylzxZ {
+  background-color: rgba(255, 255, 255, 0);
+}
+.nstud .IZUmD.ylzxZ::before {
+  transform: rotate(var(--rotate));
+}
+.nstud .IZUmD.ylzxZ::after {
+  transform: rotate(calc(0deg - var(--rotate)));
+}
+.nstud .IZUmD.Wy_0M::before {
+  transform: translateX(var(--tx)) translateY(calc(0px - var(--ty))) rotate(var(--rotate)) scaleX(var(--scale));
+}
+.nstud .IZUmD.Wy_0M::after {
+  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));
+}
+.nstud .IZUmD.bdjKS {
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.nstud .IZUmD.bdjKS::before {
+  transform: translateX(calc(0px - var(--tx))) translateY(calc(0px - var(--ty))) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));
+}
+.nstud .IZUmD.bdjKS::after {
+  transform: translateX(calc(0px - var(--tx))) translateY(var(--ty)) rotate(var(--rotate)) scaleX(var(--scale));
+}
+.nstud .IZUmD.QPs9T {
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  background-color: rgba(0, 0, 0, 0);
+}
+.nstud .IZUmD.QPs9T::before {
+  transform-origin: 0 0;
+}
+.nstud .IZUmD.QPs9T::after {
+  transform-origin: 100% 100%;
+}
+.nstud .IZUmD.QPs9T.tx7CH {
+  background-color: var(--linkHoverColor);
+  transform: translateX(-75%) translateY(-50%) rotate(-90deg);
+}
+.nstud .IZUmD.QPs9T.tx7CH::before {
+  transform: rotate(60deg);
+}
+.nstud .IZUmD.QPs9T.tx7CH::after {
+  transform: rotate(-60deg);
+}
+@media screen and (max-width: 1024px) {
+  .nstud .IZUmD.Wy_0M {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .nstud .IZUmD.Wy_0M::before {
+    transform: rotate(45deg);
+  }
+  .nstud .IZUmD.Wy_0M::after {
+    transform: rotate(-45deg);
+  }
+}
+
