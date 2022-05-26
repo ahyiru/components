@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("react"));
 	else if(typeof define === 'function' && define.amd)
-		define("components", ["react"], factory);
-	else if(typeof exports === 'object')
-		exports["components"] = factory(require("react"));
-	else
-		root["components"] = factory(root["React"]);
+		define(["react"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
 })(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
