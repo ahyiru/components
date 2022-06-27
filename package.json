@@ -1,14 +1,13 @@
 {
   "name": "@huxy/components",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "title": "components",
   "feature": "0.0.1",
   "hooks": "0.0.1",
-  "description": "react components hooks",
+  "description": "simple components",
   "homepage": "https://github.com/ahyiru/components",
   "keywords": [
-    "utils",
-    "ihuxy",
+    "react",
     "components",
     "hooks"
   ],
