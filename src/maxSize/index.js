@@ -1297,10 +1297,10 @@ var store = __webpack_require__(5353);
 (module.exports = function (key, value) {
   return store[key] || (store[key] = value !== undefined ? value : {});
 })('versions', []).push({
-  version: '3.23.3',
+  version: '3.23.5',
   mode: IS_PURE ? 'pure' : 'global',
   copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',
-  license: 'https://github.com/zloirock/core-js/blob/v3.23.3/LICENSE',
+  license: 'https://github.com/zloirock/core-js/blob/v3.23.5/LICENSE',
   source: 'https://github.com/zloirock/core-js'
 });
 
@@ -1766,9 +1766,9 @@ const getStyles = _ref => {
   };
 };
 
-const defaultIcon = () => /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
+const defaultIcon = props => /*#__PURE__*/(0,jsx_runtime.jsx)("i", _objectSpread(_objectSpread({}, props), {}, {
   children: "..."
-});
+}));
 
 const Index = _ref2 => {
   let {
