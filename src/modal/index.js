@@ -7,12 +7,12 @@
 		var a = typeof exports === 'object' ? factory(require("react"), require("react-dom")) : factory(root["React"], root["ReactDOM"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__3899__, __WEBPACK_EXTERNAL_MODULE__994__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE__687__, __WEBPACK_EXTERNAL_MODULE__994__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 6785:
+/***/ 756:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -21,10 +21,25 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ components_mask; }
 });
 
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.18.9/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
 // EXTERNAL MODULE: ../huxy/components/portal/index.jsx
-var portal = __webpack_require__(1280);
+var portal = __webpack_require__(409);
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
-var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
+var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(687);
 ;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
 
 
@@ -77,9 +92,15 @@ const useDelayState = function (state) {
 };
 
 /* harmony default export */ var use_useDelayState = (useDelayState);
-// EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(2322);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(458);
 ;// CONCATENATED MODULE: ../huxy/components/mask/index.jsx
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -118,19 +139,23 @@ const Mask = _ref => {
     close,
     delay = 300,
     children,
-    mountNode
+    mountNode,
+    hasMask = true,
+    style,
+    className = 'mask'
   } = _ref;
   const [delayOpen] = use_useDelayState(open, delay);
   return /*#__PURE__*/(0,jsx_runtime.jsx)(portal["default"], {
     mountNode: mountNode,
     children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
       children: delayOpen ? /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+        className: className,
         style: wrapper,
-        children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+        children: [hasMask ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: mask,
           onClick: close
-        }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          style: container,
+        }) : null, /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+          style: _objectSpread(_objectSpread({}, container), style),
           children: children
         })]
       }) : null
@@ -142,7 +167,7 @@ const Mask = _ref => {
 
 /***/ }),
 
-/***/ 1280:
+/***/ 409:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(994);
@@ -161,17 +186,17 @@ const Index = _ref => {
 
 /***/ }),
 
-/***/ 5514:
+/***/ 174:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2609);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(431);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(577);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "@keyframes animate-modal-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n  100% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes animate-modal-out {\n  0% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n}\n.modal-wrap {\n  position: fixed;\n  background: #ffffff;\n  border-radius: 12px;\n  width: 400px;\n  opacity: 0;\n  transform: translate3d(0, -100%, 0);\n  animation: animate-modal-out 0.25s forwards;\n}\n.modal-wrap.open {\n  animation: animate-modal-in 0.25s forwards;\n}\n.modal-container {\n  position: relative;\n}\n.modal-container .modal-header {\n  text-align: center;\n  font-weight: 500;\n  font-size: 16px;\n  color: #000000;\n  padding: 20px 12px 0;\n}\n.modal-container .modal-content {\n  padding: 8px 12px 24px;\n}\n.modal-container .modal-footer {\n  height: 44px;\n  display: flex;\n  align-items: center;\n  box-sizing: border-box;\n  border-top: 1px solid #edeff2;\n}\n.modal-container .modal-footer .btn {\n  font-weight: 500;\n  font-size: 16px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  width: 50%;\n  height: 100%;\n}\n.modal-container .modal-footer .btn.left {\n  color: #666666;\n  border-right: 1px solid #edeff2;\n}\n.modal-container .modal-footer .btn.right {\n  color: #036dff;\n}\n", ""]);
 // Exports
@@ -181,7 +206,7 @@ ___CSS_LOADER_EXPORT___.locals = {};
 
 /***/ }),
 
-/***/ 2609:
+/***/ 577:
 /***/ (function(module) {
 
 
@@ -289,7 +314,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 9601:
+/***/ 431:
 /***/ (function(module) {
 
 
@@ -300,7 +325,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 1837:
+/***/ 53:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 var __webpack_unused_export__;
@@ -313,25 +338,25 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(3899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(687),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;exports.jsxs=q;
 
 
 /***/ }),
 
-/***/ 2322:
+/***/ 458:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(1837);
+  module.exports = __webpack_require__(53);
 } else {}
 
 
 /***/ }),
 
-/***/ 6062:
+/***/ 993:
 /***/ (function(module) {
 
 
@@ -441,7 +466,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 6793:
+/***/ 334:
 /***/ (function(module) {
 
 
@@ -486,7 +511,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 1173:
+/***/ 807:
 /***/ (function(module) {
 
 
@@ -503,7 +528,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 7892:
+/***/ 808:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
@@ -521,7 +546,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 4036:
+/***/ 899:
 /***/ (function(module) {
 
 
@@ -597,7 +622,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 2464:
+/***/ 297:
 /***/ (function(module) {
 
 
@@ -619,10 +644,10 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 3899:
+/***/ 687:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__687__;
 
 /***/ }),
 
@@ -689,17 +714,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__994__;
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
 /******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	!function() {
 /******/ 		__webpack_require__.nc = undefined;
@@ -709,36 +723,34 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__994__;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_modal; }
 });
 
-// EXTERNAL MODULE: ../huxy/components/mask/index.jsx + 3 modules
-var mask = __webpack_require__(6785);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(6062);
+// EXTERNAL MODULE: ../huxy/components/mask/index.jsx + 4 modules
+var mask = __webpack_require__(756);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(4036);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(899);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(6793);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/insertBySelector.js
+var insertBySelector = __webpack_require__(334);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(7892);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(808);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(1173);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(807);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(2464);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(297);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/modal/index.less
-var modal = __webpack_require__(5514);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.0.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/modal/index.less
+var modal = __webpack_require__(174);
 ;// CONCATENATED MODULE: ../huxy/components/modal/index.less
 
       
@@ -768,8 +780,8 @@ var update = injectStylesIntoStyleTag_default()(modal/* default */.Z, options);
 
        /* harmony default export */ var components_modal = (modal/* default */.Z && modal/* default.locals */.Z.locals ? modal/* default.locals */.Z.locals : undefined);
 
-// EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(2322);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(458);
 ;// CONCATENATED MODULE: ../huxy/components/modal/index.jsx
 
 
@@ -780,6 +792,7 @@ const Modal = _ref => {
   let {
     open,
     cancel,
+    hasMask = true,
     cancelText = '取消',
     submit,
     submitText = '确定',
@@ -793,6 +806,8 @@ const Modal = _ref => {
     open: open,
     close: cancel,
     delay: delay,
+    hasMask: hasMask,
+    className: "huxy-modal",
     children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
       className: cls,
       children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
@@ -822,6 +837,7 @@ const Modal = _ref => {
 
 /* harmony default export */ var huxy_components_modal = (Modal);
 }();
+__webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;

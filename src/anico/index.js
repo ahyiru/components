@@ -7,22 +7,22 @@
 		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__3899__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE__687__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 851:
+/***/ 467:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2609);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(431);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(577);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "/*@height:2px;\n@width:18px;\n// @bgcolor:currentColor;\n@bgcolor:#00b4cf;\n\n@ratio:1.4142;\n@rotate:45deg;\n@scale:@ratio / (@ratio + 1);\n@maigin:@height * 3;\n@ty:@width / 4 - @height / @ratio;\n@tx:@width / 4 + @height / @ratio;\n@anitime:.3s;\n*/\n.nstud {\n  --height: 2px;\n  --width: 18px;\n  --ratio: 1.4142;\n  --rotate: 45deg;\n  --anitime: 0.3s;\n  --scale: calc(var(--ratio) / (var(--ratio) + 1));\n  --maigin: calc(var(--height) * 3);\n  --ty: calc(var(--width) / 4 - var(--height) / var(--ratio));\n  --tx: calc(var(--width) / 4 + var(--height) / var(--ratio));\n  position: relative;\n  display: inline-block;\n  height: 100%;\n  width: var(--width);\n}\n.nstud .IZUmD, .nstud .IZUmD::before, .nstud .IZUmD::after {\n  position: absolute;\n  background-color: var(--linkHoverColor);\n  border-radius: 2px;\n  transform: translateZ(0);\n}\n.nstud .IZUmD {\n  width: var(--width);\n  height: var(--height);\n  display: inline-block;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  transition: transform var(--anitime), background-color var(--anitime);\n}\n.nstud .IZUmD::before, .nstud .IZUmD::after {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: currentColor;\n  transition: transform var(--anitime);\n}\n.nstud .IZUmD::before {\n  transform: translateY(calc(0px - var(--maigin)));\n}\n.nstud .IZUmD::after {\n  transform: translateY(var(--maigin));\n}\n.nstud .IZUmD.ylzxZ {\n  background-color: rgba(255, 255, 255, 0);\n}\n.nstud .IZUmD.ylzxZ::before {\n  transform: rotate(var(--rotate));\n}\n.nstud .IZUmD.ylzxZ::after {\n  transform: rotate(calc(0deg - var(--rotate)));\n}\n.nstud .IZUmD.Wy_0M::before {\n  transform: translateX(var(--tx)) translateY(calc(0px - var(--ty))) rotate(var(--rotate)) scaleX(var(--scale));\n}\n.nstud .IZUmD.Wy_0M::after {\n  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));\n}\n.nstud .IZUmD.bdjKS {\n  transform: translateX(-50%) translateY(-50%) rotate(-90deg);\n}\n.nstud .IZUmD.bdjKS::before {\n  transform: translateX(calc(0px - var(--tx))) translateY(calc(0px - var(--ty))) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));\n}\n.nstud .IZUmD.bdjKS::after {\n  transform: translateX(calc(0px - var(--tx))) translateY(var(--ty)) rotate(var(--rotate)) scaleX(var(--scale));\n}\n.nstud .IZUmD.QPs9T {\n  transform: translateX(-50%) translateY(-50%) rotate(-90deg);\n  background-color: rgba(0, 0, 0, 0);\n}\n.nstud .IZUmD.QPs9T::before {\n  transform-origin: 0 0;\n}\n.nstud .IZUmD.QPs9T::after {\n  transform-origin: 100% 100%;\n}\n.nstud .IZUmD.QPs9T.tx7CH {\n  background-color: var(--linkHoverColor);\n  transform: translateX(-75%) translateY(-50%) rotate(-90deg);\n}\n.nstud .IZUmD.QPs9T.tx7CH::before {\n  transform: rotate(60deg);\n}\n.nstud .IZUmD.QPs9T.tx7CH::after {\n  transform: rotate(-60deg);\n}\n@media screen and (max-width: 1024px) {\n  .nstud .IZUmD.Wy_0M {\n    background-color: rgba(255, 255, 255, 0);\n  }\n  .nstud .IZUmD.Wy_0M::before {\n    transform: rotate(45deg);\n  }\n  .nstud .IZUmD.Wy_0M::after {\n    transform: rotate(-45deg);\n  }\n}\n", ""]);
 // Exports
@@ -40,7 +40,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
-/***/ 2609:
+/***/ 577:
 /***/ (function(module) {
 
 
@@ -148,7 +148,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 9601:
+/***/ 431:
 /***/ (function(module) {
 
 
@@ -159,7 +159,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 1837:
+/***/ 53:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 var __webpack_unused_export__;
@@ -172,25 +172,25 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(3899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(687),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
 
 
 /***/ }),
 
-/***/ 2322:
+/***/ 458:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(1837);
+  module.exports = __webpack_require__(53);
 } else {}
 
 
 /***/ }),
 
-/***/ 6062:
+/***/ 993:
 /***/ (function(module) {
 
 
@@ -300,7 +300,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 6793:
+/***/ 334:
 /***/ (function(module) {
 
 
@@ -345,7 +345,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 1173:
+/***/ 807:
 /***/ (function(module) {
 
 
@@ -362,7 +362,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 7892:
+/***/ 808:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
@@ -380,7 +380,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 4036:
+/***/ 899:
 /***/ (function(module) {
 
 
@@ -456,7 +456,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 2464:
+/***/ 297:
 /***/ (function(module) {
 
 
@@ -478,10 +478,10 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 3899:
+/***/ 687:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__687__;
 
 /***/ })
 
@@ -541,17 +541,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
 /******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	!function() {
 /******/ 		__webpack_require__.nc = undefined;
@@ -561,34 +550,32 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_anico; }
 });
 
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(6062);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(4036);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(899);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(6793);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/insertBySelector.js
+var insertBySelector = __webpack_require__(334);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(7892);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(808);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(1173);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(807);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(2464);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(297);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/anico/index.less
-var anico = __webpack_require__(851);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.0.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/anico/index.less
+var anico = __webpack_require__(467);
 ;// CONCATENATED MODULE: ../huxy/components/anico/index.less
 
       
@@ -618,8 +605,8 @@ var update = injectStylesIntoStyleTag_default()(anico/* default */.Z, options);
 
        /* harmony default export */ var components_anico = (anico/* default */.Z && anico/* default.locals */.Z.locals ? anico/* default.locals */.Z.locals : undefined);
 
-// EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(2322);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(458);
 ;// CONCATENATED MODULE: ../huxy/components/anico/index.jsx
 
 
@@ -633,6 +620,7 @@ const Index = props => /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
 
 /* harmony default export */ var huxy_components_anico = (Index);
 }();
+__webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
