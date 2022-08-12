@@ -253,6 +253,7 @@ const container = {
   alignItems: 'center',
   justifyContent: 'center'
 };
+const body = document.body;
 
 const Mask = _ref => {
   let {
@@ -266,6 +267,7 @@ const Mask = _ref => {
     className = 'mask'
   } = _ref;
   const [delayOpen] = use_useDelayState(open, delay);
+  body.style.overflow = delayOpen ? 'hidden' : '';
   return /*#__PURE__*/(0,jsx_runtime.jsx)(portal["default"], {
     mountNode: mountNode,
     children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {

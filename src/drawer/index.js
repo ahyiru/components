@@ -188,7 +188,7 @@ const Index = _ref => {
 
 /***/ }),
 
-/***/ 174:
+/***/ 129:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(431);
@@ -200,18 +200,16 @@ const Index = _ref => {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes animate-modal-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n  100% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes animate-modal-out {\n  0% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n}\n.SqXAN {\n  position: fixed;\n  background: #ffffff;\n  border-radius: 12px;\n  width: 400px;\n  opacity: 0;\n  transform: translate3d(0, -100%, 0);\n}\n.SqXAN {\n  animation: animate-modal-out 0.25s forwards;\n}\n.SqXAN.S3vb_ {\n  animation: animate-modal-in 0.25s forwards;\n}\n.RiDlb {\n  position: relative;\n}\n.RiDlb .xdqLE {\n  text-align: center;\n  font-weight: 500;\n  font-size: 16px;\n  color: #000000;\n  padding: 20px 12px 0;\n}\n.RiDlb .C91AO {\n  padding: 8px 12px 24px;\n}\n.RiDlb .J6dpF {\n  height: 44px;\n  display: flex;\n  align-items: center;\n  box-sizing: border-box;\n  border-top: 1px solid #edeff2;\n}\n.RiDlb .J6dpF .XOnmm {\n  font-weight: 500;\n  font-size: 16px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  width: 50%;\n  height: 100%;\n}\n.RiDlb .J6dpF .XOnmm.t1Fx9 {\n  color: #666666;\n  border-right: 1px solid #edeff2;\n}\n.RiDlb .J6dpF .XOnmm.YGj9K {\n  color: #036dff;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes animate-drawer-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n@keyframes animate-drawer-out {\n  0% {\n    opacity: 1;\n    transform: translate3d(-100%, 0, 0);\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n}\n.KsHNu {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 100%;\n  background: #ffffff;\n  width: 300px;\n  opacity: 0;\n  transform: translate3d(0, 0, 0);\n}\n.KsHNu {\n  animation: animate-drawer-out 0.25s forwards;\n}\n.KsHNu.c6aFy {\n  animation: animate-drawer-in 0.25s forwards;\n}\n.W4gG3 {\n  position: relative;\n}\n.W4gG3 .SMORg {\n  padding: 8px 12px 24px;\n}\n.W4gG3 .e3AWW {\n  font-weight: 500;\n  font-size: 16px;\n  color: #000000;\n  padding: 12px 16px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.W4gG3 .e3AWW .VSVwl {\n  width: 20px;\n  height: 20px;\n  line-height: 20px;\n  text-align: center;\n  cursor: pointer;\n  border: 1px solid transparent;\n}\n.W4gG3 .e3AWW .VSVwl:hover {\n  border-color: rgba(0, 0, 0, 0.2);\n}\n.W4gG3 .hlj9r {\n  height: 44px;\n  display: flex;\n  align-items: center;\n  box-sizing: border-box;\n  border-top: 1px solid #edeff2;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"modal-wrap": "SqXAN",
-	"open": "S3vb_",
-	"modal-container": "RiDlb",
-	"modal-header": "xdqLE",
-	"modal-content": "C91AO",
-	"modal-footer": "J6dpF",
-	"btn": "XOnmm",
-	"left": "t1Fx9",
-	"right": "YGj9K"
+	"drawer-wrap": "KsHNu",
+	"open": "c6aFy",
+	"drawer-container": "W4gG3",
+	"drawer-content": "SMORg",
+	"drawer-header": "e3AWW",
+	"ico-close": "VSVwl",
+	"drawer-footer": "hlj9r"
 };
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
 
@@ -738,7 +736,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ huxy_components_modal; }
+  "default": function() { return /* binding */ huxy_components_drawer; }
 });
 
 // EXTERNAL MODULE: ../huxy/components/mask/index.jsx + 4 modules
@@ -761,9 +759,9 @@ var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleE
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
 var styleTagTransform = __webpack_require__(297);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.0.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/modal/index.less
-var modal = __webpack_require__(174);
-;// CONCATENATED MODULE: ../huxy/components/modal/index.less
+// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.0.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/drawer/index.less
+var drawer = __webpack_require__(129);
+;// CONCATENATED MODULE: ../huxy/components/drawer/index.less
 
       
       
@@ -785,71 +783,66 @@ options.setAttributes = (setAttributesWithoutAttributes_default());
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(modal/* default */.Z, options);
+var update = injectStylesIntoStyleTag_default()(drawer/* default */.Z, options);
 
 
 
 
-       /* harmony default export */ var components_modal = (modal/* default */.Z && modal/* default.locals */.Z.locals ? modal/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ var components_drawer = (drawer/* default */.Z && drawer/* default.locals */.Z.locals ? drawer/* default.locals */.Z.locals : undefined);
 
 // EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(458);
-;// CONCATENATED MODULE: ../huxy/components/modal/index.jsx
+;// CONCATENATED MODULE: ../huxy/components/drawer/index.jsx
 
 
 
 
 
-const Modal = _ref => {
+const Drawer = _ref => {
   var _className$split;
 
   let {
-    open,
-    cancel,
-    hasMask = true,
-    cancelText = '取消',
-    submit,
-    submitText = '确定',
-    title = 'Modal 弹窗',
+    visible,
+    onClose,
+    footer,
+    header,
     className,
     children,
-    delay = 0
+    width = '300px'
   } = _ref;
-  const cls = ['modal-wrap', open ? 'open' : '', ...((_className$split = className == null ? void 0 : className.split(' ')) != null ? _className$split : [])].filter(Boolean).map(c => components_modal[c]).join(' ');
+  const cls = ['drawer-wrap', visible ? 'open' : '', ...((_className$split = className == null ? void 0 : className.split(' ')) != null ? _className$split : [])].filter(Boolean).map(c => components_drawer[c]).join(' ');
   return /*#__PURE__*/(0,jsx_runtime.jsx)(mask["default"], {
-    open: open,
-    close: cancel,
-    delay: delay,
-    hasMask: hasMask,
-    className: "huxy-modal",
+    open: visible,
+    close: onClose,
+    delay: 250,
+    hasMask: true,
+    className: "huxy-drawer",
     children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
       className: cls,
+      style: {
+        width
+      },
       children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-        className: components_modal["modal-container"],
-        children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          className: components_modal["modal-header"],
-          children: title
+        className: components_drawer["drawer-container"],
+        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+          className: components_drawer["drawer-header"],
+          children: [/*#__PURE__*/(0,jsx_runtime.jsx)("a", {
+            className: components_drawer["ico-close"],
+            onClick: onClose
+          }), header]
         }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          className: components_modal["modal-content"],
+          className: components_drawer["drawer-content"],
           children: children
-        }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-          className: components_modal["modal-footer"],
-          children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: `${components_modal.btn} ${components_modal.left}`,
-            onClick: e => cancel == null ? void 0 : cancel(),
-            children: cancelText
-          }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: `${components_modal.btn} ${components_modal.left}`,
-            onClick: e => submit == null ? void 0 : submit(),
-            children: submitText
-          })]
-        })]
+        }), footer ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+          className: components_drawer["drawer-footer"],
+          children: footer
+        }) : null]
       })
     })
   });
 };
 
-/* harmony default export */ var huxy_components_modal = (Modal);
+/* harmony default export */ var huxy_components_drawer = (Drawer);
 }();
 __webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
