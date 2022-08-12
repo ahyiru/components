@@ -104,6 +104,41 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ fullPage; }
 });
 
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.18.9/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.18.9/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
 ;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.18.9/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
@@ -191,6 +226,8 @@ var jsx_runtime = __webpack_require__(458);
 ;// CONCATENATED MODULE: ../huxy/components/fullPage/index.jsx
 
 
+const _excluded = ["panel", "fullIcon", "exitIcon"];
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -210,7 +247,9 @@ const Index = _ref => {
     panel,
     fullIcon = defaultIcon,
     exitIcon = defaultIcon
-  } = _ref;
+  } = _ref,
+      rest = _objectWithoutProperties(_ref, _excluded);
+
   const container = utils_isRef(panel) ? panel.current : panel;
   const [isFull, setIsFull] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)();
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
@@ -220,9 +259,9 @@ const Index = _ref => {
     return () => destroy();
   }, []);
   const Icon = isFull ? exitIcon : fullIcon;
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, _objectSpread({
     onClick: e => utils_fullScreen(container)
-  });
+  }, rest));
 };
 
 /* harmony default export */ var fullPage = (Index);
