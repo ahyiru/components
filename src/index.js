@@ -1,6 +1,7 @@
 export {default as Anico} from './anico';
 export {default as Col} from './col';
 export {default as Drawer} from './drawer';
+export {default as Drop} from './drop';
 export {default as ErrorBoundary} from './errorBoundary';
 export {default as fixEle} from './fixEle';
 export {default as FullPage} from './fullPage';

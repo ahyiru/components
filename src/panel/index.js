@@ -774,7 +774,7 @@ var jsx_runtime = __webpack_require__(458);
 ;// CONCATENATED MODULE: ../huxy/components/panel/index.jsx
 
 
-const _excluded = ["loading", "title", "plugins", "children", "className"];
+const _excluded = ["loading", "title", "plugins", "children", "className", "style"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
@@ -801,7 +801,8 @@ const Index = (props, ref) => {
     title,
     plugins,
     children,
-    className
+    className,
+    style
   } = props,
         rest = _objectWithoutProperties(props, _excluded);
 
@@ -810,7 +811,7 @@ const Index = (props, ref) => {
   const cls = className ? ` ${className}` : '';
   const container = utils_isRef(ref) ? ref : panelRef;
   return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", _objectSpread(_objectSpread({
-    className: `${components_panel.panel}${cls}`
+    className: components_panel.panel
   }, rest), {}, {
     ref: container,
     children: [(title || isValidPlugin) && /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
@@ -827,7 +828,8 @@ const Index = (props, ref) => {
         }, i))
       })]
     }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-      className: components_panel["panel-body"],
+      className: `${components_panel["panel-body"]}${cls}`,
+      style: style,
       children: children
     }), loading && /*#__PURE__*/(0,jsx_runtime.jsx)(spinner["default"], {})]
   }));

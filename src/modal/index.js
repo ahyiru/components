@@ -114,7 +114,7 @@ const wrapper = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  zIndex: 9999
+  zIndex: 99999
 };
 const mask = {
   position: 'fixed',
@@ -143,7 +143,7 @@ const Mask = _ref => {
     mountNode,
     hasMask = true,
     style,
-    className = 'mask'
+    className = 'h-mask'
   } = _ref;
   const [delayOpen] = use_useDelayState(open, delay);
   body.style.overflow = delayOpen ? 'hidden' : '';
@@ -155,7 +155,7 @@ const Mask = _ref => {
         style: wrapper,
         children: [hasMask ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: mask,
-          onClick: close
+          onClick: e => close(e)
         }) : null, /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: _objectSpread(_objectSpread({}, container), style),
           children: children
@@ -813,7 +813,7 @@ const Modal = _ref => {
     title = 'Modal 弹窗',
     className,
     children,
-    delay = 0
+    delay = 250
   } = _ref;
   const cls = ['modal-wrap', open ? 'open' : '', ...((_className$split = className == null ? void 0 : className.split(' ')) != null ? _className$split : [])].filter(Boolean).map(c => components_modal[c]).join(' ');
   return /*#__PURE__*/(0,jsx_runtime.jsx)(mask["default"], {
@@ -836,11 +836,11 @@ const Modal = _ref => {
           className: components_modal["modal-footer"],
           children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
             className: `${components_modal.btn} ${components_modal.left}`,
-            onClick: e => cancel == null ? void 0 : cancel(),
+            onClick: e => cancel == null ? void 0 : cancel(e),
             children: cancelText
           }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: `${components_modal.btn} ${components_modal.left}`,
-            onClick: e => submit == null ? void 0 : submit(),
+            className: `${components_modal.btn} ${components_modal.right}`,
+            onClick: e => submit == null ? void 0 : submit(e),
             children: submitText
           })]
         })]

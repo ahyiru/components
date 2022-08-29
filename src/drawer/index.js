@@ -114,7 +114,7 @@ const wrapper = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  zIndex: 9999
+  zIndex: 99999
 };
 const mask = {
   position: 'fixed',
@@ -143,7 +143,7 @@ const Mask = _ref => {
     mountNode,
     hasMask = true,
     style,
-    className = 'mask'
+    className = 'h-mask'
   } = _ref;
   const [delayOpen] = use_useDelayState(open, delay);
   body.style.overflow = delayOpen ? 'hidden' : '';
@@ -155,7 +155,7 @@ const Mask = _ref => {
         style: wrapper,
         children: [hasMask ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: mask,
-          onClick: close
+          onClick: e => close(e)
         }) : null, /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: _objectSpread(_objectSpread({}, container), style),
           children: children
@@ -828,7 +828,7 @@ const Drawer = _ref => {
           className: components_drawer["drawer-header"],
           children: [/*#__PURE__*/(0,jsx_runtime.jsx)("a", {
             className: components_drawer["ico-close"],
-            onClick: onClose
+            onClick: e => onClose(e)
           }), header]
         }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           className: components_drawer["drawer-content"],
