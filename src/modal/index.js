@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 498:
+/***/ 221:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -21,7 +21,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ components_mask; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.18.9/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.0/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -37,7 +37,7 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 // EXTERNAL MODULE: ../huxy/components/portal/index.jsx
-var portal = __webpack_require__(937);
+var portal = __webpack_require__(34);
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
 var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(687);
 ;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
@@ -155,7 +155,7 @@ const Mask = _ref => {
         style: wrapper,
         children: [hasMask ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: mask,
-          onClick: e => close(e)
+          onClick: e => close == null ? void 0 : close(e)
         }) : null, /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: _objectSpread(_objectSpread({}, container), style),
           children: children
@@ -169,7 +169,7 @@ const Mask = _ref => {
 
 /***/ }),
 
-/***/ 937:
+/***/ 34:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(994);
@@ -742,7 +742,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: ../huxy/components/mask/index.jsx + 4 modules
-var mask = __webpack_require__(498);
+var mask = __webpack_require__(221);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -805,7 +805,7 @@ const Modal = _ref => {
 
   let {
     open,
-    cancel,
+    close,
     hasMask = true,
     cancelText = '取消',
     submit,
@@ -818,7 +818,7 @@ const Modal = _ref => {
   const cls = ['modal-wrap', open ? 'open' : '', ...((_className$split = className == null ? void 0 : className.split(' ')) != null ? _className$split : [])].filter(Boolean).map(c => components_modal[c]).join(' ');
   return /*#__PURE__*/(0,jsx_runtime.jsx)(mask["default"], {
     open: open,
-    close: cancel,
+    close: close,
     delay: delay,
     hasMask: hasMask,
     className: "huxy-modal",
@@ -836,7 +836,7 @@ const Modal = _ref => {
           className: components_modal["modal-footer"],
           children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
             className: `${components_modal.btn} ${components_modal.left}`,
-            onClick: e => cancel == null ? void 0 : cancel(e),
+            onClick: e => close == null ? void 0 : close(e),
             children: cancelText
           }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
             className: `${components_modal.btn} ${components_modal.right}`,

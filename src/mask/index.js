@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 937:
+/***/ 34:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(994);
@@ -142,7 +142,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ components_mask; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.18.9/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.0/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -158,7 +158,7 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 // EXTERNAL MODULE: ../huxy/components/portal/index.jsx
-var portal = __webpack_require__(937);
+var portal = __webpack_require__(34);
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
 var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(687);
 ;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
@@ -276,7 +276,7 @@ const Mask = _ref => {
         style: wrapper,
         children: [hasMask ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: mask,
-          onClick: e => close(e)
+          onClick: e => close == null ? void 0 : close(e)
         }) : null, /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           style: _objectSpread(_objectSpread({}, container), style),
           children: children
