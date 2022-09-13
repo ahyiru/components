@@ -136,6 +136,44 @@ const getPosition = function () {
 };
 
 /* harmony default export */ var utils_getPosition = (getPosition);
+;// CONCATENATED MODULE: ../huxy/utils/getType.js
+const getType = value => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+
+/* harmony default export */ var utils_getType = (getType);
+;// CONCATENATED MODULE: ../huxy/utils/isElement.js
+
+
+const isElement = value => utils_getType(value).indexOf('element') > -1;
+
+/* harmony default export */ var utils_isElement = (isElement);
+;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
+
+
+
+const getViewportSize = function () {
+  let element = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+  if (!utils_isBrowser()) {
+    return {
+      width: 0,
+      height: 0
+    };
+  }
+
+  if (utils_isElement(element)) {
+    return {
+      width: element.clientWidth,
+      height: element.clientHeight
+    };
+  }
+
+  return {
+    width: window.innerWidth || document.documentElement.clientWidth,
+    height: window.innerHeight || document.documentElement.clientHeight
+  };
+};
+
+/* harmony default export */ var utils_getViewportSize = (getViewportSize);
 ;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
 
@@ -154,6 +192,7 @@ var jsx_runtime = __webpack_require__(458);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -190,6 +229,23 @@ const defaultIcon = props => /*#__PURE__*/(0,jsx_runtime.jsx)("i", _objectSpread
   children: "..."
 }));
 
+const getEleSize = ele => {
+  const {
+    left,
+    top
+  } = utils_getPosition(ele);
+  const {
+    width,
+    height
+  } = utils_getViewportSize(ele);
+  return {
+    left,
+    top,
+    width,
+    height
+  };
+};
+
 const Index = _ref2 => {
   let {
     panel,
@@ -203,8 +259,8 @@ const Index = _ref2 => {
   const targetStyleRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
     const getTarget = typeof target === 'function' ? target : () => document.getElementsByClassName(target)[0];
-    targetStyleRef.current = getStyles(utils_getPosition(getTarget()));
-    panelStyleRef.current = _objectSpread(_objectSpread({}, maxStyle), getStyles(utils_getPosition(panel)));
+    targetStyleRef.current = getStyles(getEleSize(getTarget()));
+    panelStyleRef.current = _objectSpread(_objectSpread({}, maxStyle), getStyles(getEleSize(panel)));
   }, [panel]);
 
   const handle = (isMax, ele) => {
