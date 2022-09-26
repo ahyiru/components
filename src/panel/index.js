@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 8609:
+/***/ 5416:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -719,7 +719,7 @@ const isRef = ref => utils_hasProp(ref, 'current');
 
 /* harmony default export */ var utils_isRef = (isRef);
 // EXTERNAL MODULE: ../huxy/components/spinner/index.jsx + 1 modules
-var spinner = __webpack_require__(8609);
+var spinner = __webpack_require__(5416);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(3993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
