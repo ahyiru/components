@@ -654,7 +654,7 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
 
 
-const _excluded = ["gutter", "className"];
+const _excluded = ["gutter", "className", "overflow"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
@@ -667,7 +667,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 const Row = (_ref, ref) => {
   let {
     gutter = 10,
-    className
+    className,
+    overflow = 'hidden'
   } = _ref,
       rest = _objectWithoutProperties(_ref, _excluded);
 
@@ -688,7 +689,8 @@ const Row = (_ref, ref) => {
     className: "row-wrap",
     style: {
       '--gutter': `${Math.floor(gutter / 2)}px`,
-      '--rowgap': `${Math.floor(rowgap / 2)}px`
+      '--rowgap': `${Math.floor(rowgap / 2)}px`,
+      overflow
     },
     children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", _objectSpread(_objectSpread({
       className: `row${defCls}`
