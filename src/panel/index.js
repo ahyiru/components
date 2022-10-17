@@ -656,7 +656,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_panel; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.0/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -668,34 +668,29 @@ function _defineProperty(obj, key, value) {
   } else {
     obj[key] = value;
   }
-
   return obj;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.0/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
   var key, i;
-
   for (i = 0; i < sourceKeys.length; i++) {
     key = sourceKeys[i];
     if (excluded.indexOf(key) >= 0) continue;
     target[key] = source[key];
   }
-
   return target;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.0/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
 
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
   var target = _objectWithoutPropertiesLoose(source, excluded);
   var key, i;
-
   if (Object.getOwnPropertySymbols) {
     var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
     for (i = 0; i < sourceSymbolKeys.length; i++) {
       key = sourceSymbolKeys[i];
       if (excluded.indexOf(key) >= 0) continue;
@@ -703,7 +698,6 @@ function _objectWithoutProperties(source, excluded) {
       target[key] = source[key];
     }
   }
-
   return target;
 }
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
@@ -774,7 +768,7 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/panel/index.jsx
 
 
-const _excluded = ["loading", "title", "plugins", "children", "className", "style"];
+const _excluded = ["loading", "title", "plugins", "children", "className"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
@@ -801,8 +795,7 @@ const Index = (props, ref) => {
     title,
     plugins,
     children,
-    className,
-    style
+    className
   } = props,
         rest = _objectWithoutProperties(props, _excluded);
 
@@ -811,7 +804,7 @@ const Index = (props, ref) => {
   const cls = className ? ` ${className}` : '';
   const container = utils_isRef(ref) ? ref : panelRef;
   return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", _objectSpread(_objectSpread({
-    className: components_panel.panel
+    className: `${components_panel.panel}${cls}`
   }, rest), {}, {
     ref: container,
     children: [(title || isValidPlugin) && /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
@@ -828,8 +821,7 @@ const Index = (props, ref) => {
         }, i))
       })]
     }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-      className: `${components_panel["panel-body"]}${cls}`,
-      style: style,
+      className: components_panel["panel-body"],
       children: children
     }), loading && /*#__PURE__*/(0,jsx_runtime.jsx)(spinner["default"], {})]
   }));
