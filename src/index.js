@@ -9,6 +9,7 @@ export {default as HandleError} from './handleError';
 export {default as LoadError} from './loadError';
 export {default as Mask} from './mask';
 export {default as MaxSize} from './maxSize';
+export {default as Menu} from './menu';
 export {default as Modal} from './modal';
 export {default as Panel} from './panel';
 export {default as Portal} from './portal';
