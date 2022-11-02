@@ -82,7 +82,6 @@ var __webpack_exports__ = {};
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(994);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
 
-
 const Index = _ref => {
   let {
     children,
@@ -90,7 +89,6 @@ const Index = _ref => {
   } = _ref;
   return /*#__PURE__*/(0,react_dom__WEBPACK_IMPORTED_MODULE_0__.createPortal)(children, mountNode);
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 }();
 __webpack_exports__ = __webpack_exports__["default"];

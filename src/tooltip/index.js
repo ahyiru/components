@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 7466:
+/***/ 4608:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3431);
@@ -24,9 +24,17 @@ return /******/ (function() { // webpackBootstrap
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".cols-1 {\n  width: 8.33333333%;\n}\n.cols-2 {\n  width: 16.66666667%;\n}\n.cols-3 {\n  width: 25%;\n}\n.cols-4 {\n  width: 33.33333333%;\n}\n.cols-5 {\n  width: 41.66666667%;\n}\n.cols-6 {\n  width: 50%;\n}\n.cols-7 {\n  width: 58.33333333%;\n}\n.cols-8 {\n  width: 66.66666667%;\n}\n.cols-9 {\n  width: 75%;\n}\n.cols-10 {\n  width: 83.33333333%;\n}\n.cols-11 {\n  width: 91.66666667%;\n}\n.cols-12 {\n  width: 100%;\n}\n.offsets-0 {\n  margin-left: 0;\n}\n.offsets-1 {\n  margin-left: 8.33333333%;\n}\n.offsets-2 {\n  margin-left: 16.66666667%;\n}\n.offsets-3 {\n  margin-left: 25%;\n}\n.offsets-4 {\n  margin-left: 33.33333333%;\n}\n.offsets-5 {\n  margin-left: 41.66666667%;\n}\n.offsets-6 {\n  margin-left: 50%;\n}\n.offsets-7 {\n  margin-left: 58.33333333%;\n}\n.offsets-8 {\n  margin-left: 66.66666667%;\n}\n.offsets-9 {\n  margin-left: 75%;\n}\n.offsets-10 {\n  margin-left: 83.33333333%;\n}\n.offsets-11 {\n  margin-left: 91.66666667%;\n}\n.offsets-12 {\n  margin-left: 100%;\n}\n.row-wrap {\n  --gutter: 8px;\n  --rowgap: 8px;\n}\n.row-wrap + .row-wrap {\n  margin-top: var(--rowgap);\n}\n.row {\n  display: flex;\n  flex-wrap: wrap;\n  margin: calc(0px - var(--rowgap)) calc(0px - var(--gutter));\n}\n.row [class^=\"col-\"] {\n  padding: var(--rowgap) var(--gutter);\n  position: relative;\n}\n.row .col-1 {\n  width: 8.33333333%;\n}\n.row .col-2 {\n  width: 16.66666667%;\n}\n.row .col-3 {\n  width: 25%;\n}\n.row .col-4 {\n  width: 33.33333333%;\n}\n.row .col-5 {\n  width: 41.66666667%;\n}\n.row .col-6 {\n  width: 50%;\n}\n.row .col-7 {\n  width: 58.33333333%;\n}\n.row .col-8 {\n  width: 66.66666667%;\n}\n.row .col-9 {\n  width: 75%;\n}\n.row .col-10 {\n  width: 83.33333333%;\n}\n.row .col-11 {\n  width: 91.66666667%;\n}\n.row .col-12 {\n  width: 100%;\n}\n.row .offset-0 {\n  margin-left: 0;\n}\n.row .offset-1 {\n  margin-left: 8.33333333%;\n}\n.row .offset-2 {\n  margin-left: 16.66666667%;\n}\n.row .offset-3 {\n  margin-left: 25%;\n}\n.row .offset-4 {\n  margin-left: 33.33333333%;\n}\n.row .offset-5 {\n  margin-left: 41.66666667%;\n}\n.row .offset-6 {\n  margin-left: 50%;\n}\n.row .offset-7 {\n  margin-left: 58.33333333%;\n}\n.row .offset-8 {\n  margin-left: 66.66666667%;\n}\n.row .offset-9 {\n  margin-left: 75%;\n}\n.row .offset-10 {\n  margin-left: 83.33333333%;\n}\n.row .offset-11 {\n  margin-left: 91.66666667%;\n}\n.row .offset-12 {\n  margin-left: 100%;\n}\n@media screen and (min-width: 1600px) {\n  .row .col-xl-1 {\n    width: 8.33333333%;\n  }\n  .row .col-xl-2 {\n    width: 16.66666667%;\n  }\n  .row .col-xl-3 {\n    width: 25%;\n  }\n  .row .col-xl-4 {\n    width: 33.33333333%;\n  }\n  .row .col-xl-5 {\n    width: 41.66666667%;\n  }\n  .row .col-xl-6 {\n    width: 50%;\n  }\n  .row .col-xl-7 {\n    width: 58.33333333%;\n  }\n  .row .col-xl-8 {\n    width: 66.66666667%;\n  }\n  .row .col-xl-9 {\n    width: 75%;\n  }\n  .row .col-xl-10 {\n    width: 83.33333333%;\n  }\n  .row .col-xl-11 {\n    width: 91.66666667%;\n  }\n  .row .col-xl-12 {\n    width: 100%;\n  }\n  .row .offset-xl-0 {\n    margin-left: 0;\n  }\n  .row .offset-xl-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-xl-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-xl-3 {\n    margin-left: 25%;\n  }\n  .row .offset-xl-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-xl-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-xl-6 {\n    margin-left: 50%;\n  }\n  .row .offset-xl-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-xl-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-xl-9 {\n    margin-left: 75%;\n  }\n  .row .offset-xl-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-xl-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-xl-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 1200px) and (max-width: 1600px) {\n  .row .col-lg-1 {\n    width: 8.33333333%;\n  }\n  .row .col-lg-2 {\n    width: 16.66666667%;\n  }\n  .row .col-lg-3 {\n    width: 25%;\n  }\n  .row .col-lg-4 {\n    width: 33.33333333%;\n  }\n  .row .col-lg-5 {\n    width: 41.66666667%;\n  }\n  .row .col-lg-6 {\n    width: 50%;\n  }\n  .row .col-lg-7 {\n    width: 58.33333333%;\n  }\n  .row .col-lg-8 {\n    width: 66.66666667%;\n  }\n  .row .col-lg-9 {\n    width: 75%;\n  }\n  .row .col-lg-10 {\n    width: 83.33333333%;\n  }\n  .row .col-lg-11 {\n    width: 91.66666667%;\n  }\n  .row .col-lg-12 {\n    width: 100%;\n  }\n  .row .offset-lg-0 {\n    margin-left: 0;\n  }\n  .row .offset-lg-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-lg-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-lg-3 {\n    margin-left: 25%;\n  }\n  .row .offset-lg-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-lg-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-lg-6 {\n    margin-left: 50%;\n  }\n  .row .offset-lg-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-lg-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-lg-9 {\n    margin-left: 75%;\n  }\n  .row .offset-lg-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-lg-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-lg-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 992px) and (max-width: 1200px) {\n  .row .col-md-1 {\n    width: 8.33333333%;\n  }\n  .row .col-md-2 {\n    width: 16.66666667%;\n  }\n  .row .col-md-3 {\n    width: 25%;\n  }\n  .row .col-md-4 {\n    width: 33.33333333%;\n  }\n  .row .col-md-5 {\n    width: 41.66666667%;\n  }\n  .row .col-md-6 {\n    width: 50%;\n  }\n  .row .col-md-7 {\n    width: 58.33333333%;\n  }\n  .row .col-md-8 {\n    width: 66.66666667%;\n  }\n  .row .col-md-9 {\n    width: 75%;\n  }\n  .row .col-md-10 {\n    width: 83.33333333%;\n  }\n  .row .col-md-11 {\n    width: 91.66666667%;\n  }\n  .row .col-md-12 {\n    width: 100%;\n  }\n  .row .offset-md-0 {\n    margin-left: 0;\n  }\n  .row .offset-md-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-md-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-md-3 {\n    margin-left: 25%;\n  }\n  .row .offset-md-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-md-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-md-6 {\n    margin-left: 50%;\n  }\n  .row .offset-md-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-md-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-md-9 {\n    margin-left: 75%;\n  }\n  .row .offset-md-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-md-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-md-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 768px) and (max-width: 992px) {\n  .row .col-sm-1 {\n    width: 8.33333333%;\n  }\n  .row .col-sm-2 {\n    width: 16.66666667%;\n  }\n  .row .col-sm-3 {\n    width: 25%;\n  }\n  .row .col-sm-4 {\n    width: 33.33333333%;\n  }\n  .row .col-sm-5 {\n    width: 41.66666667%;\n  }\n  .row .col-sm-6 {\n    width: 50%;\n  }\n  .row .col-sm-7 {\n    width: 58.33333333%;\n  }\n  .row .col-sm-8 {\n    width: 66.66666667%;\n  }\n  .row .col-sm-9 {\n    width: 75%;\n  }\n  .row .col-sm-10 {\n    width: 83.33333333%;\n  }\n  .row .col-sm-11 {\n    width: 91.66666667%;\n  }\n  .row .col-sm-12 {\n    width: 100%;\n  }\n  .row .offset-sm-0 {\n    margin-left: 0;\n  }\n  .row .offset-sm-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-sm-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-sm-3 {\n    margin-left: 25%;\n  }\n  .row .offset-sm-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-sm-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-sm-6 {\n    margin-left: 50%;\n  }\n  .row .offset-sm-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-sm-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-sm-9 {\n    margin-left: 75%;\n  }\n  .row .offset-sm-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-sm-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-sm-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (max-width: 768px) {\n  .row .col-xs-1 {\n    width: 8.33333333%;\n  }\n  .row .col-xs-2 {\n    width: 16.66666667%;\n  }\n  .row .col-xs-3 {\n    width: 25%;\n  }\n  .row .col-xs-4 {\n    width: 33.33333333%;\n  }\n  .row .col-xs-5 {\n    width: 41.66666667%;\n  }\n  .row .col-xs-6 {\n    width: 50%;\n  }\n  .row .col-xs-7 {\n    width: 58.33333333%;\n  }\n  .row .col-xs-8 {\n    width: 66.66666667%;\n  }\n  .row .col-xs-9 {\n    width: 75%;\n  }\n  .row .col-xs-10 {\n    width: 83.33333333%;\n  }\n  .row .col-xs-11 {\n    width: 91.66666667%;\n  }\n  .row .col-xs-12 {\n    width: 100%;\n  }\n  .row .offset-xs-0 {\n    margin-left: 0;\n  }\n  .row .offset-xs-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-xs-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-xs-3 {\n    margin-left: 25%;\n  }\n  .row .offset-xs-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-xs-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-xs-6 {\n    margin-left: 50%;\n  }\n  .row .offset-xs-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-xs-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-xs-9 {\n    margin-left: 75%;\n  }\n  .row .offset-xs-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-xs-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-xs-12 {\n    margin-left: 100%;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".ofth_ {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  display: inline-block;\n  width: 100%;\n}\n.hVmF3 {\n  position: relative;\n}\n.hVmF3:hover::before, .hVmF3:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.hVmF3:hover::before {\n  transform: translateY(0);\n}\n.hVmF3:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.hVmF3::before, .hVmF3::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: var(--tooltipBgColor);\n  border: 1px solid var(--tooltipBorderColor);\n  transition: opacity 0.2s, transform 0.2s;\n}\n.hVmF3::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: var(--tooltipColor);\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.hVmF3::after {\n  content: \"\";\n  height: calc(var(--arrowSize) + 2px);\n  width: calc(var(--arrowSize) + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.uzFyE {\n  --tooltipBgColor: #303133;\n  --tooltipBorderColor: #303133;\n  --tooltipColor: #fff;\n  --position: 15px;\n  --arrowSize: 8px;\n  --rotate: 135deg;\n}\n.uzFyE[tooltip] {\n  position: relative;\n}\n.uzFyE[tooltip]:hover::before, .uzFyE[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.uzFyE[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.uzFyE[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.uzFyE[tooltip]::before, .uzFyE[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: var(--tooltipBgColor);\n  border: 1px solid var(--tooltipBorderColor);\n  transition: opacity 0.2s, transform 0.2s;\n}\n.uzFyE[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: var(--tooltipColor);\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.uzFyE[tooltip]::after {\n  content: \"\";\n  height: calc(var(--arrowSize) + 2px);\n  width: calc(var(--arrowSize) + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.uzFyE[tooltip]::before {\n  left: 0;\n  bottom: calc(100% + var(--arrowSize));\n}\n.uzFyE[tooltip]::after {\n  left: var(--position);\n  bottom: calc(100% + var(--arrowSize) / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n.Giihu {\n  --tooltipBgColor: #303133;\n  --tooltipBorderColor: #303133;\n  --tooltipColor: #fff;\n  --position: 15px;\n  --arrowSize: 8px;\n  --rotate: 135deg;\n}\n.Giihu[tooltip] {\n  position: relative;\n}\n.Giihu[tooltip]:hover::before, .Giihu[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.Giihu[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.Giihu[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.Giihu[tooltip]::before, .Giihu[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: var(--tooltipBgColor);\n  border: 1px solid var(--tooltipBorderColor);\n  transition: opacity 0.2s, transform 0.2s;\n}\n.Giihu[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: var(--tooltipColor);\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.Giihu[tooltip]::after {\n  content: \"\";\n  height: calc(var(--arrowSize) + 2px);\n  width: calc(var(--arrowSize) + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.Giihu[tooltip]::before {\n  right: 0;\n  bottom: calc(100% + var(--arrowSize));\n}\n.Giihu[tooltip]::after {\n  right: var(--position);\n  bottom: calc(100% + var(--arrowSize) / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n.bFVVt {\n  --tooltipBgColor: #303133;\n  --tooltipBorderColor: #303133;\n  --tooltipColor: #fff;\n  --position: 15px;\n  --arrowSize: 8px;\n  --rotate: -45deg;\n}\n.bFVVt[tooltip] {\n  position: relative;\n}\n.bFVVt[tooltip]:hover::before, .bFVVt[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.bFVVt[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.bFVVt[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.bFVVt[tooltip]::before, .bFVVt[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: var(--tooltipBgColor);\n  border: 1px solid var(--tooltipBorderColor);\n  transition: opacity 0.2s, transform 0.2s;\n}\n.bFVVt[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: var(--tooltipColor);\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.bFVVt[tooltip]::after {\n  content: \"\";\n  height: calc(var(--arrowSize) + 2px);\n  width: calc(var(--arrowSize) + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.bFVVt[tooltip]::before {\n  left: 0;\n  top: calc(100% + var(--arrowSize));\n}\n.bFVVt[tooltip]::after {\n  left: var(--position);\n  top: calc(100% + var(--arrowSize) / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n.oGmKq {\n  --tooltipBgColor: #303133;\n  --tooltipBorderColor: #303133;\n  --tooltipColor: #fff;\n  --position: 15px;\n  --arrowSize: 8px;\n  --rotate: -45deg;\n}\n.oGmKq[tooltip] {\n  position: relative;\n}\n.oGmKq[tooltip]:hover::before, .oGmKq[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.oGmKq[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.oGmKq[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.oGmKq[tooltip]::before, .oGmKq[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: var(--tooltipBgColor);\n  border: 1px solid var(--tooltipBorderColor);\n  transition: opacity 0.2s, transform 0.2s;\n}\n.oGmKq[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: var(--tooltipColor);\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.oGmKq[tooltip]::after {\n  content: \"\";\n  height: calc(var(--arrowSize) + 2px);\n  width: calc(var(--arrowSize) + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.oGmKq[tooltip]::before {\n  right: 0;\n  top: calc(100% + var(--arrowSize));\n}\n.oGmKq[tooltip]::after {\n  right: var(--position);\n  top: calc(100% + var(--arrowSize) / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n.svYWD {\n  --tooltipBgColor: #303133;\n  --tooltipBorderColor: #303133;\n  --tooltipColor: #fff;\n  --position: 15px;\n  --arrowSize: 8px;\n  --rotate: -45deg;\n}\n.svYWD[tooltip] {\n  position: relative;\n}\n.svYWD[tooltip]:hover::before, .svYWD[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.svYWD[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.svYWD[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.svYWD[tooltip]::before, .svYWD[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: var(--tooltipBgColor);\n  border: 1px solid var(--tooltipBorderColor);\n  transition: opacity 0.2s, transform 0.2s;\n}\n.svYWD[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: var(--tooltipColor);\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.svYWD[tooltip]::after {\n  content: \"\";\n  height: calc(var(--arrowSize) + 2px);\n  width: calc(var(--arrowSize) + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.svYWD[tooltip]::before {\n  top: 0;\n  left: calc(100% + var(--arrowSize));\n}\n.svYWD[tooltip]::after {\n  top: var(--position);\n  left: calc(100% + var(--arrowSize) / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n", ""]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"ellipsis": "ofth_",
+	"huxy-tooltip": "hVmF3",
+	"huxy-tooltip-topRight": "uzFyE",
+	"huxy-tooltip-topLeft": "Giihu",
+	"huxy-tooltip-bottomRight": "bFVVt",
+	"huxy-tooltip-bottomLeft": "oGmKq",
+	"huxy-tooltip-rightTop": "svYWD"
+};
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
 
 
@@ -475,6 +483,28 @@ module.exports = styleTagTransform;
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
 
+/***/ }),
+
+/***/ 537:
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": function() { return /* binding */ _defineProperty; }
+/* harmony export */ });
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+  return obj;
+}
+
 /***/ })
 
 /******/ 	});
@@ -545,23 +575,11 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ huxy_components_row; }
+  "default": function() { return /* binding */ huxy_components_tooltip; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
-}
+// EXTERNAL MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+var defineProperty = __webpack_require__(537);
 ;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
@@ -592,8 +610,6 @@ function _objectWithoutProperties(source, excluded) {
   }
   return target;
 }
-// EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
-var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(3993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -612,9 +628,9 @@ var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleE
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
 var styleTagTransform = __webpack_require__(9297);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/row/index.less
-var row = __webpack_require__(7466);
-;// CONCATENATED MODULE: ../huxy/components/row/index.less
+// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/tooltip/index.less
+var tooltip = __webpack_require__(4608);
+;// CONCATENATED MODULE: ../huxy/components/tooltip/index.less
 
       
       
@@ -636,56 +652,42 @@ options.setAttributes = (setAttributesWithoutAttributes_default());
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(row/* default */.Z, options);
+var update = injectStylesIntoStyleTag_default()(tooltip/* default */.Z, options);
 
 
 
 
-       /* harmony default export */ var components_row = (row/* default */.Z && row/* default.locals */.Z.locals ? row/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ var components_tooltip = (tooltip/* default */.Z && tooltip/* default.locals */.Z.locals ? tooltip/* default.locals */.Z.locals : undefined);
 
 // EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7458);
-;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
+;// CONCATENATED MODULE: ../huxy/components/tooltip/index.jsx
 
 
-const _excluded = ["gutter", "className", "overflow"];
+const _excluded = ["title", "placement", "children", "ellipsis"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 
-
-const Row = (_ref, ref) => {
+const Index = _ref => {
   let {
-      gutter = 10,
-      className,
-      overflow = 'hidden'
+      title,
+      placement = 'topRight',
+      children,
+      ellipsis
     } = _ref,
     rest = _objectWithoutProperties(_ref, _excluded);
-  const defCls = className ? ` ${className}` : '';
-  let rowgap = 10;
-  if (Array.isArray(gutter)) {
-    var _tmp$;
-    const tmp = [...gutter];
-    gutter = tmp[0];
-    rowgap = (_tmp$ = tmp[1]) != null ? _tmp$ : tmp[0];
-  }
-  // gutter=isNaN(gutter)?10:gutter;
-  // rowgap=isNaN(rowgap)?10:rowgap;
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-    className: "row-wrap",
-    style: {
-      '--gutter': `${Math.floor(gutter / 2)}px`,
-      '--rowgap': `${Math.floor(rowgap / 2)}px`,
-      overflow
-    },
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", _objectSpread(_objectSpread({
-      className: `row${defCls}`
-    }, rest), {}, {
-      ref: ref
-    }))
-  });
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("span", _objectSpread(_objectSpread({
+    className: components_tooltip[`huxy-tooltip-${placement}`],
+    tooltip: title != null ? title : children
+  }, rest), {}, {
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+      className: ellipsis ? components_tooltip.ellipsis : '',
+      children: children
+    })
+  }));
 };
-/* harmony default export */ var huxy_components_row = (/*#__PURE__*/(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)(Row));
+/* harmony default export */ var huxy_components_tooltip = (Index);
 }();
 __webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;

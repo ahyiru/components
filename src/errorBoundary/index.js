@@ -92,7 +92,6 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       error: null
     };
   }
-
   static getDerivedStateFromError(error) {
     return {
       error
@@ -105,8 +104,6 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       errorReport({error,info});
     }
   } */
-
-
   render() {
     const {
       error
@@ -115,14 +112,11 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       fallback,
       children
     } = this.props;
-
     if (error) {
       return fallback(error);
     }
-
     return children;
   }
-
 }
 }();
 __webpack_exports__ = __webpack_exports__["default"];

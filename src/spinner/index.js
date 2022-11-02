@@ -602,7 +602,6 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/spinner/index.jsx
 
 
-
 const Spinner = _ref => {
   let {
     global
@@ -614,7 +613,6 @@ const Spinner = _ref => {
     })
   });
 };
-
 /* harmony default export */ var huxy_components_spinner = (Spinner);
 }();
 __webpack_exports__ = __webpack_exports__["default"];

@@ -104,7 +104,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ maxSize; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -122,93 +122,76 @@ function _defineProperty(obj, key, value) {
 var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
 ;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes('undefined');
-
 /* harmony default export */ var utils_isBrowser = (isBrowser);
+;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
+/* harmony default export */ var utils_hasProp = (hasProp);
+;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+
+const isRef = ref => utils_hasProp(ref, 'current');
+/* harmony default export */ var utils_isRef = (isRef);
 ;// CONCATENATED MODULE: ../huxy/utils/getPosition.js
 
 
-const getPosition = function () {
-  var _ele$getBoundingClien;
-
-  let ele = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : utils_isBrowser() && document.body;
-  return ele == null ? void 0 : (_ele$getBoundingClien = ele.getBoundingClientRect) == null ? void 0 : _ele$getBoundingClien.call(ele);
+const getPosition = ele => {
+  var _ele, _ele$getBoundingClien, _ele2;
+  if (!utils_isBrowser()) {
+    return;
+  }
+  ele = utils_isRef(ele) ? ele.current : (_ele = ele) != null ? _ele : document.body;
+  return (_ele$getBoundingClien = (_ele2 = ele).getBoundingClientRect) == null ? void 0 : _ele$getBoundingClien.call(_ele2);
 };
-
 /* harmony default export */ var utils_getPosition = (getPosition);
 ;// CONCATENATED MODULE: ../huxy/utils/getType.js
 const getType = value => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
-
 /* harmony default export */ var utils_getType = (getType);
 ;// CONCATENATED MODULE: ../huxy/utils/isElement.js
 
-
 const isElement = value => utils_getType(value).indexOf('element') > -1;
-
 /* harmony default export */ var utils_isElement = (isElement);
 ;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
 
 
-
 const getViewportSize = function () {
+  var _window$innerWidth, _window$innerHeight;
   let element = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-
   if (!utils_isBrowser()) {
     return {
       width: 0,
       height: 0
     };
   }
-
   if (utils_isElement(element)) {
     return {
       width: element.clientWidth,
       height: element.clientHeight
     };
   }
-
   return {
-    width: window.innerWidth || document.documentElement.clientWidth,
-    height: window.innerHeight || document.documentElement.clientHeight
+    width: (_window$innerWidth = window.innerWidth) != null ? _window$innerWidth : document.documentElement.clientWidth,
+    height: (_window$innerHeight = window.innerHeight) != null ? _window$innerHeight : document.documentElement.clientHeight
   };
 };
-
 /* harmony default export */ var utils_getViewportSize = (getViewportSize);
-;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
-const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
-
-/* harmony default export */ var utils_hasProp = (hasProp);
-;// CONCATENATED MODULE: ../huxy/utils/isRef.js
-
-
-const isRef = ref => utils_hasProp(ref, 'current');
-
-/* harmony default export */ var utils_isRef = (isRef);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/maxSize/index.jsx
 
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 
 
 
 
-
-
 const setStyles = (ele, styles) => Object.keys(styles).map(v => ele.style[v] = styles[v]);
-
 const resetStyles = (ele, styles) => Object.keys(styles).map(v => ele.style[v] = '');
-
 const maxStyle = {
   overflow: 'auto',
   position: 'fixed',
   zIndex: 5555,
   transition: 'all .2s'
 };
-
 const getStyles = _ref => {
   let {
     left,
@@ -223,11 +206,9 @@ const getStyles = _ref => {
     height: `${height}px`
   };
 };
-
 const defaultIcon = props => /*#__PURE__*/(0,jsx_runtime.jsx)("i", _objectSpread(_objectSpread({}, props), {}, {
   children: "..."
 }));
-
 const getEleSize = ele => {
   const {
     left,
@@ -244,7 +225,6 @@ const getEleSize = ele => {
     height
   };
 };
-
 const Index = _ref2 => {
   let {
     panel,
@@ -261,7 +241,6 @@ const Index = _ref2 => {
     targetStyleRef.current = getStyles(getEleSize(getTarget()));
     panelStyleRef.current = _objectSpread(_objectSpread({}, maxStyle), getStyles(getEleSize(panel)));
   }, [panel]);
-
   const handle = (isMax, ele) => {
     if (isMax) {
       setStyles(ele, panelStyleRef.current);
@@ -271,16 +250,13 @@ const Index = _ref2 => {
     } else {
       resetStyles(ele, panelStyleRef.current);
     }
-
     setIsMax(isMax);
   };
-
   const Icon = isMax ? exitIcon : fullIcon;
   return /*#__PURE__*/(0,jsx_runtime.jsx)(Icon, {
     onClick: e => handle(!isMax, panel)
   });
 };
-
 /* harmony default export */ var maxSize = (Index);
 }();
 __webpack_exports__ = __webpack_exports__["default"];

@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 3586:
+/***/ 9194:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -75,7 +75,6 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/spinner/index.jsx
 
 
-
 const Spinner = _ref => {
   let {
     global
@@ -87,7 +86,6 @@ const Spinner = _ref => {
     })
   });
 };
-
 /* harmony default export */ var huxy_components_spinner = (Spinner);
 
 /***/ }),
@@ -656,7 +654,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_panel; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -670,7 +668,7 @@ function _defineProperty(obj, key, value) {
   }
   return obj;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
   var target = {};
@@ -683,7 +681,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   }
   return target;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
 
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
@@ -704,16 +702,13 @@ function _objectWithoutProperties(source, excluded) {
 var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
 ;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
-
 /* harmony default export */ var utils_hasProp = (hasProp);
 ;// CONCATENATED MODULE: ../huxy/utils/isRef.js
 
-
 const isRef = ref => utils_hasProp(ref, 'current');
-
 /* harmony default export */ var utils_isRef = (isRef);
 // EXTERNAL MODULE: ../huxy/components/spinner/index.jsx + 1 modules
-var spinner = __webpack_require__(3586);
+var spinner = __webpack_require__(9194);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(3993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -769,12 +764,8 @@ var jsx_runtime = __webpack_require__(7458);
 
 
 const _excluded = ["loading", "title", "plugins", "children", "className"];
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
 
 
 
@@ -783,22 +774,18 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 const isValid = plugins => {
   var _plugins$filter;
-
   return plugins == null ? void 0 : (_plugins$filter = plugins.filter) == null ? void 0 : _plugins$filter.call(plugins, item => typeof item === 'function');
 };
-
 const Index = (props, ref) => {
   const panelRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
-
   const {
-    loading,
-    title,
-    plugins,
-    children,
-    className
-  } = props,
-        rest = _objectWithoutProperties(props, _excluded);
-
+      loading,
+      title,
+      plugins,
+      children,
+      className
+    } = props,
+    rest = _objectWithoutProperties(props, _excluded);
   const validPlugin = isValid(plugins);
   const isValidPlugin = validPlugin == null ? void 0 : validPlugin.length;
   const cls = className ? ` ${className}` : '';
@@ -826,7 +813,6 @@ const Index = (props, ref) => {
     }), loading && /*#__PURE__*/(0,jsx_runtime.jsx)(spinner["default"], {})]
   }));
 };
-
 /* harmony default export */ var huxy_components_panel = (/*#__PURE__*/(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)(Index));
 }();
 __webpack_exports__ = __webpack_exports__["default"];

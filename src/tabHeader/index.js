@@ -548,7 +548,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_tabHeader; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -566,18 +566,25 @@ function _defineProperty(obj, key, value) {
 var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
 ;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes('undefined');
-
 /* harmony default export */ var utils_isBrowser = (isBrowser);
+;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
+/* harmony default export */ var utils_hasProp = (hasProp);
+;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+
+const isRef = ref => utils_hasProp(ref, 'current');
+/* harmony default export */ var utils_isRef = (isRef);
 ;// CONCATENATED MODULE: ../huxy/utils/getPosition.js
 
 
-const getPosition = function () {
-  var _ele$getBoundingClien;
-
-  let ele = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : utils_isBrowser() && document.body;
-  return ele == null ? void 0 : (_ele$getBoundingClien = ele.getBoundingClientRect) == null ? void 0 : _ele$getBoundingClien.call(ele);
+const getPosition = ele => {
+  var _ele, _ele$getBoundingClien, _ele2;
+  if (!utils_isBrowser()) {
+    return;
+  }
+  ele = utils_isRef(ele) ? ele.current : (_ele = ele) != null ? _ele : document.body;
+  return (_ele$getBoundingClien = (_ele2 = ele).getBoundingClientRect) == null ? void 0 : _ele$getBoundingClien.call(_ele2);
 };
-
 /* harmony default export */ var utils_getPosition = (getPosition);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(3993);
@@ -632,12 +639,8 @@ var update = injectStylesIntoStyleTag_default()(tabHeader/* default */.Z, option
 var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/tabHeader/index.jsx
 
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
 
 
 
@@ -649,10 +652,8 @@ const renderTabs = value => /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
   },
   children: value
 });
-
 const Index = (_ref, ref) => {
   var _tabs$;
-
   let {
     activekey,
     tabs = [],
@@ -668,7 +669,6 @@ const Index = (_ref, ref) => {
     const activeItem = listRef.current[active];
     activeItem && setTrackPos(activeItem);
   }, []);
-
   const setTrackPos = ele => {
     const {
       left,
@@ -680,19 +680,15 @@ const Index = (_ref, ref) => {
       width
     });
   };
-
   const onChange = (e, key) => {
     e.stopPropagation();
     setActive(key);
-
     if (typeof switchTab === 'function') {
       switchTab(key);
-    } // track position
-
-
+    }
+    // track position
     setTrackPos(e.currentTarget);
   };
-
   return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
     className: "tabs-header-wrap",
     ref: ref,
@@ -713,7 +709,6 @@ const Index = (_ref, ref) => {
     })]
   });
 };
-
 /* harmony default export */ var huxy_components_tabHeader = (/*#__PURE__*/(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)(Index));
 }();
 __webpack_exports__ = __webpack_exports__["default"];

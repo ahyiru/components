@@ -104,7 +104,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ components_str2React; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -122,19 +122,14 @@ function _defineProperty(obj, key, value) {
 var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/str2React/index.jsx
 
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
 
 const str2React = (str, props) => /*#__PURE__*/(0,jsx_runtime.jsx)("div", _objectSpread({
   dangerouslySetInnerHTML: {
     __html: str
   }
 }, props));
-
 /* harmony default export */ var components_str2React = (str2React);
 }();
 __webpack_exports__ = __webpack_exports__["default"];

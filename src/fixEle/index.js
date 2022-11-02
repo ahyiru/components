@@ -82,29 +82,18 @@ var __webpack_exports__ = {};
 !function() {
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7458);
 
-
-const fixEle = props => {
-  const {
-    list,
-    Value
-  } = props || {};
-
+const fixEle = list => Value => {
   if (typeof Value === 'function' || typeof (Value == null ? void 0 : Value.render) === 'function') {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Value, {});
   }
-
   if (typeof Value === 'string') {
     const Comp = list == null ? void 0 : list[Value];
     return Comp ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Comp, {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("i", {
       className: Value
-    })
-    /* <i>{Value}</i> */
-    ;
+    });
   }
-
-  return Value || null;
+  return Value != null ? Value : null;
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (fixEle);
 }();
 __webpack_exports__ = __webpack_exports__["default"];

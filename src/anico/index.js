@@ -610,14 +610,12 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/anico/index.jsx
 
 
-
 const Index = props => /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
   className: components_anico.anico,
   children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
     className: [components_anico.hline, ...(props.type || '').split(' ').map(cls => components_anico[cls]).filter(Boolean)].join(' ')
   })
 });
-
 /* harmony default export */ var huxy_components_anico = (Index);
 }();
 __webpack_exports__ = __webpack_exports__["default"];

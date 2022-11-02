@@ -1,18 +1,18 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
+		module.exports = factory(require("react-dom"), require("react"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
+		define(["react-dom", "react"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
+		var a = typeof exports === 'object' ? factory(require("react-dom"), require("react")) : factory(root["ReactDOM"], root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__3899__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE__994__, __WEBPACK_EXTERNAL_MODULE__3899__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 7466:
+/***/ 5207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3431);
@@ -24,9 +24,16 @@ return /******/ (function() { // webpackBootstrap
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".cols-1 {\n  width: 8.33333333%;\n}\n.cols-2 {\n  width: 16.66666667%;\n}\n.cols-3 {\n  width: 25%;\n}\n.cols-4 {\n  width: 33.33333333%;\n}\n.cols-5 {\n  width: 41.66666667%;\n}\n.cols-6 {\n  width: 50%;\n}\n.cols-7 {\n  width: 58.33333333%;\n}\n.cols-8 {\n  width: 66.66666667%;\n}\n.cols-9 {\n  width: 75%;\n}\n.cols-10 {\n  width: 83.33333333%;\n}\n.cols-11 {\n  width: 91.66666667%;\n}\n.cols-12 {\n  width: 100%;\n}\n.offsets-0 {\n  margin-left: 0;\n}\n.offsets-1 {\n  margin-left: 8.33333333%;\n}\n.offsets-2 {\n  margin-left: 16.66666667%;\n}\n.offsets-3 {\n  margin-left: 25%;\n}\n.offsets-4 {\n  margin-left: 33.33333333%;\n}\n.offsets-5 {\n  margin-left: 41.66666667%;\n}\n.offsets-6 {\n  margin-left: 50%;\n}\n.offsets-7 {\n  margin-left: 58.33333333%;\n}\n.offsets-8 {\n  margin-left: 66.66666667%;\n}\n.offsets-9 {\n  margin-left: 75%;\n}\n.offsets-10 {\n  margin-left: 83.33333333%;\n}\n.offsets-11 {\n  margin-left: 91.66666667%;\n}\n.offsets-12 {\n  margin-left: 100%;\n}\n.row-wrap {\n  --gutter: 8px;\n  --rowgap: 8px;\n}\n.row-wrap + .row-wrap {\n  margin-top: var(--rowgap);\n}\n.row {\n  display: flex;\n  flex-wrap: wrap;\n  margin: calc(0px - var(--rowgap)) calc(0px - var(--gutter));\n}\n.row [class^=\"col-\"] {\n  padding: var(--rowgap) var(--gutter);\n  position: relative;\n}\n.row .col-1 {\n  width: 8.33333333%;\n}\n.row .col-2 {\n  width: 16.66666667%;\n}\n.row .col-3 {\n  width: 25%;\n}\n.row .col-4 {\n  width: 33.33333333%;\n}\n.row .col-5 {\n  width: 41.66666667%;\n}\n.row .col-6 {\n  width: 50%;\n}\n.row .col-7 {\n  width: 58.33333333%;\n}\n.row .col-8 {\n  width: 66.66666667%;\n}\n.row .col-9 {\n  width: 75%;\n}\n.row .col-10 {\n  width: 83.33333333%;\n}\n.row .col-11 {\n  width: 91.66666667%;\n}\n.row .col-12 {\n  width: 100%;\n}\n.row .offset-0 {\n  margin-left: 0;\n}\n.row .offset-1 {\n  margin-left: 8.33333333%;\n}\n.row .offset-2 {\n  margin-left: 16.66666667%;\n}\n.row .offset-3 {\n  margin-left: 25%;\n}\n.row .offset-4 {\n  margin-left: 33.33333333%;\n}\n.row .offset-5 {\n  margin-left: 41.66666667%;\n}\n.row .offset-6 {\n  margin-left: 50%;\n}\n.row .offset-7 {\n  margin-left: 58.33333333%;\n}\n.row .offset-8 {\n  margin-left: 66.66666667%;\n}\n.row .offset-9 {\n  margin-left: 75%;\n}\n.row .offset-10 {\n  margin-left: 83.33333333%;\n}\n.row .offset-11 {\n  margin-left: 91.66666667%;\n}\n.row .offset-12 {\n  margin-left: 100%;\n}\n@media screen and (min-width: 1600px) {\n  .row .col-xl-1 {\n    width: 8.33333333%;\n  }\n  .row .col-xl-2 {\n    width: 16.66666667%;\n  }\n  .row .col-xl-3 {\n    width: 25%;\n  }\n  .row .col-xl-4 {\n    width: 33.33333333%;\n  }\n  .row .col-xl-5 {\n    width: 41.66666667%;\n  }\n  .row .col-xl-6 {\n    width: 50%;\n  }\n  .row .col-xl-7 {\n    width: 58.33333333%;\n  }\n  .row .col-xl-8 {\n    width: 66.66666667%;\n  }\n  .row .col-xl-9 {\n    width: 75%;\n  }\n  .row .col-xl-10 {\n    width: 83.33333333%;\n  }\n  .row .col-xl-11 {\n    width: 91.66666667%;\n  }\n  .row .col-xl-12 {\n    width: 100%;\n  }\n  .row .offset-xl-0 {\n    margin-left: 0;\n  }\n  .row .offset-xl-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-xl-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-xl-3 {\n    margin-left: 25%;\n  }\n  .row .offset-xl-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-xl-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-xl-6 {\n    margin-left: 50%;\n  }\n  .row .offset-xl-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-xl-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-xl-9 {\n    margin-left: 75%;\n  }\n  .row .offset-xl-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-xl-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-xl-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 1200px) and (max-width: 1600px) {\n  .row .col-lg-1 {\n    width: 8.33333333%;\n  }\n  .row .col-lg-2 {\n    width: 16.66666667%;\n  }\n  .row .col-lg-3 {\n    width: 25%;\n  }\n  .row .col-lg-4 {\n    width: 33.33333333%;\n  }\n  .row .col-lg-5 {\n    width: 41.66666667%;\n  }\n  .row .col-lg-6 {\n    width: 50%;\n  }\n  .row .col-lg-7 {\n    width: 58.33333333%;\n  }\n  .row .col-lg-8 {\n    width: 66.66666667%;\n  }\n  .row .col-lg-9 {\n    width: 75%;\n  }\n  .row .col-lg-10 {\n    width: 83.33333333%;\n  }\n  .row .col-lg-11 {\n    width: 91.66666667%;\n  }\n  .row .col-lg-12 {\n    width: 100%;\n  }\n  .row .offset-lg-0 {\n    margin-left: 0;\n  }\n  .row .offset-lg-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-lg-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-lg-3 {\n    margin-left: 25%;\n  }\n  .row .offset-lg-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-lg-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-lg-6 {\n    margin-left: 50%;\n  }\n  .row .offset-lg-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-lg-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-lg-9 {\n    margin-left: 75%;\n  }\n  .row .offset-lg-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-lg-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-lg-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 992px) and (max-width: 1200px) {\n  .row .col-md-1 {\n    width: 8.33333333%;\n  }\n  .row .col-md-2 {\n    width: 16.66666667%;\n  }\n  .row .col-md-3 {\n    width: 25%;\n  }\n  .row .col-md-4 {\n    width: 33.33333333%;\n  }\n  .row .col-md-5 {\n    width: 41.66666667%;\n  }\n  .row .col-md-6 {\n    width: 50%;\n  }\n  .row .col-md-7 {\n    width: 58.33333333%;\n  }\n  .row .col-md-8 {\n    width: 66.66666667%;\n  }\n  .row .col-md-9 {\n    width: 75%;\n  }\n  .row .col-md-10 {\n    width: 83.33333333%;\n  }\n  .row .col-md-11 {\n    width: 91.66666667%;\n  }\n  .row .col-md-12 {\n    width: 100%;\n  }\n  .row .offset-md-0 {\n    margin-left: 0;\n  }\n  .row .offset-md-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-md-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-md-3 {\n    margin-left: 25%;\n  }\n  .row .offset-md-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-md-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-md-6 {\n    margin-left: 50%;\n  }\n  .row .offset-md-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-md-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-md-9 {\n    margin-left: 75%;\n  }\n  .row .offset-md-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-md-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-md-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 768px) and (max-width: 992px) {\n  .row .col-sm-1 {\n    width: 8.33333333%;\n  }\n  .row .col-sm-2 {\n    width: 16.66666667%;\n  }\n  .row .col-sm-3 {\n    width: 25%;\n  }\n  .row .col-sm-4 {\n    width: 33.33333333%;\n  }\n  .row .col-sm-5 {\n    width: 41.66666667%;\n  }\n  .row .col-sm-6 {\n    width: 50%;\n  }\n  .row .col-sm-7 {\n    width: 58.33333333%;\n  }\n  .row .col-sm-8 {\n    width: 66.66666667%;\n  }\n  .row .col-sm-9 {\n    width: 75%;\n  }\n  .row .col-sm-10 {\n    width: 83.33333333%;\n  }\n  .row .col-sm-11 {\n    width: 91.66666667%;\n  }\n  .row .col-sm-12 {\n    width: 100%;\n  }\n  .row .offset-sm-0 {\n    margin-left: 0;\n  }\n  .row .offset-sm-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-sm-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-sm-3 {\n    margin-left: 25%;\n  }\n  .row .offset-sm-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-sm-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-sm-6 {\n    margin-left: 50%;\n  }\n  .row .offset-sm-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-sm-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-sm-9 {\n    margin-left: 75%;\n  }\n  .row .offset-sm-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-sm-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-sm-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (max-width: 768px) {\n  .row .col-xs-1 {\n    width: 8.33333333%;\n  }\n  .row .col-xs-2 {\n    width: 16.66666667%;\n  }\n  .row .col-xs-3 {\n    width: 25%;\n  }\n  .row .col-xs-4 {\n    width: 33.33333333%;\n  }\n  .row .col-xs-5 {\n    width: 41.66666667%;\n  }\n  .row .col-xs-6 {\n    width: 50%;\n  }\n  .row .col-xs-7 {\n    width: 58.33333333%;\n  }\n  .row .col-xs-8 {\n    width: 66.66666667%;\n  }\n  .row .col-xs-9 {\n    width: 75%;\n  }\n  .row .col-xs-10 {\n    width: 83.33333333%;\n  }\n  .row .col-xs-11 {\n    width: 91.66666667%;\n  }\n  .row .col-xs-12 {\n    width: 100%;\n  }\n  .row .offset-xs-0 {\n    margin-left: 0;\n  }\n  .row .offset-xs-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-xs-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-xs-3 {\n    margin-left: 25%;\n  }\n  .row .offset-xs-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-xs-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-xs-6 {\n    margin-left: 50%;\n  }\n  .row .offset-xs-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-xs-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-xs-9 {\n    margin-left: 75%;\n  }\n  .row .offset-xs-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-xs-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-xs-12 {\n    margin-left: 100%;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".kLIGi {\n  --bar-color: #fff;\n  --bar-width: 16px;\n  position: relative;\n  overflow: hidden;\n}\n.XoNs4 {\n  transition: transform 0.5s cubic-bezier(0.24, 0.14, 0.17, 1.07);\n}\n.x4UPo {\n  float: left;\n}\n.qYuQn {\n  position: absolute;\n  left: 50%;\n  bottom: 10px;\n  transform: translateX(-50%);\n}\n.qYuQn .GU0qu {\n  display: inline-block;\n  margin: 0 5px;\n  width: var(--bar-width);\n  height: 4px;\n  border-radius: 2px;\n  background: var(--bar-color);\n  opacity: 0.3;\n  cursor: pointer;\n}\n.qYuQn .GU0qu.svhYU {\n  width: calc(var(--bar-width) + 8px);\n  opacity: 1;\n}\n", ""]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"huxy-carousel": "kLIGi",
+	"huxy-carousel-wrap": "XoNs4",
+	"carousel-item": "x4UPo",
+	"carousel-switch": "qYuQn",
+	"dot": "GU0qu",
+	"active": "svhYU"
+};
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
 
 
@@ -165,7 +172,7 @@ var __webpack_unused_export__;
  * LICENSE file in the root directory of this source tree.
  */
 var f=__webpack_require__(3899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
-function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
+function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;exports.jsxs=q;
 
 
 /***/ }),
@@ -475,6 +482,13 @@ module.exports = styleTagTransform;
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
 
+/***/ }),
+
+/***/ 994:
+/***/ (function(module) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__994__;
+
 /***/ })
 
 /******/ 	});
@@ -545,7 +559,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ huxy_components_row; }
+  "default": function() { return /* binding */ huxy_components_carousel; }
 });
 
 ;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
@@ -592,8 +606,183 @@ function _objectWithoutProperties(source, excluded) {
   }
   return target;
 }
+// EXTERNAL MODULE: external {"root":"ReactDOM","commonjs":"react-dom","commonjs2":"react-dom","amd":"react-dom"}
+var external_root_ReactDOM_commonjs_react_dom_commonjs2_react_dom_amd_react_dom_ = __webpack_require__(994);
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
 var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
+;// CONCATENATED MODULE: ../huxy/use/useInterval/index.jsx
+
+const useInterval = (callback, delay) => {
+  const savedCallback = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
+  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
+    if (delay) {
+      const timer = setInterval(() => savedCallback.current(), delay);
+      return () => clearInterval(timer);
+    }
+  }, [delay]);
+};
+/* harmony default export */ var use_useInterval = (useInterval);
+;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
+const isBrowser = () => ![typeof window, typeof document].includes('undefined');
+/* harmony default export */ var utils_isBrowser = (isBrowser);
+;// CONCATENATED MODULE: ../huxy/utils/getType.js
+const getType = value => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+/* harmony default export */ var utils_getType = (getType);
+;// CONCATENATED MODULE: ../huxy/utils/isElement.js
+
+const isElement = value => utils_getType(value).indexOf('element') > -1;
+/* harmony default export */ var utils_isElement = (isElement);
+;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
+
+
+const getViewportSize = function () {
+  var _window$innerWidth, _window$innerHeight;
+  let element = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+  if (!utils_isBrowser()) {
+    return {
+      width: 0,
+      height: 0
+    };
+  }
+  if (utils_isElement(element)) {
+    return {
+      width: element.clientWidth,
+      height: element.clientHeight
+    };
+  }
+  return {
+    width: (_window$innerWidth = window.innerWidth) != null ? _window$innerWidth : document.documentElement.clientWidth,
+    height: (_window$innerHeight = window.innerHeight) != null ? _window$innerHeight : document.documentElement.clientHeight
+  };
+};
+/* harmony default export */ var utils_getViewportSize = (getViewportSize);
+;// CONCATENATED MODULE: ../huxy/utils/debounce.js
+const debounce = function () {
+  let func = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : () => {};
+  let delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 60;
+  let timer = null;
+  return function () {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+    clearTimeout(timer);
+    timer = setTimeout(() => func.apply(this, args), delay);
+  };
+};
+/* harmony default export */ var utils_debounce = (debounce);
+;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
+/* harmony default export */ var utils_hasProp = (hasProp);
+;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+
+const isRef = ref => utils_hasProp(ref, 'current');
+/* harmony default export */ var utils_isRef = (isRef);
+;// CONCATENATED MODULE: ../huxy/utils/resize.js
+
+
+
+const createObj = (element, resizeListener) => {
+  if (getComputedStyle(element).position === 'static') {
+    element.style.position = 'relative';
+  }
+  const obj = document.createElement('object');
+  obj.setAttribute('style', 'display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1;opacity:0');
+  obj.setAttribute('class', 'resize-sensor');
+  obj.onload = () => {
+    obj.contentDocument.defaultView.addEventListener('resize', resizeListener, false);
+    resizeListener();
+  };
+  obj.type = 'text/html';
+  element.appendChild(obj);
+  obj.data = 'about:blank';
+  return obj;
+};
+const resize = function (element) {
+  var _element;
+  let delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 60;
+  if (!utils_isBrowser()) {
+    return;
+  }
+  element = utils_isRef(element) ? element.current : (_element = element) != null ? _element : document.body;
+  let domObj = undefined;
+  let listeners = [];
+  const resizeListener = utils_debounce(() => listeners.map(listener => listener(element)), delay);
+  const bind = cb => {
+    if (!domObj) {
+      domObj = createObj(element, resizeListener);
+    }
+    if (listeners.indexOf(cb) === -1) {
+      listeners.push(cb);
+    }
+  };
+  const unbind = cb => {
+    const idx = listeners.indexOf(cb);
+    if (idx !== -1) {
+      listeners.splice(idx, 1);
+    }
+    if (listeners.length === 0 && domObj) {
+      destroy();
+    }
+  };
+  const destroy = () => {
+    if (domObj && domObj.parentNode) {
+      if (domObj.contentDocument) {
+        domObj.contentDocument.defaultView.removeEventListener('resize', resizeListener, false);
+      }
+      domObj.parentNode.removeChild(domObj);
+      domObj = undefined;
+      listeners = [];
+    }
+  };
+  return {
+    element,
+    bind,
+    unbind,
+    destroy
+  };
+};
+/* harmony default export */ var utils_resize = (resize);
+;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
+
+const useRaf = function () {
+  let initState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  const frame = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)(0);
+  const [state, setState] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(initState);
+  const setRaf = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useCallback)(value => {
+    cancelAnimationFrame(frame.current);
+    frame.current = requestAnimationFrame(() => setState(value));
+  }, []);
+  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => () => cancelAnimationFrame(frame.current), []);
+  return [state, setRaf];
+};
+/* harmony default export */ var use_useRaf = (useRaf);
+;// CONCATENATED MODULE: ../huxy/use/useEleResize/index.jsx
+
+
+
+
+
+const useEleResize = function () {
+  let ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+  let delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 60;
+  const element = utils_isRef(ref) ? ref.current : ref;
+  const {
+    bind,
+    destroy
+  } = utils_resize(element, delay);
+  const [state, setState] = use_useRaf(utils_getViewportSize(element));
+  // const handler=useCallback(()=>setRaf(getViewportSize(element)),[element]);
+  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
+    const handler = () => element && setState(utils_getViewportSize(element));
+    bind(handler);
+    return () => destroy();
+  }, [element]);
+  return state;
+};
+/* harmony default export */ var use_useEleResize = (useEleResize);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(3993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -612,9 +801,9 @@ var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleE
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
 var styleTagTransform = __webpack_require__(9297);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/row/index.less
-var row = __webpack_require__(7466);
-;// CONCATENATED MODULE: ../huxy/components/row/index.less
+// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/carousel/index.less
+var carousel = __webpack_require__(5207);
+;// CONCATENATED MODULE: ../huxy/components/carousel/index.less
 
       
       
@@ -636,56 +825,97 @@ options.setAttributes = (setAttributesWithoutAttributes_default());
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(row/* default */.Z, options);
+var update = injectStylesIntoStyleTag_default()(carousel/* default */.Z, options);
 
 
 
 
-       /* harmony default export */ var components_row = (row/* default */.Z && row/* default.locals */.Z.locals ? row/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ var components_carousel = (carousel/* default */.Z && carousel/* default.locals */.Z.locals ? carousel/* default.locals */.Z.locals : undefined);
 
 // EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7458);
-;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
+;// CONCATENATED MODULE: ../huxy/components/carousel/index.jsx
 
 
-const _excluded = ["gutter", "className", "overflow"];
+const _excluded = ["children", "active", "delay"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 
 
-const Row = (_ref, ref) => {
+
+
+
+
+const Carousel = _ref => {
   let {
-      gutter = 10,
-      className,
-      overflow = 'hidden'
+      children,
+      active = 0,
+      delay = 5000
     } = _ref,
     rest = _objectWithoutProperties(_ref, _excluded);
-  const defCls = className ? ` ${className}` : '';
-  let rowgap = 10;
-  if (Array.isArray(gutter)) {
-    var _tmp$;
-    const tmp = [...gutter];
-    gutter = tmp[0];
-    rowgap = (_tmp$ = tmp[1]) != null ? _tmp$ : tmp[0];
-  }
-  // gutter=isNaN(gutter)?10:gutter;
-  // rowgap=isNaN(rowgap)?10:rowgap;
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-    className: "row-wrap",
-    style: {
-      '--gutter': `${Math.floor(gutter / 2)}px`,
-      '--rowgap': `${Math.floor(rowgap / 2)}px`,
-      overflow
-    },
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", _objectSpread(_objectSpread({
-      className: `row${defCls}`
-    }, rest), {}, {
-      ref: ref
-    }))
-  });
+  const [activeItem, setActiveItem] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(active + 1);
+  const [stop, setStop] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(false);
+  const container = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
+  const transition = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)('');
+  const {
+    width
+  } = use_useEleResize(container);
+  children = Array.isArray(children) ? children : [children];
+  const first = children[0];
+  const last = children[children.length - 1];
+  const list = [last, ...children, first];
+  const len = list.length;
+  use_useInterval(() => {
+    let current = activeItem + 1;
+    current = current === len ? 1 : current;
+    if (transition.current) {
+      transition.current = '';
+    }
+    setActiveItem(current);
+    if (current === len - 1) {
+      setTimeout(() => {
+        transition.current = 'none';
+        setActiveItem(1);
+      }, 500);
+    }
+  }, stop ? null : delay);
+  const switchItem = (i, e) => {
+    e.stopPropagation();
+    transition.current = '';
+    setActiveItem(i);
+    (0,external_root_ReactDOM_commonjs_react_dom_commonjs2_react_dom_amd_react_dom_.flushSync)(() => setStop(true));
+    setStop(false);
+  };
+  const wrapStyles = {
+    width: `${len * width}px`,
+    transform: `translateX(${-width * activeItem}px)`,
+    transition: transition.current
+  };
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", _objectSpread(_objectSpread({
+    className: components_carousel["huxy-carousel"]
+  }, rest), {}, {
+    ref: container,
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+      className: components_carousel["huxy-carousel-wrap"],
+      style: wrapStyles,
+      children: list.map((child, i) => /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+        className: `${components_carousel["carousel-item"]} ${activeItem === i ? components_carousel.active : ''}`,
+        style: {
+          width: `${width}px`
+        },
+        children: child
+      }, `huxy-carousel-${i}`))
+    }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+      className: components_carousel["carousel-switch"],
+      children: children.map((child, i) => /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+        className: `${components_carousel.dot} ${activeItem === i + 1 ? components_carousel.active : ''}`,
+        onClick: e => switchItem(i + 1, e)
+      }, `huxy-carousel-switch-${i}`))
+    })]
+  }));
 };
-/* harmony default export */ var huxy_components_row = (/*#__PURE__*/(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)(Row));
+/* harmony default export */ var huxy_components_carousel = (Carousel);
 }();
 __webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;

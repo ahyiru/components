@@ -104,7 +104,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ col; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -118,7 +118,7 @@ function _defineProperty(obj, key, value) {
   }
   return obj;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
   var target = {};
@@ -131,7 +131,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   }
   return target;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
 
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
@@ -156,22 +156,16 @@ var jsx_runtime = __webpack_require__(7458);
 
 
 const _excluded = ["span", "offset", "xl", "lg", "md", "sm", "xs", "style", "width", "auto", "offsetWidth", "className"];
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
 
 
 const getCls = (type, size) => {
   let sp = '',
-      os = '';
-
+    os = '';
   if (typeof size === 'number') {
     sp = `col-${type}-${size}`;
   }
-
   if (typeof size === 'object') {
     const {
       span,
@@ -180,30 +174,27 @@ const getCls = (type, size) => {
     sp = span ? `col-${type}-${span}` : ``;
     os = offset ? `offset-${type}-${offset}` : ``;
   }
-
   return {
     sp,
     os
   };
 };
-
 const Col = /*#__PURE__*/(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)((_ref, ref) => {
   let {
-    span,
-    offset,
-    xl,
-    lg,
-    md,
-    sm,
-    xs,
-    style,
-    width,
-    auto,
-    offsetWidth = '0px',
-    className
-  } = _ref,
-      rest = _objectWithoutProperties(_ref, _excluded);
-
+      span,
+      offset,
+      xl,
+      lg,
+      md,
+      sm,
+      xs,
+      style,
+      width,
+      auto,
+      offsetWidth = '0px',
+      className
+    } = _ref,
+    rest = _objectWithoutProperties(_ref, _excluded);
   const defCls = className ? ` ${className}` : '';
   const sp = `col-${span || 12}`;
   const os = offset ? `offset-${offset}` : '';

@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 8612:
+/***/ 9998:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -28,7 +28,6 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       error: null
     };
   }
-
   static getDerivedStateFromError(error) {
     return {
       error
@@ -41,8 +40,6 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       errorReport({error,info});
     }
   } */
-
-
   render() {
     const {
       error
@@ -51,24 +48,20 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       fallback,
       children
     } = this.props;
-
     if (error) {
       return fallback(error);
     }
-
     return children;
   }
-
 }
 
 /***/ }),
 
-/***/ 3875:
+/***/ 3503:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5439);
+/* harmony import */ var _str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4260);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7458);
-
 
 
 const LoadError = props => {
@@ -108,12 +101,11 @@ const LoadError = props => {
     })]
   });
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (LoadError);
 
 /***/ }),
 
-/***/ 5439:
+/***/ 4260:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -122,7 +114,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ components_str2React; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -140,19 +132,14 @@ function _defineProperty(obj, key, value) {
 var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/str2React/index.jsx
 
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
 
 const str2React = (str, props) => /*#__PURE__*/(0,jsx_runtime.jsx)("div", _objectSpread({
   dangerouslySetInnerHTML: {
     __html: str
   }
 }, props));
-
 /* harmony default export */ var components_str2React = (str2React);
 
 /***/ }),
@@ -257,26 +244,22 @@ var __webpack_exports__ = {};
 !function() {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3899);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _errorBoundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8612);
-/* harmony import */ var _loadError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3875);
+/* harmony import */ var _errorBoundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9998);
+/* harmony import */ var _loadError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3503);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7458);
-
 
 
 
 
 const HandleError = _ref => {
   var _boundaryRef$current;
-
   let {
     children
   } = _ref;
   const boundaryRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
-
   if ((_boundaryRef$current = boundaryRef.current) != null && _boundaryRef$current.state) {
     boundaryRef.current.state.error = null;
   }
-
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_errorBoundary__WEBPACK_IMPORTED_MODULE_2__["default"], {
     ref: boundaryRef,
     fallback: (error, info) => (0,_loadError__WEBPACK_IMPORTED_MODULE_3__["default"])({
@@ -286,7 +269,6 @@ const HandleError = _ref => {
     children: children
   });
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (HandleError);
 }();
 __webpack_exports__ = __webpack_exports__["default"];

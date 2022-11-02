@@ -104,7 +104,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ fullPage; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
   var target = {};
@@ -117,7 +117,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   }
   return target;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
 
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
@@ -134,7 +134,7 @@ function _objectWithoutProperties(source, excluded) {
   }
   return target;
 }
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.19.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.1/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -152,17 +152,13 @@ function _defineProperty(obj, key, value) {
 var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
 ;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes('undefined');
-
 /* harmony default export */ var utils_isBrowser = (isBrowser);
 ;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
-
 /* harmony default export */ var utils_hasProp = (hasProp);
 ;// CONCATENATED MODULE: ../huxy/utils/isRef.js
 
-
 const isRef = ref => utils_hasProp(ref, 'current');
-
 /* harmony default export */ var utils_isRef = (isRef);
 ;// CONCATENATED MODULE: ../huxy/utils/_/prefixBrowser.js
 const prefix = ['', 'webkit', 'moz', 'ms'];
@@ -174,46 +170,35 @@ const fullscreenchange = prefix.map(v => `${v}fullscreenchange`);
 
 
 
-
 const fullScreen = ele => {
+  var _ele;
   if (!utils_isBrowser()) {
     return;
   }
-
-  ele = utils_isRef(ele) ? ele.current : ele;
-  ele = ele || document.body;
+  ele = utils_isRef(ele) ? ele.current : (_ele = ele) != null ? _ele : document.body;
   const fse = fullscreenElement(document);
   const rfs = requestFullscreen(ele);
   const efs = exitFullscreen(document);
-
   if (!document[fse]) {
-    var _ele$rfs, _ele;
-
-    (_ele$rfs = (_ele = ele)[rfs]) == null ? void 0 : _ele$rfs.call(_ele);
+    var _ele$rfs, _ele2;
+    (_ele$rfs = (_ele2 = ele)[rfs]) == null ? void 0 : _ele$rfs.call(_ele2);
   } else {
     var _document$efs, _document;
-
     (_document$efs = (_document = document)[efs]) == null ? void 0 : _document$efs.call(_document);
   }
 };
-
 /* harmony default export */ var utils_fullScreen = (fullScreen);
 ;// CONCATENATED MODULE: ../huxy/utils/watchScreen.js
-
 
 
 const watchScreen = callback => {
   if (!utils_isBrowser()) {
     return;
   }
-
   fullscreenchange.map(fsc => document.addEventListener(fsc, callback, false));
-
   const destroy = () => fullscreenchange.map(fsc => document.removeEventListener(fsc, callback, false));
-
   return destroy;
 };
-
 /* harmony default export */ var utils_watchScreen = (watchScreen);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(7458);
@@ -221,12 +206,8 @@ var jsx_runtime = __webpack_require__(7458);
 
 
 const _excluded = ["panel", "fullIcon", "exitIcon"];
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
 
 
 
@@ -235,15 +216,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 const defaultIcon = props => /*#__PURE__*/(0,jsx_runtime.jsx)("i", _objectSpread(_objectSpread({}, props), {}, {
   children: "..."
 }));
-
 const Index = _ref => {
   let {
-    panel,
-    fullIcon = defaultIcon,
-    exitIcon = defaultIcon
-  } = _ref,
-      rest = _objectWithoutProperties(_ref, _excluded);
-
+      panel,
+      fullIcon = defaultIcon,
+      exitIcon = defaultIcon
+    } = _ref,
+    rest = _objectWithoutProperties(_ref, _excluded);
   const container = utils_isRef(panel) ? panel.current : panel;
   const [isFull, setIsFull] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)();
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
@@ -257,7 +236,6 @@ const Index = _ref => {
     onClick: e => utils_fullScreen(container)
   }, rest));
 };
-
 /* harmony default export */ var fullPage = (Index);
 }();
 __webpack_exports__ = __webpack_exports__["default"];
