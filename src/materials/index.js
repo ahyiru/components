@@ -24,7 +24,7 @@ return /******/ (function() { // webpackBootstrap
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes huxy-3d-models {\n  0% {\n    transform: rotateX(var(--rotateX)) rotateY(0deg) rotateZ(0deg);\n  }\n  100% {\n    transform: rotateX(var(--rotateX)) rotateY(0deg) rotateZ(-360deg);\n  }\n}\n.huxy-css-3d-models-tooltip {\n  --rotate: 135deg;\n}\n.huxy-css-3d-models-tooltip[tooltip] {\n  position: relative;\n}\n.huxy-css-3d-models-tooltip[tooltip]:hover::before,\n.huxy-css-3d-models-tooltip[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-css-3d-models-tooltip[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.huxy-css-3d-models-tooltip[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.huxy-css-3d-models-tooltip[tooltip]::before,\n.huxy-css-3d-models-tooltip[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: #303133;\n  border: 1px solid #303133;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-css-3d-models-tooltip[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: #fff;\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.huxy-css-3d-models-tooltip[tooltip]::after {\n  content: \"\";\n  height: calc(8px + 2px);\n  width: calc(8px + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.huxy-css-3d-models-tooltip[tooltip]::before {\n  left: 0;\n  bottom: calc(100% + 8px);\n}\n.huxy-css-3d-models-tooltip[tooltip]::after {\n  left: 15px;\n  bottom: calc(100% + 8px / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n.huxy-css-3d-models {\n  --size: 360px;\n  --cardSize: 42px;\n  --rotateX: 72deg;\n  --time: 20s;\n  --bottom: 60px;\n  position: absolute;\n  left: 50%;\n  bottom: var(--bottom);\n  transform: translateX(-50%);\n  width: var(--size);\n  height: var(--size);\n  transform-style: preserve-3d;\n  perspective: 1000px;\n  perspective-origin: 50% 0;\n}\n.huxy-css-3d-models .model-container {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  margin: 0 auto;\n  background-color: transparent;\n  transform-style: preserve-3d;\n  backface-visibility: hidden;\n  animation: huxy-3d-models var(--time) linear 0s infinite;\n  animation-play-state: running;\n}\n.huxy-css-3d-models .model-container:hover {\n  animation-play-state: paused;\n}\n.huxy-css-3d-models .model-container .model-item {\n  --rotateY: 0deg;\n  transform-style: preserve-3d;\n  position: absolute;\n  transform-origin: calc(var(--size) / 2) 0;\n  width: calc(var(--size) / 2);\n  height: var(--cardSize);\n  line-height: var(--cardSize);\n  left: 0;\n  top: 50%;\n  cursor: pointer;\n  transform: rotateX(-90deg) rotateY(calc(var(--rotateY) + 90deg)) translateY(-50%);\n}\n.huxy-css-3d-models .model-container .model-item .model-card {\n  position: absolute;\n  width: calc(var(--cardSize) - 12px);\n  height: var(--cardSize);\n  line-height: var(--cardSize);\n  text-align: center;\n  border-radius: 4px;\n  left: calc(6px - var(--cardSize) / 2);\n  bottom: 0;\n  transform-origin: 50% 50%;\n  transform: rotateY(-90deg);\n  background: rgba(255, 255, 255, 0.98);\n  transition: all 0.3s;\n  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.2));\n}\n.huxy-css-3d-models .model-container .model-item .model-card:hover {\n  color: #fff;\n  background-color: var(--blue2);\n  transition: all 0.3s;\n  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.3));\n}\n.huxy-css-3d-models .model-container .model-item .model-card img {\n  width: 60%;\n  height: 60%;\n  vertical-align: middle;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes huxy-3d-models {\n  0% {\n    transform: rotateX(var(--rotateX)) rotateY(0deg) rotateZ(0deg);\n  }\n  100% {\n    transform: rotateX(var(--rotateX)) rotateY(0deg) rotateZ(-360deg);\n  }\n}\n.huxy-css-3d-models-tooltip {\n  --rotate: 135deg;\n}\n.huxy-css-3d-models-tooltip[tooltip] {\n  position: relative;\n}\n.huxy-css-3d-models-tooltip[tooltip]:hover::before,\n.huxy-css-3d-models-tooltip[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-css-3d-models-tooltip[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.huxy-css-3d-models-tooltip[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.huxy-css-3d-models-tooltip[tooltip]::before,\n.huxy-css-3d-models-tooltip[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: #303133;\n  border: 1px solid #303133;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-css-3d-models-tooltip[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: #fff;\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.huxy-css-3d-models-tooltip[tooltip]::after {\n  content: \"\";\n  height: calc(8px + 2px);\n  width: calc(8px + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.huxy-css-3d-models-tooltip[tooltip]::before {\n  left: 0;\n  bottom: calc(100% + 8px);\n}\n.huxy-css-3d-models-tooltip[tooltip]::after {\n  left: 15px;\n  bottom: calc(100% + 8px / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n.huxy-css-3d-models {\n  --size: 360px;\n  --cardSize: 42px;\n  --bottom: 60px;\n  --rotateX: 72deg;\n  --time: 20s;\n  position: absolute;\n  left: 50%;\n  bottom: var(--bottom);\n  transform: translateX(-50%);\n  width: var(--size);\n  height: var(--size);\n  transform-style: preserve-3d;\n  perspective: 1000px;\n  perspective-origin: 50% 0;\n}\n.huxy-css-3d-models .model-container {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  margin: 0 auto;\n  background-color: transparent;\n  transform-style: preserve-3d;\n  backface-visibility: hidden;\n  animation: huxy-3d-models var(--time) linear 0s infinite;\n  animation-play-state: running;\n}\n.huxy-css-3d-models .model-container:hover {\n  animation-play-state: paused;\n}\n.huxy-css-3d-models .model-container .model-item {\n  --rotateY: 0deg;\n  transform-style: preserve-3d;\n  position: absolute;\n  transform-origin: calc(var(--size) / 2) 0;\n  width: calc(var(--size) / 2);\n  height: var(--cardSize);\n  line-height: var(--cardSize);\n  left: 0;\n  top: 50%;\n  cursor: pointer;\n  transform: rotateX(-90deg) rotateY(calc(var(--rotateY) + 90deg)) translateY(-50%);\n}\n.huxy-css-3d-models .model-container .model-item .model-card {\n  position: absolute;\n  width: calc(var(--cardSize) - 12px);\n  height: var(--cardSize);\n  line-height: var(--cardSize);\n  text-align: center;\n  border-radius: 4px;\n  left: calc(6px - var(--cardSize) / 2);\n  bottom: 0;\n  transform-origin: 50% 50%;\n  transform: rotateY(-90deg);\n  background: rgba(255, 255, 255, 0.98);\n  transition: all 0.3s;\n  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.2));\n}\n.huxy-css-3d-models .model-container .model-item .model-card:hover {\n  color: #fff;\n  background-color: var(--blue2);\n  transition: all 0.3s;\n  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.3));\n}\n.huxy-css-3d-models .model-container .model-item .model-card img {\n  width: 60%;\n  height: 60%;\n  vertical-align: middle;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
@@ -69,7 +69,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".huxy-icon-animate-tooltip {\n  --rotate: 135deg;\n}\n.huxy-icon-animate-tooltip[tooltip] {\n  position: relative;\n}\n.huxy-icon-animate-tooltip[tooltip]:hover::before,\n.huxy-icon-animate-tooltip[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-icon-animate-tooltip[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.huxy-icon-animate-tooltip[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.huxy-icon-animate-tooltip[tooltip]::before,\n.huxy-icon-animate-tooltip[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: #303133;\n  border: 1px solid #303133;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-icon-animate-tooltip[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: #fff;\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.huxy-icon-animate-tooltip[tooltip]::after {\n  content: \"\";\n  height: calc(8px + 2px);\n  width: calc(8px + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.huxy-icon-animate-tooltip[tooltip]::before {\n  left: 0;\n  bottom: calc(100% + 8px);\n}\n.huxy-icon-animate-tooltip[tooltip]::after {\n  left: 15px;\n  bottom: calc(100% + 8px / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n@keyframes huxy-css-obj-jump {\n  0% {\n    transform: translate3d(0, 0, 0) scale(1);\n  }\n  50% {\n    transform: translate3d(0, var(--y), 0) scale(1.1);\n  }\n  100% {\n    transform: translate3d(0, 0, 0) scale(1);\n  }\n}\n@keyframes huxy-css-obj-blink {\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes huxy-css-obj-scale {\n  0% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.1);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n.obj-centerTable {\n  --width: 450px;\n  --left: calc(50% - 218px);\n  --bottom: 60px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-scale 6s ease-in-out infinite;\n}\n.obj-centerLight {\n  --width: 150px;\n  --left: calc(50% - 75px);\n  --bottom: 220px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-blink 3s ease-in-out infinite;\n}\n.obj-brain {\n  --y: 16px;\n  --time: 6s;\n  --width: 80px;\n  --left: calc(50% - 40px);\n  --bottom: 360px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-dataAnalysis {\n  --y: 15px;\n  --time: 6s;\n  --width: 76px;\n  --left: calc(50% - 200px);\n  --bottom: 300px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-coder {\n  --y: 25px;\n  --time: 4s;\n  --width: 66px;\n  --left: calc(50% - 280px);\n  --bottom: 208px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-trend {\n  --y: 24px;\n  --time: 6s;\n  --width: 72px;\n  --left: calc(50% - 380px);\n  --bottom: 160px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-light {\n  --y: 15px;\n  --time: 6s;\n  --width: 78px;\n  --left: calc(50% + 120px);\n  --bottom: 288px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-debug {\n  --y: 30px;\n  --time: 5s;\n  --width: 66px;\n  --left: calc(50% + 220px);\n  --bottom: 168px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-chat {\n  --y: 25px;\n  --time: 6s;\n  --width: 68px;\n  --left: calc(50% + 300px);\n  --bottom: 180px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.huxy-icon-animate-container {\n  margin: 10px;\n  background: rgba(0, 0, 0, 0.3);\n  border-radius: 4px;\n  height: 500px;\n  position: relative;\n}\n.huxy-icon-animate-materiels {\n  position: relative;\n  height: 100%;\n}\n.huxy-icon-animate-materiels > a {\n  position: absolute !important;\n}\n.huxy-icon-animate-materiels .obj-img {\n  text-align: center;\n  border: 2px solid rgba(0, 0, 0, 0.02);\n  border-radius: 50%;\n  padding: 6px;\n  z-index: 999;\n}\n.huxy-icon-animate-materiels img {\n  width: 100%;\n  max-width: var(--width);\n  vertical-align: middle;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".huxy-icon-animate-tooltip {\n  --rotate: 135deg;\n}\n.huxy-icon-animate-tooltip[tooltip] {\n  position: relative;\n}\n.huxy-icon-animate-tooltip[tooltip]:hover::before,\n.huxy-icon-animate-tooltip[tooltip]:hover::after {\n  opacity: 1;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-icon-animate-tooltip[tooltip]:hover::before {\n  transform: translateY(0);\n}\n.huxy-icon-animate-tooltip[tooltip]:hover::after {\n  transform: translateY(0) rotate(var(--rotate));\n}\n.huxy-icon-animate-tooltip[tooltip]::before,\n.huxy-icon-animate-tooltip[tooltip]::after {\n  position: absolute;\n  opacity: 0;\n  pointer-events: none;\n  z-index: 10000;\n  background-color: #303133;\n  border: 1px solid #303133;\n  transition: opacity 0.2s, transform 0.2s;\n}\n.huxy-icon-animate-tooltip[tooltip]::before {\n  content: attr(tooltip);\n  z-index: 100002;\n  padding: 4px 10px;\n  text-align: left;\n  font-size: 1.2rem;\n  line-height: 1.4;\n  color: #fff;\n  border-radius: 4px;\n  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);\n  white-space: nowrap;\n  transform: translateY(100%);\n}\n.huxy-icon-animate-tooltip[tooltip]::after {\n  content: \"\";\n  height: calc(8px + 2px);\n  width: calc(8px + 2px);\n  border-left-color: transparent;\n  border-bottom-color: transparent;\n  transform: translateY(100%) rotate(var(--rotate));\n}\n.huxy-icon-animate-tooltip[tooltip]::before {\n  left: 0;\n  bottom: calc(100% + 8px);\n}\n.huxy-icon-animate-tooltip[tooltip]::after {\n  left: 15px;\n  bottom: calc(100% + 8px / 2);\n  transform: translateY(0) rotate(var(--rotate));\n}\n@keyframes huxy-css-obj-jump {\n  0% {\n    transform: translate3d(0, 0, 0) scale(1);\n  }\n  50% {\n    transform: translate3d(0, var(--y), 0) scale(1.1);\n  }\n  100% {\n    transform: translate3d(0, 0, 0) scale(1);\n  }\n}\n@keyframes huxy-css-obj-blink {\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes huxy-css-obj-scale {\n  0% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.1);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n.obj-centerTable {\n  --width: 450px;\n  --left: calc(50% - 218px);\n  --bottom: 60px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-scale 6s ease-in-out infinite;\n}\n.obj-centerLight {\n  --width: 150px;\n  --left: calc(50% - 75px);\n  --bottom: 220px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-blink 3s ease-in-out infinite;\n}\n.obj-brain {\n  --y: 16px;\n  --time: 6s;\n  --width: 80px;\n  --left: calc(50% - 40px);\n  --bottom: 360px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-dataAnalysis {\n  --y: 15px;\n  --time: 6s;\n  --width: 76px;\n  --left: calc(50% - 200px);\n  --bottom: 300px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-coder {\n  --y: 25px;\n  --time: 4s;\n  --width: 66px;\n  --left: calc(50% - 280px);\n  --bottom: 208px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-trend {\n  --y: 24px;\n  --time: 6s;\n  --width: 72px;\n  --left: calc(50% - 380px);\n  --bottom: 160px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-light {\n  --y: 15px;\n  --time: 6s;\n  --width: 78px;\n  --left: calc(50% + 120px);\n  --bottom: 288px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-debug {\n  --y: 30px;\n  --time: 5s;\n  --width: 66px;\n  --left: calc(50% + 220px);\n  --bottom: 168px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.obj-chat {\n  --y: 25px;\n  --time: 6s;\n  --width: 68px;\n  --left: calc(50% + 300px);\n  --bottom: 180px;\n  width: var(--width);\n  left: var(--left);\n  bottom: var(--bottom);\n  animation: huxy-css-obj-jump var(--time) ease-in-out infinite;\n}\n.huxy-icon-animate-container {\n  height: var(--height, 480px);\n  margin: 10px;\n  border-radius: 4px;\n  position: relative;\n}\n.huxy-icon-animate-materiels {\n  position: relative;\n  height: 100%;\n}\n.huxy-icon-animate-materiels > a {\n  position: absolute !important;\n}\n.huxy-icon-animate-materiels .obj-img {\n  text-align: center;\n  border: 2px solid rgba(0, 0, 0, 0.02);\n  border-radius: 50%;\n  padding: 6px;\n  z-index: 999;\n}\n.huxy-icon-animate-materiels img {\n  width: 100%;\n  max-width: var(--width);\n  vertical-align: middle;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
@@ -1344,6 +1344,12 @@ function _objectWithoutProperties(source, excluded) {
   }
   return target;
 }
+;// CONCATENATED MODULE: ../huxy/utils/rmUnit.js
+const rmUnit = function (value) {
+  let unit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'px';
+  return `${value}`.replace(unit, '') - 0;
+};
+/* harmony default export */ var utils_rmUnit = (rmUnit);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.74.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(3993);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -1398,19 +1404,28 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/materials/animation/css3dModel/index.jsx
 
 
-const _excluded = ["list"];
+const _excluded = ["list", "size", "cardSize", "bottom", "style"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 
 const AnimateModel = _ref => {
   let {
-      list = []
+      list = [],
+      size = '360px',
+      cardSize = '42px',
+      bottom = '60px',
+      style
     } = _ref,
     rest = _objectWithoutProperties(_ref, _excluded);
   const angle = 360 / list.length;
   return /*#__PURE__*/(0,jsx_runtime.jsx)("div", _objectSpread(_objectSpread({
-    className: "huxy-css-3d-models"
+    className: "huxy-css-3d-models",
+    style: _objectSpread({
+      '--size': size,
+      '--cardSize': cardSize,
+      '--bottom': bottom
+    }, style)
   }, rest), {}, {
     children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
       className: "model-container",
@@ -1468,9 +1483,10 @@ var iconAnimate_update = injectStylesIntoStyleTag_default()(iconAnimate/* defaul
 ;// CONCATENATED MODULE: ../huxy/components/materials/animation/iconAnimate/index.jsx
 
 
-const iconAnimate_excluded = ["objs", "models"];
+const iconAnimate_excluded = ["objs", "models", "height", "style"];
 function iconAnimate_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function iconAnimate_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? iconAnimate_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : iconAnimate_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -1478,11 +1494,16 @@ function iconAnimate_objectSpread(target) { for (var i = 1; i < arguments.length
 const CssModels = _ref => {
   let {
       objs = [],
-      models = []
+      models = [],
+      height = '480px',
+      style
     } = _ref,
     rest = _objectWithoutProperties(_ref, iconAnimate_excluded);
   return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", iconAnimate_objectSpread(iconAnimate_objectSpread({
-    className: "huxy-icon-animate-container"
+    className: "huxy-icon-animate-container",
+    style: iconAnimate_objectSpread({
+      '--height': height
+    }, style)
   }, rest), {}, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
       className: "huxy-icon-animate-materiels",
@@ -1508,7 +1529,8 @@ const CssModels = _ref => {
         }, label);
       })
     }), /*#__PURE__*/(0,jsx_runtime.jsx)(materials_animation_css3dModel, {
-      list: models
+      list: models,
+      size: `${utils_rmUnit(height) - 120}px`
     })]
   }));
 };
@@ -2107,6 +2129,23 @@ const animateBorder_Index = _ref => {
 
 
 
+;// CONCATENATED MODULE: ../huxy/utils/padStart.js
+const padStart = function () {
+  let str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  let n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  let pad = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '0';
+  const len = str.length;
+  if (len >= n) {
+    return str;
+  }
+  const fill = Array(n - len + 1).join(pad);
+  return `${fill}${str}`;
+};
+/* harmony default export */ var utils_padStart = (padStart);
+;// CONCATENATED MODULE: ../huxy/utils/randColor.js
+
+const randColor = () => '#' + utils_padStart((~~(Math.random() * (1 << 24))).toString(16), 6);
+/* harmony default export */ var utils_randColor = (randColor);
 ;// CONCATENATED MODULE: ../huxy/utils/randNum.js
 const randNum = function () {
   let a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
@@ -2126,29 +2165,6 @@ const randItem = function () {
   return list[utils_randNum(list.length - 1)];
 };
 /* harmony default export */ var utils_randItem = (randItem);
-;// CONCATENATED MODULE: ../huxy/utils/padStart.js
-const padStart = function () {
-  let str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  let n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  let pad = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '0';
-  const len = str.length;
-  if (len >= n) {
-    return str;
-  }
-  const fill = Array(n - len + 1).join(pad);
-  return `${fill}${str}`;
-};
-/* harmony default export */ var utils_padStart = (padStart);
-;// CONCATENATED MODULE: ../huxy/utils/randColor.js
-
-const randColor = () => '#' + utils_padStart((~~(Math.random() * (1 << 24))).toString(16), 6);
-/* harmony default export */ var utils_randColor = (randColor);
-;// CONCATENATED MODULE: ../huxy/utils/rmUnit.js
-const rmUnit = function (value) {
-  let unit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'px';
-  return `${value}`.replace(unit, '') - 0;
-};
-/* harmony default export */ var utils_rmUnit = (rmUnit);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.74.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/materials/chart/barchart/index.less
 var barchart = __webpack_require__(9124);
 ;// CONCATENATED MODULE: ../huxy/components/materials/chart/barchart/index.less
@@ -2186,6 +2202,9 @@ var barchart_update = injectStylesIntoStyleTag_default()(barchart/* default */.Z
 const barchart_excluded = ["list", "height", "space", "itemWidth", "colors", "color", "style"];
 function barchart_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function barchart_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? barchart_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : barchart_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+
+
 
 
 
@@ -2260,6 +2279,7 @@ var card_update = injectStylesIntoStyleTag_default()(card/* default */.Z, card_o
 const card_excluded = ["height", "leftColor", "rightColor", "topWidth", "bottomWidth", "style"];
 function card_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function card_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? card_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : card_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -2589,6 +2609,8 @@ function piechart_objectSpread(target) { for (var i = 1; i < arguments.length; i
 
 
 
+
+
 const piechart_randColors = colors => colors != null && colors.length ? utils_randItem(colors) : utils_randColor();
 const pers = utils_randPercent(4);
 const piechart_Index = _ref => {
@@ -2651,6 +2673,7 @@ var progress_update = injectStylesIntoStyleTag_default()(progress/* default */.Z
 const progress_excluded = ["percent", "height", "bgColor", "progressColor", "borderRadius", "waveColor", "waveTime", "style"];
 function progress_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function progress_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? progress_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : progress_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -3114,6 +3137,7 @@ function loading_objectSpread(target) { for (var i = 1; i < arguments.length; i+
 
 
 
+
 // const colors = ['#ffff00', '#76ff03', '#f06292', '#4fc3f7', '#ba68c8', '#f57c00', '#673ab7'];
 
 const loading_Index = _ref => {
@@ -3184,6 +3208,7 @@ var spot_update = injectStylesIntoStyleTag_default()(spot/* default */.Z, spot_o
 const spot_excluded = ["type", "size", "color", "shadowColor", "style"];
 function spot_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function spot_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? spot_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : spot_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -3310,6 +3335,8 @@ var text3d_update = injectStylesIntoStyleTag_default()(text3d/* default */.Z, te
 const text3d_excluded = ["list", "colors"];
 function text3d_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function text3d_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? text3d_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : text3d_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+
 
 
 
