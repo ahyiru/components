@@ -23,5 +23,3 @@ export {default as str2Vue} from './str2Vue';
 export {default as TabHeader} from './tabHeader';
 export {default as Tooltip} from './tooltip';
 export {default as Tree} from './tree';
-
-export {default as materials} from './materials';
