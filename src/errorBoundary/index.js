@@ -97,13 +97,18 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       error
     };
   }
-  /* componentDidCatch(error,info){
-    // this.setState({error,info:info.componentStack});
-    const {errorReport}=this.props;
-    if(typeof errorReport==='function'){
-      errorReport({error,info});
+  componentDidCatch(error, info) {
+    // this.setState({error, info: info.componentStack});
+    const {
+      errorReport
+    } = this.props;
+    if (typeof errorReport === 'function') {
+      errorReport({
+        error,
+        info: info.componentStack
+      });
     }
-  } */
+  }
   render() {
     const {
       error

@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 6106:
+/***/ 1076:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -33,13 +33,18 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
       error
     };
   }
-  /* componentDidCatch(error,info){
-    // this.setState({error,info:info.componentStack});
-    const {errorReport}=this.props;
-    if(typeof errorReport==='function'){
-      errorReport({error,info});
+  componentDidCatch(error, info) {
+    // this.setState({error, info: info.componentStack});
+    const {
+      errorReport
+    } = this.props;
+    if (typeof errorReport === 'function') {
+      errorReport({
+        error,
+        info: info.componentStack
+      });
     }
-  } */
+  }
   render() {
     const {
       error
@@ -57,10 +62,10 @@ class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Compon
 
 /***/ }),
 
-/***/ 9409:
+/***/ 804:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1106);
+/* harmony import */ var _str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(337);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7458);
 
 
@@ -105,7 +110,7 @@ const LoadError = props => {
 
 /***/ }),
 
-/***/ 1106:
+/***/ 337:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -244,8 +249,8 @@ var __webpack_exports__ = {};
 !function() {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3899);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _errorBoundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6106);
-/* harmony import */ var _loadError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9409);
+/* harmony import */ var _errorBoundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1076);
+/* harmony import */ var _loadError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(804);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7458);
 
 
@@ -254,7 +259,8 @@ var __webpack_exports__ = {};
 const HandleError = _ref => {
   var _boundaryRef$current;
   let {
-    children
+    children,
+    report
   } = _ref;
   const boundaryRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
   if ((_boundaryRef$current = boundaryRef.current) != null && _boundaryRef$current.state) {
@@ -266,6 +272,7 @@ const HandleError = _ref => {
       error,
       info
     }),
+    errorReport: report,
     children: children
   });
 };
