@@ -117,7 +117,7 @@ const Icon = fixIcon(icons);
 - delay：延迟关闭时间，默认 300ms
 
 ```html
-<Mask open={visible} close={() => setVisible(false)} />
+<Mask open={open} close={() => setOpen(false)} />
 ```
 
 ### Modal
@@ -132,7 +132,7 @@ const Icon = fixIcon(icons);
 - title：标题
 
 ```html
-<Modal open={visible} cancel={() => setVisible(false)} cancelText="取消" submit={() => setVisible(false)} submitText="确定" title="Modal 弹窗">
+<Modal open={open} cancel={() => setOpen(false)} cancelText="取消" submit={() => setOpen(false)} submitText="确定" title="Modal 弹窗">
   ...
 </Modal>
 ```
