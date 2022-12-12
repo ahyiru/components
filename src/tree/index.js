@@ -1015,7 +1015,7 @@ var update = injectStylesIntoStyleTag_default()(tree/* default */.Z, options);
 ;// CONCATENATED MODULE: ../huxy/components/tree/index.jsx
 
 
-const tree_excluded = ["data", "collapsed", "type", "Link", "width", "bgColor", "itemHeight", "collapsedWidth", "itemPadding", "style"],
+const tree_excluded = ["data", "collapsed", "type", "Link", "width", "bgColor", "itemHeight", "collapsedWidth", "itemPadding", "style", "className"],
   _excluded2 = ["float"],
   _excluded3 = ["item"];
 function tree_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -1041,7 +1041,8 @@ const Index = props => {
       itemHeight,
       collapsedWidth,
       itemPadding,
-      style
+      style,
+      className
     } = props,
     rest = (0,objectWithoutProperties/* default */.Z)(props, tree_excluded);
   const timer = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
@@ -1068,7 +1069,7 @@ const Index = props => {
       }
     }
   };
-  const cls = type === 'horizontal' ? 'huxy-horizontal-tree' : ['huxy-tree', collapsed ? 'collapsed' : ''].filter(Boolean).join(' ');
+  const cls = (type === 'horizontal' ? ['huxy-horizontal-tree', className] : ['huxy-tree', className, collapsed ? 'collapsed' : '']).filter(Boolean).join(' ');
   const _ref = (_rest$style = rest == null ? void 0 : rest.style) != null ? _rest$style : {},
     {
       float

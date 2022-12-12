@@ -851,7 +851,7 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/carousel/index.jsx
 
 
-const _excluded = ["children", "active", "delay"];
+const _excluded = ["children", "active", "delay", "className"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
@@ -865,7 +865,8 @@ const Carousel = _ref => {
   let {
       children,
       active = 0,
-      delay = 5000
+      delay = 5000,
+      className
     } = _ref,
     rest = _objectWithoutProperties(_ref, _excluded);
   const [activeItem, setActiveItem] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(active + 1);
@@ -907,7 +908,7 @@ const Carousel = _ref => {
     transition: transition.current
   };
   return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", _objectSpread(_objectSpread({
-    className: components_carousel["huxy-carousel"]
+    className: `${components_carousel["huxy-carousel"]}${className ? ` ${className}` : ''}`
   }, rest), {}, {
     ref: container,
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {

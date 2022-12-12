@@ -107,7 +107,7 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/tooltip/index.jsx
 
 
-const _excluded = ["title", "placement", "children", "ellipsis"];
+const _excluded = ["title", "placement", "children", "ellipsis", "className"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
@@ -117,11 +117,12 @@ const Index = _ref => {
       title,
       placement = 'topRight',
       children,
-      ellipsis
+      ellipsis,
+      className
     } = _ref,
     rest = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/(0,jsx_runtime.jsx)("span", _objectSpread(_objectSpread({
-    className: components_tooltip[`huxy-tooltip-${placement}`],
+    className: `${components_tooltip[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ''}`,
     tooltip: title != null ? title : children
   }, rest), {}, {
     children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {

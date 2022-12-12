@@ -3366,7 +3366,7 @@ var update = injectStylesIntoStyleTag_default()(drop/* default */.Z, options);
 ;// CONCATENATED MODULE: ../huxy/components/drop/index.jsx
 
 
-const _excluded = ["trigger", "type", "dropList", "children"];
+const _excluded = ["trigger", "type", "dropList", "className", "children"];
 function drop_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function drop_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? drop_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : drop_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
@@ -3399,6 +3399,7 @@ const Drop = _ref => {
       trigger = 'click',
       type,
       dropList,
+      className,
       children
     } = _ref,
     rest = _objectWithoutProperties(_ref, _excluded);
@@ -3427,7 +3428,7 @@ const Drop = _ref => {
   const droplistEle = utils_isReactEle(dropList) ? dropList : dropList == null ? void 0 : dropList(() => setOpen(false), open);
   return /*#__PURE__*/(0,jsx_runtime.jsxs)("span", drop_objectSpread(drop_objectSpread(drop_objectSpread({
     ref: targetRef,
-    className: components_drop["drop-target"]
+    className: `${components_drop["drop-target"]}${className ? ` ${className}` : ''}`
   }, events), rest), {}, {
     children: [children, /*#__PURE__*/(0,jsx_runtime.jsx)(mask, {
       open: open,

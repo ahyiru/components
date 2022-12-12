@@ -156,9 +156,11 @@ const Icon = fixIcon(icons);
 加载动画
 
 - global：是否为全局加载动画
+- absolute：是否相对容器绝对定位
 
 ```html
 <Spinner global />
+<Spinner absolute />
 ```
 
 ### TabHeader
