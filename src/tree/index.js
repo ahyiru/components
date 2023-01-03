@@ -79,6 +79,7 @@ const render = _ref3 => {
     List = DefList,
     leftIcon,
     rightIcon,
+    formatLinkProps,
     level = 0
   } = _ref3;
   return data.map(item => {
@@ -93,21 +94,22 @@ const render = _ref3 => {
       linkProps
     } = item;
     const hasChildren = utils_isValidArr(children);
-    const fixedEvents = fixEvents(events, item, hasChildren, level);
+    const fixedEvents = fixEvents(events, item, level, hasChildren);
     const key = item.id || path || name;
     const li = icon != null ? icon : leftIcon;
     const ri = rIcon != null ? rIcon : rightIcon;
+    const menuLinkProps = typeof formatLinkProps === 'function' ? formatLinkProps(item, level) : undefined;
     if (hasChildren) {
       return /*#__PURE__*/(0,jsx_runtime.jsxs)("li", _objectSpread(_objectSpread({
         className: open ? 'open' : '',
         "has-children": "true"
       }, fixedEvents), {}, {
-        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
+        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread(_objectSpread({
           className: active ? 'active' : '',
           to: path,
           preventDefault: true,
           stopPropagation: false
-        }, linkProps), {}, {
+        }, linkProps), menuLinkProps), {}, {
           children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
             className: "node-left-icon",
             children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
@@ -133,16 +135,17 @@ const render = _ref3 => {
             List,
             leftIcon,
             rightIcon,
+            formatLinkProps,
             level: level + 1
           })
         })]
       }), key);
     }
     return /*#__PURE__*/(0,jsx_runtime.jsx)("li", _objectSpread(_objectSpread({}, fixedEvents), {}, {
-      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
+      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread(_objectSpread({
         className: active ? 'active' : '',
         to: path
-      }, linkProps), {}, {
+      }, linkProps), menuLinkProps), {}, {
         children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           className: "node-left-icon",
           children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
@@ -1015,9 +1018,9 @@ var update = injectStylesIntoStyleTag_default()(tree/* default */.Z, options);
 ;// CONCATENATED MODULE: ../huxy/components/tree/index.jsx
 
 
-const tree_excluded = ["data", "collapsed", "type", "Link", "width", "bgColor", "itemHeight", "collapsedWidth", "itemPadding", "style", "className"],
-  _excluded2 = ["float"],
-  _excluded3 = ["item"];
+const tree_excluded = ["item"],
+  _excluded2 = ["data", "collapsed", "type", "Link", "width", "bgColor", "itemHeight", "collapsedWidth", "itemPadding", "style", "className"],
+  _excluded3 = ["float"];
 function tree_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function tree_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? tree_ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : tree_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
@@ -1029,6 +1032,15 @@ function tree_objectSpread(target) { for (var i = 1; i < arguments.length; i++) 
 
 
 const ListContauner = props => /*#__PURE__*/(0,jsx_runtime.jsx)("ul", tree_objectSpread({}, props));
+const getList = (isNormal, float) => isNormal ? _ref => {
+  let {
+      item
+    } = _ref,
+    rest = (0,objectWithoutProperties/* default */.Z)(_ref, tree_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(ListContauner, tree_objectSpread({
+    className: float === 'right' ? 'left' : ''
+  }, rest));
+} : listRender;
 const Index = props => {
   var _rest$style;
   const {
@@ -1044,37 +1056,47 @@ const Index = props => {
       style,
       className
     } = props,
-    rest = (0,objectWithoutProperties/* default */.Z)(props, tree_excluded);
+    rest = (0,objectWithoutProperties/* default */.Z)(props, _excluded2);
   const timer = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
   const menuRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => () => clearTimeout(timer.current), []);
   const rerender = use_useUpdate();
-  const isCollapsed = type !== 'horizontal' && collapsed;
+  const isHorizontal = type === 'horizontal';
+  const isCollapsed = !isHorizontal && collapsed;
   const events = {
     onClick: (e, item) => {
       e.stopPropagation();
-      const selecteds = utils_getSelected(data, item.path, 'path');
-      selecteds.map(sel => sel.path === item.path ? sel.open = !sel.open : sel.uuid = utils_uuidv4());
-      rerender();
+      if (!isHorizontal && !isCollapsed) {
+        const selecteds = utils_getSelected(data, item.path, 'path');
+        selecteds.map(sel => sel.path === item.path ? sel.open = !sel.open : sel.uuid = utils_uuidv4());
+        rerender();
+      }
     },
-    onMouseEnter: (e, item, hasChildren, level) => {
-      if (isCollapsed && hasChildren && !level) {
+    onMouseEnter: (e, item, level, hasChildren) => {
+      if (isCollapsed && !level && hasChildren) {
         clearTimeout(timer.current);
         menuRef.current.style.width = 'var(--maxWidth)';
       }
     },
-    onMouseLeave: (e, item, hasChildren, level) => {
-      if (isCollapsed && hasChildren && !level) {
+    onMouseLeave: (e, item, level, hasChildren) => {
+      if (isCollapsed && !level && hasChildren) {
         timer.current = setTimeout(() => menuRef.current.style.width = '', 200);
       }
     }
   };
-  const cls = (type === 'horizontal' ? ['huxy-horizontal-tree', className] : ['huxy-tree', className, collapsed ? 'collapsed' : '']).filter(Boolean).join(' ');
-  const _ref = (_rest$style = rest == null ? void 0 : rest.style) != null ? _rest$style : {},
+  const formatLinkProps = (item, level) => {
+    if (isCollapsed && !level) {
+      return {
+        title: item.title || item.name
+      };
+    }
+  };
+  const cls = (isHorizontal ? ['huxy-horizontal-tree', className] : ['huxy-tree', className, isCollapsed ? 'collapsed' : '']).filter(Boolean).join(' ');
+  const _ref2 = (_rest$style = rest == null ? void 0 : rest.style) != null ? _rest$style : {},
     {
       float
-    } = _ref,
-    restStyle = (0,objectWithoutProperties/* default */.Z)(_ref, _excluded2);
+    } = _ref2,
+    restStyle = (0,objectWithoutProperties/* default */.Z)(_ref2, _excluded3);
   const treeStyles = tree_objectSpread({
     '--bgColor': bgColor,
     '--itemHeight': itemHeight,
@@ -1087,15 +1109,7 @@ const Index = props => {
     treeStyles['--width'] = width;
     treeStyles['--collapsedWidth'] = collapsedWidth;
   }
-  const List = type === 'horizontal' || collapsed ? _ref2 => {
-    let {
-        item
-      } = _ref2,
-      rest = (0,objectWithoutProperties/* default */.Z)(_ref2, _excluded3);
-    return /*#__PURE__*/(0,jsx_runtime.jsx)(ListContauner, tree_objectSpread({
-      className: float === 'right' ? 'left' : ''
-    }, rest));
-  } : listRender;
+  const List = getList(isHorizontal || isCollapsed, float);
   return /*#__PURE__*/(0,jsx_runtime.jsx)("div", tree_objectSpread(tree_objectSpread({
     ref: menuRef,
     className: cls,
@@ -1111,7 +1125,8 @@ const Index = props => {
           Link,
           List,
           leftIcon: true,
-          rightIcon: true
+          rightIcon: true,
+          formatLinkProps
         })
       })
     })

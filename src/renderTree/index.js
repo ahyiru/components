@@ -309,6 +309,7 @@ const render = _ref3 => {
     List = DefList,
     leftIcon,
     rightIcon,
+    formatLinkProps,
     level = 0
   } = _ref3;
   return data.map(item => {
@@ -323,21 +324,22 @@ const render = _ref3 => {
       linkProps
     } = item;
     const hasChildren = utils_isValidArr(children);
-    const fixedEvents = fixEvents(events, item, hasChildren, level);
+    const fixedEvents = fixEvents(events, item, level, hasChildren);
     const key = item.id || path || name;
     const li = icon != null ? icon : leftIcon;
     const ri = rIcon != null ? rIcon : rightIcon;
+    const menuLinkProps = typeof formatLinkProps === 'function' ? formatLinkProps(item, level) : undefined;
     if (hasChildren) {
       return /*#__PURE__*/(0,jsx_runtime.jsxs)("li", _objectSpread(_objectSpread({
         className: open ? 'open' : '',
         "has-children": "true"
       }, fixedEvents), {}, {
-        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
+        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread(_objectSpread({
           className: active ? 'active' : '',
           to: path,
           preventDefault: true,
           stopPropagation: false
-        }, linkProps), {}, {
+        }, linkProps), menuLinkProps), {}, {
           children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
             className: "node-left-icon",
             children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
@@ -363,16 +365,17 @@ const render = _ref3 => {
             List,
             leftIcon,
             rightIcon,
+            formatLinkProps,
             level: level + 1
           })
         })]
       }), key);
     }
     return /*#__PURE__*/(0,jsx_runtime.jsx)("li", _objectSpread(_objectSpread({}, fixedEvents), {}, {
-      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
+      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread(_objectSpread({
         className: active ? 'active' : '',
         to: path
-      }, linkProps), {}, {
+      }, linkProps), menuLinkProps), {}, {
         children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           className: "node-left-icon",
           children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
