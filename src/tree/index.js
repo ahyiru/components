@@ -36,7 +36,7 @@ var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/renderTree/index.jsx
 
 
-const _excluded = ["to", "preventDefault", "stopPropagation"],
+const _excluded = ["item", "to", "preventDefault", "stopPropagation"],
   _excluded2 = ["item"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -45,6 +45,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 const DefLink = _ref => {
   let {
+      item,
       to,
       preventDefault,
       stopPropagation
@@ -79,7 +80,6 @@ const render = _ref3 => {
     List = DefList,
     leftIcon,
     rightIcon,
-    formatLinkProps,
     level = 0
   } = _ref3;
   return data.map(item => {
@@ -98,18 +98,20 @@ const render = _ref3 => {
     const key = item.id || path || name;
     const li = icon != null ? icon : leftIcon;
     const ri = rIcon != null ? rIcon : rightIcon;
-    const menuLinkProps = typeof formatLinkProps === 'function' ? formatLinkProps(item, level) : undefined;
     if (hasChildren) {
       return /*#__PURE__*/(0,jsx_runtime.jsxs)("li", _objectSpread(_objectSpread({
         className: open ? 'open' : '',
         "has-children": "true"
       }, fixedEvents), {}, {
-        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread(_objectSpread({
+        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
+          item: _objectSpread(_objectSpread({}, item), {}, {
+            level
+          }),
           className: active ? 'active' : '',
           to: path,
           preventDefault: true,
           stopPropagation: false
-        }, linkProps), menuLinkProps), {}, {
+        }, linkProps), {}, {
           children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
             className: "node-left-icon",
             children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
@@ -135,17 +137,19 @@ const render = _ref3 => {
             List,
             leftIcon,
             rightIcon,
-            formatLinkProps,
             level: level + 1
           })
         })]
       }), key);
     }
     return /*#__PURE__*/(0,jsx_runtime.jsx)("li", _objectSpread(_objectSpread({}, fixedEvents), {}, {
-      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread(_objectSpread({
+      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
+        item: _objectSpread(_objectSpread({}, item), {}, {
+          level
+        }),
         className: active ? 'active' : '',
         to: path
-      }, linkProps), menuLinkProps), {}, {
+      }, linkProps), {}, {
         children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
           className: "node-left-icon",
           children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
@@ -1020,7 +1024,8 @@ var update = injectStylesIntoStyleTag_default()(tree/* default */.Z, options);
 
 const tree_excluded = ["item"],
   _excluded2 = ["data", "collapsed", "type", "Link", "width", "bgColor", "itemHeight", "collapsedWidth", "itemPadding", "style", "className"],
-  _excluded3 = ["float"];
+  _excluded3 = ["float"],
+  _excluded4 = ["item"];
 function tree_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function tree_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? tree_ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : tree_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
@@ -1084,13 +1089,6 @@ const Index = props => {
       }
     }
   };
-  const formatLinkProps = (item, level) => {
-    if (isCollapsed && !level) {
-      return {
-        title: item.title || item.name
-      };
-    }
-  };
   const cls = (isHorizontal ? ['huxy-horizontal-tree', className] : ['huxy-tree', className, isCollapsed ? 'collapsed' : '']).filter(Boolean).join(' ');
   const _ref2 = (_rest$style = rest == null ? void 0 : rest.style) != null ? _rest$style : {},
     {
@@ -1110,6 +1108,15 @@ const Index = props => {
     treeStyles['--collapsedWidth'] = collapsedWidth;
   }
   const List = getList(isHorizontal || isCollapsed, float);
+  const TreeLink = _ref3 => {
+    let {
+        item
+      } = _ref3,
+      rest = (0,objectWithoutProperties/* default */.Z)(_ref3, _excluded4);
+    return isCollapsed && !item.level ? /*#__PURE__*/(0,jsx_runtime.jsx)(Link, tree_objectSpread(tree_objectSpread({}, rest), {}, {
+      title: item.title || item.name
+    })) : /*#__PURE__*/(0,jsx_runtime.jsx)(Link, tree_objectSpread({}, rest));
+  };
   return /*#__PURE__*/(0,jsx_runtime.jsx)("div", tree_objectSpread(tree_objectSpread({
     ref: menuRef,
     className: cls,
@@ -1122,11 +1129,10 @@ const Index = props => {
         children: (0,renderTree["default"])({
           data,
           events,
-          Link,
           List,
+          Link: TreeLink,
           leftIcon: true,
-          rightIcon: true,
-          formatLinkProps
+          rightIcon: true
         })
       })
     })
