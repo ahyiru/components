@@ -7,15 +7,15 @@
 		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__3899__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 3899:
+/***/ 899:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
 
 /***/ })
 
@@ -82,47 +82,41 @@ var __webpack_exports__ = {};
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ErrorBoundary; }
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3899);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(899);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField = (obj, key, value) => {
+  __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+  return value;
+};
 
 class ErrorBoundary extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
   constructor() {
     super(...arguments);
-    this.state = {
+    __publicField(this, "state", {
       error: null
-    };
+    });
   }
   static getDerivedStateFromError(error) {
-    return {
-      error
-    };
+    return { error };
   }
   componentDidCatch(error, info) {
-    // this.setState({error, info: info.componentStack});
-    const {
-      errorReport
-    } = this.props;
-    if (typeof errorReport === 'function') {
-      errorReport({
-        error,
-        info: info.componentStack
-      });
+    const { errorReport } = this.props;
+    if (typeof errorReport === "function") {
+      errorReport({ error, info: info.componentStack });
     }
   }
   render() {
-    const {
-      error
-    } = this.state;
-    const {
-      fallback,
-      children
-    } = this.props;
+    const { error } = this.state;
+    const { fallback, children } = this.props;
     if (error) {
       return fallback(error);
     }
     return children;
   }
 }
+
 }();
 __webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;

@@ -7,17 +7,17 @@
 		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__3899__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 6201:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7703);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(703);
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2414);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(414);
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -32,7 +32,7 @@ ___CSS_LOADER_EXPORT___.locals = {};
 
 /***/ }),
 
-/***/ 2414:
+/***/ 414:
 /***/ (function(module) {
 
 
@@ -123,7 +123,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 7703:
+/***/ 703:
 /***/ (function(module) {
 
 
@@ -134,7 +134,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 6053:
+/***/ 53:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 var __webpack_unused_export__;
@@ -147,25 +147,25 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(3899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
 
 
 /***/ }),
 
-/***/ 7458:
+/***/ 458:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(6053);
+  module.exports = __webpack_require__(53);
 } else {}
 
 
 /***/ }),
 
-/***/ 5748:
+/***/ 748:
 /***/ (function(module) {
 
 
@@ -275,7 +275,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 9736:
+/***/ 736:
 /***/ (function(module) {
 
 
@@ -320,7 +320,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 7706:
+/***/ 706:
 /***/ (function(module) {
 
 
@@ -337,7 +337,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 1567:
+/***/ 567:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
@@ -355,7 +355,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 6306:
+/***/ 306:
 /***/ (function(module) {
 
 
@@ -431,7 +431,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 2062:
+/***/ 62:
 /***/ (function(module) {
 
 
@@ -453,10 +453,10 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 3899:
+/***/ 899:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
 
 /***/ })
 
@@ -531,26 +531,28 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_spinner; }
 });
 
+// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(458);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(5748);
+var injectStylesIntoStyleTag = __webpack_require__(748);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(6306);
+var styleDomAPI = __webpack_require__(306);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(9736);
+var insertBySelector = __webpack_require__(736);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(1567);
+var setAttributesWithoutAttributes = __webpack_require__(567);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(7706);
+var insertStyleElement = __webpack_require__(706);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(2062);
+var styleTagTransform = __webpack_require__(62);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.3_webpack@5.75.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.75.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/spinner/index.less
-var spinner = __webpack_require__(6201);
+var spinner = __webpack_require__(201);
 ;// CONCATENATED MODULE: ../huxy/components/spinner/index.less
 
       
@@ -580,24 +582,12 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.Z, options)
 
        /* harmony default export */ var components_spinner = (spinner/* default */.Z && spinner/* default.locals */.Z.locals ? spinner/* default.locals */.Z.locals : undefined);
 
-// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/spinner/index.jsx
 
 
-const Spinner = _ref => {
-  let {
-    global,
-    absolute
-  } = _ref;
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-    className: `spinner${global ? ' global' : ''}${absolute ? ' absolute' : ''}`,
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)("figure", {
-      className: "spinning"
-    })
-  });
-};
+const Spinner = ({ global, absolute }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `spinner${global ? " global" : ""}${absolute ? " absolute" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("figure", { className: "spinning" }) });
 /* harmony default export */ var huxy_components_spinner = (Spinner);
+
 }();
 __webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;

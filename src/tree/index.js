@@ -7,193 +7,17 @@
 		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__3899__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 2658:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ renderTree; }
-});
-
-// EXTERNAL MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/defineProperty.js
-var defineProperty = __webpack_require__(5233);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
-var objectWithoutProperties = __webpack_require__(6867);
-// EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
-var isArray = __webpack_require__(3250);
-;// CONCATENATED MODULE: ../huxy/utils/isValidArr.js
-
-const isValidArr = value => (0,isArray/* default */.Z)(value) && !!value.length;
-/* harmony default export */ var utils_isValidArr = (isValidArr);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7458);
-;// CONCATENATED MODULE: ../huxy/components/renderTree/index.jsx
-
-
-const _excluded = ["item", "to", "preventDefault", "stopPropagation"],
-  _excluded2 = ["item"];
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
-
-const DefLink = _ref => {
-  let {
-      item,
-      to,
-      preventDefault,
-      stopPropagation
-    } = _ref,
-    rest = (0,objectWithoutProperties/* default */.Z)(_ref, _excluded);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("a", _objectSpread({
-    href: preventDefault ? null : to
-  }, rest));
-};
-const DefList = _ref2 => {
-  let {
-      item
-    } = _ref2,
-    rest = (0,objectWithoutProperties/* default */.Z)(_ref2, _excluded2);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("ul", _objectSpread({}, rest));
-};
-const fixEvents = function (events) {
-  for (var _len = arguments.length, params = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    params[_key - 1] = arguments[_key];
-  }
-  const newEvent = {};
-  Object.keys(events).filter(Boolean).map(key => {
-    newEvent[key] = e => events[key](e, ...params);
-  });
-  return newEvent;
-};
-const render = _ref3 => {
-  let {
-    data = [],
-    events = {},
-    Link = DefLink,
-    List = DefList,
-    leftIcon,
-    rightIcon,
-    level = 0
-  } = _ref3;
-  return data.map(item => {
-    const {
-      name,
-      path,
-      icon,
-      rightIcon: rIcon,
-      active,
-      open,
-      children,
-      linkProps
-    } = item;
-    const hasChildren = utils_isValidArr(children);
-    const fixedEvents = fixEvents(events, item, level, hasChildren);
-    const key = item.id || path || name;
-    const li = icon != null ? icon : leftIcon;
-    const ri = rIcon != null ? rIcon : rightIcon;
-    if (hasChildren) {
-      return /*#__PURE__*/(0,jsx_runtime.jsxs)("li", _objectSpread(_objectSpread({
-        className: open ? 'open' : '',
-        "has-children": "true"
-      }, fixedEvents), {}, {
-        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
-          item: _objectSpread(_objectSpread({}, item), {}, {
-            level
-          }),
-          className: active ? 'active' : '',
-          to: path,
-          preventDefault: true,
-          stopPropagation: false
-        }, linkProps), {}, {
-          children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: "node-left-icon",
-            children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
-              className: "default-left-icon"
-            }) : li
-          }) : null, name ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: "node-text",
-            children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
-              children: name
-            })
-          }) : null, ri ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: "node-right-icon",
-            children: ri === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
-              className: "default-right-icon"
-            }) : ri
-          }) : null]
-        })), /*#__PURE__*/(0,jsx_runtime.jsx)(List, {
-          item: item,
-          children: render({
-            data: children,
-            events,
-            Link,
-            List,
-            leftIcon,
-            rightIcon,
-            level: level + 1
-          })
-        })]
-      }), key);
-    }
-    return /*#__PURE__*/(0,jsx_runtime.jsx)("li", _objectSpread(_objectSpread({}, fixedEvents), {}, {
-      children: /*#__PURE__*/(0,jsx_runtime.jsxs)(Link, _objectSpread(_objectSpread({
-        item: _objectSpread(_objectSpread({}, item), {}, {
-          level
-        }),
-        className: active ? 'active' : '',
-        to: path
-      }, linkProps), {}, {
-        children: [li ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          className: "node-left-icon",
-          children: li === true ? /*#__PURE__*/(0,jsx_runtime.jsx)("i", {
-            className: "default-left-icon"
-          }) : li
-        }) : null, name ? /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-          className: "node-text",
-          children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
-            children: name
-          })
-        }) : null]
-      }))
-    }), key);
-  });
-};
-/* harmony default export */ var renderTree = (render);
-
-/***/ }),
-
-/***/ 3250:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": function() { return /* binding */ utils_isArray; }
-});
-
-;// CONCATENATED MODULE: ../huxy/utils/getType.js
-const getType = value => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
-/* harmony default export */ var utils_getType = (getType);
-;// CONCATENATED MODULE: ../huxy/utils/isArray.js
-
-const isArray = value => utils_getType(value) === 'array';
-/* harmony default export */ var utils_isArray = (isArray);
-
-/***/ }),
-
-/***/ 5435:
+/***/ 435:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7703);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(703);
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2414);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(414);
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -208,7 +32,7 @@ ___CSS_LOADER_EXPORT___.locals = {};
 
 /***/ }),
 
-/***/ 2414:
+/***/ 414:
 /***/ (function(module) {
 
 
@@ -299,7 +123,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 7703:
+/***/ 703:
 /***/ (function(module) {
 
 
@@ -310,7 +134,85 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 6053:
+/***/ 402:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ renderTree; }
+});
+
+// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(458);
+// EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
+var isArray = __webpack_require__(805);
+;// CONCATENATED MODULE: ../huxy/utils/isValidArr.js
+
+const isValidArr = (value) => (0,isArray/* default */.Z)(value) && !!value.length;
+/* harmony default export */ var utils_isValidArr = (isValidArr);
+
+;// CONCATENATED MODULE: ../huxy/components/renderTree/index.jsx
+
+
+const DefLink = ({ item, to, preventDefault, stopPropagation, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: preventDefault ? null : to, ...rest });
+const DefList = ({ item, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { ...rest });
+const fixEvents = (events, ...params) => {
+  const newEvent = {};
+  Object.keys(events).filter(Boolean).map((key) => {
+    newEvent[key] = (e) => events[key](e, ...params);
+  });
+  return newEvent;
+};
+const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIcon, rightIcon, level = 0 }) => data.map((item) => {
+  const { name, path, icon, rightIcon: rIcon, active, open, children, linkProps } = item;
+  const hasChildren = utils_isValidArr(children);
+  const fixedEvents = fixEvents(events, item, level, hasChildren);
+  const key = item.id || path || name;
+  const li = icon != null ? icon : leftIcon;
+  const ri = rIcon != null ? rIcon : rightIcon;
+  if (hasChildren) {
+    return /* @__PURE__ */ (0,jsx_runtime.jsxs)("li", { className: open ? "open" : "", "has-children": "true", ...fixedEvents, children: [
+      /* @__PURE__ */ (0,jsx_runtime.jsxs)(Link, { item: { ...item, level }, className: active ? "active" : "", to: path, preventDefault: true, stopPropagation: false, ...linkProps, children: [
+        li ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-left-icon", children: li === true ? /* @__PURE__ */ (0,jsx_runtime.jsx)("i", { className: "default-left-icon" }) : li }) : null,
+        name ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-text", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: name }) }) : null,
+        ri ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-right-icon", children: ri === true ? /* @__PURE__ */ (0,jsx_runtime.jsx)("i", { className: "default-right-icon" }) : ri }) : null
+      ] }),
+      /* @__PURE__ */ (0,jsx_runtime.jsx)(List, { item, children: render({ data: children, events, List, Link, leftIcon, rightIcon, level: level + 1 }) })
+    ] }, key);
+  }
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { ...fixedEvents, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)(Link, { item: { ...item, level }, className: active ? "active" : "", to: path, ...linkProps, children: [
+    li ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-left-icon", children: li === true ? /* @__PURE__ */ (0,jsx_runtime.jsx)("i", { className: "default-left-icon" }) : li }) : null,
+    name ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-text", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: name }) }) : null
+  ] }) }, key);
+});
+/* harmony default export */ var renderTree = (render);
+
+
+/***/ }),
+
+/***/ 805:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ utils_isArray; }
+});
+
+;// CONCATENATED MODULE: ../huxy/utils/getType.js
+const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+/* harmony default export */ var utils_getType = (getType);
+
+;// CONCATENATED MODULE: ../huxy/utils/isArray.js
+
+const isArray = (value) => utils_getType(value) === "array";
+/* harmony default export */ var utils_isArray = (isArray);
+
+
+/***/ }),
+
+/***/ 53:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 var __webpack_unused_export__;
@@ -323,25 +225,25 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(3899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;exports.jsxs=q;
 
 
 /***/ }),
 
-/***/ 7458:
+/***/ 458:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(6053);
+  module.exports = __webpack_require__(53);
 } else {}
 
 
 /***/ }),
 
-/***/ 5748:
+/***/ 748:
 /***/ (function(module) {
 
 
@@ -451,7 +353,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 9736:
+/***/ 736:
 /***/ (function(module) {
 
 
@@ -496,7 +398,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 7706:
+/***/ 706:
 /***/ (function(module) {
 
 
@@ -513,7 +415,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 1567:
+/***/ 567:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
@@ -531,7 +433,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 6306:
+/***/ 306:
 /***/ (function(module) {
 
 
@@ -607,7 +509,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 2062:
+/***/ 62:
 /***/ (function(module) {
 
 
@@ -629,138 +531,10 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 3899:
+/***/ 899:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
-
-/***/ }),
-
-/***/ 5233:
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": function() { return /* binding */ _defineProperty; }
-/* harmony export */ });
-/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-
-function _defineProperty(obj, key, value) {
-  key = (0,_toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(key);
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
-}
-
-/***/ }),
-
-/***/ 6867:
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": function() { return /* binding */ _objectWithoutProperties; }
-/* harmony export */ });
-/* harmony import */ var _objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(851);
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = (0,_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(source, excluded);
-  var key, i;
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-  return target;
-}
-
-/***/ }),
-
-/***/ 851:
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": function() { return /* binding */ _objectWithoutPropertiesLoose; }
-/* harmony export */ });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-
-/***/ }),
-
-/***/ 4902:
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": function() { return /* binding */ _toPrimitive; }
-/* harmony export */ });
-/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6722);
-
-function _toPrimitive(input, hint) {
-  if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(input) !== "object" || input === null) return input;
-  var prim = input[Symbol.toPrimitive];
-  if (prim !== undefined) {
-    var res = prim.call(input, hint || "default");
-    if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(res) !== "object") return res;
-    throw new TypeError("@@toPrimitive must return a primitive value.");
-  }
-  return (hint === "string" ? String : Number)(input);
-}
-
-/***/ }),
-
-/***/ 8080:
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": function() { return /* binding */ _toPropertyKey; }
-/* harmony export */ });
-/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6722);
-/* harmony import */ var _toPrimitive_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4902);
-
-
-function _toPropertyKey(arg) {
-  var key = (0,_toPrimitive_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(arg, "string");
-  return (0,_typeof_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z)(key) === "symbol" ? key : String(key);
-}
-
-/***/ }),
-
-/***/ 6722:
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": function() { return /* binding */ _typeof; }
-/* harmony export */ });
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
-}
+module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
 
 /***/ })
 
@@ -835,23 +609,19 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_tree; }
 });
 
-// EXTERNAL MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
-var objectWithoutProperties = __webpack_require__(6867);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/defineProperty.js
-var defineProperty = __webpack_require__(5233);
+// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(458);
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
-var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
+var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(899);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
-var isArray = __webpack_require__(3250);
+var isArray = __webpack_require__(805);
 ;// CONCATENATED MODULE: ../huxy/utils/getSelected.js
 
-const getSelected = function (arr, id) {
-  let idKey = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'id';
-  let childKey = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'children';
+const getSelected = (arr, id, idKey = "id", childKey = "children") => {
   if (!(0,isArray/* default */.Z)(arr)) {
     return null;
   }
-  const selected = data => {
+  const selected = (data) => {
     for (let i = 0, l = data.length; i < l; i++) {
       const item = data[i];
       if (item[idKey] === id) {
@@ -868,35 +638,39 @@ const getSelected = function (arr, id) {
   return selected(arr);
 };
 /* harmony default export */ var utils_getSelected = (getSelected);
+
 ;// CONCATENATED MODULE: ../huxy/utils/timestamp.js
 const timestamp = () => {
-  if (typeof performance !== 'undefined' && typeof performance.now === 'function') {
+  if (typeof performance !== "undefined" && typeof performance.now === "function") {
     return performance.now();
   }
   return new Date().getTime();
 };
 /* harmony default export */ var utils_timestamp = (timestamp);
+
 ;// CONCATENATED MODULE: ../huxy/utils/uuidv4.js
 
 const uuidv4 = () => {
   let timeKey = utils_timestamp();
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
     const r = (timeKey + Math.random() * 16) % 16 | 0;
     timeKey = Math.floor(timeKey / 16);
-    return (c === 'x' ? r : r & 0x3 | 0x8).toString(16);
+    return (c === "x" ? r : r & 3 | 8).toString(16);
   });
 };
 /* harmony default export */ var utils_uuidv4 = (uuidv4);
+
 ;// CONCATENATED MODULE: ../huxy/use/useUpdate/index.jsx
 
-const incrementParameter = num => ++num;
+const incrementParameter = (num) => ++num;
 const useUpdate = () => {
   const [, setState] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(0);
   return (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useCallback)(() => setState(incrementParameter), []);
 };
 /* harmony default export */ var use_useUpdate = (useUpdate);
+
 // EXTERNAL MODULE: ../huxy/components/renderTree/index.jsx + 1 modules
-var renderTree = __webpack_require__(2658);
+var renderTree = __webpack_require__(402);
 ;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
 
 const useFirstMounted = () => {
@@ -908,36 +682,21 @@ const useFirstMounted = () => {
   return false;
 };
 /* harmony default export */ var use_useFirstMounted = (useFirstMounted);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7458);
+
 ;// CONCATENATED MODULE: ../huxy/components/tree/listRender.jsx
 
 
-const _excluded = ["item", "style"];
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
-
-
-const ListRender = _ref => {
-  var _item$children;
-  let {
-      item,
-      style
-    } = _ref,
-    rest = (0,objectWithoutProperties/* default */.Z)(_ref, _excluded);
-  const {
-    uuid,
-    open
-  } = item;
+const ListRender = ({ item, style, ...rest }) => {
+  var _a;
+  const { uuid, open } = item;
   const ul = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
   const timer = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
   const isMounted = use_useFirstMounted();
-  const [maxHeight, setMaxHeight] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)('');
+  const [maxHeight, setMaxHeight] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)("");
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
     const el = ul.current;
-    const height = open ? `${el.scrollHeight}px` : '0px';
-    // el.style.maxHeight=height;
+    const height = open ? `${el.scrollHeight}px` : "0px";
     setMaxHeight(height);
   }, []);
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
@@ -945,51 +704,43 @@ const ListRender = _ref => {
       return;
     }
     const el = ul.current;
-    const initH = open ? '0px' : `${el.scrollHeight}px`;
-    // el.style.maxHeight=initH;
+    const initH = open ? "0px" : `${el.scrollHeight}px`;
     setMaxHeight(initH);
     timer.current = setTimeout(() => {
-      const height = open ? `${el.scrollHeight}px` : '0px';
-      // el.style.maxHeight=height;
+      const height = open ? `${el.scrollHeight}px` : "0px";
       setMaxHeight(height);
     }, 5);
     return () => clearTimeout(timer.current);
-  }, [open, (_item$children = item.children) == null ? void 0 : _item$children.length]);
+  }, [open, (_a = item.children) == null ? void 0 : _a.length]);
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
-    // 多层级触发
     if (uuid) {
-      // ul.current.style.maxHeight='';
-      setMaxHeight('');
+      setMaxHeight("");
     }
   }, [uuid]);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("ul", _objectSpread({
-    ref: ul,
-    style: _objectSpread(_objectSpread({}, style), {}, {
-      maxHeight
-    })
-  }, rest));
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { ref: ul, style: { ...style, maxHeight }, ...rest });
 };
 /* harmony default export */ var listRender = (ListRender);
+
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(5748);
+var injectStylesIntoStyleTag = __webpack_require__(748);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(6306);
+var styleDomAPI = __webpack_require__(306);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(9736);
+var insertBySelector = __webpack_require__(736);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(1567);
+var setAttributesWithoutAttributes = __webpack_require__(567);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(7706);
+var insertStyleElement = __webpack_require__(706);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(2062);
+var styleTagTransform = __webpack_require__(62);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.3_webpack@5.75.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.75.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/tree/index.less
-var tree = __webpack_require__(5435);
+var tree = __webpack_require__(435);
 ;// CONCATENATED MODULE: ../huxy/components/tree/index.less
 
       
@@ -1022,123 +773,78 @@ var update = injectStylesIntoStyleTag_default()(tree/* default */.Z, options);
 ;// CONCATENATED MODULE: ../huxy/components/tree/index.jsx
 
 
-const tree_excluded = ["item"],
-  _excluded2 = ["data", "collapsed", "type", "Link", "width", "bgColor", "itemHeight", "collapsedWidth", "itemPadding", "style", "className"],
-  _excluded3 = ["float"],
-  _excluded4 = ["item"];
-function tree_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function tree_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? tree_ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : tree_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 
 
 
 
 
-
-
-const ListContauner = props => /*#__PURE__*/(0,jsx_runtime.jsx)("ul", tree_objectSpread({}, props));
-const getList = (isNormal, float) => isNormal ? _ref => {
-  let {
-      item
-    } = _ref,
-    rest = (0,objectWithoutProperties/* default */.Z)(_ref, tree_excluded);
-  return /*#__PURE__*/(0,jsx_runtime.jsx)(ListContauner, tree_objectSpread({
-    className: float === 'right' ? 'left' : ''
-  }, rest));
-} : listRender;
-const Index = props => {
-  var _rest$style;
+const ListContauner = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { ...props });
+const getList = (isNormal, float) => isNormal ? ({ item, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)(ListContauner, { className: float === "right" ? "left" : "", ...rest }) : listRender;
+const Tree = (props) => {
+  var _a;
   const {
-      data = [],
-      collapsed = false,
-      type = 'vertical',
-      Link,
-      width,
-      bgColor,
-      itemHeight,
-      collapsedWidth,
-      itemPadding,
-      style,
-      className
-    } = props,
-    rest = (0,objectWithoutProperties/* default */.Z)(props, _excluded2);
+    data = [],
+    collapsed = false,
+    type = "vertical",
+    Link,
+    width,
+    bgColor,
+    itemHeight,
+    collapsedWidth,
+    itemPadding,
+    style,
+    className,
+    ...rest
+  } = props;
   const timer = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
   const menuRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => () => clearTimeout(timer.current), []);
   const rerender = use_useUpdate();
-  const isHorizontal = type === 'horizontal';
+  const isHorizontal = type === "horizontal";
   const isCollapsed = !isHorizontal && collapsed;
   const events = {
     onClick: (e, item) => {
       e.stopPropagation();
       if (!isHorizontal && !isCollapsed) {
-        const selecteds = utils_getSelected(data, item.path, 'path');
-        selecteds.map(sel => sel.path === item.path ? sel.open = !sel.open : sel.uuid = utils_uuidv4());
+        const selecteds = utils_getSelected(data, item.path, "path");
+        selecteds.map((sel) => sel.path === item.path ? sel.open = !sel.open : sel.uuid = utils_uuidv4());
         rerender();
       }
     },
     onMouseEnter: (e, item, level, hasChildren) => {
       if (isCollapsed && !level && hasChildren) {
         clearTimeout(timer.current);
-        menuRef.current.style.width = 'var(--maxWidth)';
+        menuRef.current.style.width = "var(--maxWidth)";
       }
     },
     onMouseLeave: (e, item, level, hasChildren) => {
       if (isCollapsed && !level && hasChildren) {
-        timer.current = setTimeout(() => menuRef.current.style.width = '', 200);
+        timer.current = setTimeout(() => menuRef.current.style.width = "", 200);
       }
     }
   };
-  const cls = (isHorizontal ? ['huxy-horizontal-tree', className] : ['huxy-tree', className, isCollapsed ? 'collapsed' : '']).filter(Boolean).join(' ');
-  const _ref2 = (_rest$style = rest == null ? void 0 : rest.style) != null ? _rest$style : {},
-    {
-      float
-    } = _ref2,
-    restStyle = (0,objectWithoutProperties/* default */.Z)(_ref2, _excluded3);
-  const treeStyles = tree_objectSpread({
-    '--bgColor': bgColor,
-    '--itemHeight': itemHeight,
-    '--nodeListWidth': width
-  }, restStyle);
-  if (type === 'horizontal') {
-    treeStyles['--itemPadding'] = itemPadding;
-    treeStyles['--nodeFloat'] = float;
+  const cls = (isHorizontal ? ["huxy-horizontal-tree", className] : ["huxy-tree", className, isCollapsed ? "collapsed" : ""]).filter(Boolean).join(" ");
+  const { float, ...restStyle } = (_a = rest == null ? void 0 : rest.style) != null ? _a : {};
+  const treeStyles = {
+    "--bgColor": bgColor,
+    "--itemHeight": itemHeight,
+    "--nodeListWidth": width,
+    ...restStyle
+  };
+  if (type === "horizontal") {
+    treeStyles["--itemPadding"] = itemPadding;
+    treeStyles["--nodeFloat"] = float;
   } else {
-    treeStyles['--width'] = width;
-    treeStyles['--collapsedWidth'] = collapsedWidth;
+    treeStyles["--width"] = width;
+    treeStyles["--collapsedWidth"] = collapsedWidth;
   }
   const List = getList(isHorizontal || isCollapsed, float);
-  const TreeLink = _ref3 => {
-    let {
-        item
-      } = _ref3,
-      rest = (0,objectWithoutProperties/* default */.Z)(_ref3, _excluded4);
-    return isCollapsed && !item.level ? /*#__PURE__*/(0,jsx_runtime.jsx)(Link, tree_objectSpread(tree_objectSpread({}, rest), {}, {
-      title: item.title || item.name
-    })) : /*#__PURE__*/(0,jsx_runtime.jsx)(Link, tree_objectSpread({}, rest));
-  };
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", tree_objectSpread(tree_objectSpread({
-    ref: menuRef,
-    className: cls,
-    style: treeStyles
-  }, rest), {}, {
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-      className: "huxy-tree-track",
-      children: /*#__PURE__*/(0,jsx_runtime.jsx)("ul", {
-        className: "huxy-tree-root",
-        children: (0,renderTree["default"])({
-          data,
-          events,
-          List,
-          Link: TreeLink,
-          leftIcon: true,
-          rightIcon: true
-        })
-      })
-    })
-  }));
+  const TreeLink = ({ item, ...rest2 }) => isCollapsed && !item.level ? /* @__PURE__ */ (0,jsx_runtime.jsx)(Link, { ...rest2, title: item.title || item.name }) : /* @__PURE__ */ (0,jsx_runtime.jsx)(Link, { ...rest2 });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { ref: menuRef, className: cls, style: treeStyles, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-tree-track", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-tree-root", children: (0,renderTree["default"])({ data, events, List, Link: TreeLink, leftIcon: true, rightIcon: true }) }) }) });
 };
-/* harmony default export */ var huxy_components_tree = (Index);
+/* harmony default export */ var huxy_components_tree = (Tree);
+
 }();
 __webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;

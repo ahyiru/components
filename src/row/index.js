@@ -7,7 +7,7 @@
 		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__3899__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -15,9 +15,9 @@ return /******/ (function() { // webpackBootstrap
 /***/ 31:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7703);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(703);
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2414);
+/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(414);
 /* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -32,7 +32,7 @@ ___CSS_LOADER_EXPORT___.locals = {};
 
 /***/ }),
 
-/***/ 2414:
+/***/ 414:
 /***/ (function(module) {
 
 
@@ -123,7 +123,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 7703:
+/***/ 703:
 /***/ (function(module) {
 
 
@@ -134,7 +134,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 6053:
+/***/ 53:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 var __webpack_unused_export__;
@@ -147,25 +147,25 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(3899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
 
 
 /***/ }),
 
-/***/ 7458:
+/***/ 458:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(6053);
+  module.exports = __webpack_require__(53);
 } else {}
 
 
 /***/ }),
 
-/***/ 5748:
+/***/ 748:
 /***/ (function(module) {
 
 
@@ -275,7 +275,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 9736:
+/***/ 736:
 /***/ (function(module) {
 
 
@@ -320,7 +320,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 7706:
+/***/ 706:
 /***/ (function(module) {
 
 
@@ -337,7 +337,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 1567:
+/***/ 567:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
@@ -355,7 +355,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 6306:
+/***/ 306:
 /***/ (function(module) {
 
 
@@ -431,7 +431,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 2062:
+/***/ 62:
 /***/ (function(module) {
 
 
@@ -453,10 +453,10 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 3899:
+/***/ 899:
 /***/ (function(module) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__3899__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
 
 /***/ })
 
@@ -531,100 +531,27 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_row; }
 });
 
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/typeof.js
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
-}
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/toPrimitive.js
-
-function _toPrimitive(input, hint) {
-  if (_typeof(input) !== "object" || input === null) return input;
-  var prim = input[Symbol.toPrimitive];
-  if (prim !== undefined) {
-    var res = prim.call(input, hint || "default");
-    if (_typeof(res) !== "object") return res;
-    throw new TypeError("@@toPrimitive must return a primitive value.");
-  }
-  return (hint === "string" ? String : Number)(input);
-}
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
-
-
-function _toPropertyKey(arg) {
-  var key = _toPrimitive(arg, "string");
-  return _typeof(key) === "symbol" ? key : String(key);
-}
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/defineProperty.js
-
-function _defineProperty(obj, key, value) {
-  key = _toPropertyKey(key);
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
-}
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-;// CONCATENATED MODULE: ../../node_modules/.pnpm/@babel+runtime@7.20.7/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-  var key, i;
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-  return target;
-}
+// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(458);
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
-var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(3899);
+var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(899);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(5748);
+var injectStylesIntoStyleTag = __webpack_require__(748);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(6306);
+var styleDomAPI = __webpack_require__(306);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(9736);
+var insertBySelector = __webpack_require__(736);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(1567);
+var setAttributesWithoutAttributes = __webpack_require__(567);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(7706);
+var insertStyleElement = __webpack_require__(706);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(2062);
+var styleTagTransform = __webpack_require__(62);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.3_webpack@5.75.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.75.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/row/index.less
 var row = __webpack_require__(31);
@@ -657,49 +584,23 @@ var update = injectStylesIntoStyleTag_default()(row/* default */.Z, options);
 
        /* harmony default export */ var components_row = (row/* default */.Z && row/* default.locals */.Z.locals ? row/* default.locals */.Z.locals : undefined);
 
-// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(7458);
 ;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
 
 
-const _excluded = ["gutter", "className", "overflow"];
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
-
-
-const Row = (_ref, ref) => {
-  let {
-      gutter = 10,
-      className,
-      overflow = 'hidden'
-    } = _ref,
-    rest = _objectWithoutProperties(_ref, _excluded);
-  const defCls = className ? ` ${className}` : '';
+const Row = ({ gutter = 10, className, overflow = "hidden", ...rest }, ref) => {
+  var _a;
+  const defCls = className ? ` ${className}` : "";
   let rowgap = 10;
   if (Array.isArray(gutter)) {
-    var _tmp$;
     const tmp = [...gutter];
     gutter = tmp[0];
-    rowgap = (_tmp$ = tmp[1]) != null ? _tmp$ : tmp[0];
+    rowgap = (_a = tmp[1]) != null ? _a : tmp[0];
   }
-  // gutter=isNaN(gutter)?10:gutter;
-  // rowgap=isNaN(rowgap)?10:rowgap;
-  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-    className: "row-wrap",
-    style: {
-      '--gutter': `${Math.floor(gutter / 2)}px`,
-      '--rowgap': `${Math.floor(rowgap / 2)}px`,
-      overflow
-    },
-    children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", _objectSpread(_objectSpread({
-      className: `row${defCls}`
-    }, rest), {}, {
-      ref: ref
-    }))
-  });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "row-wrap", style: { "--gutter": `${Math.floor(gutter / 2)}px`, "--rowgap": `${Math.floor(rowgap / 2)}px`, overflow }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `row${defCls}`, ...rest, ref }) });
 };
-/* harmony default export */ var huxy_components_row = (/*#__PURE__*/(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)(Row));
+/* harmony default export */ var huxy_components_row = ((0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)(Row));
+
 }();
 __webpack_exports__ = __webpack_exports__["default"];
 /******/ 	return __webpack_exports__;
