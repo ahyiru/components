@@ -137,7 +137,7 @@ const isValidArr = (value) => (0,isArray/* default */.Z)(value) && !!value.lengt
 ;// CONCATENATED MODULE: ../huxy/components/renderTree/index.jsx
 
 
-const DefLink = ({ item, to, preventDefault, stopPropagation, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: preventDefault ? null : to, ...rest });
+const DefLink = ({ item, to, preventDefault, stopPropagation, className, ...rest }) => preventDefault ? /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link${className ? ` ${className}` : ""}`, ...rest }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: to, className: `link${className ? ` ${className}` : ""}`, ...rest });
 const DefList = ({ item, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { ...rest });
 const fixEvents = (events, ...params) => {
   const newEvent = {};

@@ -723,7 +723,7 @@ const Drawer = ({ open, close, footer, header, className, children, width = "300
   const cls = ["drawer-wrap", open ? "open" : "", ...(_a = className == null ? void 0 : className.split(" ")) != null ? _a : []].filter(Boolean).map((c) => components_drawer[c]).join(" ");
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay: 250, hasMask: true, className: "huxy-drawer", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, style: { width }, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-container"], children: [
     /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-header"], children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { className: components_drawer["ico-close"], onClick: (e) => close == null ? void 0 : close(e) }),
+      /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_drawer["ico-close"]}`, onClick: (e) => close == null ? void 0 : close(e) }),
       /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: header })
     ] }),
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_drawer["drawer-content"], children }),

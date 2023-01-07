@@ -24,7 +24,7 @@ return /******/ (function() { // webpackBootstrap
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".clear {\n  zoom: 1;\n}\n.clear::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE {\n  position: relative;\n  background: var(--panelBgColor);\n  border-radius: 2px;\n  border: 1px solid rgba(0, 0, 0, 0.02);\n  height: 100%;\n  z-index: 1;\n  /*&:hover{\n      box-shadow:0px 2px 5px hsla(0,0%,80%,.7);\n    }*/\n}\n.J8VWE.ohmPp {\n  box-shadow: 0 0 3rem rgba(100, 200, 255, 0.5) inset;\n}\n.J8VWE.JzE05 {\n  border-radius: 4px;\n  border-color: rgba(0, 180, 220, 0.5);\n  box-shadow: 0 0 2rem rgba(0, 180, 220, 0.5) inset;\n}\n.J8VWE .rOxNb {\n  zoom: 1;\n  padding: 10px 12px;\n  border-radius: 2px;\n}\n.J8VWE .rOxNb::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE .OQwTX {\n  zoom: 1;\n  padding: 8px 12px;\n  background-color: rgba(0, 0, 0, 0.02);\n  border-top-left-radius: 2px;\n  border-top-right-radius: 2px;\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.03);\n}\n.J8VWE .OQwTX::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE .OQwTX .W_1K6 {\n  flex: 1;\n  width: 0;\n  margin: 0;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.J8VWE .OQwTX .eCk2_ {\n  flex: 1;\n  flex-shrink: 0;\n  float: right;\n}\n.J8VWE .OQwTX .eCk2_ a {\n  float: right;\n  font-size: 1.8rem;\n}\n.J8VWE .OQwTX .eCk2_ a:not(:first-of-type) {\n  margin-right: 10px;\n}\n.J8VWE .OQwTX + .rOxNb {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".clear {\n  zoom: 1;\n}\n.clear::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE {\n  position: relative;\n  background: var(--panelBgColor);\n  border-radius: 2px;\n  border: 1px solid rgba(0, 0, 0, 0.02);\n  height: 100%;\n  z-index: 1;\n  /*&:hover{\n      box-shadow:0px 2px 5px hsla(0,0%,80%,.7);\n    }*/\n}\n.J8VWE.ohmPp {\n  box-shadow: 0 0 3rem rgba(100, 200, 255, 0.5) inset;\n}\n.J8VWE.JzE05 {\n  border-radius: 4px;\n  border-color: rgba(0, 180, 220, 0.5);\n  box-shadow: 0 0 2rem rgba(0, 180, 220, 0.5) inset;\n}\n.J8VWE .rOxNb {\n  zoom: 1;\n  padding: 10px 12px;\n  border-radius: 2px;\n}\n.J8VWE .rOxNb::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE .OQwTX {\n  zoom: 1;\n  padding: 8px 12px;\n  background-color: rgba(0, 0, 0, 0.02);\n  border-top-left-radius: 2px;\n  border-top-right-radius: 2px;\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.03);\n}\n.J8VWE .OQwTX::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE .OQwTX .W_1K6 {\n  flex: 1;\n  width: 0;\n  margin: 0;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.J8VWE .OQwTX .eCk2_ {\n  flex: 1;\n  flex-shrink: 0;\n  float: right;\n}\n.J8VWE .OQwTX .eCk2_ .R2Mku {\n  float: right;\n  font-size: 1.8rem;\n}\n.J8VWE .OQwTX .eCk2_ .R2Mku:not(:first-of-type) {\n  margin-right: 10px;\n}\n.J8VWE .OQwTX + .rOxNb {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"panel": "J8VWE",
@@ -33,7 +33,8 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"panel-body": "rOxNb",
 	"panel-header": "OQwTX",
 	"panel-title": "W_1K6",
-	"panel-plugins": "eCk2_"
+	"panel-plugins": "eCk2_",
+	"link": "R2Mku"
 };
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
 
@@ -712,7 +713,7 @@ const Panel = (props, ref) => {
   return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${components_panel.panel}${cls}`, ...rest, ref: container, children: [
     (title || isValidPlugin) && /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_panel["panel-header"], children: [
       title && /* @__PURE__ */ (0,jsx_runtime.jsx)("h4", { className: components_panel["panel-title"], children: title }),
-      isValidPlugin && /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-plugins"], children: validPlugin.map((Item, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Item, { panel: container }) }, i)) })
+      isValidPlugin && /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-plugins"], children: validPlugin.map((Item, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: "link", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Item, { panel: container }) }, i)) })
     ] }),
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-body"], children }),
     loading && /* @__PURE__ */ (0,jsx_runtime.jsx)(spinner["default"], {})
