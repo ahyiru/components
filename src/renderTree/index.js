@@ -146,24 +146,26 @@ const fixEvents = (events, ...params) => {
   });
   return newEvent;
 };
-const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIcon, rightIcon, level = 0 }) => data.map((item) => {
+const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIcon, rightIcon, collapsed, level = 0, parentOpen = true }) => data.map((item) => {
   const { name, path, icon, rightIcon: rIcon, active, open, children, linkProps } = item;
   const hasChildren = utils_isValidArr(children);
-  const fixedEvents = fixEvents(events, item, level, hasChildren);
+  const fixedEvents = fixEvents(events, item, level);
   const key = item.id || path || name;
   const li = icon != null ? icon : leftIcon;
   const ri = rIcon != null ? rIcon : rightIcon;
+  const hidden = collapsed ? "" : parentOpen ? "" : "hidden";
   if (hasChildren) {
-    return /* @__PURE__ */ (0,jsx_runtime.jsxs)("li", { className: open ? "open" : "", "has-children": "true", ...fixedEvents, children: [
+    const cls = [hidden, open ? "open" : ""].filter(Boolean).join(" ");
+    return /* @__PURE__ */ (0,jsx_runtime.jsxs)("li", { className: cls, "has-children": "true", ...fixedEvents, children: [
       /* @__PURE__ */ (0,jsx_runtime.jsxs)(Link, { item: { ...item, level }, className: active ? "active" : "", to: path, preventDefault: true, stopPropagation: false, ...linkProps, children: [
         li ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-left-icon", children: li === true ? /* @__PURE__ */ (0,jsx_runtime.jsx)("i", { className: "default-left-icon" }) : li }) : null,
         name ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-text", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: name }) }) : null,
         ri ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-right-icon", children: ri === true ? /* @__PURE__ */ (0,jsx_runtime.jsx)("i", { className: "default-right-icon" }) : ri }) : null
       ] }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(List, { item, children: render({ data: children, events, List, Link, leftIcon, rightIcon, level: level + 1 }) })
+      /* @__PURE__ */ (0,jsx_runtime.jsx)(List, { item, children: render({ data: children, events, List, Link, leftIcon, rightIcon, collapsed, level: level + 1, parentOpen: !!open }) })
     ] }, key);
   }
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { ...fixedEvents, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)(Link, { item: { ...item, level }, className: active ? "active" : "", to: path, ...linkProps, children: [
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: hidden, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)(Link, { item: { ...item, level }, className: active ? "active" : "", to: path, ...linkProps, children: [
     li ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-left-icon", children: li === true ? /* @__PURE__ */ (0,jsx_runtime.jsx)("i", { className: "default-left-icon" }) : li }) : null,
     name ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "node-text", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: name }) }) : null
   ] }) }, key);
