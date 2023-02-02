@@ -140,6 +140,7 @@ const Col = (0,react__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(({ span, offset, x
   const autoStyle = auto ? {
     width: "auto",
     flex: 1,
+    //'auto',
     maxWidth: `calc(100% - ${offsetWidth})`
   } : { width };
   return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: `${cls}${defCls}`, ...rest, style: { ...autoStyle, ...style }, ref });

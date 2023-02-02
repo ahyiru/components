@@ -138,7 +138,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 116:
+/***/ 760:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(994);
@@ -679,9 +679,15 @@ const setStyle = (ele, styles = {}, reset = false) => {
   if (!utils_isElement(ele)) {
     return;
   }
-  Object.keys(styles).map((key) => {
-    ele.style.setProperty(key, reset ? "" : styles[key]);
-  });
+  if (reset) {
+    let objStr = "";
+    Object.keys(styles).map((key) => {
+      objStr += `${key}: ${styles[key]};`;
+    });
+    ele.style = objStr;
+    return;
+  }
+  Object.keys(styles).map((key) => ele.style.setProperty(key, styles[key]));
 };
 /* harmony default export */ var utils_setStyle = (setStyle);
 
@@ -845,7 +851,7 @@ const useDelayState = (state, delay = 450) => {
 /* harmony default export */ var use_useDelayState = (useDelayState);
 
 // EXTERNAL MODULE: ../huxy/components/portal/index.jsx
-var portal = __webpack_require__(116);
+var portal = __webpack_require__(760);
 ;// CONCATENATED MODULE: ../huxy/components/drop/mask.jsx
 
 

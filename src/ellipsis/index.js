@@ -142,7 +142,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 974:
+/***/ 257:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -780,9 +780,15 @@ const setStyle = (ele, styles = {}, reset = false) => {
   if (!utils_isElement(ele)) {
     return;
   }
-  Object.keys(styles).map((key) => {
-    ele.style.setProperty(key, reset ? "" : styles[key]);
-  });
+  if (reset) {
+    let objStr = "";
+    Object.keys(styles).map((key) => {
+      objStr += `${key}: ${styles[key]};`;
+    });
+    ele.style = objStr;
+    return;
+  }
+  Object.keys(styles).map((key) => ele.style.setProperty(key, styles[key]));
 };
 /* harmony default export */ var utils_setStyle = (setStyle);
 
@@ -820,7 +826,7 @@ const getPosition = (ele) => {
 /* harmony default export */ var utils_getPosition = (getPosition);
 
 // EXTERNAL MODULE: ../huxy/components/tooltip/index.jsx + 1 modules
-var tooltip = __webpack_require__(974);
+var tooltip = __webpack_require__(257);
 ;// CONCATENATED MODULE: ../huxy/components/ellipsis/index.jsx
 
 
