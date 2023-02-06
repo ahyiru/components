@@ -720,10 +720,10 @@ var update = injectStylesIntoStyleTag_default()(modal/* default */.Z, options);
 
 
 
-const Modal = ({ open, close, hasMask = true, cancelText = "\u53D6\u6D88", submit, submitText = "\u786E\u5B9A", title = "Modal \u5F39\u7A97", className, children, delay = 250 }) => {
+const Modal = ({ open, close, hasMask = true, cancelText = "\u53D6\u6D88", submit, submitText = "\u786E\u5B9A", title = "Modal \u5F39\u7A97", className, children, delay = 250, ...rest }) => {
   var _a;
   const cls = ["modal-wrap", open ? "open" : "", ...(_a = className == null ? void 0 : className.split(" ")) != null ? _a : []].filter(Boolean).map((c) => components_modal[c]).join(" ");
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay, hasMask, className: "huxy-modal", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-container"], children: [
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay, hasMask, className: "huxy-modal", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-container"], children: [
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_modal["modal-header"], children: title }),
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_modal["modal-content"], children }),
     /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-footer"], children: [

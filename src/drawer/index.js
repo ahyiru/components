@@ -718,10 +718,10 @@ var update = injectStylesIntoStyleTag_default()(drawer/* default */.Z, options);
 
 
 
-const Drawer = ({ open, close, footer, header, className, children, width = "300px" }) => {
+const Drawer = ({ open, close, footer, header, className, style, children, width = "300px" }) => {
   var _a;
   const cls = ["drawer-wrap", open ? "open" : "", ...(_a = className == null ? void 0 : className.split(" ")) != null ? _a : []].filter(Boolean).map((c) => components_drawer[c]).join(" ");
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay: 250, hasMask: true, className: "huxy-drawer", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, style: { width }, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-container"], children: [
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay: 250, hasMask: true, className: "huxy-drawer", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, style: { width, ...style }, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-container"], children: [
     /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-header"], children: [
       /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_drawer["ico-close"]}`, onClick: (e) => close == null ? void 0 : close(e) }),
       /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: header })

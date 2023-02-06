@@ -616,7 +616,7 @@ var update = injectStylesIntoStyleTag_default()(tabHeader/* default */.Z, option
 
 
 const renderTabs = (value) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { padding: "6px 15px" }, children: value });
-const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex }, ref) => {
+const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ...rest }, ref) => {
   var _a;
   const [active, setActive] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(activekey != null ? activekey : (_a = tabs[0]) == null ? void 0 : _a.key);
   const [pos, setPos] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)({});
@@ -639,7 +639,7 @@ const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex }, ref) =
     }
     setTrackPos(e.currentTarget);
   };
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "tabs-header-wrap", ref, children: [
+  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "tabs-header-wrap", ...rest, ref, children: [
     /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: `tabs-header${flex ? " flex" : ""}`, ref: trackRef, children: tabs.map((v) => /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { ref: (el) => listRef.current[v.key] = el, className: `th-item${active === v.key ? " active" : ""}`, onClick: (e) => onChange(e, v.key), children: typeof v.renderTabs === "function" ? v.renderTabs(v, active === v.key) : renderTabs(v.value) }, v.key)) }),
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "th-track", style: { ...pos, color: trackColor } })
   ] });
