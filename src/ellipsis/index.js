@@ -677,7 +677,29 @@ const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null 
 const isRef = (ref) => utils_hasProp(ref, "current");
 /* harmony default export */ var utils_isRef = (isRef);
 
+;// CONCATENATED MODULE: ../huxy/utils/findChildEle.js
+const findChildEle = (target, cname) => {
+  var _a;
+  const childrenEle = [];
+  const children = (_a = target.children) != null ? _a : [];
+  for (let i = 0, l = children.length; i < l; i++) {
+    const childEle = children[i];
+    if (childEle.className.indexOf(cname) > -1) {
+      childrenEle.push(childEle);
+    }
+  }
+  if (childrenEle.length === 0) {
+    return null;
+  }
+  if (childrenEle.length === 1) {
+    return childrenEle[0];
+  }
+  return childrenEle;
+};
+/* harmony default export */ var utils_findChildEle = (findChildEle);
+
 ;// CONCATENATED MODULE: ../huxy/utils/resize.js
+
 
 
 
@@ -706,7 +728,7 @@ const resize = (element, delay = 60) => {
   let listeners = [];
   const resizeListener = utils_debounce(() => listeners.map((listener) => listener(element)), delay);
   const bind = (cb) => {
-    if (!domObj) {
+    if (!domObj && !utils_findChildEle(element, "resize-sensor")) {
       domObj = createObj(element, resizeListener);
     }
     if (listeners.indexOf(cb) === -1) {
@@ -796,7 +818,7 @@ const setStyle = (ele, styles = {}, reset = false) => {
 
 
 
-const getTextSize = (text, styles = {}, ele) => {
+const getTextSize = (text, styles, ele) => {
   if (!utils_isBrowser()) {
     return;
   }
@@ -804,7 +826,7 @@ const getTextSize = (text, styles = {}, ele) => {
   const span = document.createElement("span");
   span.setAttribute("style", `pointer-events: none; z-index: -1; opacity: 0;`);
   styles && utils_setStyle(span, styles);
-  span.innerText = text;
+  span.innerText = (text != null ? text : "").replace(/[\r\n]/g, "");
   ele.appendChild(span);
   const rect = span.getBoundingClientRect();
   ele.removeChild(span);
@@ -841,7 +863,7 @@ const ellipsisStyle = {
   display: "inline-block",
   width: "100%"
 };
-const Ellipsis = (props) => {
+const EllipsisTooltip = (props) => {
   var _a, _b, _c, _d;
   const { children } = props;
   const isStringChild = typeof children === "string";
@@ -853,13 +875,19 @@ const Ellipsis = (props) => {
     if (span.current) {
       const { width: tWidth } = utils_getTextSize(text);
       const { width } = utils_getPosition(span.current);
-      const isEllipsis = tWidth > width;
+      const isEllipsis = ~~tWidth > ~~width;
       if (isEllipsis !== ellipsis) {
         setEllipsis(isEllipsis);
       }
     }
   }, [text, state.width]);
   return /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { ref: span, style: { width: "100%", display: "inline-block" }, children: ellipsis ? isStringChild ? /* @__PURE__ */ (0,jsx_runtime.jsx)(tooltip["default"], { ...props, ellipsis: true }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { style: ellipsisStyle, children }) : isStringChild ? children : (_d = children == null ? void 0 : children.props) == null ? void 0 : _d.children });
+};
+const Ellipsis = (props) => {
+  if (props.children == null) {
+    return "";
+  }
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(EllipsisTooltip, { ...props });
 };
 /* harmony default export */ var ellipsis = (Ellipsis);
 
