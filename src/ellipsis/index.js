@@ -633,169 +633,6 @@ const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).to
 const isElement = (value) => utils_getType(value).indexOf("element") > -1;
 /* harmony default export */ var utils_isElement = (isElement);
 
-;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
-
-
-const getViewportSize = (element = null) => {
-  var _a, _b;
-  if (!utils_isBrowser()) {
-    return {
-      width: 0,
-      height: 0
-    };
-  }
-  if (utils_isElement(element)) {
-    return {
-      width: element.clientWidth,
-      height: element.clientHeight
-    };
-  }
-  return {
-    width: (_a = window.innerWidth) != null ? _a : document.documentElement.clientWidth,
-    height: (_b = window.innerHeight) != null ? _b : document.documentElement.clientHeight
-  };
-};
-/* harmony default export */ var utils_getViewportSize = (getViewportSize);
-
-;// CONCATENATED MODULE: ../huxy/utils/debounce.js
-const debounce = (func = () => {
-}, delay = 60) => {
-  let timer = null;
-  return function(...args) {
-    clearTimeout(timer);
-    timer = setTimeout(() => func.apply(this, args), delay);
-  };
-};
-/* harmony default export */ var utils_debounce = (debounce);
-
-;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
-const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
-/* harmony default export */ var utils_hasProp = (hasProp);
-
-;// CONCATENATED MODULE: ../huxy/utils/isRef.js
-
-const isRef = (ref) => utils_hasProp(ref, "current");
-/* harmony default export */ var utils_isRef = (isRef);
-
-;// CONCATENATED MODULE: ../huxy/utils/findChildEle.js
-const findChildEle = (target, cname) => {
-  var _a;
-  const childrenEle = [];
-  const children = (_a = target.children) != null ? _a : [];
-  for (let i = 0, l = children.length; i < l; i++) {
-    const childEle = children[i];
-    if (childEle.className.indexOf(cname) > -1) {
-      childrenEle.push(childEle);
-    }
-  }
-  if (childrenEle.length === 0) {
-    return null;
-  }
-  if (childrenEle.length === 1) {
-    return childrenEle[0];
-  }
-  return childrenEle;
-};
-/* harmony default export */ var utils_findChildEle = (findChildEle);
-
-;// CONCATENATED MODULE: ../huxy/utils/resize.js
-
-
-
-
-const createObj = (element, resizeListener) => {
-  if (getComputedStyle(element).position === "static") {
-    element.style.position = "relative";
-  }
-  const obj = document.createElement("object");
-  obj.setAttribute("style", "display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1;opacity:0");
-  obj.setAttribute("class", "resize-sensor");
-  obj.onload = () => {
-    obj.contentDocument.defaultView.addEventListener("resize", resizeListener, false);
-    resizeListener();
-  };
-  obj.type = "text/html";
-  element.appendChild(obj);
-  obj.data = "about:blank";
-  return obj;
-};
-const resize = (element, delay = 60) => {
-  if (!utils_isBrowser()) {
-    return;
-  }
-  element = utils_isRef(element) ? element.current : element != null ? element : document.body;
-  let domObj = utils_findChildEle(element, "resize-sensor");
-  let listeners = [];
-  const resizeListener = utils_debounce(() => listeners.map((listener) => listener(element)), delay);
-  const bind = (cb) => {
-    if (!utils_findChildEle(element, "resize-sensor")) {
-      domObj = createObj(element, resizeListener);
-    }
-    if (listeners.indexOf(cb) === -1) {
-      listeners.push(cb);
-    }
-  };
-  const unbind = (cb) => {
-    const idx = listeners.indexOf(cb);
-    if (idx !== -1) {
-      listeners.splice(idx, 1);
-    }
-    if (listeners.length === 0 && domObj) {
-      destroy();
-    }
-  };
-  const destroy = () => {
-    if (domObj && domObj.parentNode) {
-      if (domObj.contentDocument) {
-        domObj.contentDocument.defaultView.removeEventListener("resize", resizeListener, false);
-      }
-      domObj.parentNode.removeChild(domObj);
-      domObj = void 0;
-      listeners = [];
-    }
-  };
-  return {
-    element,
-    bind,
-    unbind,
-    destroy
-  };
-};
-/* harmony default export */ var utils_resize = (resize);
-
-;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
-
-const useRaf = (initState = {}) => {
-  const frame = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)(0);
-  const [state, setState] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(initState);
-  const setRaf = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useCallback)((value) => {
-    cancelAnimationFrame(frame.current);
-    frame.current = requestAnimationFrame(() => setState(value));
-  }, []);
-  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => () => cancelAnimationFrame(frame.current), []);
-  return [state, setRaf];
-};
-/* harmony default export */ var use_useRaf = (useRaf);
-
-;// CONCATENATED MODULE: ../huxy/use/useEleResize/index.jsx
-
-
-
-
-
-const useEleResize = (ref = null, delay = 60) => {
-  const element = utils_isRef(ref) ? ref.current : ref;
-  const { bind, destroy } = utils_resize(element, delay);
-  const [state, setState] = use_useRaf(utils_getViewportSize(element));
-  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
-    const handler = () => element && setState(utils_getViewportSize(element));
-    bind(handler);
-    return () => destroy();
-  }, [element]);
-  return state;
-};
-/* harmony default export */ var use_useEleResize = (useEleResize);
-
 ;// CONCATENATED MODULE: ../huxy/utils/setStyle.js
 
 const setStyle = (ele, styles = {}, reset = false) => {
@@ -813,6 +650,15 @@ const setStyle = (ele, styles = {}, reset = false) => {
   Object.keys(styles).map((key) => ele.style.setProperty(key, styles[key]));
 };
 /* harmony default export */ var utils_setStyle = (setStyle);
+
+;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
+/* harmony default export */ var utils_hasProp = (hasProp);
+
+;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+
+const isRef = (ref) => utils_hasProp(ref, "current");
+/* harmony default export */ var utils_isRef = (isRef);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getTextSize.js
 
@@ -855,7 +701,6 @@ var tooltip = __webpack_require__(318);
 
 
 
-
 const ellipsisStyle = {
   overflow: "hidden",
   textOverflow: "ellipsis",
@@ -869,8 +714,7 @@ const EllipsisTooltip = (props) => {
   const isStringChild = typeof children === "string";
   const text = isStringChild ? children : (_c = (_a = children == null ? void 0 : children.props) == null ? void 0 : _a.title) != null ? _c : (_b = children == null ? void 0 : children.props) == null ? void 0 : _b.children;
   const spanRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
-  const [ellipsis, setEllipsis] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(false);
-  const state = use_useEleResize(spanRef, 250);
+  const [ellipsis, setEllipsis] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(true);
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
     if (spanRef.current) {
       const { width: tWidth } = utils_getTextSize(text);
@@ -880,7 +724,10 @@ const EllipsisTooltip = (props) => {
         setEllipsis(isEllipsis);
       }
     }
-  }, [text, state.width]);
+  }, [
+    text
+    /* , state.width */
+  ]);
   return /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { ref: spanRef, style: { display: "flex", width: "100%", ...style }, children: ellipsis ? isStringChild ? /* @__PURE__ */ (0,jsx_runtime.jsx)(tooltip["default"], { ...props, ellipsis: true }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { style: ellipsisStyle, children }) : isStringChild ? children : (_d = children == null ? void 0 : children.props) == null ? void 0 : _d.children });
 };
 const Ellipsis = (props) => {
