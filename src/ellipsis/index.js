@@ -717,7 +717,7 @@ const EllipsisTooltip = (props) => {
   const [ellipsis, setEllipsis] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(true);
   (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
     if (spanRef.current) {
-      const { width: tWidth } = utils_getTextSize(text);
+      const { width: tWidth } = utils_getTextSize(text, null, spanRef.current.parentNode);
       const { width } = utils_getPosition(spanRef.current);
       const isEllipsis = ~~tWidth > ~~width;
       if (isEllipsis !== ellipsis) {
