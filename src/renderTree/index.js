@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 564:
+/***/ 565:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -128,7 +128,7 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(458);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
-var isArray = __webpack_require__(564);
+var isArray = __webpack_require__(565);
 ;// CONCATENATED MODULE: ../huxy/utils/isValidArr.js
 
 const isValidArr = (value) => (0,isArray/* default */.Z)(value) && !!value.length;

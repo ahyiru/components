@@ -142,7 +142,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 318:
+/***/ 553:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -694,7 +694,7 @@ const getPosition = (ele) => {
 /* harmony default export */ var utils_getPosition = (getPosition);
 
 // EXTERNAL MODULE: ../huxy/components/tooltip/index.jsx + 1 modules
-var tooltip = __webpack_require__(318);
+var tooltip = __webpack_require__(553);
 ;// CONCATENATED MODULE: ../huxy/components/ellipsis/index.jsx
 
 
