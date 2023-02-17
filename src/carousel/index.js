@@ -12,17 +12,17 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 145:
+/***/ 921:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(703);
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(414);
-/* harmony import */ var _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(609);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_3_webpack_5_75_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ".kLIGi {\n  --bar-color: #fff;\n  --bar-width: 16px;\n  position: relative;\n  overflow: hidden;\n}\n.XoNs4 {\n  transition: transform 0.5s cubic-bezier(0.24, 0.14, 0.17, 1.07);\n}\n.x4UPo {\n  float: left;\n}\n.qYuQn {\n  position: absolute;\n  left: 50%;\n  bottom: 10px;\n  transform: translateX(-50%);\n}\n.qYuQn .GU0qu {\n  display: inline-block;\n  margin: 0 5px;\n  width: var(--bar-width);\n  height: 4px;\n  border-radius: 2px;\n  background: var(--bar-color);\n  opacity: 0.3;\n  cursor: pointer;\n}\n.qYuQn .GU0qu.svhYU {\n  width: calc(var(--bar-width) + 8px);\n  opacity: 1;\n}\n", ""]);
 // Exports
@@ -39,7 +39,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
-/***/ 414:
+/***/ 609:
 /***/ (function(module) {
 
 
@@ -130,7 +130,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 703:
+/***/ 601:
 /***/ (function(module) {
 
 
@@ -141,7 +141,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 53:
+/***/ 837:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 var __webpack_unused_export__;
@@ -160,19 +160,19 @@ function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&
 
 /***/ }),
 
-/***/ 458:
+/***/ 322:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(53);
+  module.exports = __webpack_require__(837);
 } else {}
 
 
 /***/ }),
 
-/***/ 748:
+/***/ 62:
 /***/ (function(module) {
 
 
@@ -282,7 +282,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 736:
+/***/ 793:
 /***/ (function(module) {
 
 
@@ -327,7 +327,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 706:
+/***/ 173:
 /***/ (function(module) {
 
 
@@ -344,7 +344,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 567:
+/***/ 892:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 
@@ -362,7 +362,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 306:
+/***/ 36:
 /***/ (function(module) {
 
 
@@ -438,7 +438,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 62:
+/***/ 464:
 /***/ (function(module) {
 
 
@@ -545,8 +545,8 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ huxy_components_carousel; }
 });
 
-// EXTERNAL MODULE: ../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(458);
+// EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(322);
 // EXTERNAL MODULE: external {"root":"ReactDOM","commonjs":"react-dom","commonjs2":"react-dom","amd":"react-dom"}
 var external_root_ReactDOM_commonjs_react_dom_commonjs2_react_dom_amd_react_dom_ = __webpack_require__(994);
 // EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
@@ -743,26 +743,26 @@ const useEleResize = (ref = null, delay = 60) => {
 };
 /* harmony default export */ var use_useEleResize = (useEleResize);
 
-// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(748);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(62);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(306);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(36);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(736);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertBySelector.js
+var insertBySelector = __webpack_require__(793);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(567);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(892);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(706);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(173);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.1_webpack@5.75.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(62);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(464);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.3_webpack@5.75.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/.pnpm/less-loader@11.1.0_less@4.1.3+webpack@5.75.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/carousel/index.less
-var carousel = __webpack_require__(145);
+// EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/carousel/index.less
+var carousel = __webpack_require__(921);
 ;// CONCATENATED MODULE: ../huxy/components/carousel/index.less
 
       
