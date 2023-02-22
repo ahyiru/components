@@ -103,7 +103,7 @@ var __webpack_exports__ = {};
 /* harmony import */ var _fixEle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(210);
 
 const fixIcons = (iconList) => (0,_fixEle__WEBPACK_IMPORTED_MODULE_0__["default"])(iconList);
-const Icon = (iconList) => ({ icon, defaultIcon = null }) => icon ? fixIcons(iconList)(icon) : icon === false ? null : defaultIcon;
+const Icon = (iconList) => ({ icon, defaultIcon }) => icon ? fixIcons(iconList)(icon) : icon === false ? null : defaultIcon;
 /* harmony default export */ __webpack_exports__["default"] = (Icon);
 
 }();
