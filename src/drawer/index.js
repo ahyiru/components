@@ -24,11 +24,13 @@ return /******/ (function() { // webpackBootstrap
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes animate-drawer-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n@keyframes animate-drawer-out {\n  0% {\n    opacity: 1;\n    transform: translate3d(-100%, 0, 0);\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n}\n.KsHNu {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 100%;\n  background: #ffffff;\n  width: 300px;\n  opacity: 0;\n  transform: translate3d(0, 0, 0);\n}\n.KsHNu {\n  animation: animate-drawer-out 0.25s forwards;\n}\n.KsHNu.c6aFy {\n  animation: animate-drawer-in 0.25s forwards;\n}\n.W4gG3 {\n  position: relative;\n}\n.W4gG3 .SMORg {\n  padding: 8px 12px 24px;\n}\n.W4gG3 .e3AWW {\n  font-weight: 500;\n  font-size: 16px;\n  color: #000000;\n  padding: 12px 16px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.W4gG3 .e3AWW .VSVwl {\n  font-size: 2.2rem;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  vertical-align: middle;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  width: 20px;\n  height: 20px;\n  text-align: center;\n  cursor: pointer;\n  border: 1px solid transparent;\n}\n.W4gG3 .e3AWW .VSVwl:before {\n  content: \"\\00D7\";\n}\n.W4gG3 .e3AWW .VSVwl:hover {\n  border-color: rgba(0, 0, 0, 0.2);\n}\n.W4gG3 .hlj9r {\n  height: 44px;\n  display: flex;\n  align-items: center;\n  box-sizing: border-box;\n  border-top: 1px solid #edeff2;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes animate-drawer-right-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n@keyframes animate-drawer-right-out {\n  0% {\n    opacity: 1;\n    transform: translate3d(-100%, 0, 0);\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes animate-drawer-left-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    transform: translate3d(100%, 0, 0);\n  }\n}\n@keyframes animate-drawer-left-out {\n  0% {\n    opacity: 1;\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(0, 0, 0);\n  }\n}\n.KsHNu {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 100%;\n  background: #ffffff;\n  width: 300px;\n  opacity: 0;\n  transform: translate3d(0, 0, 0);\n}\n.KsHNu {\n  animation: animate-drawer-right-out 0.25s forwards;\n}\n.KsHNu.c6aFy {\n  animation: animate-drawer-right-in 0.25s forwards;\n}\n.KsHNu.mlowE {\n  top: 0;\n  bottom: 0;\n  left: 100%;\n}\n.KsHNu.mlowE {\n  animation: animate-drawer-right-out 0.25s forwards;\n}\n.KsHNu.mlowE.c6aFy {\n  animation: animate-drawer-right-in 0.25s forwards;\n}\n.KsHNu.w0B0d {\n  top: 0;\n  bottom: 0;\n  right: 100%;\n  left: auto;\n}\n.KsHNu.w0B0d {\n  animation: animate-drawer-left-out 0.25s forwards;\n}\n.KsHNu.w0B0d.c6aFy {\n  animation: animate-drawer-left-in 0.25s forwards;\n}\n.W4gG3 {\n  position: relative;\n}\n.W4gG3 .SMORg {\n  padding: 8px 12px 24px;\n}\n.W4gG3 .e3AWW {\n  font-weight: 500;\n  font-size: 16px;\n  color: #000000;\n  padding: 12px 16px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.W4gG3 .e3AWW .VSVwl {\n  position: relative;\n  font-size: 2.2rem;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  vertical-align: middle;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  width: 20px;\n  height: 20px;\n  text-align: center;\n  cursor: pointer;\n  border: 1px solid transparent;\n  border-radius: 2px;\n  border-color: rgba(0, 0, 0, 0.2);\n}\n.W4gG3 .e3AWW .VSVwl:before {\n  content: \"\\00D7\";\n  position: absolute;\n  top: -4px;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.W4gG3 .e3AWW .VSVwl:hover {\n  border-color: rgba(0, 0, 0, 0.2);\n}\n.W4gG3 .hlj9r {\n  height: 44px;\n  display: flex;\n  align-items: center;\n  box-sizing: border-box;\n  border-top: 1px solid #edeff2;\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"drawer-wrap": "KsHNu",
 	"open": "c6aFy",
+	"right": "mlowE",
+	"left": "w0B0d",
 	"drawer-container": "W4gG3",
 	"drawer-content": "SMORg",
 	"drawer-header": "e3AWW",
@@ -204,6 +206,7 @@ var portal = __webpack_require__(643);
 
 
 
+
 const wrapper = {
   position: "fixed",
   top: 0,
@@ -224,20 +227,25 @@ const mask = {
   background: "rgba(0, 0, 0, 0.5)",
   zIndex: 1e5
 };
-const container = {
-  position: "relative",
-  zIndex: 100001,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center"
-};
 const body = document.body;
-const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask" }) => {
+const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask", relative }) => {
   const [delayOpen] = use_useDelayState(open, delay);
-  body.style.overflow = delayOpen ? "hidden" : "";
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: wrapper, children: [
-    hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: mask, onClick: (e) => close == null ? void 0 : close(e) }) : null,
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...container, ...style }, children })
+  (mountNode != null ? mountNode : body).style.overflow = delayOpen ? "hidden" : "";
+  const position = relative ? "absolute" : "fixed";
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
+    hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...mask, position }, onClick: (e) => close == null ? void 0 : close(e) }) : null,
+    external_root_React_commonjs_react_commonjs2_react_amd_react_.Children.map(children, (child) => {
+      if (!(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.isValidElement)(child)) {
+        return child;
+      }
+      return (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.cloneElement)(child, {
+        style: {
+          position: "relative",
+          zIndex: 100001,
+          ...child.props.style
+        }
+      });
+    })
   ] }) : null }) });
 };
 /* harmony default export */ var components_mask = (Mask);
@@ -718,10 +726,10 @@ var update = injectStylesIntoStyleTag_default()(drawer/* default */.Z, options);
 
 
 
-const Drawer = ({ open, close, footer, header, className, style, children, width = "300px" }) => {
+const Drawer = ({ open, close, footer, header, className, style, children, width = "300px", mountNode, position = "right", relative }) => {
   var _a;
-  const cls = ["drawer-wrap", open ? "open" : "", ...(_a = className == null ? void 0 : className.split(" ")) != null ? _a : []].filter(Boolean).map((c) => components_drawer[c]).join(" ");
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay: 250, hasMask: true, className: "huxy-drawer", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, style: { width, ...style }, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-container"], children: [
+  const cls = ["drawer-wrap", position, open ? "open" : "", ...(_a = className == null ? void 0 : className.split(" ")) != null ? _a : []].filter(Boolean).map((c) => components_drawer[c]).join(" ");
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay: 250, hasMask: true, relative, mountNode, className: "huxy-drawer", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, style: { width, position: relative ? "absolute" : "fixed", ...style }, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-container"], children: [
     /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-header"], children: [
       /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_drawer["ico-close"]}`, onClick: (e) => close == null ? void 0 : close(e) }),
       /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: header })

@@ -188,6 +188,7 @@ var portal = __webpack_require__(643);
 
 
 
+
 const wrapper = {
   position: "fixed",
   top: 0,
@@ -208,20 +209,25 @@ const mask = {
   background: "rgba(0, 0, 0, 0.5)",
   zIndex: 1e5
 };
-const container = {
-  position: "relative",
-  zIndex: 100001,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center"
-};
 const body = document.body;
-const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask" }) => {
+const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask", relative }) => {
   const [delayOpen] = use_useDelayState(open, delay);
-  body.style.overflow = delayOpen ? "hidden" : "";
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: wrapper, children: [
-    hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: mask, onClick: (e) => close == null ? void 0 : close(e) }) : null,
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...container, ...style }, children })
+  (mountNode != null ? mountNode : body).style.overflow = delayOpen ? "hidden" : "";
+  const position = relative ? "absolute" : "fixed";
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
+    hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...mask, position }, onClick: (e) => close == null ? void 0 : close(e) }) : null,
+    external_root_React_commonjs_react_commonjs2_react_amd_react_.Children.map(children, (child) => {
+      if (!(0,external_root_React_commonjs_react_commonjs2_react_amd_react_.isValidElement)(child)) {
+        return child;
+      }
+      return (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.cloneElement)(child, {
+        style: {
+          position: "relative",
+          zIndex: 100001,
+          ...child.props.style
+        }
+      });
+    })
   ] }) : null }) });
 };
 /* harmony default export */ var components_mask = (Mask);
