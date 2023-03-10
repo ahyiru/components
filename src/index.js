@@ -1,4 +1,5 @@
 export {default as Anico} from './anico';
+export {default as Base64Image} from './base64Image';
 export {default as Carousel} from './carousel';
 export {default as Col} from './col';
 export {default as Drawer} from './drawer';

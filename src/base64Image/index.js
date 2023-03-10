@@ -12,26 +12,6 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 871:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(322);
-
-const fixEle = (list) => (Value) => {
-  if (typeof Value === "function" || typeof (Value == null ? void 0 : Value.render) === "function") {
-    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Value, {});
-  }
-  if (typeof Value === "string") {
-    const Comp = list == null ? void 0 : list[Value];
-    return Comp ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Comp, {}) : /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("i", { className: Value });
-  }
-  return Value != null ? Value : null;
-};
-/* harmony default export */ __webpack_exports__["default"] = (fixEle);
-
-
-/***/ }),
-
 /***/ 837:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
@@ -97,14 +77,88 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-/* harmony import */ var _fixEle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(871);
 
-const fixIcons = (iconList) => (0,_fixEle__WEBPACK_IMPORTED_MODULE_0__["default"])(iconList);
-const Icon = (iconList) => ({ icon, defaultIcon }) => icon ? fixIcons(iconList)(icon) : icon === false ? null : defaultIcon;
-/* harmony default export */ __webpack_exports__["default"] = (Icon);
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ base64Image; }
+});
+
+// EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(322);
+// EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
+var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(899);
+;// CONCATENATED MODULE: ../huxy/utils/isUrl.js
+const isUrl = (url) => /^https?:\/\/[^\s/?.#]+\.[^\s]+/.test(url);
+/* harmony default export */ var utils_isUrl = (isUrl);
+
+;// CONCATENATED MODULE: ../huxy/utils/loadBase64.js
+const loadBase64 = (file) => new Promise((resolve, reject) => {
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.addEventListener("load", () => resolve(reader.result));
+  reader.addEventListener("error", (error) => reject(error));
+});
+/* harmony default export */ var utils_loadBase64 = (loadBase64);
+
+;// CONCATENATED MODULE: ../huxy/utils/loadBase64ByUrl.js
+
+
+const loadBase64ByUrl = async (url) => {
+  if (!utils_isUrl(url)) {
+    return url;
+  }
+  const response = await fetch(url);
+  const blob = await response.blob();
+  const result = await utils_loadBase64(blob);
+  return result;
+};
+/* harmony default export */ var utils_loadBase64ByUrl = (loadBase64ByUrl);
+
+;// CONCATENATED MODULE: ../huxy/use/useBase64/index.jsx
+
+
+const useBase64 = (url) => {
+  const [dataUrl, setDataUrl] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(url);
+  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
+    const getBase64 = async (url2) => {
+      const base64 = await utils_loadBase64ByUrl(url2);
+      setDataUrl(base64);
+    };
+    getBase64(url);
+  }, []);
+  return dataUrl;
+};
+/* harmony default export */ var use_useBase64 = (useBase64);
+
+;// CONCATENATED MODULE: ../huxy/components/base64Image/index.jsx
+
+
+const Base64Image = ({ src, ...rest }) => {
+  const url = use_useBase64(src);
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("img", { decoding: "async", loading: "lazy", ...rest, src: url });
+};
+/* harmony default export */ var base64Image = (Base64Image);
 
 }();
 __webpack_exports__ = __webpack_exports__["default"];

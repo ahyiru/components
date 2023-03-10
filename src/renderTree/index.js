@@ -12,27 +12,6 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 938:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": function() { return /* binding */ utils_isArray; }
-});
-
-;// CONCATENATED MODULE: ../huxy/utils/getType.js
-const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
-/* harmony default export */ var utils_getType = (getType);
-
-;// CONCATENATED MODULE: ../huxy/utils/isArray.js
-
-const isArray = (value) => utils_getType(value) === "array";
-/* harmony default export */ var utils_isArray = (isArray);
-
-
-/***/ }),
-
 /***/ 837:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
@@ -68,6 +47,27 @@ if (true) {
 /***/ (function(module) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
+
+/***/ }),
+
+/***/ 481:
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ utils_isArray; }
+});
+
+;// CONCATENATED MODULE: ../huxy/utils/getType.js
+const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+/* harmony default export */ var utils_getType = (getType);
+
+;// CONCATENATED MODULE: ../huxy/utils/isArray.js
+
+const isArray = (value) => utils_getType(value) === "array";
+/* harmony default export */ var utils_isArray = (isArray);
+
 
 /***/ })
 
@@ -128,7 +128,7 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(322);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
-var isArray = __webpack_require__(938);
+var isArray = __webpack_require__(481);
 ;// CONCATENATED MODULE: ../huxy/utils/isValidArr.js
 
 const isValidArr = (value) => (0,isArray/* default */.Z)(value) && !!value.length;

@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 198:
+/***/ 918:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(601);
@@ -142,7 +142,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 134:
+/***/ 412:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
@@ -171,8 +171,8 @@ var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleE
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
 var styleTagTransform = __webpack_require__(464);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../huxy/components/tooltip/index.less
-var tooltip = __webpack_require__(198);
+// EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/tooltip/index.less
+var tooltip = __webpack_require__(918);
 ;// CONCATENATED MODULE: ../huxy/components/tooltip/index.less
 
       
@@ -694,7 +694,7 @@ const getPosition = (ele) => {
 /* harmony default export */ var utils_getPosition = (getPosition);
 
 // EXTERNAL MODULE: ../huxy/components/tooltip/index.jsx + 1 modules
-var tooltip = __webpack_require__(134);
+var tooltip = __webpack_require__(412);
 ;// CONCATENATED MODULE: ../huxy/components/ellipsis/index.jsx
 
 

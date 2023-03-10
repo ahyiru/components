@@ -17,6 +17,14 @@
 <Anico type={type} />
 ```
 
+### Base64Image
+
+将图片 src 地址 改为 base64。
+
+```html
+<Base64Image {props} />
+```
+
 ### loadError/ErrorBoundary/HandleError
 
 错误边界处理。
