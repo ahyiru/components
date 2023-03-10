@@ -1,20 +1,12 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
-	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
-	else {
-		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
-return /******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+/******/ var __webpack_modules__ = ({
 
 /***/ 249:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(609);
@@ -27,13 +19,13 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, ".cols-1 {\n  width: 8.33333333%;\n}\n.cols-2 {\n  width: 16.66666667%;\n}\n.cols-3 {\n  width: 25%;\n}\n.cols-4 {\n  width: 33.33333333%;\n}\n.cols-5 {\n  width: 41.66666667%;\n}\n.cols-6 {\n  width: 50%;\n}\n.cols-7 {\n  width: 58.33333333%;\n}\n.cols-8 {\n  width: 66.66666667%;\n}\n.cols-9 {\n  width: 75%;\n}\n.cols-10 {\n  width: 83.33333333%;\n}\n.cols-11 {\n  width: 91.66666667%;\n}\n.cols-12 {\n  width: 100%;\n}\n.offsets-0 {\n  margin-left: 0;\n}\n.offsets-1 {\n  margin-left: 8.33333333%;\n}\n.offsets-2 {\n  margin-left: 16.66666667%;\n}\n.offsets-3 {\n  margin-left: 25%;\n}\n.offsets-4 {\n  margin-left: 33.33333333%;\n}\n.offsets-5 {\n  margin-left: 41.66666667%;\n}\n.offsets-6 {\n  margin-left: 50%;\n}\n.offsets-7 {\n  margin-left: 58.33333333%;\n}\n.offsets-8 {\n  margin-left: 66.66666667%;\n}\n.offsets-9 {\n  margin-left: 75%;\n}\n.offsets-10 {\n  margin-left: 83.33333333%;\n}\n.offsets-11 {\n  margin-left: 91.66666667%;\n}\n.offsets-12 {\n  margin-left: 100%;\n}\n.row-wrap {\n  --gutter: 8px;\n  --rowgap: 8px;\n}\n.row-wrap + .row-wrap {\n  margin-top: calc(var(--rowgap) * 2);\n}\n.row {\n  display: flex;\n  flex-wrap: wrap;\n  margin: calc(0px - var(--rowgap)) calc(0px - var(--gutter));\n}\n.row [class^=\"col-\"] {\n  padding: var(--rowgap) var(--gutter);\n  position: relative;\n}\n.row .col-1 {\n  width: 8.33333333%;\n}\n.row .col-2 {\n  width: 16.66666667%;\n}\n.row .col-3 {\n  width: 25%;\n}\n.row .col-4 {\n  width: 33.33333333%;\n}\n.row .col-5 {\n  width: 41.66666667%;\n}\n.row .col-6 {\n  width: 50%;\n}\n.row .col-7 {\n  width: 58.33333333%;\n}\n.row .col-8 {\n  width: 66.66666667%;\n}\n.row .col-9 {\n  width: 75%;\n}\n.row .col-10 {\n  width: 83.33333333%;\n}\n.row .col-11 {\n  width: 91.66666667%;\n}\n.row .col-12 {\n  width: 100%;\n}\n.row .offset-0 {\n  margin-left: 0;\n}\n.row .offset-1 {\n  margin-left: 8.33333333%;\n}\n.row .offset-2 {\n  margin-left: 16.66666667%;\n}\n.row .offset-3 {\n  margin-left: 25%;\n}\n.row .offset-4 {\n  margin-left: 33.33333333%;\n}\n.row .offset-5 {\n  margin-left: 41.66666667%;\n}\n.row .offset-6 {\n  margin-left: 50%;\n}\n.row .offset-7 {\n  margin-left: 58.33333333%;\n}\n.row .offset-8 {\n  margin-left: 66.66666667%;\n}\n.row .offset-9 {\n  margin-left: 75%;\n}\n.row .offset-10 {\n  margin-left: 83.33333333%;\n}\n.row .offset-11 {\n  margin-left: 91.66666667%;\n}\n.row .offset-12 {\n  margin-left: 100%;\n}\n@media screen and (min-width: 1600px) {\n  .row .col-xl-1 {\n    width: 8.33333333%;\n  }\n  .row .col-xl-2 {\n    width: 16.66666667%;\n  }\n  .row .col-xl-3 {\n    width: 25%;\n  }\n  .row .col-xl-4 {\n    width: 33.33333333%;\n  }\n  .row .col-xl-5 {\n    width: 41.66666667%;\n  }\n  .row .col-xl-6 {\n    width: 50%;\n  }\n  .row .col-xl-7 {\n    width: 58.33333333%;\n  }\n  .row .col-xl-8 {\n    width: 66.66666667%;\n  }\n  .row .col-xl-9 {\n    width: 75%;\n  }\n  .row .col-xl-10 {\n    width: 83.33333333%;\n  }\n  .row .col-xl-11 {\n    width: 91.66666667%;\n  }\n  .row .col-xl-12 {\n    width: 100%;\n  }\n  .row .offset-xl-0 {\n    margin-left: 0;\n  }\n  .row .offset-xl-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-xl-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-xl-3 {\n    margin-left: 25%;\n  }\n  .row .offset-xl-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-xl-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-xl-6 {\n    margin-left: 50%;\n  }\n  .row .offset-xl-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-xl-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-xl-9 {\n    margin-left: 75%;\n  }\n  .row .offset-xl-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-xl-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-xl-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 1200px) and (max-width: 1600px) {\n  .row .col-lg-1 {\n    width: 8.33333333%;\n  }\n  .row .col-lg-2 {\n    width: 16.66666667%;\n  }\n  .row .col-lg-3 {\n    width: 25%;\n  }\n  .row .col-lg-4 {\n    width: 33.33333333%;\n  }\n  .row .col-lg-5 {\n    width: 41.66666667%;\n  }\n  .row .col-lg-6 {\n    width: 50%;\n  }\n  .row .col-lg-7 {\n    width: 58.33333333%;\n  }\n  .row .col-lg-8 {\n    width: 66.66666667%;\n  }\n  .row .col-lg-9 {\n    width: 75%;\n  }\n  .row .col-lg-10 {\n    width: 83.33333333%;\n  }\n  .row .col-lg-11 {\n    width: 91.66666667%;\n  }\n  .row .col-lg-12 {\n    width: 100%;\n  }\n  .row .offset-lg-0 {\n    margin-left: 0;\n  }\n  .row .offset-lg-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-lg-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-lg-3 {\n    margin-left: 25%;\n  }\n  .row .offset-lg-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-lg-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-lg-6 {\n    margin-left: 50%;\n  }\n  .row .offset-lg-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-lg-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-lg-9 {\n    margin-left: 75%;\n  }\n  .row .offset-lg-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-lg-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-lg-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 992px) and (max-width: 1200px) {\n  .row .col-md-1 {\n    width: 8.33333333%;\n  }\n  .row .col-md-2 {\n    width: 16.66666667%;\n  }\n  .row .col-md-3 {\n    width: 25%;\n  }\n  .row .col-md-4 {\n    width: 33.33333333%;\n  }\n  .row .col-md-5 {\n    width: 41.66666667%;\n  }\n  .row .col-md-6 {\n    width: 50%;\n  }\n  .row .col-md-7 {\n    width: 58.33333333%;\n  }\n  .row .col-md-8 {\n    width: 66.66666667%;\n  }\n  .row .col-md-9 {\n    width: 75%;\n  }\n  .row .col-md-10 {\n    width: 83.33333333%;\n  }\n  .row .col-md-11 {\n    width: 91.66666667%;\n  }\n  .row .col-md-12 {\n    width: 100%;\n  }\n  .row .offset-md-0 {\n    margin-left: 0;\n  }\n  .row .offset-md-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-md-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-md-3 {\n    margin-left: 25%;\n  }\n  .row .offset-md-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-md-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-md-6 {\n    margin-left: 50%;\n  }\n  .row .offset-md-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-md-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-md-9 {\n    margin-left: 75%;\n  }\n  .row .offset-md-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-md-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-md-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (min-width: 768px) and (max-width: 992px) {\n  .row .col-sm-1 {\n    width: 8.33333333%;\n  }\n  .row .col-sm-2 {\n    width: 16.66666667%;\n  }\n  .row .col-sm-3 {\n    width: 25%;\n  }\n  .row .col-sm-4 {\n    width: 33.33333333%;\n  }\n  .row .col-sm-5 {\n    width: 41.66666667%;\n  }\n  .row .col-sm-6 {\n    width: 50%;\n  }\n  .row .col-sm-7 {\n    width: 58.33333333%;\n  }\n  .row .col-sm-8 {\n    width: 66.66666667%;\n  }\n  .row .col-sm-9 {\n    width: 75%;\n  }\n  .row .col-sm-10 {\n    width: 83.33333333%;\n  }\n  .row .col-sm-11 {\n    width: 91.66666667%;\n  }\n  .row .col-sm-12 {\n    width: 100%;\n  }\n  .row .offset-sm-0 {\n    margin-left: 0;\n  }\n  .row .offset-sm-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-sm-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-sm-3 {\n    margin-left: 25%;\n  }\n  .row .offset-sm-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-sm-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-sm-6 {\n    margin-left: 50%;\n  }\n  .row .offset-sm-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-sm-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-sm-9 {\n    margin-left: 75%;\n  }\n  .row .offset-sm-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-sm-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-sm-12 {\n    margin-left: 100%;\n  }\n}\n@media screen and (max-width: 768px) {\n  .row .col-xs-1 {\n    width: 8.33333333%;\n  }\n  .row .col-xs-2 {\n    width: 16.66666667%;\n  }\n  .row .col-xs-3 {\n    width: 25%;\n  }\n  .row .col-xs-4 {\n    width: 33.33333333%;\n  }\n  .row .col-xs-5 {\n    width: 41.66666667%;\n  }\n  .row .col-xs-6 {\n    width: 50%;\n  }\n  .row .col-xs-7 {\n    width: 58.33333333%;\n  }\n  .row .col-xs-8 {\n    width: 66.66666667%;\n  }\n  .row .col-xs-9 {\n    width: 75%;\n  }\n  .row .col-xs-10 {\n    width: 83.33333333%;\n  }\n  .row .col-xs-11 {\n    width: 91.66666667%;\n  }\n  .row .col-xs-12 {\n    width: 100%;\n  }\n  .row .offset-xs-0 {\n    margin-left: 0;\n  }\n  .row .offset-xs-1 {\n    margin-left: 8.33333333%;\n  }\n  .row .offset-xs-2 {\n    margin-left: 16.66666667%;\n  }\n  .row .offset-xs-3 {\n    margin-left: 25%;\n  }\n  .row .offset-xs-4 {\n    margin-left: 33.33333333%;\n  }\n  .row .offset-xs-5 {\n    margin-left: 41.66666667%;\n  }\n  .row .offset-xs-6 {\n    margin-left: 50%;\n  }\n  .row .offset-xs-7 {\n    margin-left: 58.33333333%;\n  }\n  .row .offset-xs-8 {\n    margin-left: 66.66666667%;\n  }\n  .row .offset-xs-9 {\n    margin-left: 75%;\n  }\n  .row .offset-xs-10 {\n    margin-left: 83.33333333%;\n  }\n  .row .offset-xs-11 {\n    margin-left: 91.66666667%;\n  }\n  .row .offset-xs-12 {\n    margin-left: 100%;\n  }\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
-/* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
 /***/ 609:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -124,7 +116,7 @@ module.exports = function (cssWithMappingToString) {
 /***/ }),
 
 /***/ 601:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -135,7 +127,7 @@ module.exports = function (i) {
 /***/ }),
 
 /***/ 837:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var __webpack_unused_export__;
 /**
@@ -147,14 +139,14 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(810),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
 
 
 /***/ }),
 
 /***/ 322:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
@@ -166,7 +158,7 @@ if (true) {
 /***/ }),
 
 /***/ 62:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -276,7 +268,7 @@ module.exports = function (list, options) {
 /***/ }),
 
 /***/ 793:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -321,7 +313,7 @@ module.exports = insertBySelector;
 /***/ }),
 
 /***/ 173:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -338,7 +330,7 @@ module.exports = insertStyleElement;
 /***/ }),
 
 /***/ 892:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
@@ -356,7 +348,7 @@ module.exports = setAttributesWithoutAttributes;
 /***/ }),
 
 /***/ 36:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -432,7 +424,7 @@ module.exports = domAPI;
 /***/ }),
 
 /***/ 464:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -453,88 +445,90 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 899:
-/***/ (function(module) {
+/***/ 810:
+/***/ ((module) => {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
+var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
+var y = x => () => x
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ })
 
-/******/ 	});
+/******/ });
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
 /******/ 	}
-/******/ 	
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		id: moduleId,
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
+/******/ /* webpack/runtime/compat get default export */
+/******/ (() => {
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = (module) => {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			() => (module['default']) :
+/******/ 			() => (module);
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/define property getters */
+/******/ (() => {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
-/******/ 	
+/******/ 		}
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ (() => {
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/nonce */
+/******/ (() => {
+/******/ 	__webpack_require__.nc = undefined;
+/******/ })();
+/******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
+(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ huxy_components_row; }
+  "default": () => (/* binding */ huxy_components_row)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(322);
-// EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
-var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(899);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(810);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(62);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -582,28 +576,26 @@ var update = injectStylesIntoStyleTag_default()(row/* default */.Z, options);
 
 
 
-       /* harmony default export */ var components_row = (row/* default */.Z && row/* default.locals */.Z.locals ? row/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_row = (row/* default */.Z && row/* default.locals */.Z.locals ? row/* default.locals */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
 
 
 
 const Row = ({ gutter = 10, className, overflow = "hidden", ...rest }, ref) => {
-  var _a;
   const defCls = className ? ` ${className}` : "";
   let rowgap = 10;
   if (Array.isArray(gutter)) {
     const tmp = [...gutter];
     gutter = tmp[0];
-    rowgap = (_a = tmp[1]) != null ? _a : tmp[0];
+    rowgap = tmp[1] ?? tmp[0];
   }
   return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "row-wrap", style: { "--gutter": `${Math.floor(gutter / 2)}px`, "--rowgap": `${Math.floor(rowgap / 2)}px`, overflow }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `row${defCls}`, ...rest, ref }) });
 };
-/* harmony default export */ var huxy_components_row = ((0,external_root_React_commonjs_react_commonjs2_react_amd_react_.forwardRef)(Row));
+/* harmony default export */ const huxy_components_row = ((0,external_react_.forwardRef)(Row));
 
-}();
+})();
+
 __webpack_exports__ = __webpack_exports__["default"];
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
+var __webpack_exports__default = __webpack_exports__["default"];
+export { __webpack_exports__default as default };

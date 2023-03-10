@@ -1,20 +1,13 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("react-dom"));
-	else if(typeof define === 'function' && define.amd)
-		define(["react", "react-dom"], factory);
-	else {
-		var a = typeof exports === 'object' ? factory(require("react"), require("react-dom")) : factory(root["React"], root["ReactDOM"]);
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__899__, __WEBPACK_EXTERNAL_MODULE__994__) {
-return /******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+import * as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__ from "react-dom";
+import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+/******/ var __webpack_modules__ = ({
 
 /***/ 503:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(609);
@@ -31,13 +24,13 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"drop-wrap": "NCYpg",
 	"open": "qjBWI"
 };
-/* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
 /***/ 609:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -128,7 +121,7 @@ module.exports = function (cssWithMappingToString) {
 /***/ }),
 
 /***/ 601:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -138,20 +131,29 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 267:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ 380:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(994);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
 
-const Portal = ({ children, mountNode = document.body }) => (0,react_dom__WEBPACK_IMPORTED_MODULE_0__.createPortal)(children, mountNode);
-/* harmony default export */ __webpack_exports__["default"] = (Portal);
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ portal)
+});
+
+;// CONCATENATED MODULE: external "react-dom"
+var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
+var y = x => () => x
+const external_react_dom_namespaceObject = x({ ["createPortal"]: () => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.createPortal });
+;// CONCATENATED MODULE: ../huxy/components/portal/index.jsx
+
+const Portal = ({ children, mountNode = document.body }) => (0,external_react_dom_namespaceObject.createPortal)(children, mountNode);
+/* harmony default export */ const portal = (Portal);
 
 
 /***/ }),
 
 /***/ 837:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var __webpack_unused_export__;
 /**
@@ -163,14 +165,14 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(810),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;exports.jsxs=q;
 
 
 /***/ }),
 
 /***/ 322:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
@@ -182,7 +184,7 @@ if (true) {
 /***/ }),
 
 /***/ 62:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -292,7 +294,7 @@ module.exports = function (list, options) {
 /***/ }),
 
 /***/ 793:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -337,7 +339,7 @@ module.exports = insertBySelector;
 /***/ }),
 
 /***/ 173:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -354,7 +356,7 @@ module.exports = insertStyleElement;
 /***/ }),
 
 /***/ 892:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
@@ -372,7 +374,7 @@ module.exports = setAttributesWithoutAttributes;
 /***/ }),
 
 /***/ 36:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -448,7 +450,7 @@ module.exports = domAPI;
 /***/ }),
 
 /***/ 464:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -469,112 +471,107 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 899:
-/***/ (function(module) {
+/***/ 810:
+/***/ ((module) => {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
-
-/***/ }),
-
-/***/ 994:
-/***/ (function(module) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__994__;
+var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
+var y = x => () => x
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ })
 
-/******/ 	});
+/******/ });
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
 /******/ 	}
-/******/ 	
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		id: moduleId,
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
+/******/ /* webpack/runtime/compat get default export */
+/******/ (() => {
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = (module) => {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			() => (module['default']) :
+/******/ 			() => (module);
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/define property getters */
+/******/ (() => {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
-/******/ 	
+/******/ 		}
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ (() => {
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/nonce */
+/******/ (() => {
+/******/ 	__webpack_require__.nc = undefined;
+/******/ })();
+/******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
+(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ huxy_components_drop; }
+  "default": () => (/* binding */ huxy_components_drop)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(322);
-// EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
-var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(899);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(810);
 ;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
-const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
-/* harmony default export */ var utils_hasProp = (hasProp);
+const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
+/* harmony default export */ const utils_hasProp = (hasProp);
 
 ;// CONCATENATED MODULE: ../huxy/utils/isRef.js
 
 const isRef = (ref) => utils_hasProp(ref, "current");
-/* harmony default export */ var utils_isRef = (isRef);
+/* harmony default export */ const utils_isRef = (isRef);
 
 ;// CONCATENATED MODULE: ../huxy/use/useClickAway/index.jsx
 
 
 const useClickAway = (elRef, handleEvent, events = "click") => {
-  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
+  (0,external_react_.useEffect)(() => {
     const handler = (event) => {
       const el = utils_isRef(elRef) ? elRef.current : elRef;
-      if ((el == null ? void 0 : el.contains) && !el.contains(event.target)) {
+      if (el?.contains && !el.contains(event.target)) {
         handleEvent(event);
       }
     };
@@ -589,15 +586,15 @@ const useClickAway = (elRef, handleEvent, events = "click") => {
     };
   }, [elRef, handleEvent, events]);
 };
-/* harmony default export */ var use_useClickAway = (useClickAway);
+/* harmony default export */ const use_useClickAway = (useClickAway);
 
 ;// CONCATENATED MODULE: ../huxy/utils/isReactEle.js
-const isReactEle = (value) => (value == null ? void 0 : value["$$typeof"]) && typeof value["$$typeof"] === "symbol" && value["$$typeof"]["description"] === "react.element";
-/* harmony default export */ var utils_isReactEle = (isReactEle);
+const isReactEle = (value) => value?.["$$typeof"] && typeof value["$$typeof"] === "symbol" && value["$$typeof"]["description"] === "react.element";
+/* harmony default export */ const utils_isReactEle = (isReactEle);
 
 ;// CONCATENATED MODULE: ../huxy/utils/firstUpper.js
 const firstUpper = (str = "") => str.replace(/^\S/, (s) => s.toUpperCase());
-/* harmony default export */ var utils_firstUpper = (firstUpper);
+/* harmony default export */ const utils_firstUpper = (firstUpper);
 
 ;// CONCATENATED MODULE: ../huxy/utils/debounce.js
 const debounce = (func = () => {
@@ -608,26 +605,25 @@ const debounce = (func = () => {
     timer = setTimeout(() => func.apply(this, args), delay);
   };
 };
-/* harmony default export */ var utils_debounce = (debounce);
+/* harmony default export */ const utils_debounce = (debounce);
 
 ;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes("undefined");
-/* harmony default export */ var utils_isBrowser = (isBrowser);
+/* harmony default export */ const utils_isBrowser = (isBrowser);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getType.js
 const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
-/* harmony default export */ var utils_getType = (getType);
+/* harmony default export */ const utils_getType = (getType);
 
 ;// CONCATENATED MODULE: ../huxy/utils/isElement.js
 
 const isElement = (value) => utils_getType(value).indexOf("element") > -1;
-/* harmony default export */ var utils_isElement = (isElement);
+/* harmony default export */ const utils_isElement = (isElement);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
 
 
 const getViewportSize = (element = null) => {
-  var _a, _b;
   if (!utils_isBrowser()) {
     return {
       width: 0,
@@ -641,24 +637,23 @@ const getViewportSize = (element = null) => {
     };
   }
   return {
-    width: (_a = window.innerWidth) != null ? _a : document.documentElement.clientWidth,
-    height: (_b = window.innerHeight) != null ? _b : document.documentElement.clientHeight
+    width: window.innerWidth ?? document.documentElement.clientWidth,
+    height: window.innerHeight ?? document.documentElement.clientHeight
   };
 };
-/* harmony default export */ var utils_getViewportSize = (getViewportSize);
+/* harmony default export */ const utils_getViewportSize = (getViewportSize);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getPosition.js
 
 
 const getPosition = (ele) => {
-  var _a;
   if (!utils_isBrowser()) {
     return;
   }
-  ele = utils_isRef(ele) ? ele.current : ele != null ? ele : document.body;
-  return (_a = ele.getBoundingClientRect) == null ? void 0 : _a.call(ele);
+  ele = utils_isRef(ele) ? ele.current : ele ?? document.body;
+  return ele.getBoundingClientRect?.();
 };
-/* harmony default export */ var utils_getPosition = (getPosition);
+/* harmony default export */ const utils_getPosition = (getPosition);
 
 ;// CONCATENATED MODULE: ../huxy/utils/str2Html.js
 
@@ -671,7 +666,7 @@ const str2Html = (str) => {
   const ele = templ.children[0];
   return ele;
 };
-/* harmony default export */ var utils_str2Html = (str2Html);
+/* harmony default export */ const utils_str2Html = (str2Html);
 
 ;// CONCATENATED MODULE: ../huxy/utils/setStyle.js
 
@@ -689,7 +684,7 @@ const setStyle = (ele, styles = {}, reset = false) => {
   }
   Object.keys(styles).map((key) => ele.style.setProperty(key, styles[key]));
 };
-/* harmony default export */ var utils_setStyle = (setStyle);
+/* harmony default export */ const utils_setStyle = (setStyle);
 
 ;// CONCATENATED MODULE: ../huxy/utils/sleep.js
 const sleep = (ms = 350) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -698,7 +693,7 @@ const sleepSync = (ms = 100) => {
   while (Date.now() - start <= ms) {
   }
 };
-/* harmony default export */ var utils_sleep = (sleep);
+/* harmony default export */ const utils_sleep = (sleep);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getElementsSize.js
 
@@ -727,7 +722,7 @@ const getElementsSize = async (ele, delay = 15) => {
   ele.parentNode.removeChild(shadow);
   return info;
 };
-/* harmony default export */ var utils_getElementsSize = (getElementsSize);
+/* harmony default export */ const utils_getElementsSize = (getElementsSize);
 
 ;// CONCATENATED MODULE: ../huxy/utils/dropInfo.js
 
@@ -738,9 +733,8 @@ const getElementsSize = async (ele, delay = 15) => {
 const reg = /(\s|^)(huxy-drop-arrow-lt|huxy-drop-arrow-rt|huxy-drop-arrow-lb|huxy-drop-arrow-rb|huxy-drop-arrow-tl|huxy-drop-arrow-tr|huxy-drop-arrow-bl|huxy-drop-arrow-br)(\s|$)/;
 const classReg = /huxy-drop-arrow-lt|huxy-drop-arrow-rt|huxy-drop-arrow-lb|huxy-drop-arrow-rb|huxy-drop-arrow-tl|huxy-drop-arrow-tr|huxy-drop-arrow-bl|huxy-drop-arrow-br/;
 const setDirectionCls = (showEle, direction) => {
-  var _a;
   direction = `huxy-drop-arrow-${direction}`;
-  const cls = (_a = showEle.getAttribute("class")) != null ? _a : "";
+  const cls = showEle.getAttribute("class") ?? "";
   if (reg.test(cls)) {
     showEle.setAttribute("class", cls.replace(classReg, direction));
   } else {
@@ -805,38 +799,38 @@ const dropInfo = (triggerEle, showEle, type = "horizontal") => {
   setPosition(triggerEle, showEle, type);
   return destroyFn;
 };
-/* harmony default export */ var utils_dropInfo = (dropInfo);
+/* harmony default export */ const utils_dropInfo = (dropInfo);
 
 ;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
 
 const useFirstMounted = () => {
-  const isFirst = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)(true);
+  const isFirst = (0,external_react_.useRef)(true);
   if (isFirst.current) {
     isFirst.current = false;
     return true;
   }
   return false;
 };
-/* harmony default export */ var use_useFirstMounted = (useFirstMounted);
+/* harmony default export */ const use_useFirstMounted = (useFirstMounted);
 
 ;// CONCATENATED MODULE: ../huxy/use/useUpdateEffect/index.jsx
 
 
 const useUpdateEffect = (effect, deps = []) => {
   const isFirst = use_useFirstMounted();
-  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
+  (0,external_react_.useEffect)(() => {
     if (!isFirst) {
       return effect();
     }
   }, deps);
 };
-/* harmony default export */ var use_useUpdateEffect = (useUpdateEffect);
+/* harmony default export */ const use_useUpdateEffect = (useUpdateEffect);
 
 ;// CONCATENATED MODULE: ../huxy/use/useDelayState/index.jsx
 
 
 const useDelayState = (state, delay = 450) => {
-  const [delayState, setDelayState] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(state);
+  const [delayState, setDelayState] = (0,external_react_.useState)(state);
   use_useUpdateEffect(() => {
     let timer;
     if (state || delay === 0) {
@@ -848,10 +842,10 @@ const useDelayState = (state, delay = 450) => {
   }, [state]);
   return [delayState, setDelayState];
 };
-/* harmony default export */ var use_useDelayState = (useDelayState);
+/* harmony default export */ const use_useDelayState = (useDelayState);
 
-// EXTERNAL MODULE: ../huxy/components/portal/index.jsx
-var portal = __webpack_require__(267);
+// EXTERNAL MODULE: ../huxy/components/portal/index.jsx + 1 modules
+var portal = __webpack_require__(380);
 ;// CONCATENATED MODULE: ../huxy/components/drop/mask.jsx
 
 
@@ -860,7 +854,7 @@ const Mask = ({ open, delay = 250, children, mountNode, style, className = "huxy
   const [delayOpen] = use_useDelayState(open, delay);
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...style, display: delayOpen ? "block" : "none" }, children }) }) }) });
 };
-/* harmony default export */ var mask = (Mask);
+/* harmony default export */ const mask = (Mask);
 
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(62);
@@ -909,7 +903,7 @@ var update = injectStylesIntoStyleTag_default()(drop/* default */.Z, options);
 
 
 
-       /* harmony default export */ var components_drop = (drop/* default */.Z && drop/* default.locals */.Z.locals ? drop/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_drop = (drop/* default */.Z && drop/* default.locals */.Z.locals ? drop/* default.locals */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/drop/index.jsx
 
@@ -921,16 +915,13 @@ var update = injectStylesIntoStyleTag_default()(drop/* default */.Z, options);
 
 
 const Drop = ({ trigger = "click", type, dropList, className, wrapStyle, children, ...rest }) => {
-  const [open, setOpen] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(false);
-  const targetRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
-  const dropRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
-  const destroyFn = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
+  const [open, setOpen] = (0,external_react_.useState)(false);
+  const targetRef = (0,external_react_.useRef)();
+  const dropRef = (0,external_react_.useRef)();
+  const destroyFn = (0,external_react_.useRef)();
   use_useClickAway(targetRef, (e) => open && setOpen(false), [.../* @__PURE__ */ new Set(["click", trigger.toLowerCase()])]);
-  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
-    return () => {
-      var _a;
-      return (_a = destroyFn.current) == null ? void 0 : _a.call(destroyFn);
-    };
+  (0,external_react_.useEffect)(() => {
+    return () => destroyFn.current?.();
   }, []);
   const handler = (e) => {
     e.preventDefault();
@@ -941,17 +932,16 @@ const Drop = ({ trigger = "click", type, dropList, className, wrapStyle, childre
     [`on${utils_firstUpper(trigger)}`]: handler
   };
   const cls = ["drop-wrap", open ? "open" : ""].filter(Boolean).map((c) => components_drop[c]).join(" ");
-  const droplistEle = utils_isReactEle(dropList) ? dropList : dropList == null ? void 0 : dropList(() => setOpen(false), open);
+  const droplistEle = utils_isReactEle(dropList) ? dropList : dropList?.(() => setOpen(false), open);
   return /* @__PURE__ */ (0,jsx_runtime.jsxs)("span", { ref: targetRef, className: `${components_drop["drop-target"]}${className ? ` ${className}` : ""}`, ...events, ...rest, children: [
     children,
     /* @__PURE__ */ (0,jsx_runtime.jsx)(mask, { open, className: "huxy-drop", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { ref: dropRef, className: cls, style: wrapStyle, children: droplistEle }) })
   ] });
 };
-/* harmony default export */ var huxy_components_drop = (Drop);
+/* harmony default export */ const huxy_components_drop = (Drop);
 
-}();
+})();
+
 __webpack_exports__ = __webpack_exports__["default"];
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
+var __webpack_exports__default = __webpack_exports__["default"];
+export { __webpack_exports__default as default };

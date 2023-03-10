@@ -1,20 +1,12 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
-	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
-	else {
-		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__899__) {
-return /******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+/******/ var __webpack_modules__ = ({
 
 /***/ 918:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(609);
@@ -35,13 +27,13 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"huxy-tooltip-bottomLeft": "oGmKq",
 	"huxy-tooltip-rightTop": "svYWD"
 };
-/* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
 /***/ 609:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -132,7 +124,7 @@ module.exports = function (cssWithMappingToString) {
 /***/ }),
 
 /***/ 601:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -143,12 +135,12 @@ module.exports = function (i) {
 /***/ }),
 
 /***/ 412:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ huxy_components_tooltip; }
+  "default": () => (/* binding */ huxy_components_tooltip)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -200,7 +192,7 @@ var update = injectStylesIntoStyleTag_default()(tooltip/* default */.Z, options)
 
 
 
-       /* harmony default export */ var components_tooltip = (tooltip/* default */.Z && tooltip/* default.locals */.Z.locals ? tooltip/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_tooltip = (tooltip/* default */.Z && tooltip/* default.locals */.Z.locals ? tooltip/* default.locals */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/tooltip/index.jsx
 
@@ -209,18 +201,18 @@ const Tooltip = ({ title, placement = "topRight", children, ellipsis, className,
   "span",
   {
     className: `${components_tooltip[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ""}`,
-    tooltip: title != null ? title : children,
+    tooltip: title ?? children,
     ...rest,
     children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: ellipsis ? components_tooltip.ellipsis : "", children })
   }
 );
-/* harmony default export */ var huxy_components_tooltip = (Tooltip);
+/* harmony default export */ const huxy_components_tooltip = (Tooltip);
 
 
 /***/ }),
 
 /***/ 837:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var __webpack_unused_export__;
 /**
@@ -232,14 +224,14 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(899),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(810),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
 
 
 /***/ }),
 
 /***/ 322:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
@@ -251,7 +243,7 @@ if (true) {
 /***/ }),
 
 /***/ 62:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -361,7 +353,7 @@ module.exports = function (list, options) {
 /***/ }),
 
 /***/ 793:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -406,7 +398,7 @@ module.exports = insertBySelector;
 /***/ }),
 
 /***/ 173:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -423,7 +415,7 @@ module.exports = insertStyleElement;
 /***/ }),
 
 /***/ 892:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
@@ -441,7 +433,7 @@ module.exports = setAttributesWithoutAttributes;
 /***/ }),
 
 /***/ 36:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -517,7 +509,7 @@ module.exports = domAPI;
 /***/ }),
 
 /***/ 464:
-/***/ (function(module) {
+/***/ ((module) => {
 
 
 
@@ -538,100 +530,102 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 899:
-/***/ (function(module) {
+/***/ 810:
+/***/ ((module) => {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__899__;
+var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
+var y = x => () => x
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ })
 
-/******/ 	});
+/******/ });
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
 /******/ 	}
-/******/ 	
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		id: moduleId,
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
+/******/ /* webpack/runtime/compat get default export */
+/******/ (() => {
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = (module) => {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			() => (module['default']) :
+/******/ 			() => (module);
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/define property getters */
+/******/ (() => {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
-/******/ 	
+/******/ 		}
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ (() => {
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/nonce */
+/******/ (() => {
+/******/ 	__webpack_require__.nc = undefined;
+/******/ })();
+/******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
+(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ ellipsis; }
+  "default": () => (/* binding */ ellipsis)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(322);
-// EXTERNAL MODULE: external {"root":"React","commonjs":"react","commonjs2":"react","amd":"react"}
-var external_root_React_commonjs_react_commonjs2_react_amd_react_ = __webpack_require__(899);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(810);
 ;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes("undefined");
-/* harmony default export */ var utils_isBrowser = (isBrowser);
+/* harmony default export */ const utils_isBrowser = (isBrowser);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getType.js
 const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
-/* harmony default export */ var utils_getType = (getType);
+/* harmony default export */ const utils_getType = (getType);
 
 ;// CONCATENATED MODULE: ../huxy/utils/isElement.js
 
 const isElement = (value) => utils_getType(value).indexOf("element") > -1;
-/* harmony default export */ var utils_isElement = (isElement);
+/* harmony default export */ const utils_isElement = (isElement);
 
 ;// CONCATENATED MODULE: ../huxy/utils/setStyle.js
 
@@ -649,16 +643,16 @@ const setStyle = (ele, styles = {}, reset = false) => {
   }
   Object.keys(styles).map((key) => ele.style.setProperty(key, styles[key]));
 };
-/* harmony default export */ var utils_setStyle = (setStyle);
+/* harmony default export */ const utils_setStyle = (setStyle);
 
 ;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
-const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj != null ? obj : {}, prop);
-/* harmony default export */ var utils_hasProp = (hasProp);
+const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
+/* harmony default export */ const utils_hasProp = (hasProp);
 
 ;// CONCATENATED MODULE: ../huxy/utils/isRef.js
 
 const isRef = (ref) => utils_hasProp(ref, "current");
-/* harmony default export */ var utils_isRef = (isRef);
+/* harmony default export */ const utils_isRef = (isRef);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getTextSize.js
 
@@ -668,30 +662,29 @@ const getTextSize = (text, styles, ele) => {
   if (!utils_isBrowser()) {
     return;
   }
-  ele = utils_isRef(ele) ? ele.current : ele != null ? ele : document.body;
+  ele = utils_isRef(ele) ? ele.current : ele ?? document.body;
   const span = document.createElement("span");
   span.setAttribute("style", `pointer-events: none; z-index: -1; opacity: 0;`);
   styles && utils_setStyle(span, styles);
-  span.innerText = (text != null ? text : "").replace(/[\r\n]/g, "");
+  span.innerText = (text ?? "").replace(/[\r\n]/g, "");
   ele.appendChild(span);
   const rect = span.getBoundingClientRect();
   ele.removeChild(span);
   return rect;
 };
-/* harmony default export */ var utils_getTextSize = (getTextSize);
+/* harmony default export */ const utils_getTextSize = (getTextSize);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getPosition.js
 
 
 const getPosition = (ele) => {
-  var _a;
   if (!utils_isBrowser()) {
     return;
   }
-  ele = utils_isRef(ele) ? ele.current : ele != null ? ele : document.body;
-  return (_a = ele.getBoundingClientRect) == null ? void 0 : _a.call(ele);
+  ele = utils_isRef(ele) ? ele.current : ele ?? document.body;
+  return ele.getBoundingClientRect?.();
 };
-/* harmony default export */ var utils_getPosition = (getPosition);
+/* harmony default export */ const utils_getPosition = (getPosition);
 
 // EXTERNAL MODULE: ../huxy/components/tooltip/index.jsx + 1 modules
 var tooltip = __webpack_require__(412);
@@ -709,13 +702,12 @@ const ellipsisStyle = {
   width: "100%"
 };
 const EllipsisTooltip = (props) => {
-  var _a, _b, _c, _d;
   const { children, style } = props;
   const isStringChild = typeof children === "string";
-  const text = isStringChild ? children : (_c = (_a = children == null ? void 0 : children.props) == null ? void 0 : _a.title) != null ? _c : (_b = children == null ? void 0 : children.props) == null ? void 0 : _b.children;
-  const spanRef = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useRef)();
-  const [ellipsis, setEllipsis] = (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useState)(true);
-  (0,external_root_React_commonjs_react_commonjs2_react_amd_react_.useEffect)(() => {
+  const text = isStringChild ? children : children?.props?.title ?? children?.props?.children;
+  const spanRef = (0,external_react_.useRef)();
+  const [ellipsis, setEllipsis] = (0,external_react_.useState)(true);
+  (0,external_react_.useEffect)(() => {
     if (spanRef.current) {
       const { width: tWidth } = utils_getTextSize(text, null, spanRef.current.parentNode);
       const { width } = utils_getPosition(spanRef.current);
@@ -728,7 +720,7 @@ const EllipsisTooltip = (props) => {
     text
     /* , state.width */
   ]);
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { ref: spanRef, style: { display: "flex", width: "100%", ...style }, children: ellipsis ? isStringChild ? /* @__PURE__ */ (0,jsx_runtime.jsx)(tooltip["default"], { ...props, ellipsis: true }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { style: ellipsisStyle, children }) : isStringChild ? children : (_d = children == null ? void 0 : children.props) == null ? void 0 : _d.children });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { ref: spanRef, style: { display: "flex", width: "100%", ...style }, children: ellipsis ? isStringChild ? /* @__PURE__ */ (0,jsx_runtime.jsx)(tooltip["default"], { ...props, ellipsis: true }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { style: ellipsisStyle, children }) : isStringChild ? children : children?.props?.children });
 };
 const Ellipsis = (props) => {
   if (props.children == null) {
@@ -736,11 +728,10 @@ const Ellipsis = (props) => {
   }
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(EllipsisTooltip, { ...props });
 };
-/* harmony default export */ var ellipsis = (Ellipsis);
+/* harmony default export */ const ellipsis = (Ellipsis);
 
-}();
+})();
+
 __webpack_exports__ = __webpack_exports__["default"];
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
+var __webpack_exports__default = __webpack_exports__["default"];
+export { __webpack_exports__default as default };
