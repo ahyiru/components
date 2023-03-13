@@ -9,6 +9,7 @@ export {default as ErrorBoundary} from './errorBoundary';
 export {default as fixEle} from './fixEle';
 export {default as fixIcon} from './fixIcon';
 export {default as FullPage} from './fullPage';
+export {default as Grid} from './grid';
 export {default as HandleError} from './handleError';
 export {default as LoadError} from './loadError';
 export {default as Mask} from './mask';

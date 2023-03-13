@@ -126,6 +126,132 @@ module.exports = function (i) {
 
 /***/ }),
 
+/***/ 860:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(322);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(810);
+
+
+const getCls = (type, size) => {
+  let sp = "", os = "";
+  if (typeof size === "number") {
+    sp = `col-${type}-${size}`;
+  }
+  if (typeof size === "object") {
+    const { span, offset } = size;
+    sp = span ? `col-${type}-${span}` : ``;
+    os = offset ? `offset-${type}-${offset}` : ``;
+  }
+  return { sp, os };
+};
+const Col = (0,react__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(({ span, offset, xl, lg, md, sm, xs, style, width, auto, offsetWidth = "0px", className, ...rest }, ref) => {
+  const defCls = className ? ` ${className}` : "";
+  const sp = `col-${span || 12}`;
+  const os = offset ? `offset-${offset}` : "";
+  const { sp: xs_sp, os: xs_os } = getCls("xs", xs);
+  const { sp: sm_sp, os: sm_os } = getCls("sm", sm);
+  const { sp: md_sp, os: md_os } = getCls("md", md);
+  const { sp: lg_sp, os: lg_os } = getCls("lg", lg);
+  const { sp: xl_sp, os: xl_os } = getCls("xl", xl);
+  const cls = [sp, xl_sp, lg_sp, md_sp, sm_sp, xs_sp, os, xl_os, lg_os, md_os, sm_os, xs_os].filter(Boolean).join(" ");
+  const autoStyle = auto ? {
+    width: "auto",
+    flex: 1,
+    //'auto',
+    maxWidth: `calc(100% - ${offsetWidth})`
+  } : { width };
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: `${cls}${defCls}`, ...rest, style: { ...autoStyle, ...style }, ref });
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Col);
+
+
+/***/ }),
+
+/***/ 689:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ huxy_components_row)
+});
+
+// EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(322);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(810);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(62);
+var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(36);
+var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertBySelector.js
+var insertBySelector = __webpack_require__(793);
+var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(892);
+var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(173);
+var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
+// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(464);
+var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
+// EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/row/index.less
+var row = __webpack_require__(249);
+;// CONCATENATED MODULE: ../huxy/components/row/index.less
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (styleTagTransform_default());
+options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      options.insert = insertBySelector_default().bind(null, "head");
+    
+options.domAPI = (styleDomAPI_default());
+options.insertStyleElement = (insertStyleElement_default());
+
+var update = injectStylesIntoStyleTag_default()(row/* default */.Z, options);
+
+
+
+
+       /* harmony default export */ const components_row = (row/* default */.Z && row/* default.locals */.Z.locals ? row/* default.locals */.Z.locals : undefined);
+
+;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
+
+
+
+const Row = ({ gutter = 10, className, overflow = "hidden", ...rest }, ref) => {
+  const defCls = className ? ` ${className}` : "";
+  let rowgap = 10;
+  if (Array.isArray(gutter)) {
+    const tmp = [...gutter];
+    gutter = tmp[0];
+    rowgap = tmp[1] ?? tmp[0];
+  }
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "row-wrap", style: { "--gutter": `${Math.floor(gutter / 2)}px`, "--rowgap": `${Math.floor(rowgap / 2)}px`, overflow }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `row${defCls}`, ...rest, ref }) });
+};
+/* harmony default export */ const huxy_components_row = ((0,external_react_.forwardRef)(Row));
+
+
+/***/ }),
+
 /***/ 837:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -519,80 +645,31 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_row)
-});
-
-// EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(322);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(810);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(62);
-var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(36);
-var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(793);
-var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(892);
-var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(173);
-var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
-// EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(464);
-var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/row/index.less
-var row = __webpack_require__(249);
-;// CONCATENATED MODULE: ../huxy/components/row/index.less
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (styleTagTransform_default());
-options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
-options.domAPI = (styleDomAPI_default());
-options.insertStyleElement = (insertStyleElement_default());
-
-var update = injectStylesIntoStyleTag_default()(row/* default */.Z, options);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(322);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(810);
+/* harmony import */ var _row__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(689);
+/* harmony import */ var _col__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(860);
 
 
 
 
-       /* harmony default export */ const components_row = (row/* default */.Z && row/* default.locals */.Z.locals ? row/* default.locals */.Z.locals : undefined);
-
-;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
-
-
-
-const Row = ({ gutter = 10, className, overflow = "hidden", ...rest }, ref) => {
-  const defCls = className ? ` ${className}` : "";
-  let rowgap = 10;
-  if (Array.isArray(gutter)) {
-    const tmp = [...gutter];
-    gutter = tmp[0];
-    rowgap = tmp[1] ?? tmp[0];
-  }
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "row-wrap", style: { "--gutter": `${Math.floor(gutter / 2)}px`, "--rowgap": `${Math.floor(rowgap / 2)}px`, overflow }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `row${defCls}`, ...rest, ref }) });
+const Grid = ({ rowProps, colProps, children, Row = _row__WEBPACK_IMPORTED_MODULE_2__["default"], Col = _col__WEBPACK_IMPORTED_MODULE_3__["default"] }) => {
+  const newChild = [];
+  react__WEBPACK_IMPORTED_MODULE_1__.Children.map(children, (child) => {
+    if (child) {
+      if (child.type?.description === "react.fragment") {
+        newChild.push(...child.props.children);
+      } else {
+        newChild.push(child);
+      }
+    }
+  });
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Row, { ...rowProps, children: newChild.map((child, i) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Col, { ...colProps, ...child.props.itemprops, children: child }, `huuxy_grid_${i}`)) });
 };
-/* harmony default export */ const huxy_components_row = ((0,external_react_.forwardRef)(Row));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Grid);
 
 })();
 
