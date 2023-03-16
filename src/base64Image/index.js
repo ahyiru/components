@@ -119,7 +119,7 @@ const loadBase64ByUrl = async (url) => {
   if (!utils_isUrl(url)) {
     return url;
   }
-  const response = await fetch(url);
+  const response = await fetch(decodeURIComponent(url));
   const blob = await response.blob();
   const result = await utils_loadBase64(blob);
   return result;
