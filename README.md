@@ -93,6 +93,18 @@ const Icon = fixIcon(icons);
 
 ```
 
+### Grid
+
+基于 `Row/Col` 的栅格布局。
+
+```html
+<Grid rowProps={{gutter: 12}} colProps={{span: 6}} Row={} Col={}>
+  <p>list 1</p>
+  <p>list 2</p>
+  <p>list 3</p>
+</Grid>
+```
+
 ### MaxSize
 
 最大化面板。

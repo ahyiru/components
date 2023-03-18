@@ -147,7 +147,7 @@ const useBase64 = (url) => {
 
 const Base64Image = ({ src, ...rest }) => {
   const url = use_useBase64(src);
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)("img", { decoding: "async", loading: "lazy", ...rest, src: url });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("img", { ...rest, src: url });
 };
 /* harmony default export */ const base64Image = (Base64Image);
 
