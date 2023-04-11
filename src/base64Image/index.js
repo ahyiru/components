@@ -137,7 +137,7 @@ const useBase64 = (url) => {
       setDataUrl(base64);
     };
     getBase64(url);
-  }, []);
+  }, [url]);
   return dataUrl;
 };
 /* harmony default export */ const use_useBase64 = (useBase64);

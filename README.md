@@ -22,7 +22,7 @@
 将图片 src 地址 改为 base64。
 
 ```html
-<Base64Image {props} />
+<Base64Image {...props} />
 ```
 
 ### loadError/ErrorBoundary/HandleError

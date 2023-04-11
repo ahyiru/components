@@ -186,10 +186,7 @@ const MaxSize = ({ panel, target, fullIcon = defaultIcon, exitIcon = defaultIcon
   panel = utils_isRef(panel) ? panel.current : panel || document.body;
   const [isMax, setIsMax] = (0,external_react_.useState)();
   const panelStyleRef = (0,external_react_.useRef)();
-  const targetStyleRef = (0,external_react_.useRef)();
   (0,external_react_.useEffect)(() => {
-    const getTarget = typeof target === "function" ? target : () => document.getElementsByClassName(target)[0];
-    targetStyleRef.current = getStyles(getEleSize(getTarget()));
     panelStyleRef.current = {
       ...maxStyle,
       ...getStyles(getEleSize(panel))
@@ -197,9 +194,11 @@ const MaxSize = ({ panel, target, fullIcon = defaultIcon, exitIcon = defaultIcon
   }, [panel]);
   const handle = (isMax2, ele) => {
     if (isMax2) {
+      const getTarget = typeof target === "function" ? target : () => document.getElementsByClassName(target)[0];
+      const targetStyles = getStyles(getEleSize(getTarget()));
       setStyles(ele, panelStyleRef.current);
       setTimeout(() => {
-        setStyles(ele, targetStyleRef.current);
+        setStyles(ele, targetStyles);
       }, 0);
     } else {
       resetStyles(ele, panelStyleRef.current);
