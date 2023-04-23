@@ -1230,9 +1230,7 @@ const RenderPage = ({ router, curName, context, marked, getContext }) => {
 const getFiles = (list) => {
   const newArr = [];
   list.map((item) => {
-    const fileList = item.name.split("/");
-    const folder = fileList[0];
-    const name = fileList[1];
+    const [folder, name] = item.name.split("/");
     const hasFolder = newArr.find((item2) => item2.name === folder);
     if (!hasFolder) {
       newArr.push({
@@ -1318,7 +1316,7 @@ const Md2html = (props) => {
   (0,external_react_.useEffect)(() => {
     const readFiles = async () => {
       const files = await listFiles();
-      const list2 = await utils_getFiles(files);
+      const list2 = utils_getFiles(files);
       setList(list2);
       if (!folder) {
         router.push({ query: { folder: list2[0]?.name, name: list2[0]?.children[0]?.name } });

@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ahyiru/components/blob/develop/LICENSE)
 [![npm version](https://img.shields.io/npm/v/@huxy/components.svg)](https://www.npmjs.com/package/@huxy/components)
-[![Build Status](https://api.travis-ci.com/ahyiru/components.svg?branch=master)](https://app.travis-ci.com/github/ahyiru/components)
+[![npm](https://img.shields.io/npm/dt/@huxy/components)](https://www.npmjs.com/package/@huxy/components)
 [![](https://img.shields.io/badge/blog-ihuxy-blue.svg)](http://ihuxy.com/)
 
 ### Anico
