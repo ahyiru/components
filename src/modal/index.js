@@ -209,7 +209,7 @@ const wrapper = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  zIndex: 99999
+  zIndex: 9999
 };
 const mask = {
   position: "fixed",
@@ -218,7 +218,7 @@ const mask = {
   bottom: 0,
   right: 0,
   background: "rgba(0, 0, 0, 0.5)",
-  zIndex: 1e5
+  zIndex: 1e4
 };
 const body = document.body;
 const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask", relative }) => {
