@@ -5,7 +5,7 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -16,7 +16,949 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".node-right-icon-close {\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n}\n.node-right-icon-close .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.node-right-icon-close .default-right-icon::before,\n.node-right-icon-close .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.node-right-icon-close .default-right-icon::before {\n  left: 0;\n}\n.node-right-icon-close .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.node-right-icon-close .default-right-icon::before,\n.node-right-icon-close .default-right-icon::after {\n  top: calc(50% + var(--pos));\n}\n.node-right-icon-close .default-right-icon::before {\n  transform: rotate(135deg);\n}\n.node-right-icon-close .default-right-icon::after {\n  transform: rotate(45deg);\n}\n.node-right-icon-open {\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n}\n.node-right-icon-open .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.node-right-icon-open .default-right-icon::before,\n.node-right-icon-open .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.node-right-icon-open .default-right-icon::before {\n  left: 0;\n}\n.node-right-icon-open .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.node-right-icon-open .default-right-icon::before,\n.node-right-icon-open .default-right-icon::after {\n  top: calc(50% - var(--pos));\n}\n.node-right-icon-open .default-right-icon::before {\n  transform: rotate(225deg);\n}\n.node-right-icon-open .default-right-icon::after {\n  transform: rotate(-45deg);\n}\n.hide-scrollbar {\n  scrollbar-width: none;\n  scrollbar-color: transparent transparent;\n}\n.hide-scrollbar::-webkit-scrollbar {\n  display: none;\n}\n.huxy-tree {\n  --topBar: 0px;\n  --downBar: var(--footerHeight, 0);\n  --width: var(--menuWidth, 100%);\n  --bgColor: var(--menuBgColor, transparent);\n  --itemHeight: var(--menuItemHeight, 40px);\n  --nodeListWidth: var(--collapseMenuWidth, 200px);\n  --treeBorderColor: var(--borderColor, rgba(0, 0, 0, 0.06));\n  --subItemHeight: calc(var(--itemHeight) - 3px);\n  --leftIconWidth: 38px;\n  --rightIconWidth: 24px;\n  --trackWidth: 15px;\n  --collapsedWidth: var(--collapseWidth, 60px);\n  --ulPadding: 2px 0;\n  --ulPosition: calc(100% + 8px);\n  --arrowPosition: 16px;\n  position: relative;\n  height: calc(100% - var(--topBar) - var(--downBar));\n  overflow: hidden;\n}\n.huxy-tree .huxy-tree-track {\n  width: calc(100% + var(--trackWidth));\n  height: 100%;\n  overflow-y: auto;\n  overflow-x: hidden;\n  scrollbar-width: none;\n  scrollbar-color: transparent transparent;\n}\n.huxy-tree .huxy-tree-track::-webkit-scrollbar {\n  display: none;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root {\n  width: calc(100% - var(--trackWidth));\n  min-height: 100%;\n  padding: var(--ulPadding);\n  margin: 0;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link {\n  padding-left: 6px;\n  font-size: 1.3rem;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul {\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;\n  background-color: hsla(0, 0%, 0%, 0.03);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > .link {\n  padding-left: 22px;\n  font-size: 1.2rem;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul {\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;\n  background-color: hsla(0, 0%, 0%, 0.03);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > .link {\n  padding-left: 38px;\n  font-size: 1.1rem;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul {\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;\n  background-color: hsla(0, 0%, 0%, 0.03);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > .link {\n  padding-left: 54px;\n  font-size: 1rem;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > ul {\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;\n  background-color: hsla(0, 0%, 0%, 0.03);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > ul > li > .link {\n  padding-left: 70px;\n  font-size: 0.9rem;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > ul > li > ul {\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;\n  background-color: hsla(0, 0%, 0%, 0.03);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li {\n  user-select: none;\n  position: relative;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children=\"true\"] > .link.active {\n  background-color: hsla(0, 0%, 0%, 0.02);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children=\"true\"] > .link.active::after {\n  display: none;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children=\"true\"] > .link .node-text {\n  padding-right: calc(var(--rightIconWidth) + 5px);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link {\n  /*&:hover,*/\n  position: relative;\n  display: block;\n  height: var(--subItemHeight);\n  line-height: var(--subItemHeight);\n  text-decoration: none;\n  transition: all 0.3s;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link::after {\n  content: '';\n  display: block;\n  position: absolute;\n  left: 0px;\n  bottom: 0;\n  top: auto;\n  height: 3px;\n  width: calc(100% - 0px * 2);\n  background-color: currentColor;\n  transform: scale(0);\n  transition: transform 0.3s;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link.active::after {\n  transform: scale(1);\n  transition: transform 0.3s;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link::after {\n  left: 0;\n  bottom: 0;\n  top: 0;\n  height: 100%;\n  width: 3px;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link.active {\n  background-color: hsla(0, 0%, 0%, 0.02);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link:hover {\n  background-color: hsla(0, 0%, 0%, 0.03);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon {\n  display: block;\n  position: absolute;\n  top: 0;\n  width: var(--leftIconWidth);\n  height: var(--subItemHeight);\n  line-height: var(--subItemHeight);\n  text-align: center;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon .default-left-icon:after {\n  content: \"\";\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border-radius: 100%;\n  background: currentColor;\n  opacity: 0.7;\n  left: 50%;\n  top: 50%;\n  transform: translate(-2px, -2px);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon + .node-text {\n  padding-left: var(--leftIconWidth);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon > * {\n  vertical-align: middle;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text {\n  display: block;\n  padding: 0 10px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon {\n  right: 0;\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {\n  left: 0;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  top: calc(50% + var(--pos));\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {\n  transform: rotate(135deg);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  transform: rotate(45deg);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon {\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {\n  left: 0;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  top: calc(50% - var(--pos));\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {\n  transform: rotate(225deg);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  transform: rotate(-45deg);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.open > ul {\n  height: calc(var(--subItemHeight) * var(--count));\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li.hidden {\n  display: none;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root li > ul {\n  --count: 0;\n  overflow: hidden;\n  height: 0;\n  transition: height 0.3s;\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.03);\n  height: var(--itemHeight);\n  line-height: var(--itemHeight);\n}\n.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-left-icon {\n  height: var(--itemHeight);\n  line-height: var(--itemHeight);\n}\n.collapsed.huxy-tree {\n  width: var(--collapsedWidth);\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root {\n  width: var(--collapsedWidth);\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > .link {\n  padding-left: 0px;\n  position: relative;\n  /*&:hover,*/\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > .link::after {\n  content: '';\n  display: block;\n  position: absolute;\n  left: 0px;\n  bottom: 0;\n  top: auto;\n  height: 3px;\n  width: calc(100% - 0px * 2);\n  background-color: currentColor;\n  transform: scale(0);\n  transition: transform 0.3s;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > .link.active::after {\n  transform: scale(1);\n  transition: transform 0.3s;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul {\n  overflow: visible;\n  height: auto;\n  position: relative;\n  background: var(--bgColor);\n  border: 1px solid var(--treeBorderColor);\n  position: absolute;\n  top: 0;\n  left: var(--ulPosition);\n  width: var(--nodeListWidth);\n  padding: var(--ulPadding);\n  opacity: 0.99;\n  border-radius: 2px;\n  transform: scale(0);\n  transform-origin: 0 0;\n  transition: 0.3s transform;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before,\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border: solid transparent;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before {\n  border-width: 6px;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  border-width: 5px;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before,\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  left: auto;\n  right: 100%;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before {\n  top: var(--arrowPosition);\n  border-right-color: var(--treeBorderColor);\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  top: calc(var(--arrowPosition) + 1px);\n  border-right-color: var(--bgColor);\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon {\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {\n  left: 0;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  top: calc(50% - var(--pos));\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {\n  transform: rotate(225deg);\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  transform: rotate(-45deg);\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > ul {\n  transform: scale(1);\n  transition: 0.3s transform;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li {\n  z-index: 10001;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-text,\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-right-icon {\n  display: none;\n}\n.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-left-icon {\n  width: var(--collapsedWidth);\n  font-size: 1.6rem;\n}\n.huxy-horizontal-tree {\n  --bgColor: var(--navBgColor, transparent);\n  --itemHeight: var(--menuItemHeight, 40px);\n  --nodeListWidth: var(--collapseMenuWidth, 200px);\n  --treeBorderColor: var(--borderColor, rgba(0, 0, 0, 0.06));\n  --subItemHeight: calc(var(--itemHeight) - 3px);\n  --leftIconWidth: 38px;\n  --rightIconWidth: 24px;\n  --itemPadding: 0 8px;\n  --nodeFloat: auto;\n  --ulPadding: 2px 0;\n  --ulPosition: calc(100% + 8px);\n  --arrowPosition: 16px;\n  position: relative;\n  border-top: 1px solid var(--treeBorderColor);\n  float: var(--nodeFloat);\n}\n.huxy-horizontal-tree .huxy-tree-track {\n  max-width: 100%;\n  height: 100%;\n  margin: 0 auto;\n  scrollbar-width: none;\n  scrollbar-color: transparent transparent;\n}\n.huxy-horizontal-tree .huxy-tree-track::-webkit-scrollbar {\n  display: none;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root {\n  float: var(--nodeFloat);\n  width: max-content;\n  padding: 0 10px;\n  margin: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li {\n  user-select: none;\n  position: relative;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children=\"true\"] > .link.active {\n  background-color: hsla(0, 0%, 0%, 0.02);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children=\"true\"] > .link.active::after {\n  display: none;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children=\"true\"] > .link .node-text {\n  padding-right: calc(var(--rightIconWidth) + 5px);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link {\n  /*&:hover,*/\n  position: relative;\n  display: block;\n  height: var(--subItemHeight);\n  line-height: var(--subItemHeight);\n  text-decoration: none;\n  transition: all 0.3s;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link::after {\n  content: '';\n  display: block;\n  position: absolute;\n  left: 0px;\n  bottom: 0;\n  top: auto;\n  height: 3px;\n  width: calc(100% - 0px * 2);\n  background-color: currentColor;\n  transform: scale(0);\n  transition: transform 0.3s;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link.active::after {\n  transform: scale(1);\n  transition: transform 0.3s;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link.active {\n  background-color: hsla(0, 0%, 0%, 0.02);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link:hover {\n  background-color: hsla(0, 0%, 0%, 0.03);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon {\n  display: block;\n  position: absolute;\n  top: 0;\n  width: var(--leftIconWidth);\n  height: var(--subItemHeight);\n  line-height: var(--subItemHeight);\n  text-align: center;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon .default-left-icon:after {\n  content: \"\";\n  position: absolute;\n  width: 4px;\n  height: 4px;\n  border-radius: 100%;\n  background: currentColor;\n  opacity: 0.7;\n  left: 50%;\n  top: 50%;\n  transform: translate(-2px, -2px);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon + .node-text {\n  padding-left: var(--leftIconWidth);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon > * {\n  vertical-align: middle;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text {\n  display: block;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon {\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {\n  left: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  top: calc(50% + var(--pos));\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {\n  transform: rotate(135deg);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {\n  transform: rotate(45deg);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon {\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {\n  left: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  top: calc(50% - var(--pos));\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {\n  transform: rotate(225deg);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {\n  transform: rotate(-45deg);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul {\n  position: relative;\n  background: var(--bgColor);\n  border: 1px solid var(--treeBorderColor);\n  position: absolute;\n  top: 0;\n  left: var(--ulPosition);\n  right: auto;\n  width: var(--nodeListWidth);\n  padding: var(--ulPadding);\n  opacity: 0.99;\n  transform: scale(0);\n  transform-origin: 0 0;\n  transition: 0.3s transform;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border: solid transparent;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before {\n  border-width: 6px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  border-width: 5px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  left: auto;\n  right: 100%;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before {\n  top: var(--arrowPosition);\n  border-right-color: var(--treeBorderColor);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {\n  top: calc(var(--arrowPosition) + 1px);\n  border-right-color: var(--bgColor);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left {\n  position: relative;\n  background: var(--bgColor);\n  border: 1px solid var(--treeBorderColor);\n  left: auto;\n  right: var(--ulPosition);\n  position: absolute;\n  transform-origin: 100% 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border: solid transparent;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before {\n  border-width: 6px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {\n  border-width: 5px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {\n  right: auto;\n  left: 100%;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before {\n  top: var(--arrowPosition);\n  border-left-color: var(--treeBorderColor);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {\n  top: calc(var(--arrowPosition) + 1px);\n  border-left-color: var(--bgColor);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon {\n  height: 100%;\n  width: var(--rightIconWidth);\n  position: absolute;\n  top: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon {\n  --pos: calc(5px - 1px) / 2;\n  position: relative;\n  display: inline-block;\n  font-style: normal;\n  float: right;\n  cursor: pointer;\n  height: 100%;\n  width: 10px;\n  width: 100%;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  content: '';\n  display: block;\n  position: absolute;\n  border-radius: 1px;\n  background-color: currentColor;\n  height: 1px;\n  width: 5px;\n  left: 0;\n  transform-origin: 100% 50% 0;\n  transition: all 0.3s;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {\n  left: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  left: calc(1px * 0.7);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  top: calc(50% - var(--pos));\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {\n  transform: rotate(225deg);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {\n  transform: rotate(-45deg);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > ul {\n  transform: scale(1);\n  transition: 0.3s transform;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li {\n  float: left;\n  padding: var(--itemPadding);\n  z-index: 10001;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: calc(50% - 10px);\n  height: 20px;\n  width: 1px;\n  background-color: rgba(0, 0, 0, 0.02);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > .link {\n  height: var(--itemHeight);\n  line-height: var(--itemHeight);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > .link .node-left-icon {\n  height: var(--itemHeight);\n  line-height: var(--itemHeight);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul {\n  position: relative;\n  background: var(--bgColor);\n  border: 1px solid var(--treeBorderColor);\n  position: absolute;\n  top: var(--ulPosition);\n  left: 0;\n  transform-origin: 50% 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border: solid transparent;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before {\n  border-width: 8px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {\n  border-width: 7px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {\n  top: auto;\n  bottom: 100%;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before {\n  left: 16px;\n  border-bottom-color: var(--treeBorderColor);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {\n  left: calc(16px + 1px);\n  border-bottom-color: var(--bgColor);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left {\n  position: relative;\n  background: var(--bgColor);\n  border: 1px solid var(--treeBorderColor);\n  position: absolute;\n  left: auto;\n  right: 0;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 0;\n  border: solid transparent;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before {\n  border-width: 6px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {\n  border-width: 5px;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before,\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {\n  left: auto;\n  top: auto;\n  bottom: 100%;\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before {\n  right: 10px;\n  border-bottom-color: var(--treeBorderColor);\n}\n.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {\n  right: calc(10px + 1px);\n  border-bottom-color: var(--bgColor);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `.node-right-icon-close {
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+}
+.node-right-icon-close .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.node-right-icon-close .default-right-icon::before,
+.node-right-icon-close .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.node-right-icon-close .default-right-icon::before {
+  left: 0;
+}
+.node-right-icon-close .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.node-right-icon-close .default-right-icon::before,
+.node-right-icon-close .default-right-icon::after {
+  top: calc(50% + var(--pos));
+}
+.node-right-icon-close .default-right-icon::before {
+  transform: rotate(135deg);
+}
+.node-right-icon-close .default-right-icon::after {
+  transform: rotate(45deg);
+}
+.node-right-icon-open {
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+}
+.node-right-icon-open .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.node-right-icon-open .default-right-icon::before,
+.node-right-icon-open .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.node-right-icon-open .default-right-icon::before {
+  left: 0;
+}
+.node-right-icon-open .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.node-right-icon-open .default-right-icon::before,
+.node-right-icon-open .default-right-icon::after {
+  top: calc(50% - var(--pos));
+}
+.node-right-icon-open .default-right-icon::before {
+  transform: rotate(225deg);
+}
+.node-right-icon-open .default-right-icon::after {
+  transform: rotate(-45deg);
+}
+.hide-scrollbar {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.huxy-tree {
+  --topBar: 0px;
+  --downBar: var(--footerHeight, 0);
+  --width: var(--menuWidth, 100%);
+  --bgColor: var(--menuBgColor, transparent);
+  --itemHeight: var(--menuItemHeight, 40px);
+  --nodeListWidth: var(--collapseMenuWidth, 200px);
+  --treeBorderColor: var(--borderColor, rgba(0, 0, 0, 0.06));
+  --subItemHeight: calc(var(--itemHeight) - 3px);
+  --leftIconWidth: 38px;
+  --rightIconWidth: 24px;
+  --trackWidth: 15px;
+  --collapsedWidth: var(--collapseWidth, 60px);
+  --ulPadding: 2px 0;
+  --ulPosition: calc(100% + 8px);
+  --arrowPosition: 16px;
+  position: relative;
+  height: calc(100% - var(--topBar) - var(--downBar));
+  overflow: hidden;
+}
+.huxy-tree .huxy-tree-track {
+  width: calc(100% + var(--trackWidth));
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+.huxy-tree .huxy-tree-track::-webkit-scrollbar {
+  display: none;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root {
+  width: calc(100% - var(--trackWidth));
+  min-height: 100%;
+  padding: var(--ulPadding);
+  margin: 0;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link {
+  padding-left: 6px;
+  font-size: 1.3rem;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;
+  background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > .link {
+  padding-left: 22px;
+  font-size: 1.2rem;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;
+  background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > .link {
+  padding-left: 38px;
+  font-size: 1.1rem;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;
+  background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > .link {
+  padding-left: 54px;
+  font-size: 1rem;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > ul {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;
+  background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > ul > li > .link {
+  padding-left: 70px;
+  font-size: 0.9rem;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > ul > li > ul > li > ul > li > ul > li > ul {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) inset;
+  background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li {
+  user-select: none;
+  position: relative;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active {
+  background-color: hsla(0, 0%, 0%, 0.02);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active::after {
+  display: none;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link .node-text {
+  padding-right: calc(var(--rightIconWidth) + 5px);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link {
+  /*&:hover,*/
+  position: relative;
+  display: block;
+  height: var(--subItemHeight);
+  line-height: var(--subItemHeight);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  top: auto;
+  height: 3px;
+  width: calc(100% - 0px * 2);
+  background-color: currentColor;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link.active::after {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link::after {
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link.active {
+  background-color: hsla(0, 0%, 0%, 0.02);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link:hover {
+  background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: var(--leftIconWidth);
+  height: var(--subItemHeight);
+  line-height: var(--subItemHeight);
+  text-align: center;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon .default-left-icon:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: currentColor;
+  opacity: 0.7;
+  left: 50%;
+  top: 50%;
+  transform: translate(-2px, -2px);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon + .node-text {
+  padding-left: var(--leftIconWidth);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon > * {
+  vertical-align: middle;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text {
+  display: block;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon {
+  right: 0;
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {
+  left: 0;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  top: calc(50% + var(--pos));
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {
+  transform: rotate(135deg);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  transform: rotate(45deg);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon {
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {
+  left: 0;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  top: calc(50% - var(--pos));
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {
+  transform: rotate(225deg);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  transform: rotate(-45deg);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.open > ul {
+  height: calc(var(--subItemHeight) * var(--count));
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li.hidden {
+  display: none;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root li > ul {
+  --count: 0;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s;
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  height: var(--itemHeight);
+  line-height: var(--itemHeight);
+}
+.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-left-icon {
+  height: var(--itemHeight);
+  line-height: var(--itemHeight);
+}
+.collapsed.huxy-tree {
+  width: var(--collapsedWidth);
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root {
+  width: var(--collapsedWidth);
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > .link {
+  padding-left: 0px;
+  position: relative;
+  /*&:hover,*/
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > .link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  top: auto;
+  height: 3px;
+  width: calc(100% - 0px * 2);
+  background-color: currentColor;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > .link.active::after {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul {
+  overflow: visible;
+  height: auto;
+  position: relative;
+  background: var(--bgColor);
+  border: 1px solid var(--treeBorderColor);
+  position: absolute;
+  top: 0;
+  left: var(--ulPosition);
+  width: var(--nodeListWidth);
+  padding: var(--ulPadding);
+  opacity: 0.99;
+  border-radius: 2px;
+  transform: scale(0);
+  transform-origin: 0 0;
+  transition: 0.3s transform;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before,
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before {
+  border-width: 6px;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  border-width: 5px;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before,
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  left: auto;
+  right: 100%;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::before {
+  top: var(--arrowPosition);
+  border-right-color: var(--treeBorderColor);
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  top: calc(var(--arrowPosition) + 1px);
+  border-right-color: var(--bgColor);
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon {
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {
+  left: 0;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  top: calc(50% - var(--pos));
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {
+  transform: rotate(225deg);
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  transform: rotate(-45deg);
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root li:hover > ul {
+  transform: scale(1);
+  transition: 0.3s transform;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li {
+  z-index: 10001;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-text,
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-right-icon {
+  display: none;
+}
+.collapsed.huxy-tree .huxy-tree-track .huxy-tree-root > li > .link .node-left-icon {
+  width: var(--collapsedWidth);
+  font-size: 1.6rem;
+}
+.huxy-horizontal-tree {
+  --bgColor: var(--navBgColor, transparent);
+  --itemHeight: var(--menuItemHeight, 40px);
+  --nodeListWidth: var(--collapseMenuWidth, 200px);
+  --treeBorderColor: var(--borderColor, rgba(0, 0, 0, 0.06));
+  --subItemHeight: calc(var(--itemHeight) - 3px);
+  --leftIconWidth: 38px;
+  --rightIconWidth: 24px;
+  --itemPadding: 0 8px;
+  --nodeFloat: auto;
+  --ulPadding: 2px 0;
+  --ulPosition: calc(100% + 8px);
+  --arrowPosition: 16px;
+  position: relative;
+  border-top: 1px solid var(--treeBorderColor);
+  float: var(--nodeFloat);
+}
+.huxy-horizontal-tree .huxy-tree-track {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+.huxy-horizontal-tree .huxy-tree-track::-webkit-scrollbar {
+  display: none;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root {
+  float: var(--nodeFloat);
+  width: max-content;
+  padding: 0 10px;
+  margin: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root::after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li {
+  user-select: none;
+  position: relative;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active {
+  background-color: hsla(0, 0%, 0%, 0.02);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active::after {
+  display: none;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link .node-text {
+  padding-right: calc(var(--rightIconWidth) + 5px);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link {
+  /*&:hover,*/
+  position: relative;
+  display: block;
+  height: var(--subItemHeight);
+  line-height: var(--subItemHeight);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  top: auto;
+  height: 3px;
+  width: calc(100% - 0px * 2);
+  background-color: currentColor;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link.active::after {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link.active {
+  background-color: hsla(0, 0%, 0%, 0.02);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link:hover {
+  background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: var(--leftIconWidth);
+  height: var(--subItemHeight);
+  line-height: var(--subItemHeight);
+  text-align: center;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon .default-left-icon:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: currentColor;
+  opacity: 0.7;
+  left: 50%;
+  top: 50%;
+  transform: translate(-2px, -2px);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon + .node-text {
+  padding-left: var(--leftIconWidth);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon > * {
+  vertical-align: middle;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon {
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {
+  left: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  top: calc(50% + var(--pos));
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::before {
+  transform: rotate(135deg);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-text + .node-right-icon .default-right-icon::after {
+  transform: rotate(45deg);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon {
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {
+  left: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  top: calc(50% - var(--pos));
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::before {
+  transform: rotate(225deg);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li.open > .link .node-right-icon .default-right-icon::after {
+  transform: rotate(-45deg);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul {
+  position: relative;
+  background: var(--bgColor);
+  border: 1px solid var(--treeBorderColor);
+  position: absolute;
+  top: 0;
+  left: var(--ulPosition);
+  right: auto;
+  width: var(--nodeListWidth);
+  padding: var(--ulPadding);
+  opacity: 0.99;
+  transform: scale(0);
+  transform-origin: 0 0;
+  transition: 0.3s transform;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before {
+  border-width: 6px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  border-width: 5px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  left: auto;
+  right: 100%;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::before {
+  top: var(--arrowPosition);
+  border-right-color: var(--treeBorderColor);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul::after {
+  top: calc(var(--arrowPosition) + 1px);
+  border-right-color: var(--bgColor);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left {
+  position: relative;
+  background: var(--bgColor);
+  border: 1px solid var(--treeBorderColor);
+  left: auto;
+  right: var(--ulPosition);
+  position: absolute;
+  transform-origin: 100% 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before {
+  border-width: 6px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {
+  border-width: 5px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {
+  right: auto;
+  left: 100%;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::before {
+  top: var(--arrowPosition);
+  border-left-color: var(--treeBorderColor);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > ul.left::after {
+  top: calc(var(--arrowPosition) + 1px);
+  border-left-color: var(--bgColor);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon {
+  height: 100%;
+  width: var(--rightIconWidth);
+  position: absolute;
+  top: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon {
+  --pos: calc(5px - 1px) / 2;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  width: 100%;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+  height: 1px;
+  width: 5px;
+  left: 0;
+  transform-origin: 100% 50% 0;
+  transition: all 0.3s;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {
+  left: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  left: calc(1px * 0.7);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  top: calc(50% - var(--pos));
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::before {
+  transform: rotate(225deg);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > .link .node-right-icon .default-right-icon::after {
+  transform: rotate(-45deg);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li:hover > ul {
+  transform: scale(1);
+  transition: 0.3s transform;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li {
+  float: left;
+  padding: var(--itemPadding);
+  z-index: 10001;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
+  height: 20px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > .link {
+  height: var(--itemHeight);
+  line-height: var(--itemHeight);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > .link .node-left-icon {
+  height: var(--itemHeight);
+  line-height: var(--itemHeight);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul {
+  position: relative;
+  background: var(--bgColor);
+  border: 1px solid var(--treeBorderColor);
+  position: absolute;
+  top: var(--ulPosition);
+  left: 0;
+  transform-origin: 50% 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before {
+  border-width: 8px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {
+  border-width: 7px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {
+  top: auto;
+  bottom: 100%;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::before {
+  left: 16px;
+  border-bottom-color: var(--treeBorderColor);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul::after {
+  left: calc(16px + 1px);
+  border-bottom-color: var(--bgColor);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left {
+  position: relative;
+  background: var(--bgColor);
+  border: 1px solid var(--treeBorderColor);
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before {
+  border-width: 6px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {
+  border-width: 5px;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before,
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {
+  left: auto;
+  top: auto;
+  bottom: 100%;
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::before {
+  right: 10px;
+  border-bottom-color: var(--treeBorderColor);
+}
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li > ul.left::after {
+  right: calc(10px + 1px);
+  border-bottom-color: var(--bgColor);
+}
+`, ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -487,7 +1429,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ utils_isArray)
+  Z: () => (/* binding */ utils_isArray)
 });
 
 ;// CONCATENATED MODULE: ../huxy/utils/getType.js
@@ -677,7 +1619,7 @@ var update = injectStylesIntoStyleTag_default()(tree/* default */.Z, options);
 
 
 
-       /* harmony default export */ const components_tree = (tree/* default */.Z && tree/* default.locals */.Z.locals ? tree/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_tree = (tree/* default */.Z && tree/* default */.Z.locals ? tree/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/tree/index.jsx
 

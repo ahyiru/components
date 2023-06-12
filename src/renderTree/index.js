@@ -47,7 +47,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ utils_isArray)
+  Z: () => (/* binding */ utils_isArray)
 });
 
 ;// CONCATENATED MODULE: ../huxy/utils/getType.js

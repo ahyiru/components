@@ -5,7 +5,7 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -16,7 +16,91 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes before {\n  0% {\n    width: 0.6rem;\n    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;\n  }\n  35% {\n    width: 3rem;\n    box-shadow: 0 -0.6rem #ff3e38, 0 0.6rem #318ffa;\n  }\n  70% {\n    width: 0.6rem;\n    box-shadow: -1.2rem -0.6rem #ff3e38, 1.2rem 0.6rem #318ffa;\n  }\n  100% {\n    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;\n  }\n}\n@keyframes after {\n  0% {\n    height: 0.6rem;\n    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;\n  }\n  35% {\n    height: 3rem;\n    box-shadow: 0.6rem 0 #6ce581, -0.6rem 0 #fecb2e;\n  }\n  70% {\n    height: 0.6rem;\n    box-shadow: 0.6rem -1.2rem #6ce581, -0.6rem 1.2rem #fecb2e;\n  }\n  100% {\n    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;\n  }\n}\n.spinner {\n  position: relative;\n  height: 100%;\n  min-height: 100px;\n  display: block;\n  overflow: hidden;\n  pointer-events: auto;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 999;\n  background-color: hsla(0, 0%, 72%, 0.24);\n}\n.spinner.absolute {\n  position: absolute;\n  min-height: auto;\n}\n.spinner.global {\n  position: fixed;\n  width: 100vw;\n  height: 100vh;\n}\n.spinner .spinning {\n  width: 3rem;\n  height: 3rem;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%) rotate(165deg);\n  margin: 0;\n}\n.spinner .spinning::before,\n.spinner .spinning::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  display: block;\n  width: 0.6rem;\n  height: 0.6rem;\n  border-radius: 0.3rem;\n  transform: translate(-50%, -50%);\n}\n.spinner .spinning::before {\n  animation: before 1.5s infinite;\n}\n.spinner .spinning::after {\n  animation: after 1.5s infinite;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `@keyframes before {
+  0% {
+    width: 0.6rem;
+    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;
+  }
+  35% {
+    width: 3rem;
+    box-shadow: 0 -0.6rem #ff3e38, 0 0.6rem #318ffa;
+  }
+  70% {
+    width: 0.6rem;
+    box-shadow: -1.2rem -0.6rem #ff3e38, 1.2rem 0.6rem #318ffa;
+  }
+  100% {
+    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.6rem;
+    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;
+  }
+  35% {
+    height: 3rem;
+    box-shadow: 0.6rem 0 #6ce581, -0.6rem 0 #fecb2e;
+  }
+  70% {
+    height: 0.6rem;
+    box-shadow: 0.6rem -1.2rem #6ce581, -0.6rem 1.2rem #fecb2e;
+  }
+  100% {
+    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;
+  }
+}
+.spinner {
+  position: relative;
+  height: 100%;
+  min-height: 100px;
+  display: block;
+  overflow: hidden;
+  pointer-events: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: hsla(0, 0%, 72%, 0.24);
+}
+.spinner.absolute {
+  position: absolute;
+  min-height: auto;
+}
+.spinner.global {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.spinner .spinning {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(165deg);
+  margin: 0;
+}
+.spinner .spinning::before,
+.spinner .spinning::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  transform: translate(-50%, -50%);
+}
+.spinner .spinning::before {
+  animation: before 1.5s infinite;
+}
+.spinner .spinning::after {
+  animation: after 1.5s infinite;
+}
+`, ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -535,7 +619,7 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.Z, options)
 
 
 
-       /* harmony default export */ const components_spinner = (spinner/* default */.Z && spinner/* default.locals */.Z.locals ? spinner/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_spinner = (spinner/* default */.Z && spinner/* default */.Z.locals ? spinner/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/spinner/index.jsx
 

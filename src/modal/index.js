@@ -6,7 +6,7 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -17,18 +17,89 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes animate-modal-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n  100% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes animate-modal-out {\n  0% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0);\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0);\n  }\n}\n.SqXAN {\n  position: fixed;\n  background: #ffffff;\n  border-radius: 12px;\n  min-width: 333px;\n  opacity: 0;\n  transform: translate3d(0, -100%, 0);\n}\n.SqXAN {\n  animation: animate-modal-out 0.25s forwards;\n}\n.SqXAN.S3vb_ {\n  animation: animate-modal-in 0.25s forwards;\n}\n.RiDlb {\n  position: relative;\n}\n.RiDlb .xdqLE {\n  text-align: center;\n  font-weight: 500;\n  font-size: 16px;\n  color: #000000;\n  padding: 20px 12px 0;\n}\n.RiDlb .C91AO {\n  padding: 8px 12px 24px;\n}\n.RiDlb .J6dpF {\n  height: 44px;\n  display: flex;\n  align-items: center;\n  box-sizing: border-box;\n  border-top: 1px solid #edeff2;\n}\n.RiDlb .J6dpF .XOnmm {\n  font-weight: 500;\n  font-size: 16px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  width: 50%;\n  height: 100%;\n}\n.RiDlb .J6dpF .XOnmm.t1Fx9 {\n  color: #666666;\n  border-right: 1px solid #edeff2;\n}\n.RiDlb .J6dpF .XOnmm.YGj9K {\n  color: #036dff;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-modal-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes animate-modal-out {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.SqXAN {
+  position: fixed;
+  background: #ffffff;
+  border-radius: 12px;
+  min-width: 333px;
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+.SqXAN {
+  animation: animate-modal-out 0.25s forwards;
+}
+.SqXAN.S3vb_ {
+  animation: animate-modal-in 0.25s forwards;
+}
+.RiDlb {
+  position: relative;
+}
+.RiDlb .xdqLE {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  padding: 20px 12px 0;
+}
+.RiDlb .C91AO {
+  padding: 8px 12px 24px;
+}
+.RiDlb .J6dpF {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid #edeff2;
+}
+.RiDlb .J6dpF .XOnmm {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+}
+.RiDlb .J6dpF .XOnmm.t1Fx9 {
+  color: #666666;
+  border-right: 1px solid #edeff2;
+}
+.RiDlb .J6dpF .XOnmm.YGj9K {
+  color: #036dff;
+}
+`, ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"modal-wrap": "SqXAN",
-	"open": "S3vb_",
-	"modal-container": "RiDlb",
-	"modal-header": "xdqLE",
-	"modal-content": "C91AO",
-	"modal-footer": "J6dpF",
-	"btn": "XOnmm",
-	"left": "t1Fx9",
-	"right": "YGj9K"
+	"modal-wrap": `SqXAN`,
+	"open": `S3vb_`,
+	"modal-container": `RiDlb`,
+	"modal-header": `xdqLE`,
+	"modal-content": `C91AO`,
+	"modal-footer": `J6dpF`,
+	"btn": `XOnmm`,
+	"left": `t1Fx9`,
+	"right": `YGj9K`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -678,7 +749,7 @@ var update = injectStylesIntoStyleTag_default()(modal/* default */.Z, options);
 
 
 
-       /* harmony default export */ const components_modal = (modal/* default */.Z && modal/* default.locals */.Z.locals ? modal/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_modal = (modal/* default */.Z && modal/* default */.Z.locals ? modal/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/modal/index.jsx
 

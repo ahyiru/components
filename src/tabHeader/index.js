@@ -5,7 +5,7 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -16,7 +16,80 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".clear::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.tabs-header-wrap {\n  position: relative;\n  border-bottom: 3px solid rgba(0, 0, 0, 0.06);\n  margin-bottom: 12px;\n}\n.tabs-header-wrap .tabs-header {\n  display: block;\n  user-select: none;\n  margin: 0;\n  padding: 0;\n}\n.tabs-header-wrap .tabs-header::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.tabs-header-wrap .tabs-header.flex {\n  display: flex;\n}\n.tabs-header-wrap .tabs-header.flex .th-item {\n  flex: 1;\n  text-align: center;\n}\n.tabs-header-wrap .tabs-header .th-item {\n  display: block;\n  float: left;\n  position: relative;\n  cursor: pointer;\n  border-right: 1px solid transparent;\n  margin-right: 10px;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-weight: 500;\n}\n.tabs-header-wrap .tabs-header .th-item:last-of-type {\n  border: 0;\n  margin-right: 0;\n}\n.tabs-header-wrap .tabs-header .th-item:hover {\n  color: #40a9ff;\n}\n.tabs-header-wrap .tabs-header .th-item.active {\n  color: #40a9ff;\n}\n.tabs-header-wrap .th-track {\n  height: 3px;\n  position: absolute;\n  left: 0;\n  bottom: -3px;\n  color: #40a9ff;\n  background-color: currentColor;\n  transition: all 0.3s;\n}\n.tabs-header-wrap .th-track::after {\n  content: \"\";\n  position: absolute;\n  width: 0;\n  height: 0;\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  border: 4px solid transparent;\n  border-top-color: currentColor;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.tabs-header-wrap {
+  position: relative;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+  margin-bottom: 12px;
+}
+.tabs-header-wrap .tabs-header {
+  display: block;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+.tabs-header-wrap .tabs-header::after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.tabs-header-wrap .tabs-header.flex {
+  display: flex;
+}
+.tabs-header-wrap .tabs-header.flex .th-item {
+  flex: 1;
+  text-align: center;
+}
+.tabs-header-wrap .tabs-header .th-item {
+  display: block;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  border-right: 1px solid transparent;
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.tabs-header-wrap .tabs-header .th-item:last-of-type {
+  border: 0;
+  margin-right: 0;
+}
+.tabs-header-wrap .tabs-header .th-item:hover {
+  color: #40a9ff;
+}
+.tabs-header-wrap .tabs-header .th-item.active {
+  color: #40a9ff;
+}
+.tabs-header-wrap .th-track {
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  color: #40a9ff;
+  background-color: currentColor;
+  transition: all 0.3s;
+}
+.tabs-header-wrap .th-track::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: currentColor;
+}
+`, ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -562,7 +635,7 @@ var update = injectStylesIntoStyleTag_default()(tabHeader/* default */.Z, option
 
 
 
-       /* harmony default export */ const components_tabHeader = (tabHeader/* default */.Z && tabHeader/* default.locals */.Z.locals ? tabHeader/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_tabHeader = (tabHeader/* default */.Z && tabHeader/* default */.Z.locals ? tabHeader/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/tabHeader/index.jsx
 

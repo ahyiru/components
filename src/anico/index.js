@@ -5,7 +5,7 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -16,16 +16,129 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*@height:2px;\n@width:18px;\n// @bgcolor:currentColor;\n@bgcolor:#00b4cf;\n\n@ratio:1.4142;\n@rotate:45deg;\n@scale:@ratio / (@ratio + 1);\n@maigin:@height * 3;\n@ty:@width / 4 - @height / @ratio;\n@tx:@width / 4 + @height / @ratio;\n@anitime:.3s;\n*/\n.nstud {\n  --height: 2px;\n  --width: 18px;\n  --ratio: 1.4142;\n  --rotate: 45deg;\n  --anitime: 0.3s;\n  --scale: calc(var(--ratio) / (var(--ratio) + 1));\n  --maigin: calc(var(--height) * 3);\n  --ty: calc(var(--width) / 4 - var(--height) / var(--ratio));\n  --tx: calc(var(--width) / 4 + var(--height) / var(--ratio));\n  position: relative;\n  display: inline-block;\n  height: 100%;\n  width: var(--width);\n}\n.nstud .IZUmD, .nstud .IZUmD::before, .nstud .IZUmD::after {\n  position: absolute;\n  background-color: var(--linkHoverColor, currentColor);\n  border-radius: 2px;\n  transform: translateZ(0);\n}\n.nstud .IZUmD {\n  width: var(--width);\n  height: var(--height);\n  display: inline-block;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  transition: transform var(--anitime), background-color var(--anitime);\n}\n.nstud .IZUmD::before, .nstud .IZUmD::after {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: currentColor;\n  transition: transform var(--anitime);\n}\n.nstud .IZUmD::before {\n  transform: translateY(calc(0px - var(--maigin)));\n}\n.nstud .IZUmD::after {\n  transform: translateY(var(--maigin));\n}\n.nstud .IZUmD.ylzxZ {\n  background-color: rgba(255, 255, 255, 0);\n}\n.nstud .IZUmD.ylzxZ::before {\n  transform: rotate(var(--rotate));\n}\n.nstud .IZUmD.ylzxZ::after {\n  transform: rotate(calc(0deg - var(--rotate)));\n}\n.nstud .IZUmD.Wy_0M::before {\n  transform: translateX(var(--tx)) translateY(calc(0px - var(--ty))) rotate(var(--rotate)) scaleX(var(--scale));\n}\n.nstud .IZUmD.Wy_0M::after {\n  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));\n}\n.nstud .IZUmD.bdjKS {\n  transform: translateX(-50%) translateY(-50%) rotate(-90deg);\n}\n.nstud .IZUmD.bdjKS::before {\n  transform: translateX(calc(0px - var(--tx))) translateY(calc(0px - var(--ty))) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));\n}\n.nstud .IZUmD.bdjKS::after {\n  transform: translateX(calc(0px - var(--tx))) translateY(var(--ty)) rotate(var(--rotate)) scaleX(var(--scale));\n}\n.nstud .IZUmD.QPs9T {\n  transform: translateX(-50%) translateY(-50%) rotate(-90deg);\n  background-color: rgba(0, 0, 0, 0);\n}\n.nstud .IZUmD.QPs9T::before {\n  transform-origin: 0 0;\n}\n.nstud .IZUmD.QPs9T::after {\n  transform-origin: 100% 100%;\n}\n.nstud .IZUmD.QPs9T.tx7CH {\n  background-color: var(--linkHoverColor, currentColor);\n  transform: translateX(-75%) translateY(-50%) rotate(-90deg);\n}\n.nstud .IZUmD.QPs9T.tx7CH::before {\n  transform: rotate(60deg);\n}\n.nstud .IZUmD.QPs9T.tx7CH::after {\n  transform: rotate(-60deg);\n}\n@media screen and (max-width: 1024px) {\n  .nstud .IZUmD.Wy_0M {\n    background-color: rgba(255, 255, 255, 0);\n  }\n  .nstud .IZUmD.Wy_0M::before {\n    transform: rotate(45deg);\n  }\n  .nstud .IZUmD.Wy_0M::after {\n    transform: rotate(-45deg);\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `/*@height:2px;
+@width:18px;
+// @bgcolor:currentColor;
+@bgcolor:#00b4cf;
+
+@ratio:1.4142;
+@rotate:45deg;
+@scale:@ratio / (@ratio + 1);
+@maigin:@height * 3;
+@ty:@width / 4 - @height / @ratio;
+@tx:@width / 4 + @height / @ratio;
+@anitime:.3s;
+*/
+.nstud {
+  --height: 2px;
+  --width: 18px;
+  --ratio: 1.4142;
+  --rotate: 45deg;
+  --anitime: 0.3s;
+  --scale: calc(var(--ratio) / (var(--ratio) + 1));
+  --maigin: calc(var(--height) * 3);
+  --ty: calc(var(--width) / 4 - var(--height) / var(--ratio));
+  --tx: calc(var(--width) / 4 + var(--height) / var(--ratio));
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: var(--width);
+}
+.nstud .IZUmD, .nstud .IZUmD::before, .nstud .IZUmD::after {
+  position: absolute;
+  background-color: var(--linkHoverColor, currentColor);
+  border-radius: 2px;
+  transform: translateZ(0);
+}
+.nstud .IZUmD {
+  width: var(--width);
+  height: var(--height);
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform var(--anitime), background-color var(--anitime);
+}
+.nstud .IZUmD::before, .nstud .IZUmD::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: transform var(--anitime);
+}
+.nstud .IZUmD::before {
+  transform: translateY(calc(0px - var(--maigin)));
+}
+.nstud .IZUmD::after {
+  transform: translateY(var(--maigin));
+}
+.nstud .IZUmD.ylzxZ {
+  background-color: rgba(255, 255, 255, 0);
+}
+.nstud .IZUmD.ylzxZ::before {
+  transform: rotate(var(--rotate));
+}
+.nstud .IZUmD.ylzxZ::after {
+  transform: rotate(calc(0deg - var(--rotate)));
+}
+.nstud .IZUmD.Wy_0M::before {
+  transform: translateX(var(--tx)) translateY(calc(0px - var(--ty))) rotate(var(--rotate)) scaleX(var(--scale));
+}
+.nstud .IZUmD.Wy_0M::after {
+  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));
+}
+.nstud .IZUmD.bdjKS {
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.nstud .IZUmD.bdjKS::before {
+  transform: translateX(calc(0px - var(--tx))) translateY(calc(0px - var(--ty))) rotate(calc(0deg - var(--rotate))) scaleX(var(--scale));
+}
+.nstud .IZUmD.bdjKS::after {
+  transform: translateX(calc(0px - var(--tx))) translateY(var(--ty)) rotate(var(--rotate)) scaleX(var(--scale));
+}
+.nstud .IZUmD.QPs9T {
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  background-color: rgba(0, 0, 0, 0);
+}
+.nstud .IZUmD.QPs9T::before {
+  transform-origin: 0 0;
+}
+.nstud .IZUmD.QPs9T::after {
+  transform-origin: 100% 100%;
+}
+.nstud .IZUmD.QPs9T.tx7CH {
+  background-color: var(--linkHoverColor, currentColor);
+  transform: translateX(-75%) translateY(-50%) rotate(-90deg);
+}
+.nstud .IZUmD.QPs9T.tx7CH::before {
+  transform: rotate(60deg);
+}
+.nstud .IZUmD.QPs9T.tx7CH::after {
+  transform: rotate(-60deg);
+}
+@media screen and (max-width: 1024px) {
+  .nstud .IZUmD.Wy_0M {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .nstud .IZUmD.Wy_0M::before {
+    transform: rotate(45deg);
+  }
+  .nstud .IZUmD.Wy_0M::after {
+    transform: rotate(-45deg);
+  }
+}
+`, ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"anico": "nstud",
-	"hline": "IZUmD",
-	"close": "ylzxZ",
-	"right": "Wy_0M",
-	"bottom": "bdjKS",
-	"play": "QPs9T",
-	"pause": "tx7CH"
+	"anico": `nstud`,
+	"hline": `IZUmD`,
+	"close": `ylzxZ`,
+	"right": `Wy_0M`,
+	"bottom": `bdjKS`,
+	"play": `QPs9T`,
+	"pause": `tx7CH`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -543,7 +656,7 @@ var update = injectStylesIntoStyleTag_default()(anico/* default */.Z, options);
 
 
 
-       /* harmony default export */ const components_anico = (anico/* default */.Z && anico/* default.locals */.Z.locals ? anico/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_anico = (anico/* default */.Z && anico/* default */.Z.locals ? anico/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/anico/index.jsx
 

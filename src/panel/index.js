@@ -5,7 +5,7 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -16,17 +16,93 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".clear::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE {\n  --radius: 2px;\n  position: relative;\n  background: var(--panelBgColor);\n  border-radius: var(--radius);\n  height: 100%;\n  z-index: 1;\n  /*&:hover{\n      box-shadow:0px 2px 5px hsla(0,0%,80%,.7);\n    }*/\n}\n.J8VWE.ohmPp {\n  box-shadow: 0 0 3rem rgba(100, 200, 255, 0.5) inset;\n}\n.J8VWE.JzE05 {\n  border-color: rgba(0, 180, 220, 0.5);\n  box-shadow: 0 0 2rem rgba(0, 180, 220, 0.5) inset;\n}\n.J8VWE .rOxNb {\n  padding: 10px 12px;\n  border-radius: var(--radius);\n}\n.J8VWE .rOxNb::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE .OQwTX {\n  padding: 8px 12px;\n  background-color: rgba(0, 0, 0, 0.02);\n  border-top-left-radius: var(--radius);\n  border-top-right-radius: var(--radius);\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.03);\n}\n.J8VWE .OQwTX::after {\n  clear: both;\n  content: \"\";\n  display: block;\n  height: 0;\n  visibility: hidden;\n}\n.J8VWE .OQwTX .W_1K6 {\n  flex: 1;\n  width: 0;\n  margin: 0;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.J8VWE .OQwTX .eCk2_ {\n  flex: 1;\n  flex-shrink: 0;\n  float: right;\n}\n.J8VWE .OQwTX .eCk2_ .R2Mku {\n  float: right;\n  font-size: 1.8rem;\n}\n.J8VWE .OQwTX .eCk2_ .R2Mku:not(:first-of-type) {\n  margin-right: 10px;\n}\n.J8VWE .OQwTX + .rOxNb {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.J8VWE {
+  --radius: 2px;
+  position: relative;
+  background: var(--panelBgColor);
+  border-radius: var(--radius);
+  height: 100%;
+  z-index: 1;
+  /*&:hover{
+      box-shadow:0px 2px 5px hsla(0,0%,80%,.7);
+    }*/
+}
+.J8VWE.ohmPp {
+  box-shadow: 0 0 3rem rgba(100, 200, 255, 0.5) inset;
+}
+.J8VWE.JzE05 {
+  border-color: rgba(0, 180, 220, 0.5);
+  box-shadow: 0 0 2rem rgba(0, 180, 220, 0.5) inset;
+}
+.J8VWE .rOxNb {
+  padding: 10px 12px;
+  border-radius: var(--radius);
+}
+.J8VWE .rOxNb::after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.J8VWE .OQwTX {
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+.J8VWE .OQwTX::after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.J8VWE .OQwTX .W_1K6 {
+  flex: 1;
+  width: 0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.J8VWE .OQwTX .eCk2_ {
+  flex: 1;
+  flex-shrink: 0;
+  float: right;
+}
+.J8VWE .OQwTX .eCk2_ .R2Mku {
+  float: right;
+  font-size: 1.8rem;
+}
+.J8VWE .OQwTX .eCk2_ .R2Mku:not(:first-of-type) {
+  margin-right: 10px;
+}
+.J8VWE .OQwTX + .rOxNb {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+`, ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"panel": "J8VWE",
-	"shadow1": "ohmPp",
-	"shadow2": "JzE05",
-	"panel-body": "rOxNb",
-	"panel-header": "OQwTX",
-	"panel-title": "W_1K6",
-	"panel-plugins": "eCk2_",
-	"link": "R2Mku"
+	"panel": `J8VWE`,
+	"shadow1": `ohmPp`,
+	"shadow2": `JzE05`,
+	"panel-body": `rOxNb`,
+	"panel-header": `OQwTX`,
+	"panel-title": `W_1K6`,
+	"panel-plugins": `eCk2_`,
+	"link": `R2Mku`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37,7 +113,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -48,7 +124,91 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes before {\n  0% {\n    width: 0.6rem;\n    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;\n  }\n  35% {\n    width: 3rem;\n    box-shadow: 0 -0.6rem #ff3e38, 0 0.6rem #318ffa;\n  }\n  70% {\n    width: 0.6rem;\n    box-shadow: -1.2rem -0.6rem #ff3e38, 1.2rem 0.6rem #318ffa;\n  }\n  100% {\n    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;\n  }\n}\n@keyframes after {\n  0% {\n    height: 0.6rem;\n    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;\n  }\n  35% {\n    height: 3rem;\n    box-shadow: 0.6rem 0 #6ce581, -0.6rem 0 #fecb2e;\n  }\n  70% {\n    height: 0.6rem;\n    box-shadow: 0.6rem -1.2rem #6ce581, -0.6rem 1.2rem #fecb2e;\n  }\n  100% {\n    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;\n  }\n}\n.spinner {\n  position: relative;\n  height: 100%;\n  min-height: 100px;\n  display: block;\n  overflow: hidden;\n  pointer-events: auto;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 999;\n  background-color: hsla(0, 0%, 72%, 0.24);\n}\n.spinner.absolute {\n  position: absolute;\n  min-height: auto;\n}\n.spinner.global {\n  position: fixed;\n  width: 100vw;\n  height: 100vh;\n}\n.spinner .spinning {\n  width: 3rem;\n  height: 3rem;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%) rotate(165deg);\n  margin: 0;\n}\n.spinner .spinning::before,\n.spinner .spinning::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  display: block;\n  width: 0.6rem;\n  height: 0.6rem;\n  border-radius: 0.3rem;\n  transform: translate(-50%, -50%);\n}\n.spinner .spinning::before {\n  animation: before 1.5s infinite;\n}\n.spinner .spinning::after {\n  animation: after 1.5s infinite;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `@keyframes before {
+  0% {
+    width: 0.6rem;
+    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;
+  }
+  35% {
+    width: 3rem;
+    box-shadow: 0 -0.6rem #ff3e38, 0 0.6rem #318ffa;
+  }
+  70% {
+    width: 0.6rem;
+    box-shadow: -1.2rem -0.6rem #ff3e38, 1.2rem 0.6rem #318ffa;
+  }
+  100% {
+    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.6rem;
+    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;
+  }
+  35% {
+    height: 3rem;
+    box-shadow: 0.6rem 0 #6ce581, -0.6rem 0 #fecb2e;
+  }
+  70% {
+    height: 0.6rem;
+    box-shadow: 0.6rem -1.2rem #6ce581, -0.6rem 1.2rem #fecb2e;
+  }
+  100% {
+    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;
+  }
+}
+.spinner {
+  position: relative;
+  height: 100%;
+  min-height: 100px;
+  display: block;
+  overflow: hidden;
+  pointer-events: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: hsla(0, 0%, 72%, 0.24);
+}
+.spinner.absolute {
+  position: absolute;
+  min-height: auto;
+}
+.spinner.global {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.spinner .spinning {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(165deg);
+  margin: 0;
+}
+.spinner .spinning::before,
+.spinner .spinning::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  transform: translate(-50%, -50%);
+}
+.spinner .spinning::before {
+  animation: before 1.5s infinite;
+}
+.spinner .spinning::after {
+  animation: after 1.5s infinite;
+}
+`, ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -216,7 +376,7 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.Z, options)
 
 
 
-       /* harmony default export */ const components_spinner = (spinner/* default */.Z && spinner/* default.locals */.Z.locals ? spinner/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_spinner = (spinner/* default */.Z && spinner/* default */.Z.locals ? spinner/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/spinner/index.jsx
 
@@ -649,7 +809,7 @@ var update = injectStylesIntoStyleTag_default()(panel/* default */.Z, options);
 
 
 
-       /* harmony default export */ const components_panel = (panel/* default */.Z && panel/* default.locals */.Z.locals ? panel/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const components_panel = (panel/* default */.Z && panel/* default */.Z.locals ? panel/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/panel/index.jsx
 
