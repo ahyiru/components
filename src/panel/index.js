@@ -54,12 +54,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
 }
 .J8VWE .OQwTX {
   padding: 8px 12px;
-  background-color: rgba(0, 0, 0, 0.02);
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 .J8VWE .OQwTX::after {
   clear: both;
@@ -77,16 +76,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
   white-space: nowrap;
 }
 .J8VWE .OQwTX .eCk2_ {
-  flex: 1;
   flex-shrink: 0;
-  float: right;
 }
 .J8VWE .OQwTX .eCk2_ .R2Mku {
-  float: right;
+  text-align: right;
   font-size: 1.8rem;
 }
 .J8VWE .OQwTX .eCk2_ .R2Mku:not(:first-of-type) {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .J8VWE .OQwTX + .rOxNb {
   border-top-left-radius: 0;
@@ -828,7 +825,7 @@ const Panel = (props, ref) => {
   return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${components_panel.panel}${cls}`, ...rest, ref: container, children: [
     (title || isValidPlugin) && /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_panel["panel-header"], children: [
       title && /* @__PURE__ */ (0,jsx_runtime.jsx)("h4", { className: components_panel["panel-title"], children: title }),
-      isValidPlugin && /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-plugins"], children: validPlugin.map((Item, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: "link", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Item, { panel: container }) }, i)) })
+      isValidPlugin && /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-plugins"], children: validPlugin.map((Item, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_panel.link}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Item, { panel: container }) }, i)) })
     ] }),
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-body"], children }),
     loading && /* @__PURE__ */ (0,jsx_runtime.jsx)(spinner["default"], {})
