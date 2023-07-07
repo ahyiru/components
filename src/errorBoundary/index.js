@@ -62,20 +62,11 @@ var __webpack_exports__ = {};
 /* harmony export */   "default": () => (/* binding */ ErrorBoundary)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(810);
-var __defProp = Object.defineProperty;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __publicField = (obj, key, value) => {
-  __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-  return value;
-};
 
 class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Component {
-  constructor() {
-    super(...arguments);
-    __publicField(this, "state", {
-      error: null
-    });
-  }
+  state = {
+    error: null
+  };
   static getDerivedStateFromError(error) {
     return { error };
   }
