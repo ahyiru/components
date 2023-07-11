@@ -352,7 +352,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.huxy-doc-frame {
 }
 .huxy-doc-header {
   height: var(--headerHeight);
-  overflow: hidden;
+  display: flex;
   position: sticky;
   top: 0;
   width: 100%;
@@ -362,16 +362,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.huxy-doc-frame {
   backdrop-filter: blur(0.3rem);
 }
 .huxy-doc-header .huxy-doc-banner {
-  float: left;
   width: var(--bannerWidth);
   height: var(--headerHeight);
   line-height: var(--headerHeight);
   text-align: center;
   font-size: 24px;
+  flex-shrink: 0;
 }
 .huxy-doc-header .huxy-doc-nav {
-  float: left;
-  width: calc(100% - var(--bannerWidth));
+  flex: 1;
   overflow: hidden;
 }
 .huxy-doc-header .huxy-doc-nav li {
@@ -391,6 +390,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.huxy-doc-frame {
 }
 .huxy-doc-header .huxy-doc-nav li > .link:hover {
   background-color: hsla(0, 0%, 0%, 0.03);
+}
+.huxy-doc-header .huxy-doc-back {
+  height: var(--headerHeight);
+  line-height: var(--headerHeight);
+  font-size: 12px;
+  padding: 0 10px;
+  flex-shrink: 0;
 }
 .huxy-doc-container {
   display: flex;
@@ -1802,7 +1808,7 @@ const getSidebar = (list, folder, Link) => ({
   listEle: list.map(({ name, children }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Link, { to: { query: { folder: name, name: children[0]?.name } }, className: `link${name === folder ? " active" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: name }) }) }, name))
 });
 const Md2html = (props) => {
-  const { params, router, Link, listFiles, getContext, marked, title, className, style } = props;
+  const { params, router, Link, listFiles, getContext, marked, title, routeLink, routeName, className, style } = props;
   const { folder, name } = params;
   const { width } = use_useWinResize();
   const [list, setList] = (0,external_react_.useState)([]);
@@ -1829,7 +1835,8 @@ const Md2html = (props) => {
           setCollapsed(!collapsed);
         }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(anico["default"], { type: collapsed ? "right" : "" }) }) }),
         /* @__PURE__ */ (0,jsx_runtime.jsx)(drawer["default"], { open: collapsed, close: () => setCollapsed(false), width: "220px", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-doc-menu-drawer", children: listEle }) })
-      ] }) : listEle })
+      ] }) : listEle }),
+      routeLink ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-doc-back", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Link, { to: routeLink, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: routeName ?? "\u8FD4\u56DE\u4E3B\u9875" }) }) }) : null
     ] }),
     /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "huxy-doc-container", children: [
       /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-doc-main-page", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(renderPage, { router, curName: name, context: sidebar, marked, getContext }) }),
