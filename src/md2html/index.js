@@ -202,6 +202,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drawer-right-in {
   }
 }
 .KsHNu {
+  --headerHeight: 44px;
+  --footerHeight: 0px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -244,11 +246,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drawer-right-in {
 .W4gG3 {
   position: relative;
   height: 100%;
-  --headerHeight: 44px;
-  --footerHeight: 0px;
 }
 .W4gG3 .SMORg {
-  padding: 8px 12px 24px;
   height: calc(100% - var(--headerHeight) - var(--footerHeight));
 }
 .W4gG3 .e3AWW {
@@ -259,6 +258,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drawer-right-in {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 .W4gG3 .e3AWW .VSVwl {
   position: relative;
@@ -849,11 +849,12 @@ var update = injectStylesIntoStyleTag_default()(drawer/* default */.Z, options);
 
 const Drawer = ({ open, close, footer, header, className, style, children, width = "300px", mountNode, position = "right", relative }) => {
   const cls = ["drawer-wrap", position, open ? "open" : "", ...className?.split(" ") ?? []].filter(Boolean).map((c) => components_drawer[c]).join(" ");
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay: 250, hasMask: true, relative, mountNode, className: "huxy-drawer", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, style: { width, position: relative ? "absolute" : "fixed", "--footerHeight": footer ? "44px" : "0px", ...style }, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-container"], children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-header"], children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_drawer["ico-close"]}`, onClick: (e) => close?.(e) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: header })
-    ] }),
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay: 250, hasMask: true, relative, mountNode, className: "huxy-drawer", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, style: { width, position: relative ? "absolute" : "fixed", "--footerHeight": footer ? "44px" : "0px", "--headerHeight": header ? "44px" : "0px", ...style }, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-container"], children: [
+    header ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_drawer["drawer-header"], children: [
+      position === "right" ? /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_drawer["ico-close"]}`, onClick: (e) => close?.(e) }) : null,
+      /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: header }),
+      position === "left" ? /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_drawer["ico-close"]}`, onClick: (e) => close?.(e) }) : null
+    ] }) : null,
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_drawer["drawer-content"], children }),
     footer ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_drawer["drawer-footer"], children: footer }) : null
   ] }) }) });
