@@ -496,7 +496,7 @@ module.exports = function (i) {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_tooltip)
+  Z: () => (/* binding */ huxy_components_tooltip)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -924,7 +924,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ ellipsis)
+  Z: () => (/* binding */ ellipsis)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -1037,7 +1037,7 @@ const EllipsisTooltip = (props) => {
     text
     /* , state.width */
   ]);
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { ref: spanRef, style: { display: "flex", width: "100%", ...style }, children: ellipsis ? isStringChild ? /* @__PURE__ */ (0,jsx_runtime.jsx)(tooltip["default"], { ...props, ellipsis: true }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { style: ellipsisStyle, children }) : isStringChild ? children : children?.props?.children });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { ref: spanRef, style: { display: "flex", width: "100%", ...style }, children: ellipsis ? isStringChild ? /* @__PURE__ */ (0,jsx_runtime.jsx)(tooltip/* default */.Z, { ...props, ellipsis: true }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { style: ellipsisStyle, children }) : isStringChild ? children : children?.props?.children });
 };
 const Ellipsis = (props) => {
   if (props.children == null) {
@@ -1049,6 +1049,5 @@ const Ellipsis = (props) => {
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

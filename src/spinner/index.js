@@ -567,7 +567,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_spinner)
+  Z: () => (/* binding */ huxy_components_spinner)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -629,6 +629,5 @@ const Spinner = ({ global, absolute }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("d
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

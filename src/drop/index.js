@@ -20,7 +20,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drop-in {
   0% {
     opacity: 0;
-    transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, 25px, 0);
   }
   100% {
     opacity: 1;
@@ -34,7 +34,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drop-in {
   }
   100% {
     opacity: 0;
-    transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, 25px, 0);
   }
 }
 .TEYHV {
@@ -451,7 +451,7 @@ module.exports = function (i) {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ portal)
+  Z: () => (/* binding */ portal)
 });
 
 ;// CONCATENATED MODULE: external "react-dom"
@@ -823,7 +823,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_drop)
+  Z: () => (/* binding */ huxy_components_drop)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -962,7 +962,14 @@ const setStyle = (ele, styles = {}, reset = false) => {
 /* harmony default export */ const utils_setStyle = (setStyle);
 
 ;// CONCATENATED MODULE: ../huxy/utils/sleep.js
-const sleep = (ms = 350) => new Promise((resolve) => setTimeout(resolve, ms));
+const formatMs = (ms = 350, unit = "ms") => ({
+  ms: ms * 1,
+  s: ms * 1e3,
+  m: ms * 6e4,
+  h: ms * 36e5,
+  d: ms * 864e5
+})[unit] ?? ms;
+const sleep = (ms = 350, unit = "ms") => new Promise((resolve) => setTimeout(resolve, formatMs(ms, unit)));
 const sleepSync = (ms = 100) => {
   const start = Date.now();
   while (Date.now() - start <= ms) {
@@ -1127,7 +1134,7 @@ var portal = __webpack_require__(380);
 
 const Mask = ({ open, delay = 280, children, mountNode, style, ...rest }) => {
   const [delayOpen] = use_useDelayState(open, delay);
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...style, display: delayOpen ? "block" : "none" }, ...rest, children }) }) });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal/* default */.Z, { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...style, display: delayOpen ? "block" : "none" }, ...rest, children }) }) });
 };
 /* harmony default export */ const mask = (Mask);
 
@@ -1217,6 +1224,5 @@ const Drop = ({ trigger = "click", type, dropList, className, children, targetPr
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

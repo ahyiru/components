@@ -523,7 +523,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_carousel)
+  Z: () => (/* binding */ huxy_components_carousel)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -829,6 +829,5 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

@@ -321,7 +321,7 @@ module.exports = function (i) {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_spinner)
+  Z: () => (/* binding */ huxy_components_spinner)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -741,7 +741,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_panel)
+  Z: () => (/* binding */ huxy_components_panel)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -828,13 +828,12 @@ const Panel = (props, ref) => {
       isValidPlugin && /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-plugins"], children: validPlugin.map((Item, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_panel.link}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Item, { panel: container }) }, i)) })
     ] }),
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-body"], children }),
-    loading && /* @__PURE__ */ (0,jsx_runtime.jsx)(spinner["default"], {})
+    loading && /* @__PURE__ */ (0,jsx_runtime.jsx)(spinner/* default */.Z, {})
   ] });
 };
 /* harmony default export */ const huxy_components_panel = ((0,external_react_.forwardRef)(Panel));
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

@@ -1074,7 +1074,7 @@ module.exports = function (i) {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ renderTree)
+  Z: () => (/* binding */ renderTree)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -1512,7 +1512,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_tree)
+  Z: () => (/* binding */ huxy_components_tree)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -1690,12 +1690,11 @@ const Tree = (props) => {
     treeStyles["--collapsedWidth"] = collapsedWidth;
   }
   const List = getList(!isHorizontal && !isCollapsed, float);
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { ref: menuRef, className: cls, style: treeStyles, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-tree-track", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-tree-root", children: (0,renderTree["default"])({ data, events, List, Link, leftIcon: true, rightIcon: true, isHorizontal, isCollapsed }) }) }) });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { ref: menuRef, className: cls, style: treeStyles, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-tree-track", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-tree-root", children: (0,renderTree/* default */.Z)({ data, events, List, Link, leftIcon: true, rightIcon: true, isHorizontal, isCollapsed }) }) }) });
 };
 /* harmony default export */ const huxy_components_tree = (Tree);
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

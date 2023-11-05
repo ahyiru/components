@@ -682,7 +682,7 @@ module.exports = function (i) {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2322);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(810);
@@ -729,7 +729,7 @@ const Col = (0,react__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(({ span, offset, x
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_row)
+  Z: () => (/* binding */ huxy_components_row)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -1159,7 +1159,7 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2322);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(810);
@@ -1169,7 +1169,7 @@ var __webpack_exports__ = {};
 
 
 
-const Grid = ({ rowProps, colProps, children, Row = _row__WEBPACK_IMPORTED_MODULE_2__["default"], Col = _col__WEBPACK_IMPORTED_MODULE_3__["default"] }) => {
+const Grid = ({ rowProps, colProps, children, Row = _row__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, Col = _col__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z }) => {
   const newChild = [];
   react__WEBPACK_IMPORTED_MODULE_1__.Children.map(children, (child) => {
     if (child) {
@@ -1186,6 +1186,5 @@ const Grid = ({ rowProps, colProps, children, Row = _row__WEBPACK_IMPORTED_MODUL
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

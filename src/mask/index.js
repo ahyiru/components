@@ -8,7 +8,7 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ portal)
+  Z: () => (/* binding */ portal)
 });
 
 ;// CONCATENATED MODULE: external "react-dom"
@@ -114,7 +114,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ components_mask)
+  Z: () => (/* binding */ components_mask)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -196,7 +196,7 @@ const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, s
   const [delayOpen] = use_useDelayState(open, delay);
   (mountNode ?? body).style.overflow = delayOpen ? "hidden" : "";
   const position = relative ? "absolute" : "fixed";
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal/* default */.Z, { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
     hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...mask, position }, onClick: (e) => close?.(e) }) : null,
     external_react_.Children.map(children, (child) => {
       if (!(0,external_react_.isValidElement)(child)) {
@@ -216,6 +216,5 @@ const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, s
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };

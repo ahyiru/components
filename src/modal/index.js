@@ -214,7 +214,7 @@ module.exports = function (i) {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ components_mask)
+  Z: () => (/* binding */ components_mask)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -296,7 +296,7 @@ const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, s
   const [delayOpen] = use_useDelayState(open, delay);
   (mountNode ?? body).style.overflow = delayOpen ? "hidden" : "";
   const position = relative ? "absolute" : "fixed";
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal["default"], { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal/* default */.Z, { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
     hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...mask, position }, onClick: (e) => close?.(e) }) : null,
     external_react_.Children.map(children, (child) => {
       if (!(0,external_react_.isValidElement)(child)) {
@@ -323,7 +323,7 @@ const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, s
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ portal)
+  Z: () => (/* binding */ portal)
 });
 
 ;// CONCATENATED MODULE: external "react-dom"
@@ -695,7 +695,7 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ huxy_components_modal)
+  Z: () => (/* binding */ huxy_components_modal)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -757,7 +757,7 @@ var update = injectStylesIntoStyleTag_default()(modal/* default */.Z, options);
 
 const Modal = ({ open, close, hasMask = true, cancelText = "\u53D6\u6D88", submit, submitText = "\u786E\u5B9A", title = "Modal \u5F39\u7A97", className, children, delay = 250, ...rest }) => {
   const cls = ["modal-wrap", open ? "open" : "", ...className?.split(" ") ?? []].filter(Boolean).map((c) => components_modal[c]).join(" ");
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask["default"], { open, close, delay, hasMask, className: "huxy-modal", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-container"], children: [
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask/* default */.Z, { open, close, delay, hasMask, className: "huxy-modal", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-container"], children: [
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_modal["modal-header"], children: title }),
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_modal["modal-content"], children }),
     /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-footer"], children: [
@@ -770,6 +770,5 @@ const Modal = ({ open, close, hasMask = true, cancelText = "\u53D6\u6D88", submi
 
 })();
 
-__webpack_exports__ = __webpack_exports__["default"];
-var __webpack_exports__default = __webpack_exports__["default"];
+var __webpack_exports__default = __webpack_exports__.Z;
 export { __webpack_exports__default as default };
