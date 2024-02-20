@@ -1,15 +1,15 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
-/***/ 8942:
+/***/ 3133:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2609);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -966,7 +966,7 @@ ___CSS_LOADER_EXPORT___.locals = {};
 
 /***/ }),
 
-/***/ 2609:
+/***/ 935:
 /***/ ((module) => {
 
 
@@ -1057,7 +1057,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 9601:
+/***/ 6758:
 /***/ ((module) => {
 
 
@@ -1068,22 +1068,22 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 8532:
+/***/ 1918:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Z: () => (/* binding */ renderTree)
+  A: () => (/* binding */ renderTree)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(2322);
+var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
-var isArray = __webpack_require__(481);
+var isArray = __webpack_require__(4828);
 ;// CONCATENATED MODULE: ../huxy/utils/isValidArr.js
 
-const isValidArr = (value) => (0,isArray/* default */.Z)(value) && !!value.length;
+const isValidArr = (value) => (0,isArray/* default */.A)(value) && !!value.length;
 /* harmony default export */ const utils_isValidArr = (isValidArr);
 
 ;// CONCATENATED MODULE: ../huxy/components/renderTree/index.jsx
@@ -1104,7 +1104,7 @@ const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIc
   return data.map((item) => {
     const { name, path, icon, rightIcon: rIcon, active, open, children, linkProps } = item;
     const hasChildren = utils_isValidArr(children);
-    const key = item.id || path || name;
+    const key = `${item.id || path}-${name}`;
     const title = hasTitle ? item.title ?? name : void 0;
     const hidden = hideChild ? "hidden" : "";
     const li = icon ?? leftIcon;
@@ -1134,7 +1134,7 @@ const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIc
 
 /***/ }),
 
-/***/ 1837:
+/***/ 3335:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var __webpack_unused_export__;
@@ -1147,25 +1147,25 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(810),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(1649),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;exports.jsxs=q;
 
 
 /***/ }),
 
-/***/ 2322:
+/***/ 1085:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(1837);
+  module.exports = __webpack_require__(3335);
 } else {}
 
 
 /***/ }),
 
-/***/ 6062:
+/***/ 2591:
 /***/ ((module) => {
 
 
@@ -1255,7 +1255,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 6793:
+/***/ 8128:
 /***/ ((module) => {
 
 
@@ -1295,7 +1295,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 1173:
+/***/ 3051:
 /***/ ((module) => {
 
 
@@ -1311,7 +1311,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 7892:
+/***/ 855:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -1327,7 +1327,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 4036:
+/***/ 1740:
 /***/ ((module) => {
 
 
@@ -1394,7 +1394,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 2464:
+/***/ 3656:
 /***/ ((module) => {
 
 
@@ -1414,22 +1414,24 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 810:
+/***/ 1649:
 /***/ ((module) => {
 
-var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
-var y = x => () => x
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
 module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ }),
 
-/***/ 481:
+/***/ 4828:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Z: () => (/* binding */ utils_isArray)
+  A: () => (/* binding */ utils_isArray)
 });
 
 ;// CONCATENATED MODULE: ../huxy/utils/getType.js
@@ -1512,19 +1514,19 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Z: () => (/* binding */ huxy_components_tree)
+  A: () => (/* binding */ huxy_components_tree)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(2322);
+var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(810);
+var external_react_ = __webpack_require__(1649);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
-var isArray = __webpack_require__(481);
+var isArray = __webpack_require__(4828);
 ;// CONCATENATED MODULE: ../huxy/utils/getSelected.js
 
 const getSelected = (arr, id, idKey = "id", childKey = "children") => {
-  if (!(0,isArray/* default */.Z)(arr)) {
+  if (!(0,isArray/* default */.A)(arr)) {
     return null;
   }
   const selected = (data) => {
@@ -1533,7 +1535,7 @@ const getSelected = (arr, id, idKey = "id", childKey = "children") => {
       if (item[idKey] === id) {
         return [item];
       }
-      if ((0,isArray/* default */.Z)(item[childKey])) {
+      if ((0,isArray/* default */.A)(item[childKey])) {
         const selChildren = selected(item[childKey]);
         if (selChildren) {
           return [item].concat(selChildren);
@@ -1555,7 +1557,7 @@ const useUpdate = () => {
 /* harmony default export */ const use_useUpdate = (useUpdate);
 
 // EXTERNAL MODULE: ../huxy/components/renderTree/index.jsx + 1 modules
-var renderTree = __webpack_require__(8532);
+var renderTree = __webpack_require__(1918);
 ;// CONCATENATED MODULE: ../huxy/components/tree/listRender.jsx
 
 const getChildrenCount = (item) => {
@@ -1573,25 +1575,25 @@ const ListRender = ({ item, style, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.
 /* harmony default export */ const listRender = (ListRender);
 
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(6062);
+var injectStylesIntoStyleTag = __webpack_require__(2591);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(4036);
+var styleDomAPI = __webpack_require__(1740);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(6793);
+var insertBySelector = __webpack_require__(8128);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(7892);
+var setAttributesWithoutAttributes = __webpack_require__(855);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(1173);
+var insertStyleElement = __webpack_require__(3051);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(2464);
+var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/tree/index.less
-var tree = __webpack_require__(8942);
+var tree = __webpack_require__(3133);
 ;// CONCATENATED MODULE: ../huxy/components/tree/index.less
 
       
@@ -1614,12 +1616,12 @@ options.setAttributes = (setAttributesWithoutAttributes_default());
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(tree/* default */.Z, options);
+var update = injectStylesIntoStyleTag_default()(tree/* default */.A, options);
 
 
 
 
-       /* harmony default export */ const components_tree = (tree/* default */.Z && tree/* default */.Z.locals ? tree/* default */.Z.locals : undefined);
+       /* harmony default export */ const components_tree = (tree/* default */.A && tree/* default */.A.locals ? tree/* default */.A.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/tree/index.jsx
 
@@ -1690,11 +1692,11 @@ const Tree = (props) => {
     treeStyles["--collapsedWidth"] = collapsedWidth;
   }
   const List = getList(!isHorizontal && !isCollapsed, float);
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { ref: menuRef, className: cls, style: treeStyles, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-tree-track", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-tree-root", children: (0,renderTree/* default */.Z)({ data, events, List, Link, leftIcon: true, rightIcon: true, isHorizontal, isCollapsed }) }) }) });
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { ref: menuRef, className: cls, style: treeStyles, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-tree-track", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-tree-root", children: (0,renderTree/* default */.A)({ data, events, List, Link, leftIcon: true, rightIcon: true, isHorizontal, isCollapsed }) }) }) });
 };
 /* harmony default export */ const huxy_components_tree = (Tree);
 
 })();
 
-var __webpack_exports__default = __webpack_exports__.Z;
+var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

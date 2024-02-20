@@ -1,12 +1,14 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
-/***/ 810:
+/***/ 1649:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
-var y = x => () => x
-module.exports = x({ ["default"]: () => __WEBPACK_EXTERNAL_MODULE_react__["default"] });
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
+module.exports = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]) });
 
 /***/ })
 
@@ -59,9 +61,9 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (/* binding */ ErrorBoundary)
+/* harmony export */   A: () => (/* binding */ ErrorBoundary)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(810);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1649);
 
 class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Component {
   state = {
@@ -88,5 +90,5 @@ class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Compon
 
 })();
 
-var __webpack_exports__default = __webpack_exports__.Z;
+var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

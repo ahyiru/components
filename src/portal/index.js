@@ -25,17 +25,19 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Z: () => (/* binding */ portal)
+  A: () => (/* binding */ portal)
 });
 
 ;// CONCATENATED MODULE: external "react-dom"
-var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
-var y = x => () => x
-const external_react_dom_namespaceObject = x({ ["createPortal"]: () => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.createPortal });
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
+const external_react_dom_namespaceObject = x({ ["createPortal"]: () => (__WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.createPortal) });
 ;// CONCATENATED MODULE: ../huxy/components/portal/index.jsx
 
 const Portal = ({ children, mountNode = document.body }) => (0,external_react_dom_namespaceObject.createPortal)(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
-var __webpack_exports__default = __webpack_exports__.Z;
+var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

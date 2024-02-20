@@ -1,7 +1,7 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
-/***/ 1837:
+/***/ 3335:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var __webpack_unused_export__;
@@ -14,40 +14,42 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(810),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(1649),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;exports.jsxs=q;
 
 
 /***/ }),
 
-/***/ 2322:
+/***/ 1085:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(1837);
+  module.exports = __webpack_require__(3335);
 } else {}
 
 
 /***/ }),
 
-/***/ 810:
+/***/ 1649:
 /***/ ((module) => {
 
-var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
-var y = x => () => x
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
 module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ }),
 
-/***/ 481:
+/***/ 4828:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Z: () => (/* binding */ utils_isArray)
+  A: () => (/* binding */ utils_isArray)
 });
 
 ;// CONCATENATED MODULE: ../huxy/utils/getType.js
@@ -113,16 +115,16 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Z: () => (/* binding */ renderTree)
+  A: () => (/* binding */ renderTree)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(2322);
+var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
-var isArray = __webpack_require__(481);
+var isArray = __webpack_require__(4828);
 ;// CONCATENATED MODULE: ../huxy/utils/isValidArr.js
 
-const isValidArr = (value) => (0,isArray/* default */.Z)(value) && !!value.length;
+const isValidArr = (value) => (0,isArray/* default */.A)(value) && !!value.length;
 /* harmony default export */ const utils_isValidArr = (isValidArr);
 
 ;// CONCATENATED MODULE: ../huxy/components/renderTree/index.jsx
@@ -143,7 +145,7 @@ const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIc
   return data.map((item) => {
     const { name, path, icon, rightIcon: rIcon, active, open, children, linkProps } = item;
     const hasChildren = utils_isValidArr(children);
-    const key = item.id || path || name;
+    const key = `${item.id || path}-${name}`;
     const title = hasTitle ? item.title ?? name : void 0;
     const hidden = hideChild ? "hidden" : "";
     const li = icon ?? leftIcon;
@@ -172,5 +174,5 @@ const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIc
 
 })();
 
-var __webpack_exports__default = __webpack_exports__.Z;
+var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

@@ -1,15 +1,15 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
-/***/ 8269:
+/***/ 1087:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2609);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -145,7 +145,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
-/***/ 2609:
+/***/ 935:
 /***/ ((module) => {
 
 
@@ -236,7 +236,7 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 9601:
+/***/ 6758:
 /***/ ((module) => {
 
 
@@ -247,7 +247,7 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 1837:
+/***/ 3335:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var __webpack_unused_export__;
@@ -260,25 +260,25 @@ var __webpack_unused_export__;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var f=__webpack_require__(810),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+var f=__webpack_require__(1649),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}__webpack_unused_export__=l;exports.jsx=q;__webpack_unused_export__=q;
 
 
 /***/ }),
 
-/***/ 2322:
+/***/ 1085:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(1837);
+  module.exports = __webpack_require__(3335);
 } else {}
 
 
 /***/ }),
 
-/***/ 6062:
+/***/ 2591:
 /***/ ((module) => {
 
 
@@ -368,7 +368,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 6793:
+/***/ 8128:
 /***/ ((module) => {
 
 
@@ -408,7 +408,7 @@ module.exports = insertBySelector;
 
 /***/ }),
 
-/***/ 1173:
+/***/ 3051:
 /***/ ((module) => {
 
 
@@ -424,7 +424,7 @@ module.exports = insertStyleElement;
 
 /***/ }),
 
-/***/ 7892:
+/***/ 855:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -440,7 +440,7 @@ module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
-/***/ 4036:
+/***/ 1740:
 /***/ ((module) => {
 
 
@@ -507,7 +507,7 @@ module.exports = domAPI;
 
 /***/ }),
 
-/***/ 2464:
+/***/ 3656:
 /***/ ((module) => {
 
 
@@ -527,11 +527,13 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 810:
+/***/ 1649:
 /***/ ((module) => {
 
-var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
-var y = x => () => x
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
 module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ })
@@ -604,31 +606,31 @@ var __webpack_exports__ = {};
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Z: () => (/* binding */ huxy_components_anico)
+  A: () => (/* binding */ huxy_components_anico)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(2322);
+var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(6062);
+var injectStylesIntoStyleTag = __webpack_require__(2591);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(4036);
+var styleDomAPI = __webpack_require__(1740);
 var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(6793);
+var insertBySelector = __webpack_require__(8128);
 var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(7892);
+var setAttributesWithoutAttributes = __webpack_require__(855);
 var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(1173);
+var insertStyleElement = __webpack_require__(3051);
 var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(2464);
+var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/anico/index.less
-var anico = __webpack_require__(8269);
+var anico = __webpack_require__(1087);
 ;// CONCATENATED MODULE: ../huxy/components/anico/index.less
 
       
@@ -651,12 +653,12 @@ options.setAttributes = (setAttributesWithoutAttributes_default());
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(anico/* default */.Z, options);
+var update = injectStylesIntoStyleTag_default()(anico/* default */.A, options);
 
 
 
 
-       /* harmony default export */ const components_anico = (anico/* default */.Z && anico/* default */.Z.locals ? anico/* default */.Z.locals : undefined);
+       /* harmony default export */ const components_anico = (anico/* default */.A && anico/* default */.A.locals ? anico/* default */.A.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/anico/index.jsx
 
@@ -674,5 +676,5 @@ const Anico = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className
 
 })();
 
-var __webpack_exports__default = __webpack_exports__.Z;
+var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };
