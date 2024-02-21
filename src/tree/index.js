@@ -1104,7 +1104,7 @@ const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIc
   return data.map((item) => {
     const { name, path, icon, rightIcon: rIcon, active, open, children, linkProps } = item;
     const hasChildren = utils_isValidArr(children);
-    const key = `${item.id || path}-${name}`;
+    const key = item.id || `${path}${item.childSameRouteLevel ?? ""}`;
     const title = hasTitle ? item.title ?? name : void 0;
     const hidden = hideChild ? "hidden" : "";
     const li = icon ?? leftIcon;
