@@ -5,8 +5,15 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   $d: () => (/* binding */ _2),
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   CG: () => (/* binding */ _1),
+/* harmony export */   kv: () => (/* binding */ _4),
+/* harmony export */   nd: () => (/* binding */ panel),
+/* harmony export */   nf: () => (/* binding */ link),
+/* harmony export */   w_: () => (/* binding */ _3)
 /* harmony export */ });
+/* unused harmony exports shadow1, shadow2 */
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
@@ -91,16 +98,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
 }
 `, ""]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {
-	"panel": `J8VWE`,
-	"shadow1": `ohmPp`,
-	"shadow2": `JzE05`,
-	"panel-body": `rOxNb`,
-	"panel-header": `OQwTX`,
-	"panel-title": `W_1K6`,
-	"panel-plugins": `eCk2_`,
-	"link": `R2Mku`
-};
+var panel = `J8VWE`;
+var shadow1 = (/* unused pure expression or super */ null && (`ohmPp`));
+var shadow2 = (/* unused pure expression or super */ null && (`JzE05`));
+var _1 = `rOxNb`;
+
+var _2 = `OQwTX`;
+
+var _3 = `W_1K6`;
+
+var _4 = `eCk2_`;
+
+var link = `R2Mku`;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -207,7 +216,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes before {
 }
 `, ""]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -362,9 +370,7 @@ var options = {};
 
 options.styleTagTransform = (styleTagTransform_default());
 options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
+options.insert = insertBySelector_default().bind(null, "head");
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
@@ -797,18 +803,16 @@ var options = {};
 
 options.styleTagTransform = (styleTagTransform_default());
 options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
+options.insert = insertBySelector_default().bind(null, "head");
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(panel/* default */.A, options);
+var update = injectStylesIntoStyleTag_default()(panel/* default */.Ay, options);
 
 
 
 
-       /* harmony default export */ const components_panel = (panel/* default */.A && panel/* default */.A.locals ? panel/* default */.A.locals : undefined);
+       /* harmony default export */ const components_panel = (panel/* default */.Ay && panel/* default */.Ay.locals ? panel/* default */.Ay.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/panel/index.jsx
 
@@ -824,12 +828,12 @@ const Panel = (props, ref) => {
   const isValidPlugin = validPlugin?.length;
   const cls = className ? ` ${className}` : "";
   const container = utils_isRef(ref) ? ref : panelRef;
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${components_panel.panel}${cls}`, ...rest, ref: container, children: [
-    (title || isValidPlugin) && /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_panel["panel-header"], children: [
-      title && /* @__PURE__ */ (0,jsx_runtime.jsx)("h4", { className: components_panel["panel-title"], children: title }),
-      isValidPlugin && /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-plugins"], children: validPlugin.map((Item, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${components_panel.link}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Item, { panel: container }) }, i)) })
+  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${panel/* panel */.nd}${cls}`, ...rest, ref: container, children: [
+    (title || isValidPlugin) && /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: panel/* panel-header */.$d, children: [
+      title && /* @__PURE__ */ (0,jsx_runtime.jsx)("h4", { className: panel/* panel-title */.w_, children: title }),
+      isValidPlugin && /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: panel/* panel-plugins */.kv, children: validPlugin.map((Item, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `link ${panel/* link */.nf}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Item, { panel: container }) }, i)) })
     ] }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_panel["panel-body"], children }),
+    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: panel/* panel-body */.CG, children }),
     loading && /* @__PURE__ */ (0,jsx_runtime.jsx)(spinner/* default */.A, {})
   ] });
 };

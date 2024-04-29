@@ -6,7 +6,13 @@ import * as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__ from "react-dom";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   Om: () => (/* binding */ dot),
+/* harmony export */   Ri: () => (/* binding */ _2),
+/* harmony export */   S$: () => (/* binding */ _4),
+/* harmony export */   UM: () => (/* binding */ _1),
+/* harmony export */   fv: () => (/* binding */ _3),
+/* harmony export */   vu: () => (/* binding */ active)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -51,14 +57,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.kLIGi {
 }
 `, ""]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {
-	"huxy-carousel": `kLIGi`,
-	"huxy-carousel-wrap": `XoNs4`,
-	"carousel-item": `x4UPo`,
-	"carousel-switch": `qYuQn`,
-	"dot": `GU0qu`,
-	"active": `svhYU`
-};
+var _1 = `kLIGi`;
+
+var _2 = `XoNs4`;
+
+var _3 = `x4UPo`;
+
+var _4 = `qYuQn`;
+
+var dot = `GU0qu`;
+var active = `svhYU`;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -764,18 +772,16 @@ var options = {};
 
 options.styleTagTransform = (styleTagTransform_default());
 options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
+options.insert = insertBySelector_default().bind(null, "head");
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(carousel/* default */.A, options);
+var update = injectStylesIntoStyleTag_default()(carousel/* default */.Ay, options);
 
 
 
 
-       /* harmony default export */ const components_carousel = (carousel/* default */.A && carousel/* default */.A.locals ? carousel/* default */.A.locals : undefined);
+       /* harmony default export */ const components_carousel = (carousel/* default */.Ay && carousel/* default */.Ay.locals ? carousel/* default */.Ay.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/carousel/index.jsx
 
@@ -824,9 +830,9 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
     transform: `translateX(${-width * activeItem}px)`,
     transition: transition.current
   };
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${components_carousel["huxy-carousel"]}${className ? ` ${className}` : ""}`, ...rest, ref: container, children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_carousel["huxy-carousel-wrap"], style: wrapStyles, children: list.map((child, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `${components_carousel["carousel-item"]} ${activeItem === i ? components_carousel["active"] : ""}`, style: { width: `${width}px` }, children: child }, `huxy-carousel-${i}`)) }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_carousel["carousel-switch"], children: children.map((child, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `${components_carousel["dot"]} ${activeItem === i + 1 ? components_carousel["active"] : ""}`, onClick: (e) => switchItem(i + 1, e) }, `huxy-carousel-switch-${i}`)) })
+  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${carousel/* huxy-carousel */.UM}${className ? ` ${className}` : ""}`, ...rest, ref: container, children: [
+    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: carousel/* huxy-carousel-wrap */.Ri, style: wrapStyles, children: list.map((child, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `${carousel/* carousel-item */.fv} ${activeItem === i ? carousel/* active */.vu : ""}`, style: { width: `${width}px` }, children: child }, `huxy-carousel-${i}`)) }),
+    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: carousel/* carousel-switch */.S$, children: children.map((child, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `${carousel/* dot */.Om} ${activeItem === i + 1 ? carousel/* active */.vu : ""}`, onClick: (e) => switchItem(i + 1, e) }, `huxy-carousel-switch-${i}`)) })
   ] });
 };
 /* harmony default export */ const huxy_components_carousel = (Carousel);

@@ -5,7 +5,14 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   $x: () => (/* binding */ _4),
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   E9: () => (/* binding */ _3),
+/* harmony export */   Vz: () => (/* binding */ _1),
+/* harmony export */   ZG: () => (/* binding */ _2),
+/* harmony export */   gO: () => (/* binding */ ellipsis),
+/* harmony export */   l3: () => (/* binding */ _6),
+/* harmony export */   o7: () => (/* binding */ _5)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -374,15 +381,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
 }
 `, ""]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {
-	"ellipsis": `ofth_`,
-	"huxy-tooltip": `hVmF3`,
-	"huxy-tooltip-topRight": `uzFyE`,
-	"huxy-tooltip-topLeft": `Giihu`,
-	"huxy-tooltip-bottomRight": `bFVVt`,
-	"huxy-tooltip-bottomLeft": `oGmKq`,
-	"huxy-tooltip-rightTop": `svYWD`
-};
+var ellipsis = `ofth_`;
+var _1 = `hVmF3`;
+
+var _2 = `uzFyE`;
+
+var _3 = `Giihu`;
+
+var _4 = `bFVVt`;
+
+var _5 = `oGmKq`;
+
+var _6 = `svYWD`;
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -499,6 +510,20 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ huxy_components_tooltip)
 });
 
+// NAMESPACE OBJECT: ../huxy/components/tooltip/index.less
+var tooltip_namespaceObject = {};
+__webpack_require__.r(tooltip_namespaceObject);
+__webpack_require__.d(tooltip_namespaceObject, {
+  "default": () => (components_tooltip),
+  ellipsis: () => (tooltip/* ellipsis */.gO),
+  "huxy-tooltip": () => (tooltip/* huxy-tooltip */.Vz),
+  "huxy-tooltip-bottomLeft": () => (tooltip/* huxy-tooltip-bottomLeft */.o7),
+  "huxy-tooltip-bottomRight": () => (tooltip/* huxy-tooltip-bottomRight */.$x),
+  "huxy-tooltip-rightTop": () => (tooltip/* huxy-tooltip-rightTop */.l3),
+  "huxy-tooltip-topLeft": () => (tooltip/* huxy-tooltip-topLeft */.E9),
+  "huxy-tooltip-topRight": () => (tooltip/* huxy-tooltip-topRight */.ZG)
+});
+
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
@@ -537,18 +562,16 @@ var options = {};
 
 options.styleTagTransform = (styleTagTransform_default());
 options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
+options.insert = insertBySelector_default().bind(null, "head");
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(tooltip/* default */.A, options);
+var update = injectStylesIntoStyleTag_default()(tooltip/* default */.Ay, options);
 
 
 
 
-       /* harmony default export */ const components_tooltip = (tooltip/* default */.A && tooltip/* default */.A.locals ? tooltip/* default */.A.locals : undefined);
+       /* harmony default export */ const components_tooltip = (tooltip/* default */.Ay && tooltip/* default */.Ay.locals ? tooltip/* default */.Ay.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/tooltip/index.jsx
 
@@ -556,10 +579,10 @@ var update = injectStylesIntoStyleTag_default()(tooltip/* default */.A, options)
 const Tooltip = ({ title, placement = "topRight", children, ellipsis, className, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)(
   "span",
   {
-    className: `${components_tooltip[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ""}`,
+    className: `${tooltip_namespaceObject[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ""}`,
     tooltip: title ?? children,
     ...rest,
-    children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: ellipsis ? components_tooltip.ellipsis : "", children })
+    children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: ellipsis ? tooltip/* ellipsis */.gO : "", children })
   }
 );
 /* harmony default export */ const huxy_components_tooltip = (Tooltip);
@@ -912,6 +935,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /******/ /* webpack/runtime/hasOwnProperty shorthand */
 /******/ (() => {
 /******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/make namespace object */
+/******/ (() => {
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
 /******/ })();
 /******/ 
 /******/ /* webpack/runtime/nonce */

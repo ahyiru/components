@@ -6,7 +6,16 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   HM: () => (/* binding */ btn),
+/* harmony export */   QN: () => (/* binding */ _2),
+/* harmony export */   R8: () => (/* binding */ _1),
+/* harmony export */   Y8: () => (/* binding */ _4),
+/* harmony export */   ho: () => (/* binding */ open),
+/* harmony export */   k3: () => (/* binding */ _3),
+/* harmony export */   kb: () => (/* binding */ left),
+/* harmony export */   pG: () => (/* binding */ right),
+/* harmony export */   ww: () => (/* binding */ _5)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -90,17 +99,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-modal-in {
 }
 `, ""]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {
-	"modal-wrap": `SqXAN`,
-	"open": `S3vb_`,
-	"modal-container": `RiDlb`,
-	"modal-header": `xdqLE`,
-	"modal-content": `C91AO`,
-	"modal-footer": `J6dpF`,
-	"btn": `XOnmm`,
-	"left": `t1Fx9`,
-	"right": `YGj9K`
-};
+var _1 = `SqXAN`;
+
+var open = `S3vb_`;
+var _2 = `RiDlb`;
+
+var _3 = `xdqLE`;
+
+var _4 = `C91AO`;
+
+var _5 = `J6dpF`;
+
+var btn = `XOnmm`;
+var left = `t1Fx9`;
+var right = `YGj9K`;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -687,6 +699,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ })();
 /******/ 
+/******/ /* webpack/runtime/make namespace object */
+/******/ (() => {
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ })();
+/******/ 
 /******/ /* webpack/runtime/nonce */
 /******/ (() => {
 /******/ 	__webpack_require__.nc = undefined;
@@ -700,6 +723,22 @@ var __webpack_exports__ = {};
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ huxy_components_modal)
+});
+
+// NAMESPACE OBJECT: ../huxy/components/modal/index.less
+var modal_namespaceObject = {};
+__webpack_require__.r(modal_namespaceObject);
+__webpack_require__.d(modal_namespaceObject, {
+  btn: () => (modal/* btn */.HM),
+  "default": () => (components_modal),
+  left: () => (modal/* left */.kb),
+  "modal-container": () => (modal/* modal-container */.QN),
+  "modal-content": () => (modal/* modal-content */.Y8),
+  "modal-footer": () => (modal/* modal-footer */.ww),
+  "modal-header": () => (modal/* modal-header */.k3),
+  "modal-wrap": () => (modal/* modal-wrap */.R8),
+  open: () => (modal/* open */.ho),
+  right: () => (modal/* right */.pG)
 });
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -742,31 +781,29 @@ var options = {};
 
 options.styleTagTransform = (styleTagTransform_default());
 options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
+options.insert = insertBySelector_default().bind(null, "head");
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(modal/* default */.A, options);
+var update = injectStylesIntoStyleTag_default()(modal/* default */.Ay, options);
 
 
 
 
-       /* harmony default export */ const components_modal = (modal/* default */.A && modal/* default */.A.locals ? modal/* default */.A.locals : undefined);
+       /* harmony default export */ const components_modal = (modal/* default */.Ay && modal/* default */.Ay.locals ? modal/* default */.Ay.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/modal/index.jsx
 
 
 
 const Modal = ({ open, close, hasMask = true, cancelText = "\u53D6\u6D88", submit, submitText = "\u786E\u5B9A", title = "Modal \u5F39\u7A97", className, children, delay = 250, ...rest }) => {
-  const cls = ["modal-wrap", open ? "open" : "", ...className?.split(" ") ?? []].filter(Boolean).map((c) => components_modal[c]).join(" ");
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask/* default */.A, { open, close, delay, hasMask, className: "huxy-modal", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-container"], children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_modal["modal-header"], children: title }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: components_modal["modal-content"], children }),
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: components_modal["modal-footer"], children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `${components_modal.btn} ${components_modal.left}`, onClick: (e) => close?.(e), children: cancelText }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `${components_modal.btn} ${components_modal.right}`, onClick: (e) => submit?.(e), children: submitText })
+  const cls = ["modal-wrap", open ? "open" : "", ...className?.split(" ") ?? []].filter(Boolean).map((c) => modal_namespaceObject[c]).join(" ");
+  return /* @__PURE__ */ (0,jsx_runtime.jsx)(mask/* default */.A, { open, close, delay, hasMask, className: "huxy-modal", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: cls, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: modal/* modal-container */.QN, children: [
+    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: modal/* modal-header */.k3, children: title }),
+    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: modal/* modal-content */.Y8, children }),
+    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: modal/* modal-footer */.ww, children: [
+      /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `${modal/* btn */.HM} ${modal/* left */.kb}`, onClick: (e) => close?.(e), children: cancelText }),
+      /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `${modal/* btn */.HM} ${modal/* right */.pG}`, onClick: (e) => submit?.(e), children: submitText })
     ] })
   ] }) }) });
 };
