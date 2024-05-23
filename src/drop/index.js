@@ -471,22 +471,44 @@ const Portal = ({ children, mountNode = document.body }) => (0,external_react_do
 
 /***/ }),
 
-/***/ 3335:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 1197:
+/***/ ((__unused_webpack_module, exports) => {
 
 var __webpack_unused_export__;
-/*
- React
- react-jsx-runtime.production.min.js
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
- Copyright (c) Meta Platforms, Inc. and affiliates.
 
- This source code is licensed under the MIT license found in the
- LICENSE file in the root directory of this source tree.
-*/
-__webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.fragment"),h=Object.prototype.hasOwnProperty;function k(l,a,f){var b,c={},d=null;void 0!==f&&(d=""+f);void 0!==a.key&&(d=""+a.key);for(b in a)h.call(a,b)&&"key"!==b&&(c[b]=a[b]);a=c.ref;return{$$typeof:e,type:l,key:d,ref:void 0!==a?a:null,props:c}}__webpack_unused_export__=g;exports.jsx=k;exports.jsxs=k;
-
-//# sourceMappingURL=react-jsx-runtime.production.min.js.map
+var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"),
+  REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+  var key = null;
+  void 0 !== maybeKey && (key = "" + maybeKey);
+  void 0 !== config.key && (key = "" + config.key);
+  if ("key" in config) {
+    maybeKey = {};
+    for (var propName in config)
+      "key" !== propName && (maybeKey[propName] = config[propName]);
+  } else maybeKey = config;
+  config = maybeKey.ref;
+  return {
+    $$typeof: REACT_ELEMENT_TYPE,
+    type: type,
+    key: key,
+    ref: void 0 !== config ? config : null,
+    props: maybeKey
+  };
+}
+__webpack_unused_export__ = REACT_FRAGMENT_TYPE;
+exports.jsx = jsxProd;
+exports.jsxs = jsxProd;
 
 
 /***/ }),
@@ -497,7 +519,7 @@ __webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.
 
 
 if (true) {
-  module.exports = __webpack_require__(3335);
+  module.exports = __webpack_require__(1197);
 } else {}
 
 
@@ -750,17 +772,6 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ 1649:
-/***/ ((module) => {
-
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
-
 /***/ })
 
 /******/ });
@@ -857,8 +868,12 @@ __webpack_require__.d(drop_namespaceObject, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(1649);
+;// CONCATENATED MODULE: external "react"
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
+const external_react_namespaceObject = x({ ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
 ;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
 /* harmony default export */ const utils_hasProp = (hasProp);
@@ -872,7 +887,7 @@ const isRef = (ref) => utils_hasProp(ref, "current");
 
 
 const useClickAway = (elRef, handleEvent, events = "click") => {
-  (0,external_react_.useEffect)(() => {
+  (0,external_react_namespaceObject.useEffect)(() => {
     const handler = (event) => {
       const el = utils_isRef(elRef) ? elRef.current : elRef;
       if (el?.contains && !el.contains(event.target)) {
@@ -1115,7 +1130,7 @@ const dropInfo = (triggerEle, showEle, type = "horizontal") => {
 ;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
 
 const useFirstMounted = () => {
-  const isFirst = (0,external_react_.useRef)(true);
+  const isFirst = (0,external_react_namespaceObject.useRef)(true);
   if (isFirst.current) {
     isFirst.current = false;
     return true;
@@ -1129,7 +1144,7 @@ const useFirstMounted = () => {
 
 const useUpdateEffect = (effect, deps = []) => {
   const isFirst = use_useFirstMounted();
-  (0,external_react_.useEffect)(() => {
+  (0,external_react_namespaceObject.useEffect)(() => {
     if (!isFirst) {
       return effect();
     }
@@ -1141,7 +1156,7 @@ const useUpdateEffect = (effect, deps = []) => {
 
 
 const useDelayState = (state, delay = 450) => {
-  const [delayState, setDelayState] = (0,external_react_.useState)(state);
+  const [delayState, setDelayState] = (0,external_react_namespaceObject.useState)(state);
   use_useUpdateEffect(() => {
     let timer;
     if (state || delay === 0) {
@@ -1224,12 +1239,12 @@ var update = injectStylesIntoStyleTag_default()(drop/* default */.Ay, options);
 
 
 const Drop = ({ trigger = "click", type, dropList, className, children, targetProps, ...rest }) => {
-  const [open, setOpen] = (0,external_react_.useState)(false);
-  const targetRef = (0,external_react_.useRef)();
-  const dropRef = (0,external_react_.useRef)();
-  const destroyFn = (0,external_react_.useRef)();
+  const [open, setOpen] = (0,external_react_namespaceObject.useState)(false);
+  const targetRef = (0,external_react_namespaceObject.useRef)();
+  const dropRef = (0,external_react_namespaceObject.useRef)();
+  const destroyFn = (0,external_react_namespaceObject.useRef)();
   use_useClickAway(targetRef, (e) => open && setOpen(false), [.../* @__PURE__ */ new Set(["click", trigger.toLowerCase()])]);
-  (0,external_react_.useEffect)(() => {
+  (0,external_react_namespaceObject.useEffect)(() => {
     return () => destroyFn.current?.();
   }, []);
   const handler = (e) => {

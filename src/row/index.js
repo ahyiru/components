@@ -1,4 +1,3 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 2531:
@@ -677,22 +676,44 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 3335:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 1197:
+/***/ ((__unused_webpack_module, exports) => {
 
 var __webpack_unused_export__;
-/*
- React
- react-jsx-runtime.production.min.js
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
- Copyright (c) Meta Platforms, Inc. and affiliates.
 
- This source code is licensed under the MIT license found in the
- LICENSE file in the root directory of this source tree.
-*/
-__webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.fragment"),h=Object.prototype.hasOwnProperty;function k(l,a,f){var b,c={},d=null;void 0!==f&&(d=""+f);void 0!==a.key&&(d=""+a.key);for(b in a)h.call(a,b)&&"key"!==b&&(c[b]=a[b]);a=c.ref;return{$$typeof:e,type:l,key:d,ref:void 0!==a?a:null,props:c}}__webpack_unused_export__=g;exports.jsx=k;__webpack_unused_export__=k;
-
-//# sourceMappingURL=react-jsx-runtime.production.min.js.map
+var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"),
+  REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+  var key = null;
+  void 0 !== maybeKey && (key = "" + maybeKey);
+  void 0 !== config.key && (key = "" + config.key);
+  if ("key" in config) {
+    maybeKey = {};
+    for (var propName in config)
+      "key" !== propName && (maybeKey[propName] = config[propName]);
+  } else maybeKey = config;
+  config = maybeKey.ref;
+  return {
+    $$typeof: REACT_ELEMENT_TYPE,
+    type: type,
+    key: key,
+    ref: void 0 !== config ? config : null,
+    props: maybeKey
+  };
+}
+__webpack_unused_export__ = REACT_FRAGMENT_TYPE;
+exports.jsx = jsxProd;
+__webpack_unused_export__ = jsxProd;
 
 
 /***/ }),
@@ -703,7 +724,7 @@ __webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.
 
 
 if (true) {
-  module.exports = __webpack_require__(3335);
+  module.exports = __webpack_require__(1197);
 } else {}
 
 
@@ -956,17 +977,6 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ 1649:
-/***/ ((module) => {
-
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
-
 /***/ })
 
 /******/ });
@@ -1042,8 +1052,6 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(1649);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(2591);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -1094,8 +1102,7 @@ var update = injectStylesIntoStyleTag_default()(row/* default */.A, options);
 ;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
 
 
-
-const Row = ({ gutter = 10, className, overflow = "hidden", ...rest }, ref) => {
+const Row = ({ gutter = 10, className, overflow = "hidden", ref, ...rest }) => {
   const defCls = className ? ` ${className}` : "";
   let rowgap = 10;
   if (Array.isArray(gutter)) {
@@ -1105,7 +1112,7 @@ const Row = ({ gutter = 10, className, overflow = "hidden", ...rest }, ref) => {
   }
   return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "row-wrap", style: { "--gutter": `${Math.floor(gutter / 2)}px`, "--rowgap": `${Math.floor(rowgap / 2)}px`, overflow }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `row${defCls}`, ...rest, ref }) });
 };
-/* harmony default export */ const huxy_components_row = ((0,external_react_.forwardRef)(Row));
+/* harmony default export */ const huxy_components_row = (Row);
 
 })();
 

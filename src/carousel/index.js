@@ -1,5 +1,5 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 import * as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__ from "react-dom";
+import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 3587:
@@ -174,22 +174,44 @@ module.exports = function (i) {
 
 /***/ }),
 
-/***/ 3335:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 1197:
+/***/ ((__unused_webpack_module, exports) => {
 
 var __webpack_unused_export__;
-/*
- React
- react-jsx-runtime.production.min.js
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
- Copyright (c) Meta Platforms, Inc. and affiliates.
 
- This source code is licensed under the MIT license found in the
- LICENSE file in the root directory of this source tree.
-*/
-__webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.fragment"),h=Object.prototype.hasOwnProperty;function k(l,a,f){var b,c={},d=null;void 0!==f&&(d=""+f);void 0!==a.key&&(d=""+a.key);for(b in a)h.call(a,b)&&"key"!==b&&(c[b]=a[b]);a=c.ref;return{$$typeof:e,type:l,key:d,ref:void 0!==a?a:null,props:c}}__webpack_unused_export__=g;exports.jsx=k;exports.jsxs=k;
-
-//# sourceMappingURL=react-jsx-runtime.production.min.js.map
+var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"),
+  REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+  var key = null;
+  void 0 !== maybeKey && (key = "" + maybeKey);
+  void 0 !== config.key && (key = "" + config.key);
+  if ("key" in config) {
+    maybeKey = {};
+    for (var propName in config)
+      "key" !== propName && (maybeKey[propName] = config[propName]);
+  } else maybeKey = config;
+  config = maybeKey.ref;
+  return {
+    $$typeof: REACT_ELEMENT_TYPE,
+    type: type,
+    key: key,
+    ref: void 0 !== config ? config : null,
+    props: maybeKey
+  };
+}
+__webpack_unused_export__ = REACT_FRAGMENT_TYPE;
+exports.jsx = jsxProd;
+exports.jsxs = jsxProd;
 
 
 /***/ }),
@@ -200,7 +222,7 @@ __webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.
 
 
 if (true) {
-  module.exports = __webpack_require__(3335);
+  module.exports = __webpack_require__(1197);
 } else {}
 
 
@@ -453,17 +475,6 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ 1649:
-/***/ ((module) => {
-
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
-
 /***/ })
 
 /******/ });
@@ -545,16 +556,20 @@ var x = (y) => {
 } 
 var y = (x) => (() => (x))
 const external_react_dom_namespaceObject = x({ ["flushSync"]: () => (__WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.flushSync) });
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(1649);
+;// CONCATENATED MODULE: external "react"
+var external_react_x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var external_react_y = (x) => (() => (x))
+const external_react_namespaceObject = external_react_x({ ["useCallback"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useCallback), ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
 ;// CONCATENATED MODULE: ../huxy/use/useInterval/index.jsx
 
 const useInterval = (callback, delay) => {
-  const savedCallback = (0,external_react_.useRef)();
-  (0,external_react_.useEffect)(() => {
+  const savedCallback = (0,external_react_namespaceObject.useRef)();
+  (0,external_react_namespaceObject.useEffect)(() => {
     savedCallback.current = callback;
   }, [callback]);
-  (0,external_react_.useEffect)(() => {
+  (0,external_react_namespaceObject.useEffect)(() => {
     if (delay) {
       const timer = setInterval(() => savedCallback.current(), delay);
       return () => clearInterval(timer);
@@ -707,13 +722,13 @@ const resize = (element, delay = 60) => {
 ;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
 
 const useRaf = (initState = {}) => {
-  const frame = (0,external_react_.useRef)(0);
-  const [state, setState] = (0,external_react_.useState)(initState);
-  const setRaf = (0,external_react_.useCallback)((value) => {
+  const frame = (0,external_react_namespaceObject.useRef)(0);
+  const [state, setState] = (0,external_react_namespaceObject.useState)(initState);
+  const setRaf = (0,external_react_namespaceObject.useCallback)((value) => {
     cancelAnimationFrame(frame.current);
     frame.current = requestAnimationFrame(() => setState(value));
   }, []);
-  (0,external_react_.useEffect)(() => () => cancelAnimationFrame(frame.current), []);
+  (0,external_react_namespaceObject.useEffect)(() => () => cancelAnimationFrame(frame.current), []);
   return [state, setRaf];
 };
 /* harmony default export */ const use_useRaf = (useRaf);
@@ -728,7 +743,7 @@ const useEleResize = (ref = null, delay = 60) => {
   const element = utils_isRef(ref) ? ref.current : ref;
   const { bind, destroy } = utils_resize(element, delay);
   const [state, setState] = use_useRaf(utils_getViewportSize(element));
-  (0,external_react_.useEffect)(() => {
+  (0,external_react_namespaceObject.useEffect)(() => {
     const handler = () => element && setState(utils_getViewportSize(element));
     bind(handler);
     return () => destroy();
@@ -792,10 +807,10 @@ var update = injectStylesIntoStyleTag_default()(carousel/* default */.Ay, option
 
 
 const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => {
-  const [activeItem, setActiveItem] = (0,external_react_.useState)(active + 1);
-  const [stop, setStop] = (0,external_react_.useState)(false);
-  const container = (0,external_react_.useRef)();
-  const transition = (0,external_react_.useRef)("");
+  const [activeItem, setActiveItem] = (0,external_react_namespaceObject.useState)(active + 1);
+  const [stop, setStop] = (0,external_react_namespaceObject.useState)(false);
+  const container = (0,external_react_namespaceObject.useRef)();
+  const transition = (0,external_react_namespaceObject.useRef)("");
   const { width } = use_useEleResize(container);
   children = Array.isArray(children) ? children : [children];
   const first = children[0];

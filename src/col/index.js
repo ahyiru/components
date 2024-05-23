@@ -1,22 +1,43 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
-/***/ 3335:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 1197:
+/***/ ((__unused_webpack_module, exports) => {
 
 var __webpack_unused_export__;
-/*
- React
- react-jsx-runtime.production.min.js
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
- Copyright (c) Meta Platforms, Inc. and affiliates.
 
- This source code is licensed under the MIT license found in the
- LICENSE file in the root directory of this source tree.
-*/
-__webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.fragment"),h=Object.prototype.hasOwnProperty;function k(l,a,f){var b,c={},d=null;void 0!==f&&(d=""+f);void 0!==a.key&&(d=""+a.key);for(b in a)h.call(a,b)&&"key"!==b&&(c[b]=a[b]);a=c.ref;return{$$typeof:e,type:l,key:d,ref:void 0!==a?a:null,props:c}}__webpack_unused_export__=g;exports.jsx=k;__webpack_unused_export__=k;
-
-//# sourceMappingURL=react-jsx-runtime.production.min.js.map
+var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"),
+  REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+  var key = null;
+  void 0 !== maybeKey && (key = "" + maybeKey);
+  void 0 !== config.key && (key = "" + config.key);
+  if ("key" in config) {
+    maybeKey = {};
+    for (var propName in config)
+      "key" !== propName && (maybeKey[propName] = config[propName]);
+  } else maybeKey = config;
+  config = maybeKey.ref;
+  return {
+    $$typeof: REACT_ELEMENT_TYPE,
+    type: type,
+    key: key,
+    ref: void 0 !== config ? config : null,
+    props: maybeKey
+  };
+}
+__webpack_unused_export__ = REACT_FRAGMENT_TYPE;
+exports.jsx = jsxProd;
+__webpack_unused_export__ = jsxProd;
 
 
 /***/ }),
@@ -27,20 +48,9 @@ __webpack_require__(1649);var e=Symbol.for("react.element"),g=Symbol.for("react.
 
 
 if (true) {
-  module.exports = __webpack_require__(3335);
+  module.exports = __webpack_require__(1197);
 } else {}
 
-
-/***/ }),
-
-/***/ 1649:
-/***/ ((module) => {
-
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ })
 
@@ -96,8 +106,6 @@ var __webpack_exports__ = {};
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1649);
-
 
 const getCls = (type, size) => {
   let sp = "", os = "";
@@ -111,7 +119,7 @@ const getCls = (type, size) => {
   }
   return { sp, os };
 };
-const Col = (0,react__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(({ span, offset, xl, lg, md, sm, xs, style, width, auto, offsetWidth = "0px", className, ...rest }, ref) => {
+const Col = ({ span, offset, xl, lg, md, sm, xs, style, width, auto, offsetWidth = "0px", className, ref, ...rest }) => {
   const defCls = className ? ` ${className}` : "";
   const sp = `col-${span || 12}`;
   const os = offset ? `offset-${offset}` : "";
@@ -128,7 +136,7 @@ const Col = (0,react__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(({ span, offset, x
     maxWidth: `calc(100% - ${offsetWidth})`
   } : { width };
   return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: `${cls}${defCls}`, ...rest, style: { ...autoStyle, ...style }, ref });
-});
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Col);
 
 })();
