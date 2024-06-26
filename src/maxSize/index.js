@@ -101,8 +101,6 @@ if (true) {
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -227,8 +225,6 @@ const MaxSize = ({ panel, target, fullIcon = defaultIcon, exitIcon = defaultIcon
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(Icon, { onClick: (e) => handle(!isMax, panel) });
 };
 /* harmony default export */ const maxSize = (MaxSize);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

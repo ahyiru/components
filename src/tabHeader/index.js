@@ -18,7 +18,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
   clear: both;
-  content: "";
+  content: '';
   display: block;
   height: 0;
   visibility: hidden;
@@ -36,7 +36,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
 }
 .tabs-header-wrap .tabs-header::after {
   clear: both;
-  content: "";
+  content: '';
   display: block;
   height: 0;
   visibility: hidden;
@@ -79,7 +79,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.clear::after {
   transition: all 0.3s;
 }
 .tabs-header-wrap .th-track::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -564,8 +564,6 @@ module.exports = styleTagTransform;
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -686,8 +684,6 @@ const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ref, ...
   ] });
 };
 /* harmony default export */ const huxy_components_tabHeader = (TabHeader);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

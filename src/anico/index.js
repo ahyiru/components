@@ -66,7 +66,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*@height:2px;
   transition: transform var(--anitime), background-color var(--anitime);
 }
 .nstud .IZUmD::before, .nstud .IZUmD::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   top: 0;
@@ -628,8 +628,6 @@ module.exports = styleTagTransform;
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -712,8 +710,6 @@ const Anico = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className
   }
 ) });
 /* harmony default export */ const huxy_components_anico = (Anico);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

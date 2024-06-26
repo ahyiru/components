@@ -192,8 +192,6 @@ module.exports = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["defa
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -213,8 +211,6 @@ const HandleError = ({ children, report }) => {
   return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_errorBoundary__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, { ref: boundaryRef, fallback: (error, info) => (0,_loadError__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)({ error, info }), errorReport: report, children });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HandleError);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

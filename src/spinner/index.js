@@ -83,7 +83,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes before {
 }
 .spinner .spinning::before,
 .spinner .spinning::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -574,8 +574,6 @@ module.exports = styleTagTransform;
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -636,8 +634,6 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.A, options)
 
 const Spinner = ({ global, absolute }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `spinner${global ? " global" : ""}${absolute ? " absolute" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("figure", { className: "spinning" }) });
 /* harmony default export */ const huxy_components_spinner = (Spinner);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

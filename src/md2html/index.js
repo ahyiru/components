@@ -68,7 +68,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*@height:2px;
   transition: transform var(--anitime), background-color var(--anitime);
 }
 .nstud .IZUmD::before, .nstud .IZUmD::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   top: 0;
@@ -295,7 +295,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drawer-right-in {
   border-color: rgba(0, 0, 0, 0.02);
 }
 .W4gG3 .e3AWW .VSVwl:before {
-  content: "\\00D7";
+  content: '\\00D7';
   position: absolute;
   top: 0;
   left: 0;
@@ -595,7 +595,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes before {
 }
 .spinner .spinning::before,
 .spinner .spinning::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -990,9 +990,10 @@ const mask = {
   zIndex: 1e4
 };
 const body = document.body;
+const changeOverflow = (mountNode, delayOpen) => (mountNode ?? body).style.overflow = delayOpen ? "hidden" : "";
 const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask", relative }) => {
   const [delayOpen] = use_useDelayState(open, delay);
-  (mountNode ?? body).style.overflow = delayOpen ? "hidden" : "";
+  changeOverflow(mountNode, delayOpen);
   const position = relative ? "absolute" : "fixed";
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal/* default */.A, { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
     hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...mask, position }, onClick: (e) => close?.(e) }) : null,
@@ -1506,8 +1507,6 @@ module.exports = x({ ["Children"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.Chil
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -1683,23 +1682,23 @@ const Anchor = ({ curName, itemList }) => {
   const currentName = (0,external_react_.useRef)("");
   const [name, setName] = (0,external_react_.useState)(curName);
   (0,external_react_.useEffect)(() => {
-    itemList.current = utils_validObj(itemList.current);
+    const validItemList = utils_validObj(itemList.current);
     if (!curName) {
-      const items = Object.keys(itemList.current).map((key) => ({ name: key, offsetTop: itemList.current[key]?.offsetTop ?? 0 }));
+      const items = Object.keys(validItemList).map((key) => ({ name: key, offsetTop: validItemList[key]?.offsetTop ?? 0 }));
       setName(items[0]?.name);
     }
     let animateDelay = 0;
     let initDelay = 0;
     if (currentName.current !== curName) {
       currentName.current = curName;
-      const currentRef = itemList.current[curName];
+      const currentRef = validItemList[curName];
       isScrolling.current = true;
       if (currentRef) {
         utils_scrollTo(currentRef.offsetTop);
         animateDelay = setTimeout(() => isScrolling.current = false, 1050);
       } else {
         initDelay = setTimeout(() => {
-          window.scrollTo?.({ top: itemList.current[curName]?.offsetTop ?? 0, behavior: "instant" });
+          window.scrollTo?.({ top: validItemList[curName]?.offsetTop ?? 0, behavior: "instant" });
           animateDelay = setTimeout(() => isScrolling.current = false, 1050);
         }, 550);
       }
@@ -1907,10 +1906,17 @@ const Md2html = (props) => {
     /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "huxy-doc-header", children: [
       /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-doc-banner", children: title || "\u6587\u6863\u7CFB\u7EDF" }),
       /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-doc-nav", children: isSmall ? /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "huxy-doc-collapsed", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: "link", onClick: (e) => {
-          e.stopPropagation();
-          setCollapsed(!collapsed);
-        }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(anico/* default */.A, { type: collapsed ? "right" : "" }) }) }),
+        /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "huxy-doc-collapsed", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
+          "span",
+          {
+            className: "link",
+            onClick: (e) => {
+              e.stopPropagation();
+              setCollapsed(!collapsed);
+            },
+            children: /* @__PURE__ */ (0,jsx_runtime.jsx)(anico/* default */.A, { type: collapsed ? "right" : "" })
+          }
+        ) }),
         /* @__PURE__ */ (0,jsx_runtime.jsx)(drawer/* default */.A, { open: collapsed, close: () => setCollapsed(false), width: "220px", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-doc-menu-drawer", children: listEle }) })
       ] }) : listEle }),
       routeLink ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-doc-back", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Link, { to: routeLink, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: routeName ?? "\u8FD4\u56DE\u4E3B\u9875" }) }) }) : null
@@ -1922,8 +1928,6 @@ const Md2html = (props) => {
   ] });
 };
 /* harmony default export */ const huxy_components_md2html = (Md2html);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

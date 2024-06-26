@@ -52,7 +52,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drop-in {
 }
 .TEYHV::after {
   clear: both;
-  content: "";
+  content: '';
   display: block;
   height: 0;
   visibility: hidden;
@@ -848,8 +848,6 @@ module.exports = styleTagTransform;
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -908,7 +906,7 @@ const useClickAway = (elRef, handleEvent, events = "click") => {
 /* harmony default export */ const use_useClickAway = (useClickAway);
 
 ;// CONCATENATED MODULE: ../huxy/utils/isReactEle.js
-const isReactEle = (value) => value?.["$$typeof"] && typeof value["$$typeof"] === "symbol" && ["react.transitional.element", "react.element"].includes(value["$$typeof"]["description"]);
+const isReactEle = (value) => value?.["$$typeof"] && typeof value["$$typeof"] === "symbol" && value["$$typeof"]["description"]?.indexOf("react.") === 0;
 /* harmony default export */ const utils_isReactEle = (isReactEle);
 
 ;// CONCATENATED MODULE: ../huxy/utils/firstUpper.js
@@ -1263,8 +1261,6 @@ const Drop = ({ trigger = "click", type, dropList, className, children, targetPr
   ] });
 };
 /* harmony default export */ const huxy_components_drop = (Drop);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

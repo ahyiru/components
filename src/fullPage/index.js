@@ -101,8 +101,6 @@ if (true) {
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -190,8 +188,6 @@ const FullPage = ({ panel, fullIcon = defaultIcon, exitIcon = defaultIcon, ...re
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(Icon, { onClick: (e) => utils_fullScreen(container), ...rest });
 };
 /* harmony default export */ const fullPage = (FullPage);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

@@ -304,9 +304,10 @@ const mask = {
   zIndex: 1e4
 };
 const body = document.body;
+const changeOverflow = (mountNode, delayOpen) => (mountNode ?? body).style.overflow = delayOpen ? "hidden" : "";
 const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask", relative }) => {
   const [delayOpen] = use_useDelayState(open, delay);
-  (mountNode ?? body).style.overflow = delayOpen ? "hidden" : "";
+  changeOverflow(mountNode, delayOpen);
   const position = relative ? "absolute" : "fixed";
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(portal/* default */.A, { mountNode, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { children: delayOpen ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className, style: { ...wrapper, position }, children: [
     hasMask ? /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { ...mask, position }, onClick: (e) => close?.(e) }) : null,
@@ -740,8 +741,6 @@ module.exports = x({ ["Children"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.Chil
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -831,8 +830,6 @@ const Modal = ({ open, close, hasMask = true, cancelText = "\u53D6\u6D88", submi
   ] }) }) });
 };
 /* harmony default export */ const huxy_components_modal = (Modal);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

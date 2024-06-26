@@ -196,13 +196,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.node-right-icon-close {
   user-select: none;
   position: relative;
 }
-.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active {
+.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children='true'] > .link.active {
   background-color: hsla(0, 0%, 0%, 0.02);
 }
-.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active::after {
+.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children='true'] > .link.active::after {
   display: none;
 }
-.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link .node-text {
+.huxy-tree .huxy-tree-track .huxy-tree-root li[has-children='true'] > .link .node-text {
   padding-right: calc(var(--rightIconWidth) + 5px);
 }
 .huxy-tree .huxy-tree-track .huxy-tree-root li > .link {
@@ -254,7 +254,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.node-right-icon-close {
   text-align: center;
 }
 .huxy-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon .default-left-icon:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 4px;
   height: 4px;
@@ -560,7 +560,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.node-right-icon-close {
 }
 .huxy-horizontal-tree .huxy-tree-track .huxy-tree-root::after {
   clear: both;
-  content: "";
+  content: '';
   display: block;
   height: 0;
   visibility: hidden;
@@ -569,13 +569,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.node-right-icon-close {
   user-select: none;
   position: relative;
 }
-.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active {
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children='true'] > .link.active {
   background-color: hsla(0, 0%, 0%, 0.02);
 }
-.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link.active::after {
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children='true'] > .link.active::after {
   display: none;
 }
-.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children="true"] > .link .node-text {
+.huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li[has-children='true'] > .link .node-text {
   padding-right: calc(var(--rightIconWidth) + 5px);
 }
 .huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link {
@@ -620,7 +620,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.node-right-icon-close {
   text-align: center;
 }
 .huxy-horizontal-tree .huxy-tree-track .huxy-tree-root li > .link .node-left-icon .default-left-icon:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 4px;
   height: 4px;
@@ -870,7 +870,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.node-right-icon-close {
   z-index: 10001;
 }
 .huxy-horizontal-tree .huxy-tree-track .huxy-tree-root > li::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: calc(50% - 10px);
@@ -1520,8 +1520,6 @@ const isArray = (value) => utils_getType(value) === "array";
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -1708,8 +1706,6 @@ const Tree = (props) => {
   return /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { ref: menuRef, className: cls, style: treeStyles, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "huxy-tree-track", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { className: "huxy-tree-root", children: (0,renderTree/* default */.A)({ data, events, List, Link, leftIcon: true, rightIcon: true, isHorizontal, isCollapsed }) }) }) });
 };
 /* harmony default export */ const huxy_components_tree = (Tree);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

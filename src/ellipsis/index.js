@@ -67,7 +67,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
   transform: translateY(100%);
 }
 .hVmF3::after {
-  content: "";
+  content: '';
   height: calc(var(--arrowSize) + 2px);
   width: calc(var(--arrowSize) + 2px);
   border-left-color: transparent;
@@ -119,7 +119,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
   transform: translateY(100%);
 }
 .uzFyE[tooltip]::after {
-  content: "";
+  content: '';
   height: calc(var(--arrowSize) + 2px);
   width: calc(var(--arrowSize) + 2px);
   border-left-color: transparent;
@@ -180,7 +180,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
   transform: translateY(100%);
 }
 .Giihu[tooltip]::after {
-  content: "";
+  content: '';
   height: calc(var(--arrowSize) + 2px);
   width: calc(var(--arrowSize) + 2px);
   border-left-color: transparent;
@@ -241,7 +241,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
   transform: translateY(100%);
 }
 .bFVVt[tooltip]::after {
-  content: "";
+  content: '';
   height: calc(var(--arrowSize) + 2px);
   width: calc(var(--arrowSize) + 2px);
   border-left-color: transparent;
@@ -302,7 +302,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
   transform: translateY(100%);
 }
 .oGmKq[tooltip]::after {
-  content: "";
+  content: '';
   height: calc(var(--arrowSize) + 2px);
   width: calc(var(--arrowSize) + 2px);
   border-left-color: transparent;
@@ -363,7 +363,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
   transform: translateY(100%);
 }
 .svYWD[tooltip]::after {
-  content: "";
+  content: '';
   height: calc(var(--arrowSize) + 2px);
   width: calc(var(--arrowSize) + 2px);
   border-left-color: transparent;
@@ -576,15 +576,7 @@ var update = injectStylesIntoStyleTag_default()(tooltip/* default */.Ay, options
 ;// CONCATENATED MODULE: ../huxy/components/tooltip/index.jsx
 
 
-const Tooltip = ({ title, placement = "topRight", children, ellipsis, className, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)(
-  "span",
-  {
-    className: `${tooltip_namespaceObject[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ""}`,
-    tooltip: title ?? children,
-    ...rest,
-    children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: ellipsis ? tooltip/* ellipsis */.gO : "", children })
-  }
-);
+const Tooltip = ({ title, placement = "topRight", children, ellipsis, className, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `${tooltip_namespaceObject[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ""}`, tooltip: title ?? children, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: ellipsis ? tooltip/* ellipsis */.gO : "", children }) });
 /* harmony default export */ const huxy_components_tooltip = (Tooltip);
 
 
@@ -967,8 +959,6 @@ module.exports = styleTagTransform;
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -1098,8 +1088,6 @@ const Ellipsis = (props) => {
   return /* @__PURE__ */ (0,jsx_runtime.jsx)(EllipsisTooltip, { ...props });
 };
 /* harmony default export */ const ellipsis = (Ellipsis);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

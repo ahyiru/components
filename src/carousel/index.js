@@ -540,8 +540,6 @@ module.exports = styleTagTransform;
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -852,8 +850,6 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
   ] });
 };
 /* harmony default export */ const huxy_components_carousel = (Carousel);
-
-})();
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };
