@@ -42,7 +42,7 @@ class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Compon
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
-/* harmony import */ var _str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7877);
+/* harmony import */ var _huxy_components_str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7877);
 
 
 const LoadError = (props) => {
@@ -55,7 +55,7 @@ ${info}`.replace(/\r|\n|\r\n/g, "<br/>");
   str = str.replace(/\s/g, "&nbsp;");
   const errStack = message?.slice(0, 120).split(". ").slice(0, 2).join(". ");
   return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { style: { padding: "15px 20px", backgroundColor: "#fff", wordWrap: "break-word" }, children: [
-    (0,_str2React__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(str, { style: { color: "red" } }),
+    (0,_huxy_components_str2React__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(str, { style: { color: "red" } }),
     errStack && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", { style: { display: "inline-block", padding: "15px", color: "#00b4cf" }, href: `https://stackoverflow.com/search?q=${errStack}`, target: "_blank", children: [
       " ",
       "--> \u53BB\u7F51\u4E0A\u67E5\u627E\u9519\u8BEF\u539F\u56E0\uFF1F"
@@ -197,8 +197,8 @@ var __webpack_exports__ = {};
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1649);
-/* harmony import */ var _errorBoundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4907);
-/* harmony import */ var _loadError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8217);
+/* harmony import */ var _huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4907);
+/* harmony import */ var _huxy_components_loadError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8217);
 
 
 
@@ -208,7 +208,7 @@ const HandleError = ({ children, report }) => {
   if (boundaryRef.current?.state) {
     boundaryRef.current.state.error = null;
   }
-  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_errorBoundary__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, { ref: boundaryRef, fallback: (error, info) => (0,_loadError__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)({ error, info }), errorReport: report, children });
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, { ref: boundaryRef, fallback: (error, info) => (0,_huxy_components_loadError__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)({ error, info }), errorReport: report, children });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HandleError);
 

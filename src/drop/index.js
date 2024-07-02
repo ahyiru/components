@@ -1125,25 +1125,14 @@ const dropInfo = (triggerEle, showEle, type = "horizontal") => {
 };
 /* harmony default export */ const utils_dropInfo = (dropInfo);
 
-;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
-
-const useFirstMounted = () => {
-  const isFirst = (0,external_react_namespaceObject.useRef)(true);
-  if (isFirst.current) {
-    isFirst.current = false;
-    return true;
-  }
-  return false;
-};
-/* harmony default export */ const use_useFirstMounted = (useFirstMounted);
-
 ;// CONCATENATED MODULE: ../huxy/use/useUpdateEffect/index.jsx
 
-
 const useUpdateEffect = (effect, deps = []) => {
-  const isFirst = use_useFirstMounted();
+  const isMounted = (0,external_react_namespaceObject.useRef)(false);
   (0,external_react_namespaceObject.useEffect)(() => {
-    if (!isFirst) {
+    if (!isMounted.current) {
+      isMounted.current = true;
+    } else {
       return effect();
     }
   }, deps);

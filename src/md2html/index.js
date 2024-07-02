@@ -836,8 +836,8 @@ __webpack_require__.d(drawer_namespaceObject, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-// EXTERNAL MODULE: ../huxy/components/mask/index.jsx + 3 modules
-var mask = __webpack_require__(2768);
+// EXTERNAL MODULE: ../huxy/components/mask/index.jsx + 2 modules
+var mask = __webpack_require__(7266);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(2591);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -906,7 +906,7 @@ const Drawer = ({ open, close, footer, header, className, style, children, width
 
 /***/ }),
 
-/***/ 2768:
+/***/ 7266:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -919,25 +919,14 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(1649);
-;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
-
-const useFirstMounted = () => {
-  const isFirst = (0,external_react_.useRef)(true);
-  if (isFirst.current) {
-    isFirst.current = false;
-    return true;
-  }
-  return false;
-};
-/* harmony default export */ const use_useFirstMounted = (useFirstMounted);
-
 ;// CONCATENATED MODULE: ../huxy/use/useUpdateEffect/index.jsx
 
-
 const useUpdateEffect = (effect, deps = []) => {
-  const isFirst = use_useFirstMounted();
+  const isMounted = (0,external_react_.useRef)(false);
   (0,external_react_.useEffect)(() => {
-    if (!isFirst) {
+    if (!isMounted.current) {
+      isMounted.current = true;
+    } else {
       return effect();
     }
   }, deps);
@@ -1582,10 +1571,10 @@ const useWinResize = () => {
 };
 /* harmony default export */ const use_useWinResize = (useWinResize);
 
-// EXTERNAL MODULE: ../huxy/components/anico/index.jsx + 1 modules
-var anico = __webpack_require__(2819);
 // EXTERNAL MODULE: ../huxy/components/drawer/index.jsx + 1 modules
 var drawer = __webpack_require__(8928);
+// EXTERNAL MODULE: ../huxy/components/anico/index.jsx + 1 modules
+var anico = __webpack_require__(2819);
 ;// CONCATENATED MODULE: ../huxy/components/md2html/renderMenu.jsx
 
 const RenderMenu = ({ menu, curName, Link }) => menu.map((item) => {
@@ -1600,18 +1589,6 @@ const RenderMenu = ({ menu, curName, Link }) => menu.map((item) => {
   return /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Link, { to: { query: { name } }, className: `link${active ? " active" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: name }) }) }, path || name);
 });
 /* harmony default export */ const renderMenu = (RenderMenu);
-
-;// CONCATENATED MODULE: ../huxy/utils/validObj.js
-const validObj = (obj = {}) => {
-  const newObj = {};
-  Object.keys(obj).map((v) => {
-    if (obj[v] != null) {
-      newObj[v] = obj[v];
-    }
-  });
-  return newObj;
-};
-/* harmony default export */ const utils_validObj = (validObj);
 
 ;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
@@ -1633,6 +1610,11 @@ const scrollTo = (top = 0, ele) => {
   ele.scrollTo?.({ top, behavior: "smooth" });
 };
 /* harmony default export */ const utils_scrollTo = (scrollTo);
+
+;// CONCATENATED MODULE: ../huxy/utils/scrollTop.js
+
+const scrollTop = () => utils_isBrowser() && (window.pageYOffset ?? document.documentElement.scrollTop ?? document.body.scrollTop);
+/* harmony default export */ const utils_scrollTop = (scrollTop);
 
 ;// CONCATENATED MODULE: ../huxy/utils/throttle.js
 const throttle = (fn = () => {
@@ -1669,12 +1651,23 @@ const sort = (arr, key = null, desc = false) => {
 };
 /* harmony default export */ const utils_sort = (sort);
 
-;// CONCATENATED MODULE: ../huxy/utils/scrollTop.js
-
-const scrollTop = () => utils_isBrowser() && (window.pageYOffset ?? document.documentElement.scrollTop ?? document.body.scrollTop);
-/* harmony default export */ const utils_scrollTop = (scrollTop);
+;// CONCATENATED MODULE: ../huxy/utils/validObj.js
+const validObj = (obj = {}) => {
+  const newObj = {};
+  Object.keys(obj).map((v) => {
+    if (obj[v] != null) {
+      newObj[v] = obj[v];
+    }
+  });
+  return newObj;
+};
+/* harmony default export */ const utils_validObj = (validObj);
 
 ;// CONCATENATED MODULE: ../huxy/components/md2html/useAnchor/index.jsx
+
+
+
+
 
 
 const Anchor = ({ curName, itemList }) => {
@@ -1731,10 +1724,10 @@ const Anchor = ({ curName, itemList }) => {
 };
 /* harmony default export */ const useAnchor = (Anchor);
 
-// EXTERNAL MODULE: ../huxy/components/str2React/index.jsx
-var str2React = __webpack_require__(7877);
 // EXTERNAL MODULE: ../huxy/components/spinner/index.jsx + 1 modules
 var spinner = __webpack_require__(1034);
+// EXTERNAL MODULE: ../huxy/components/str2React/index.jsx
+var str2React = __webpack_require__(7877);
 ;// CONCATENATED MODULE: ../huxy/components/md2html/utils/replacePath.js
 const imgReg = /!\[.*\]\((.*)\)/g;
 const getPaths = async (defaultPaths, folder, getContext) => {
@@ -1760,6 +1753,7 @@ const replacePath = async (context, { folder }, getContext) => {
 /* harmony default export */ const utils_replacePath = (replacePath);
 
 ;// CONCATENATED MODULE: ../huxy/components/md2html/renderPage/renderContext.jsx
+
 
 
 
@@ -1871,6 +1865,7 @@ var update = injectStylesIntoStyleTag_default()(md2html/* default */.A, options)
        /* harmony default export */ const components_md2html = (md2html/* default */.A && md2html/* default */.A.locals ? md2html/* default */.A.locals : undefined);
 
 ;// CONCATENATED MODULE: ../huxy/components/md2html/index.jsx
+
 
 
 

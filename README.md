@@ -14,7 +14,7 @@
 `default：''`
 
 ```html
-<Anico type={type} />
+<Anico type="{type}" />
 ```
 
 ### Base64Image
@@ -30,14 +30,13 @@
 错误边界处理。
 
 ```html
-<ErrorBoundary fallback={loadError}>
-  <ErrorComp state={demoError} name="eb" />
+<ErrorBoundary fallback="{loadError}">
+  <ErrorComp state="{demoError}" name="eb" />
 </ErrorBoundary>
 
 <HandleError>
-  <ErrorComp state={demoError} name="eb" />
+  <ErrorComp state="{demoError}" name="eb" />
 </HandleError>
-
 ```
 
 ### fixEle/fixIcon
@@ -45,12 +44,9 @@
 对传入的元素兼容处理。如传入函数、react 对象、原生 dom、className、注入元素、默认元素、null等。
 
 ```html
-const Ele = fixEle(iconList)(iconValue);
-
-const Icon = fixIcon(icons);
+const Ele = fixEle(iconList)(iconValue); const Icon = fixIcon(icons);
 
 <Icon icon="home" />
-
 ```
 
 ### FullPage
@@ -62,7 +58,7 @@ const Icon = fixIcon(icons);
 - exitIcon：最小化 icon，默认'...'
 
 ```html
-<FullPage panel={panel} fullIcon="..." exitIcon="---" />
+<FullPage panel="{panel}" fullIcon="..." exitIcon="---" />
 ```
 
 ### Row/Col
@@ -98,7 +94,7 @@ const Icon = fixIcon(icons);
 基于 `Row/Col` 的栅格布局。
 
 ```html
-<Grid rowProps={{gutter: 12}} colProps={{span: 6}} Row={} Col={}>
+<Grid rowProps="{{gutter:" 12}} colProps="{{span:" 6}} Row="{}" Col="{}">
   <p>list 1</p>
   <p>list 2</p>
   <p>list 3</p>
@@ -115,7 +111,7 @@ const Icon = fixIcon(icons);
 - exitIcon：最小化 icon，默认'...'
 
 ```html
-<MaxSize target={target} panel={panel} fullIcon="..." exitIcon="---" />
+<MaxSize target="{target}" panel="{panel}" fullIcon="..." exitIcon="---" />
 ```
 
 ### Portal
@@ -123,8 +119,7 @@ const Icon = fixIcon(icons);
 - mountNode：挂载点，默认`document.body`
 
 ```html
-<Portal mountNode={}> portal </Portal>
-
+<Portal mountNode="{}"> portal </Portal>
 ```
 
 ### Mask
@@ -137,7 +132,7 @@ const Icon = fixIcon(icons);
 - delay：延迟关闭时间，默认 300ms
 
 ```html
-<Mask open={open} close={() => setOpen(false)} />
+<Mask open="{open}" close="{()" =""> setOpen(false)} /></Mask>
 ```
 
 ### Modal
@@ -152,9 +147,7 @@ const Icon = fixIcon(icons);
 - title：标题
 
 ```html
-<Modal open={open} cancel={() => setOpen(false)} cancelText="取消" submit={() => setOpen(false)} submitText="确定" title="Modal 弹窗">
-  ...
-</Modal>
+<Modal open="{open}" cancel="{()" =""> setOpen(false)} cancelText="取消" submit={() => setOpen(false)} submitText="确定" title="Modal 弹窗"> ... </Modal>
 ```
 
 ### Panel
@@ -166,9 +159,7 @@ const Icon = fixIcon(icons);
 - loading：加载状态
 
 ```html
-<Panel title="panelTitle" plugins={[]}>
-  ...
-</Panel>
+<Panel title="panelTitle" plugins="{[]}"> ... </Panel>
 ```
 
 ### Spinner
@@ -179,8 +170,7 @@ const Icon = fixIcon(icons);
 - absolute：是否相对容器绝对定位
 
 ```html
-<Spinner global />
-<Spinner absolute />
+<Spinner global /> <Spinner absolute />
 ```
 
 ### TabHeader
@@ -244,7 +234,7 @@ tab 切换
 - dropList：弹出层内容 DOM。
 
 ```html
-<Drop trigger="contextMenu" dropList={fileDrop(filename)}>
+<Drop trigger="contextMenu" dropList="{fileDrop(filename)}">
   <div>{filename}</div>
 </Drop>
 ```
@@ -263,17 +253,19 @@ renderTree：
 Tree：
 
 - data：树对象 []。
-- type：展示类型，默认  'vertical' 。
-- collapsed：是否为收缩状态，默认  'false' 。
+- type：展示类型，默认 'vertical' 。
+- collapsed：是否为收缩状态，默认 'false' 。
 - Link：链接跳转，默认 `a` 标签跳转。
 - width：菜单宽度。
 - bgColor：背景颜色。
 - itemHeight：菜单节点高度。
 
 ```html
-<ul className="huxy-tree-root">{render(data, events, Link, List)}</ul>
+<ul className="huxy-tree-root">
+  {render(data, events, Link, List)}
+</ul>
 
-<Tree data={navMenu} type="horizontal" Link={Link} style={navMenuStyle} />
+<Tree data="{navMenu}" type="horizontal" Link="{Link}" style="{navMenuStyle}" />
 ```
 
 ### Carousel
@@ -293,9 +285,7 @@ Tree：
 ### Tooltip
 
 ```html
-<Tooltip placement="topRight">
-  hello worldhello worldhello worldhello worldhello world
-</Tooltip>
+<Tooltip placement="topRight"> hello worldhello worldhello worldhello worldhello world </Tooltip>
 ```
 
 - placement：tooltip 位置，有 topRight | topLeft | bottomRight | bottomLeft | rightTop ，默认 topRight 。
@@ -305,13 +295,10 @@ Tree：
 超出容器宽度展示省略号并且鼠标移上去有 tooltip 。
 
 ```html
-<Ellipsis>
-  hello worldhello worldhello worldhello worldhello world
-</Ellipsis>
+<Ellipsis> hello worldhello worldhello worldhello worldhello world </Ellipsis>
 <Ellipsis>
   <Tooltip placement="topLeft" title="hhhhhhhhh">
     <span>hhhhhhhhh</span>
   </Tooltip>
 </Ellipsis>
 ```
-

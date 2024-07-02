@@ -146,25 +146,14 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(1649);
-;// CONCATENATED MODULE: ../huxy/use/useFirstMounted/index.jsx
-
-const useFirstMounted = () => {
-  const isFirst = (0,external_react_.useRef)(true);
-  if (isFirst.current) {
-    isFirst.current = false;
-    return true;
-  }
-  return false;
-};
-/* harmony default export */ const use_useFirstMounted = (useFirstMounted);
-
 ;// CONCATENATED MODULE: ../huxy/use/useUpdateEffect/index.jsx
 
-
 const useUpdateEffect = (effect, deps = []) => {
-  const isFirst = use_useFirstMounted();
+  const isMounted = (0,external_react_.useRef)(false);
   (0,external_react_.useEffect)(() => {
-    if (!isFirst) {
+    if (!isMounted.current) {
+      isMounted.current = true;
+    } else {
       return effect();
     }
   }, deps);

@@ -126,9 +126,9 @@ var __webpack_exports__ = {};
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _fixEle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6770);
+/* harmony import */ var _huxy_components_fixEle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6770);
 
-const fixIcons = (iconList) => (0,_fixEle__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(iconList);
+const fixIcons = (iconList) => (0,_huxy_components_fixEle__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(iconList);
 const Icon = (iconList) => ({ icon, defaultIcon }) => icon ? fixIcons(iconList)(icon) : icon === false ? null : defaultIcon;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
 
