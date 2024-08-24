@@ -588,7 +588,10 @@ const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, p
 
 ;// CONCATENATED MODULE: ../huxy/utils/isRef.js
 
-const isRef = (ref) => utils_hasProp(ref, "current");
+const isRef = (ref) => {
+  const refObj = typeof ref === "function" ? ref() : ref;
+  return utils_hasProp(refObj, "current");
+};
 /* harmony default export */ const utils_isRef = (isRef);
 
 ;// CONCATENATED MODULE: ../huxy/utils/getPosition.js

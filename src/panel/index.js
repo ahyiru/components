@@ -772,6 +772,18 @@ var y = (x) => (() => (x))
 const external_react_namespaceObject = x({ ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef) });
 // EXTERNAL MODULE: ../huxy/components/spinner/index.jsx + 1 modules
 var spinner = __webpack_require__(1034);
+;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
+/* harmony default export */ const utils_hasProp = (hasProp);
+
+;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+
+const isRef = (ref) => {
+  const refObj = typeof ref === "function" ? ref() : ref;
+  return utils_hasProp(refObj, "current");
+};
+/* harmony default export */ const utils_isRef = (isRef);
+
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(2591);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -824,13 +836,14 @@ var update = injectStylesIntoStyleTag_default()(panel/* default */.Ay, options);
 
 
 
+
 const isValid = (plugins) => plugins?.filter?.((item) => typeof item === "function");
 const Panel = ({ loading, title, plugins, children, className, ref, ...rest }) => {
   const panelRef = (0,external_react_namespaceObject.useRef)();
   const validPlugin = isValid(plugins);
   const isValidPlugin = validPlugin?.length;
   const cls = className ? ` ${className}` : "";
-  const container = ref?.current ? ref : panelRef;
+  const container = utils_isRef(() => ref) ? ref : panelRef;
   return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${panel/* panel */.nd}${cls}`, ...rest, ref: container, children: [
     (title || isValidPlugin) && /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: panel/* panel-header */.$d, children: [
       title && /* @__PURE__ */ (0,jsx_runtime.jsx)("h4", { className: panel/* panel-title */.w_, children: title }),
