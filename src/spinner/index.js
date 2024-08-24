@@ -60,7 +60,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes before {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 9999;
   background-color: hsla(0, 0%, 72%, 0.24);
 }
 .spinner.absolute {

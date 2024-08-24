@@ -1569,6 +1569,14 @@ const useUpdate = () => {
 };
 /* harmony default export */ const use_useUpdate = (useUpdate);
 
+;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+
+const useRefFun = (initRef = null) => {
+  const ref = (0,external_react_namespaceObject.useRef)(initRef);
+  return () => ref;
+};
+/* harmony default export */ const use_useRefFun = (useRefFun);
+
 // EXTERNAL MODULE: ../huxy/components/renderTree/index.jsx + 1 modules
 var renderTree = __webpack_require__(1918);
 ;// CONCATENATED MODULE: ../huxy/components/tree/listRender.jsx
@@ -1642,6 +1650,7 @@ var update = injectStylesIntoStyleTag_default()(tree/* default */.A, options);
 
 
 
+
 const ListContauner = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { ...props });
 const getList = (isNormal, float) => isNormal ? listRender : ({ item, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)(ListContauner, { className: float === "right" ? "left" : "", ...rest });
 const Tree = (props) => {
@@ -1659,8 +1668,8 @@ const Tree = (props) => {
     className,
     ...rest
   } = props;
-  const timer = (0,external_react_namespaceObject.useRef)();
-  const menuRef = (0,external_react_namespaceObject.useRef)();
+  const timer = use_useRefFun()();
+  const menuRef = use_useRefFun()();
   (0,external_react_namespaceObject.useEffect)(() => () => clearTimeout(timer.current), []);
   const rerender = use_useUpdate();
   const isHorizontal = type === "horizontal";

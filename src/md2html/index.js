@@ -572,7 +572,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes before {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 9999;
   background-color: hsla(0, 0%, 72%, 0.24);
 }
 .spinner.absolute {
@@ -1542,10 +1542,19 @@ const getViewportSize = (element = null) => {
 };
 /* harmony default export */ const utils_getViewportSize = (getViewportSize);
 
+;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+
+const useRefFun = (initRef = null) => {
+  const ref = (0,external_react_.useRef)(initRef);
+  return () => ref;
+};
+/* harmony default export */ const use_useRefFun = (useRefFun);
+
 ;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
 
+
 const useRaf = (initState = {}) => {
-  const frame = (0,external_react_.useRef)(0);
+  const frame = use_useRefFun(0)();
   const [state, setState] = (0,external_react_.useState)(initState);
   const setRaf = (0,external_react_.useCallback)((value) => {
     cancelAnimationFrame(frame.current);
@@ -1785,8 +1794,9 @@ const RenderContext = ({ item, marked, getContext }) => {
 
 
 
+
 const RenderPage = ({ router, curName, context, marked, getContext }) => {
-  const itemList = (0,external_react_.useRef)({});
+  const itemList = use_useRefFun({})();
   const [name] = useAnchor({ curName, itemList });
   (0,external_react_.useEffect)(() => {
     name && router.push({ query: { name } });

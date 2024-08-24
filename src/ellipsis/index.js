@@ -55,7 +55,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
 }
 .hVmF3::before {
   content: attr(tooltip);
-  z-index: 100002;
+  z-index: 10002;
   padding: 4px 10px;
   text-align: left;
   font-size: 1.2rem;
@@ -107,7 +107,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
 }
 .uzFyE[tooltip]::before {
   content: attr(tooltip);
-  z-index: 100002;
+  z-index: 10002;
   padding: 4px 10px;
   text-align: left;
   font-size: 1.2rem;
@@ -168,7 +168,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
 }
 .Giihu[tooltip]::before {
   content: attr(tooltip);
-  z-index: 100002;
+  z-index: 10002;
   padding: 4px 10px;
   text-align: left;
   font-size: 1.2rem;
@@ -229,7 +229,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
 }
 .bFVVt[tooltip]::before {
   content: attr(tooltip);
-  z-index: 100002;
+  z-index: 10002;
   padding: 4px 10px;
   text-align: left;
   font-size: 1.2rem;
@@ -290,7 +290,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
 }
 .oGmKq[tooltip]::before {
   content: attr(tooltip);
-  z-index: 100002;
+  z-index: 10002;
   padding: 4px 10px;
   text-align: left;
   font-size: 1.2rem;
@@ -351,7 +351,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ofth_ {
 }
 .svYWD[tooltip]::before {
   content: attr(tooltip);
-  z-index: 100002;
+  z-index: 10002;
   padding: 4px 10px;
   text-align: left;
   font-size: 1.2rem;

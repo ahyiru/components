@@ -1,42 +1,6 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
-/******/ var __webpack_modules__ = ({
-
-/***/ 1649:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-module.exports = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]) });
-
-/***/ })
-
-/******/ });
-/************************************************************************/
-/******/ // The module cache
-/******/ var __webpack_module_cache__ = {};
-/******/ 
-/******/ // The require function
-/******/ function __webpack_require__(moduleId) {
-/******/ 	// Check if module is in cache
-/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 	if (cachedModule !== undefined) {
-/******/ 		return cachedModule.exports;
-/******/ 	}
-/******/ 	// Create a new module (and put it into the cache)
-/******/ 	var module = __webpack_module_cache__[moduleId] = {
-/******/ 		// no module.id needed
-/******/ 		// no module.loaded needed
-/******/ 		exports: {}
-/******/ 	};
-/******/ 
-/******/ 	// Execute the module function
-/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 
-/******/ 	// Return the exports of the module
-/******/ 	return module.exports;
-/******/ }
+/******/ // The require scope
+/******/ var __webpack_require__ = {};
 /******/ 
 /************************************************************************/
 /******/ /* webpack/runtime/define property getters */
@@ -58,12 +22,21 @@ module.exports = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["defa
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ ErrorBoundary)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1649);
 
-class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Component {
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ ErrorBoundary)
+});
+
+;// CONCATENATED MODULE: external "react"
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
+const external_react_namespaceObject = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]) });
+;// CONCATENATED MODULE: ../huxy/components/errorBoundary/index.jsx
+
+class ErrorBoundary extends external_react_namespaceObject["default"].Component {
   state = {
     error: null
   };
@@ -74,6 +47,13 @@ class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Compon
     const { errorReport } = this.props;
     if (typeof errorReport === "function") {
       errorReport({ error, info: info.componentStack });
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.error) {
+      this.setState({
+        error: null
+      });
     }
   }
   render() {

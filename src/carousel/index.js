@@ -717,10 +717,19 @@ const resize = (element, delay = 60) => {
 };
 /* harmony default export */ const utils_resize = (resize);
 
+;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+
+const useRefFun = (initRef = null) => {
+  const ref = (0,external_react_namespaceObject.useRef)(initRef);
+  return () => ref;
+};
+/* harmony default export */ const use_useRefFun = (useRefFun);
+
 ;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
 
+
 const useRaf = (initState = {}) => {
-  const frame = (0,external_react_namespaceObject.useRef)(0);
+  const frame = use_useRefFun(0)();
   const [state, setState] = (0,external_react_namespaceObject.useState)(initState);
   const setRaf = (0,external_react_namespaceObject.useCallback)((value) => {
     cancelAnimationFrame(frame.current);
@@ -738,7 +747,8 @@ const useRaf = (initState = {}) => {
 
 
 const useEleResize = (ref = null, delay = 60) => {
-  const element = utils_isRef(ref) ? ref.current : ref;
+  const ele = typeof ref === "function" ? ref() : ref;
+  const element = utils_isRef(ele) ? ele.current : ele;
   const { bind, destroy } = utils_resize(element, delay);
   const [state, setState] = use_useRaf(utils_getViewportSize(element));
   (0,external_react_namespaceObject.useEffect)(() => {
@@ -804,12 +814,13 @@ var update = injectStylesIntoStyleTag_default()(carousel/* default */.Ay, option
 
 
 
+
 const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => {
   const [activeItem, setActiveItem] = (0,external_react_namespaceObject.useState)(active + 1);
   const [stop, setStop] = (0,external_react_namespaceObject.useState)(false);
   const container = (0,external_react_namespaceObject.useRef)();
-  const transition = (0,external_react_namespaceObject.useRef)("");
-  const { width } = use_useEleResize(container);
+  const transition = use_useRefFun("")();
+  const { width } = use_useEleResize(() => container);
   children = Array.isArray(children) ? children : [children];
   const first = children[0];
   const last = children[children.length - 1];

@@ -603,6 +603,14 @@ const getPosition = (ele) => {
 };
 /* harmony default export */ const utils_getPosition = (getPosition);
 
+;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+
+const useRefFun = (initRef = null) => {
+  const ref = (0,external_react_namespaceObject.useRef)(initRef);
+  return () => ref;
+};
+/* harmony default export */ const use_useRefFun = (useRefFun);
+
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(2591);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -655,11 +663,12 @@ var update = injectStylesIntoStyleTag_default()(tabHeader/* default */.A, option
 
 
 
+
 const renderTabs = (value) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { padding: "6px 15px" }, children: value });
 const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ref, ...rest }) => {
   const [active, setActive] = (0,external_react_namespaceObject.useState)(activekey ?? tabs[0]?.key);
   const [pos, setPos] = (0,external_react_namespaceObject.useState)({});
-  const listRef = (0,external_react_namespaceObject.useRef)({});
+  const listRef = use_useRefFun({})();
   const trackRef = (0,external_react_namespaceObject.useRef)();
   (0,external_react_namespaceObject.useEffect)(() => {
     const activeItem = listRef.current[active];
@@ -667,7 +676,7 @@ const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ref, ...
   }, []);
   const setTrackPos = (ele) => {
     const { left, width } = utils_getPosition(ele);
-    const trackLeft = utils_getPosition(trackRef.current).left;
+    const trackLeft = utils_getPosition(trackRef?.current).left;
     setPos({ left: left - trackLeft, width });
   };
   const onChange = (e, key) => {

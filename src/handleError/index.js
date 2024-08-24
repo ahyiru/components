@@ -4,12 +4,21 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /***/ 4907:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ ErrorBoundary)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1649);
 
-class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Component {
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ ErrorBoundary)
+});
+
+;// CONCATENATED MODULE: external "react"
+var x = (y) => {
+	var x = {}; __webpack_require__.d(x, y); return x
+} 
+var y = (x) => (() => (x))
+const external_react_namespaceObject = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]) });
+;// CONCATENATED MODULE: ../huxy/components/errorBoundary/index.jsx
+
+class ErrorBoundary extends external_react_namespaceObject["default"].Component {
   state = {
     error: null
   };
@@ -20,6 +29,13 @@ class ErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__["default"].Compon
     const { errorReport } = this.props;
     if (typeof errorReport === "function") {
       errorReport({ error, info: info.componentStack });
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.error) {
+      this.setState({
+        error: null
+      });
     }
   }
   render() {
@@ -133,17 +149,6 @@ if (true) {
 } else {}
 
 
-/***/ }),
-
-/***/ 1649:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-module.exports = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef) });
-
 /***/ })
 
 /******/ });
@@ -196,19 +201,13 @@ var __webpack_exports__ = {};
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1649);
-/* harmony import */ var _huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4907);
-/* harmony import */ var _huxy_components_loadError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8217);
-
+/* harmony import */ var _huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4907);
+/* harmony import */ var _huxy_components_loadError__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8217);
 
 
 
 const HandleError = ({ children, report }) => {
-  const boundaryRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();
-  if (boundaryRef.current?.state) {
-    boundaryRef.current.state.error = null;
-  }
-  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, { ref: boundaryRef, fallback: (error, info) => (0,_huxy_components_loadError__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)({ error, info }), errorReport: report, children });
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, { fallback: (error, info) => (0,_huxy_components_loadError__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)({ error, info }), errorReport: report, children });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HandleError);
 
