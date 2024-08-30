@@ -672,14 +672,14 @@ const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ref, ...
   const [active, setActive] = (0,external_react_namespaceObject.useState)(activekey ?? tabs[0]?.key);
   const [pos, setPos] = (0,external_react_namespaceObject.useState)({});
   const listRef = use_useRefFun({})();
-  const trackRef = (0,external_react_namespaceObject.useRef)();
+  const trackRef = use_useRefFun()();
   (0,external_react_namespaceObject.useEffect)(() => {
     const activeItem = listRef.current[active];
     activeItem && setTrackPos(activeItem);
   }, []);
   const setTrackPos = (ele) => {
     const { left, width } = utils_getPosition(ele);
-    const trackLeft = utils_getPosition(trackRef?.current).left;
+    const trackLeft = utils_getPosition(trackRef.current).left;
     setPos({ left: left - trackLeft, width });
   };
   const onChange = (e, key) => {
