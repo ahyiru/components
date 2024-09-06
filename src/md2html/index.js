@@ -1542,19 +1542,19 @@ const getViewportSize = (element = null) => {
 };
 /* harmony default export */ const utils_getViewportSize = (getViewportSize);
 
-;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+;// CONCATENATED MODULE: ../huxy/use/useCustomRef/index.jsx
 
-const useRefFun = (initRef = null) => {
+const useCustomRef = (initRef = null) => {
   const ref = (0,external_react_.useRef)(initRef);
   return () => ref;
 };
-/* harmony default export */ const use_useRefFun = (useRefFun);
+/* harmony default export */ const use_useCustomRef = (useCustomRef);
 
 ;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
 
 
 const useRaf = (initState = {}) => {
-  const frame = use_useRefFun(0)();
+  const frame = use_useCustomRef(0)();
   const [state, setState] = (0,external_react_.useState)(initState);
   const setRaf = (0,external_react_.useCallback)((value) => {
     cancelAnimationFrame(frame.current);
@@ -1799,7 +1799,7 @@ const RenderContext = ({ item, marked, getContext }) => {
 
 
 const RenderPage = ({ router, curName, context, marked, getContext }) => {
-  const itemList = use_useRefFun({})();
+  const itemList = use_useCustomRef({})();
   const [name] = useAnchor({ curName, itemList });
   (0,external_react_.useEffect)(() => {
     name && router.push({ query: { name } });

@@ -606,13 +606,13 @@ const getPosition = (ele) => {
 };
 /* harmony default export */ const utils_getPosition = (getPosition);
 
-;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+;// CONCATENATED MODULE: ../huxy/use/useCustomRef/index.jsx
 
-const useRefFun = (initRef = null) => {
+const useCustomRef = (initRef = null) => {
   const ref = (0,external_react_namespaceObject.useRef)(initRef);
   return () => ref;
 };
-/* harmony default export */ const use_useRefFun = (useRefFun);
+/* harmony default export */ const use_useCustomRef = (useCustomRef);
 
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(2591);
@@ -671,8 +671,8 @@ const renderTabs = (value) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style
 const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ref, ...rest }) => {
   const [active, setActive] = (0,external_react_namespaceObject.useState)(activekey ?? tabs[0]?.key);
   const [pos, setPos] = (0,external_react_namespaceObject.useState)({});
-  const listRef = use_useRefFun({})();
-  const trackRef = use_useRefFun()();
+  const listRef = use_useCustomRef({})();
+  const trackRef = use_useCustomRef()();
   (0,external_react_namespaceObject.useEffect)(() => {
     const activeItem = listRef.current[active];
     activeItem && setTrackPos(activeItem);

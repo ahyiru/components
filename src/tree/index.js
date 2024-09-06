@@ -1569,13 +1569,13 @@ const useUpdate = () => {
 };
 /* harmony default export */ const use_useUpdate = (useUpdate);
 
-;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+;// CONCATENATED MODULE: ../huxy/use/useCustomRef/index.jsx
 
-const useRefFun = (initRef = null) => {
+const useCustomRef = (initRef = null) => {
   const ref = (0,external_react_namespaceObject.useRef)(initRef);
   return () => ref;
 };
-/* harmony default export */ const use_useRefFun = (useRefFun);
+/* harmony default export */ const use_useCustomRef = (useCustomRef);
 
 // EXTERNAL MODULE: ../huxy/components/renderTree/index.jsx + 1 modules
 var renderTree = __webpack_require__(1918);
@@ -1668,8 +1668,8 @@ const Tree = (props) => {
     className,
     ...rest
   } = props;
-  const timer = use_useRefFun()();
-  const menuRef = use_useRefFun()();
+  const timer = use_useCustomRef()();
+  const menuRef = use_useCustomRef()();
   (0,external_react_namespaceObject.useEffect)(() => () => clearTimeout(timer.current), []);
   const rerender = use_useUpdate();
   const isHorizontal = type === "horizontal";

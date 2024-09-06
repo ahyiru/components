@@ -720,19 +720,19 @@ const resize = (element, delay = 60) => {
 };
 /* harmony default export */ const utils_resize = (resize);
 
-;// CONCATENATED MODULE: ../huxy/use/useRefFun/index.jsx
+;// CONCATENATED MODULE: ../huxy/use/useCustomRef/index.jsx
 
-const useRefFun = (initRef = null) => {
+const useCustomRef = (initRef = null) => {
   const ref = (0,external_react_namespaceObject.useRef)(initRef);
   return () => ref;
 };
-/* harmony default export */ const use_useRefFun = (useRefFun);
+/* harmony default export */ const use_useCustomRef = (useCustomRef);
 
 ;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
 
 
 const useRaf = (initState = {}) => {
-  const frame = use_useRefFun(0)();
+  const frame = use_useCustomRef(0)();
   const [state, setState] = (0,external_react_namespaceObject.useState)(initState);
   const setRaf = (0,external_react_namespaceObject.useCallback)((value) => {
     cancelAnimationFrame(frame.current);
@@ -822,7 +822,7 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
   const [activeItem, setActiveItem] = (0,external_react_namespaceObject.useState)(active + 1);
   const [stop, setStop] = (0,external_react_namespaceObject.useState)(false);
   const container = (0,external_react_namespaceObject.useRef)();
-  const transition = use_useRefFun("")();
+  const transition = use_useCustomRef("")();
   const { width } = use_useEleResize(() => container);
   children = Array.isArray(children) ? children : [children];
   const first = children[0];
