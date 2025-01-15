@@ -101,11 +101,11 @@ if (true) {
 /************************************************************************/
 var __webpack_exports__ = {};
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (col)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
+/* harmony import */ var col_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_ = __webpack_require__(1085);
 
-const getCls = (type, size) => {
+const col_getCls = (type, size) => {
   let sp = "", os = "";
   if (typeof size === "number") {
     sp = `col-${type}-${size}`;
@@ -117,15 +117,15 @@ const getCls = (type, size) => {
   }
   return { sp, os };
 };
-const Col = ({ span, offset, xl, lg, md, sm, xs, style, width, auto, offsetWidth = "0px", className, ref, ...rest }) => {
+const col_Col = ({ span, offset, xl, lg, md, sm, xs, style, width, auto, offsetWidth = "0px", className, ref, ...rest }) => {
   const defCls = className ? ` ${className}` : "";
   const sp = `col-${span || 12}`;
   const os = offset ? `offset-${offset}` : "";
-  const { sp: xs_sp, os: xs_os } = getCls("xs", xs);
-  const { sp: sm_sp, os: sm_os } = getCls("sm", sm);
-  const { sp: md_sp, os: md_os } = getCls("md", md);
-  const { sp: lg_sp, os: lg_os } = getCls("lg", lg);
-  const { sp: xl_sp, os: xl_os } = getCls("xl", xl);
+  const { sp: xs_sp, os: xs_os } = col_getCls("xs", xs);
+  const { sp: sm_sp, os: sm_os } = col_getCls("sm", sm);
+  const { sp: md_sp, os: md_os } = col_getCls("md", md);
+  const { sp: lg_sp, os: lg_os } = col_getCls("lg", lg);
+  const { sp: xl_sp, os: xl_os } = col_getCls("xl", xl);
   const cls = [sp, xl_sp, lg_sp, md_sp, sm_sp, xs_sp, os, xl_os, lg_os, md_os, sm_os, xs_os].filter(Boolean).join(" ");
   const autoStyle = auto ? {
     width: "auto",
@@ -133,9 +133,9 @@ const Col = ({ span, offset, xl, lg, md, sm, xs, style, width, auto, offsetWidth
     //'auto',
     maxWidth: `calc(100% - ${offsetWidth})`
   } : { width };
-  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: `${cls}${defCls}`, ...rest, style: { ...autoStyle, ...style }, ref });
+  return /* @__PURE__ */ (0,col_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_.jsx)("div", { className: `${cls}${defCls}`, ...rest, style: { ...autoStyle, ...style }, ref });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Col);
+/* harmony default export */ const col = (col_Col);
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

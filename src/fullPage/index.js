@@ -109,21 +109,21 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const external_react_namespaceObject = x({ ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
-;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
+;// ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes("undefined");
 /* harmony default export */ const utils_isBrowser = (isBrowser);
 
-;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+;// ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
 /* harmony default export */ const utils_hasProp = (hasProp);
 
-;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+;// ../huxy/utils/isRef.js
 
 const isRef = (ref) => {
   const refObj = typeof ref === "function" ? ref() : ref;
@@ -131,14 +131,14 @@ const isRef = (ref) => {
 };
 /* harmony default export */ const utils_isRef = (isRef);
 
-;// CONCATENATED MODULE: ../huxy/utils/_/prefixBrowser.js
+;// ../huxy/utils/_/prefixBrowser.js
 const prefix = ["", "webkit", "moz", "ms"];
 const fullscreenElement = (ele) => prefix.map((v) => v ? `${v}FullscreenElement` : "fullscreenElement").find((v) => ele[v]);
 const requestFullscreen = (ele) => prefix.map((v) => v ? `${v}RequestFullscreen` : "requestFullscreen").find((v) => ele[v]);
 const exitFullscreen = (ele) => prefix.map((v) => v ? `${v}ExitFullscreen` : "exitFullscreen").find((v) => ele[v]);
 const fullscreenchange = prefix.map((v) => `${v}fullscreenchange`);
 
-;// CONCATENATED MODULE: ../huxy/utils/fullScreen.js
+;// ../huxy/utils/fullScreen.js
 
 
 
@@ -158,7 +158,7 @@ const fullScreen = (ele) => {
 };
 /* harmony default export */ const utils_fullScreen = (fullScreen);
 
-;// CONCATENATED MODULE: ../huxy/utils/watchScreen.js
+;// ../huxy/utils/watchScreen.js
 
 
 const watchScreen = (callback) => {
@@ -171,7 +171,7 @@ const watchScreen = (callback) => {
 };
 /* harmony default export */ const utils_watchScreen = (watchScreen);
 
-;// CONCATENATED MODULE: ../huxy/components/fullPage/index.jsx
+;// ../huxy/components/fullPage/index.jsx
 
 
 

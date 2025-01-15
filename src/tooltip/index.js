@@ -919,7 +919,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/tooltip/index.less
 var tooltip = __webpack_require__(7700);
-;// CONCATENATED MODULE: ../huxy/components/tooltip/index.less
+;// ../huxy/components/tooltip/index.less
 
       
       
@@ -946,7 +946,7 @@ var update = injectStylesIntoStyleTag_default()(tooltip/* default */.Ay, options
 
        /* harmony default export */ const components_tooltip = (tooltip/* default */.Ay && tooltip/* default */.Ay.locals ? tooltip/* default */.Ay.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/tooltip/index.jsx
+;// ../huxy/components/tooltip/index.jsx
 
 
 const Tooltip = ({ title, placement = "topRight", children, ellipsis, className, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `${tooltip_namespaceObject[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ""}`, tooltip: title ?? children, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: ellipsis ? tooltip/* ellipsis */.gO : "", children }) });

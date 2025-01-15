@@ -101,21 +101,21 @@ if (true) {
 /************************************************************************/
 var __webpack_exports__ = {};
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (components_fixEle)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
+/* harmony import */ var fixEle_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_ = __webpack_require__(1085);
 
-const fixEle = (list) => (Value) => {
+const fixEle_fixEle = (list) => (Value) => {
   if (typeof Value === "function" || typeof Value?.render === "function") {
-    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Value, {});
+    return /* @__PURE__ */ (0,fixEle_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_.jsx)(Value, {});
   }
   if (typeof Value === "string") {
     const Comp = list?.[Value];
-    return Comp ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Comp, {}) : /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("i", { className: Value });
+    return Comp ? /* @__PURE__ */ (0,fixEle_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_.jsx)(Comp, {}) : /* @__PURE__ */ (0,fixEle_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_.jsx)("i", { className: Value });
   }
   return Value ?? null;
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fixEle);
+/* harmony default export */ const components_fixEle = (fixEle_fixEle);
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

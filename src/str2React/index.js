@@ -101,12 +101,12 @@ if (true) {
 /************************************************************************/
 var __webpack_exports__ = {};
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (components_str2React)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
+/* harmony import */ var str2React_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_ = __webpack_require__(1085);
 
-const str2React = (str, props) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { dangerouslySetInnerHTML: { __html: str }, ...props });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (str2React);
+const str2React_str2React = (str, props) => /* @__PURE__ */ (0,str2React_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_.jsx)("div", { dangerouslySetInnerHTML: { __html: str }, ...props });
+/* harmony default export */ const components_str2React = (str2React_str2React);
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

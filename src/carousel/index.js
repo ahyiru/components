@@ -548,19 +548,19 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-;// CONCATENATED MODULE: external "react-dom"
+;// external "react-dom"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const external_react_dom_namespaceObject = x({ ["flushSync"]: () => (__WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.flushSync) });
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var external_react_x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var external_react_y = (x) => (() => (x))
 const external_react_namespaceObject = external_react_x({ ["useCallback"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useCallback), ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
-;// CONCATENATED MODULE: ../huxy/use/useInterval/index.jsx
+;// ../huxy/use/useInterval/index.jsx
 
 const useInterval = (callback, delay) => {
   const savedCallback = (0,external_react_namespaceObject.useRef)();
@@ -576,20 +576,20 @@ const useInterval = (callback, delay) => {
 };
 /* harmony default export */ const use_useInterval = (useInterval);
 
-;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
+;// ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes("undefined");
 /* harmony default export */ const utils_isBrowser = (isBrowser);
 
-;// CONCATENATED MODULE: ../huxy/utils/getType.js
+;// ../huxy/utils/getType.js
 const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
 /* harmony default export */ const utils_getType = (getType);
 
-;// CONCATENATED MODULE: ../huxy/utils/isElement.js
+;// ../huxy/utils/isElement.js
 
 const isElement = (value) => utils_getType(value).indexOf("element") > -1;
 /* harmony default export */ const utils_isElement = (isElement);
 
-;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
+;// ../huxy/utils/getViewportSize.js
 
 
 const getViewportSize = (element = null) => {
@@ -612,7 +612,7 @@ const getViewportSize = (element = null) => {
 };
 /* harmony default export */ const utils_getViewportSize = (getViewportSize);
 
-;// CONCATENATED MODULE: ../huxy/utils/debounce.js
+;// ../huxy/utils/debounce.js
 const debounce = (func = () => {
 }, delay = 60) => {
   let timer = null;
@@ -623,11 +623,11 @@ const debounce = (func = () => {
 };
 /* harmony default export */ const utils_debounce = (debounce);
 
-;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+;// ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
 /* harmony default export */ const utils_hasProp = (hasProp);
 
-;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+;// ../huxy/utils/isRef.js
 
 const isRef = (ref) => {
   const refObj = typeof ref === "function" ? ref() : ref;
@@ -635,7 +635,7 @@ const isRef = (ref) => {
 };
 /* harmony default export */ const utils_isRef = (isRef);
 
-;// CONCATENATED MODULE: ../huxy/utils/findChildEle.js
+;// ../huxy/utils/findChildEle.js
 const findChildEle = (target, cname) => {
   const childrenEle = [];
   const children = target.children ?? [];
@@ -655,7 +655,7 @@ const findChildEle = (target, cname) => {
 };
 /* harmony default export */ const utils_findChildEle = (findChildEle);
 
-;// CONCATENATED MODULE: ../huxy/utils/resize.js
+;// ../huxy/utils/resize.js
 
 
 
@@ -720,7 +720,7 @@ const resize = (element, delay = 60) => {
 };
 /* harmony default export */ const utils_resize = (resize);
 
-;// CONCATENATED MODULE: ../huxy/use/useCustomRef/index.jsx
+;// ../huxy/use/useCustomRef/index.jsx
 
 const useCustomRef = (initRef = null) => {
   const ref = (0,external_react_namespaceObject.useRef)(initRef);
@@ -728,7 +728,7 @@ const useCustomRef = (initRef = null) => {
 };
 /* harmony default export */ const use_useCustomRef = (useCustomRef);
 
-;// CONCATENATED MODULE: ../huxy/use/useRaf/index.jsx
+;// ../huxy/use/useRaf/index.jsx
 
 
 const useRaf = (initState = {}) => {
@@ -743,7 +743,7 @@ const useRaf = (initState = {}) => {
 };
 /* harmony default export */ const use_useRaf = (useRaf);
 
-;// CONCATENATED MODULE: ../huxy/use/useEleResize/index.jsx
+;// ../huxy/use/useEleResize/index.jsx
 
 
 
@@ -783,7 +783,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/carousel/index.less
 var carousel = __webpack_require__(3587);
-;// CONCATENATED MODULE: ../huxy/components/carousel/index.less
+;// ../huxy/components/carousel/index.less
 
       
       
@@ -810,7 +810,7 @@ var update = injectStylesIntoStyleTag_default()(carousel/* default */.Ay, option
 
        /* harmony default export */ const components_carousel = (carousel/* default */.Ay && carousel/* default */.Ay.locals ? carousel/* default */.Ay.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/carousel/index.jsx
+;// ../huxy/components/carousel/index.jsx
 
 
 

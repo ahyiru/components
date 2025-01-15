@@ -457,13 +457,13 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ portal)
 });
 
-;// CONCATENATED MODULE: external "react-dom"
+;// external "react-dom"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const external_react_dom_namespaceObject = x({ ["createPortal"]: () => (__WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.createPortal) });
-;// CONCATENATED MODULE: ../huxy/components/portal/index.jsx
+;// ../huxy/components/portal/index.jsx
 
 const Portal = ({ children, mountNode = document.body }) => (0,external_react_dom_namespaceObject.createPortal)(children, mountNode);
 /* harmony default export */ const portal = (Portal);
@@ -866,17 +866,17 @@ __webpack_require__.d(drop_namespaceObject, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const external_react_namespaceObject = x({ ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
-;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+;// ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
 /* harmony default export */ const utils_hasProp = (hasProp);
 
-;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+;// ../huxy/utils/isRef.js
 
 const isRef = (ref) => {
   const refObj = typeof ref === "function" ? ref() : ref;
@@ -884,7 +884,7 @@ const isRef = (ref) => {
 };
 /* harmony default export */ const utils_isRef = (isRef);
 
-;// CONCATENATED MODULE: ../huxy/use/useClickAway/index.jsx
+;// ../huxy/use/useClickAway/index.jsx
 
 
 const useClickAway = (elRef, handleEvent, events = "click") => {
@@ -909,15 +909,15 @@ const useClickAway = (elRef, handleEvent, events = "click") => {
 };
 /* harmony default export */ const use_useClickAway = (useClickAway);
 
-;// CONCATENATED MODULE: ../huxy/utils/isReactEle.js
+;// ../huxy/utils/isReactEle.js
 const isReactEle = (value) => value?.["$$typeof"] && typeof value["$$typeof"] === "symbol" && value["$$typeof"]["description"]?.indexOf("react.") === 0;
 /* harmony default export */ const utils_isReactEle = (isReactEle);
 
-;// CONCATENATED MODULE: ../huxy/utils/firstUpper.js
+;// ../huxy/utils/firstUpper.js
 const firstUpper = (str = "") => str.replace(/^\S/, (s) => s.toUpperCase());
 /* harmony default export */ const utils_firstUpper = (firstUpper);
 
-;// CONCATENATED MODULE: ../huxy/utils/debounce.js
+;// ../huxy/utils/debounce.js
 const debounce = (func = () => {
 }, delay = 60) => {
   let timer = null;
@@ -928,20 +928,20 @@ const debounce = (func = () => {
 };
 /* harmony default export */ const utils_debounce = (debounce);
 
-;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
+;// ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes("undefined");
 /* harmony default export */ const utils_isBrowser = (isBrowser);
 
-;// CONCATENATED MODULE: ../huxy/utils/getType.js
+;// ../huxy/utils/getType.js
 const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
 /* harmony default export */ const utils_getType = (getType);
 
-;// CONCATENATED MODULE: ../huxy/utils/isElement.js
+;// ../huxy/utils/isElement.js
 
 const isElement = (value) => utils_getType(value).indexOf("element") > -1;
 /* harmony default export */ const utils_isElement = (isElement);
 
-;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
+;// ../huxy/utils/getViewportSize.js
 
 
 const getViewportSize = (element = null) => {
@@ -964,7 +964,7 @@ const getViewportSize = (element = null) => {
 };
 /* harmony default export */ const utils_getViewportSize = (getViewportSize);
 
-;// CONCATENATED MODULE: ../huxy/utils/getPosition.js
+;// ../huxy/utils/getPosition.js
 
 
 const getPosition = (ele) => {
@@ -976,7 +976,7 @@ const getPosition = (ele) => {
 };
 /* harmony default export */ const utils_getPosition = (getPosition);
 
-;// CONCATENATED MODULE: ../huxy/utils/str2Html.js
+;// ../huxy/utils/str2Html.js
 
 const str2Html = (str) => {
   if (!utils_isBrowser()) {
@@ -989,7 +989,7 @@ const str2Html = (str) => {
 };
 /* harmony default export */ const utils_str2Html = (str2Html);
 
-;// CONCATENATED MODULE: ../huxy/utils/setStyle.js
+;// ../huxy/utils/setStyle.js
 
 const setStyle = (ele, styles = {}, reset = false) => {
   if (!utils_isElement(ele)) {
@@ -1007,7 +1007,7 @@ const setStyle = (ele, styles = {}, reset = false) => {
 };
 /* harmony default export */ const utils_setStyle = (setStyle);
 
-;// CONCATENATED MODULE: ../huxy/utils/sleep.js
+;// ../huxy/utils/sleep.js
 const formatMs = (ms = 350, unit = "ms") => ({
   ms: ms * 1,
   s: ms * 1e3,
@@ -1023,7 +1023,7 @@ const sleepSync = (ms = 100) => {
 };
 /* harmony default export */ const utils_sleep = (sleep);
 
-;// CONCATENATED MODULE: ../huxy/utils/getElementsSize.js
+;// ../huxy/utils/getElementsSize.js
 
 
 
@@ -1052,7 +1052,7 @@ const getElementsSize = async (ele, delay = 15) => {
 };
 /* harmony default export */ const utils_getElementsSize = (getElementsSize);
 
-;// CONCATENATED MODULE: ../huxy/utils/dropInfo.js
+;// ../huxy/utils/dropInfo.js
 
 
 
@@ -1129,7 +1129,7 @@ const dropInfo = (triggerEle, showEle, type = "horizontal") => {
 };
 /* harmony default export */ const utils_dropInfo = (dropInfo);
 
-;// CONCATENATED MODULE: ../huxy/use/useUpdateEffect/index.jsx
+;// ../huxy/use/useUpdateEffect/index.jsx
 
 const useUpdateEffect = (effect, deps = []) => {
   const isMounted = (0,external_react_namespaceObject.useRef)(false);
@@ -1143,7 +1143,7 @@ const useUpdateEffect = (effect, deps = []) => {
 };
 /* harmony default export */ const use_useUpdateEffect = (useUpdateEffect);
 
-;// CONCATENATED MODULE: ../huxy/use/useDelayState/index.jsx
+;// ../huxy/use/useDelayState/index.jsx
 
 
 const useDelayState = (state, delay = 450) => {
@@ -1163,7 +1163,7 @@ const useDelayState = (state, delay = 450) => {
 
 // EXTERNAL MODULE: ../huxy/components/portal/index.jsx + 1 modules
 var portal = __webpack_require__(2147);
-;// CONCATENATED MODULE: ../huxy/components/drop/mask.jsx
+;// ../huxy/components/drop/mask.jsx
 
 
 
@@ -1193,7 +1193,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/drop/index.less
 var drop = __webpack_require__(1468);
-;// CONCATENATED MODULE: ../huxy/components/drop/index.less
+;// ../huxy/components/drop/index.less
 
       
       
@@ -1220,7 +1220,7 @@ var update = injectStylesIntoStyleTag_default()(drop/* default */.Ay, options);
 
        /* harmony default export */ const components_drop = (drop/* default */.Ay && drop/* default */.Ay.locals ? drop/* default */.Ay.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/drop/index.jsx
+;// ../huxy/components/drop/index.jsx
 
 
 
@@ -1234,7 +1234,7 @@ const Drop = ({ trigger = "click", type, dropList, className, children, targetPr
   const targetRef = (0,external_react_namespaceObject.useRef)();
   const dropRef = (0,external_react_namespaceObject.useRef)();
   const destroyFn = (0,external_react_namespaceObject.useRef)();
-  use_useClickAway(targetRef, (e) => open && setOpen(false), [.../* @__PURE__ */ new Set(["click", trigger.toLowerCase()])]);
+  use_useClickAway(targetRef, (e) => setOpen(false), [.../* @__PURE__ */ new Set(["click", trigger.toLowerCase()])]);
   (0,external_react_namespaceObject.useEffect)(() => {
     return () => destroyFn.current?.();
   }, []);

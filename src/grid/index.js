@@ -751,7 +751,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/row/index.less
 var row = __webpack_require__(2531);
-;// CONCATENATED MODULE: ../huxy/components/row/index.less
+;// ../huxy/components/row/index.less
 
       
       
@@ -778,7 +778,7 @@ var update = injectStylesIntoStyleTag_default()(row/* default */.A, options);
 
        /* harmony default export */ const components_row = (row/* default */.A && row/* default */.A.locals ? row/* default */.A.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/row/index.jsx
+;// ../huxy/components/row/index.jsx
 
 
 const Row = ({ gutter = 10, className, overflow = "hidden", ref, ...rest }) => {
@@ -1170,7 +1170,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
@@ -1180,7 +1180,7 @@ const external_react_namespaceObject = x({ ["Children"]: () => (__WEBPACK_EXTERN
 var row = __webpack_require__(5975);
 // EXTERNAL MODULE: ../huxy/components/col/index.jsx
 var col = __webpack_require__(3457);
-;// CONCATENATED MODULE: ../huxy/components/grid/index.jsx
+;// ../huxy/components/grid/index.jsx
 
 
 

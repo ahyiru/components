@@ -109,21 +109,21 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const external_react_namespaceObject = x({ ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
-;// CONCATENATED MODULE: ../huxy/utils/isBrowser.js
+;// ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes("undefined");
 /* harmony default export */ const utils_isBrowser = (isBrowser);
 
-;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+;// ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
 /* harmony default export */ const utils_hasProp = (hasProp);
 
-;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+;// ../huxy/utils/isRef.js
 
 const isRef = (ref) => {
   const refObj = typeof ref === "function" ? ref() : ref;
@@ -131,7 +131,7 @@ const isRef = (ref) => {
 };
 /* harmony default export */ const utils_isRef = (isRef);
 
-;// CONCATENATED MODULE: ../huxy/utils/getPosition.js
+;// ../huxy/utils/getPosition.js
 
 
 const getPosition = (ele) => {
@@ -143,16 +143,16 @@ const getPosition = (ele) => {
 };
 /* harmony default export */ const utils_getPosition = (getPosition);
 
-;// CONCATENATED MODULE: ../huxy/utils/getType.js
+;// ../huxy/utils/getType.js
 const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
 /* harmony default export */ const utils_getType = (getType);
 
-;// CONCATENATED MODULE: ../huxy/utils/isElement.js
+;// ../huxy/utils/isElement.js
 
 const isElement = (value) => utils_getType(value).indexOf("element") > -1;
 /* harmony default export */ const utils_isElement = (isElement);
 
-;// CONCATENATED MODULE: ../huxy/utils/getViewportSize.js
+;// ../huxy/utils/getViewportSize.js
 
 
 const getViewportSize = (element = null) => {
@@ -175,7 +175,7 @@ const getViewportSize = (element = null) => {
 };
 /* harmony default export */ const utils_getViewportSize = (getViewportSize);
 
-;// CONCATENATED MODULE: ../huxy/components/maxSize/index.jsx
+;// ../huxy/components/maxSize/index.jsx
 
 
 

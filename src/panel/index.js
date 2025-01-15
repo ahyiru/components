@@ -354,7 +354,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/spinner/index.less
 var spinner = __webpack_require__(6670);
-;// CONCATENATED MODULE: ../huxy/components/spinner/index.less
+;// ../huxy/components/spinner/index.less
 
       
       
@@ -381,7 +381,7 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.A, options)
 
        /* harmony default export */ const components_spinner = (spinner/* default */.A && spinner/* default */.A.locals ? spinner/* default */.A.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/spinner/index.jsx
+;// ../huxy/components/spinner/index.jsx
 
 
 const Spinner = ({ global, absolute }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `spinner${global ? " global" : ""}${absolute ? " absolute" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("figure", { className: "spinning" }) });
@@ -764,7 +764,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
@@ -772,11 +772,11 @@ var y = (x) => (() => (x))
 const external_react_namespaceObject = x({ ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef) });
 // EXTERNAL MODULE: ../huxy/components/spinner/index.jsx + 1 modules
 var spinner = __webpack_require__(1034);
-;// CONCATENATED MODULE: ../huxy/utils/hasProp.js
+;// ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
 /* harmony default export */ const utils_hasProp = (hasProp);
 
-;// CONCATENATED MODULE: ../huxy/utils/isRef.js
+;// ../huxy/utils/isRef.js
 
 const isRef = (ref) => {
   const refObj = typeof ref === "function" ? ref() : ref;
@@ -804,7 +804,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/panel/index.less
 var panel = __webpack_require__(945);
-;// CONCATENATED MODULE: ../huxy/components/panel/index.less
+;// ../huxy/components/panel/index.less
 
       
       
@@ -831,7 +831,7 @@ var update = injectStylesIntoStyleTag_default()(panel/* default */.Ay, options);
 
        /* harmony default export */ const components_panel = (panel/* default */.Ay && panel/* default */.Ay.locals ? panel/* default */.Ay.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/panel/index.jsx
+;// ../huxy/components/panel/index.jsx
 
 
 

@@ -28,13 +28,13 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ ErrorBoundary)
 });
 
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const external_react_namespaceObject = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]) });
-;// CONCATENATED MODULE: ../huxy/components/errorBoundary/index.jsx
+;// ../huxy/components/errorBoundary/index.jsx
 
 class ErrorBoundary extends external_react_namespaceObject["default"].Component {
   state = {

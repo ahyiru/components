@@ -602,7 +602,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/spinner/index.less
 var spinner = __webpack_require__(6670);
-;// CONCATENATED MODULE: ../huxy/components/spinner/index.less
+;// ../huxy/components/spinner/index.less
 
       
       
@@ -629,7 +629,7 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.A, options)
 
        /* harmony default export */ const components_spinner = (spinner/* default */.A && spinner/* default */.A.locals ? spinner/* default */.A.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/spinner/index.jsx
+;// ../huxy/components/spinner/index.jsx
 
 
 const Spinner = ({ global, absolute }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `spinner${global ? " global" : ""}${absolute ? " absolute" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("figure", { className: "spinning" }) });

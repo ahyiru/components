@@ -10,13 +10,13 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ ErrorBoundary)
 });
 
-;// CONCATENATED MODULE: external "react"
+;// external "react"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const external_react_namespaceObject = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]) });
-;// CONCATENATED MODULE: ../huxy/components/errorBoundary/index.jsx
+;// ../huxy/components/errorBoundary/index.jsx
 
 class ErrorBoundary extends external_react_namespaceObject["default"].Component {
   state = {
@@ -198,18 +198,18 @@ if (true) {
 /************************************************************************/
 var __webpack_exports__ = {};
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (handleError)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
-/* harmony import */ var _huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4907);
-/* harmony import */ var _huxy_components_loadError__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8217);
+/* harmony import */ var handleError_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_ = __webpack_require__(1085);
+/* harmony import */ var handleError_huxy_components_errorBoundary_WEBPACK_IMPORTED_MODULE_1_ = __webpack_require__(4907);
+/* harmony import */ var handleError_huxy_components_loadError_WEBPACK_IMPORTED_MODULE_2_ = __webpack_require__(8217);
 
 
 
-const HandleError = ({ children, report }) => {
-  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_huxy_components_errorBoundary__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, { fallback: (error, info) => (0,_huxy_components_loadError__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)({ error, info }), errorReport: report, children });
+const handleError_HandleError = ({ children, report }) => {
+  return /* @__PURE__ */ (0,handleError_react_jsx_runtime_WEBPACK_IMPORTED_MODULE_0_.jsx)(handleError_huxy_components_errorBoundary_WEBPACK_IMPORTED_MODULE_1_/* ["default"] */ .A, { fallback: (error, info) => (0,handleError_huxy_components_loadError_WEBPACK_IMPORTED_MODULE_2_/* ["default"] */ .A)({ error, info }), errorReport: report, children });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HandleError);
+/* harmony default export */ const handleError = (handleError_HandleError);
 
 var __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

@@ -63,11 +63,11 @@ __webpack_require__.d(__webpack_exports__, {
   A: () => (/* binding */ utils_isArray)
 });
 
-;// CONCATENATED MODULE: ../huxy/utils/getType.js
+;// ../huxy/utils/getType.js
 const getType = (value) => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
 /* harmony default export */ const utils_getType = (getType);
 
-;// CONCATENATED MODULE: ../huxy/utils/isArray.js
+;// ../huxy/utils/isArray.js
 
 const isArray = (value) => utils_getType(value) === "array";
 /* harmony default export */ const utils_isArray = (isArray);
@@ -131,12 +131,12 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
 var isArray = __webpack_require__(4828);
-;// CONCATENATED MODULE: ../huxy/utils/isValidArr.js
+;// ../huxy/utils/isValidArr.js
 
 const isValidArr = (value) => (0,isArray/* default */.A)(value) && !!value.length;
 /* harmony default export */ const utils_isValidArr = (isValidArr);
 
-;// CONCATENATED MODULE: ../huxy/components/renderTree/index.jsx
+;// ../huxy/components/renderTree/index.jsx
 
 
 const DefLink = ({ to, preventDefault, stopPropagation, ...rest }) => preventDefault ? /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { ...rest }) : /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: to, ...rest });

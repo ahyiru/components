@@ -670,7 +670,7 @@ var styleTagTransform = __webpack_require__(3656);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../huxy/components/anico/index.less
 var anico = __webpack_require__(1087);
-;// CONCATENATED MODULE: ../huxy/components/anico/index.less
+;// ../huxy/components/anico/index.less
 
       
       
@@ -697,7 +697,7 @@ var update = injectStylesIntoStyleTag_default()(anico/* default */.Ay, options);
 
        /* harmony default export */ const components_anico = (anico/* default */.Ay && anico/* default */.Ay.locals ? anico/* default */.Ay.locals : undefined);
 
-;// CONCATENATED MODULE: ../huxy/components/anico/index.jsx
+;// ../huxy/components/anico/index.jsx
 
 
 const Anico = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: anico/* anico */.Zx, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
