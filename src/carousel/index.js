@@ -2,73 +2,19 @@ import * as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__ from "react-dom";
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 /******/ var __webpack_modules__ = ({
 
-/***/ 3587:
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   Om: () => (/* binding */ dot),
-/* harmony export */   Ri: () => (/* binding */ _2),
-/* harmony export */   S$: () => (/* binding */ _4),
-/* harmony export */   UM: () => (/* binding */ _1),
-/* harmony export */   fv: () => (/* binding */ _3),
-/* harmony export */   vu: () => (/* binding */ active)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
+/***/ 855:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `.kLIGi {
-  --bar-color: #fff;
-  --bar-width: 16px;
-  position: relative;
-  overflow: hidden;
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
 }
-.XoNs4 {
-  transition: transform 0.5s cubic-bezier(0.24, 0.14, 0.17, 1.07);
-}
-.x4UPo {
-  float: left;
-}
-.qYuQn {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  transform: translateX(-50%);
-}
-.qYuQn .GU0qu {
-  display: inline-block;
-  margin: 0 5px;
-  width: var(--bar-width);
-  height: 4px;
-  border-radius: 2px;
-  background: var(--bar-color);
-  opacity: 0.3;
-  cursor: pointer;
-}
-.qYuQn .GU0qu.svhYU {
-  width: calc(var(--bar-width) + 8px);
-  opacity: 1;
-}
-`, ""]);
-// Exports
-var _1 = `kLIGi`;
-
-var _2 = `XoNs4`;
-
-var _3 = `x4UPo`;
-
-var _4 = `qYuQn`;
-
-var dot = `GU0qu`;
-var active = `svhYU`;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
+module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
 
@@ -163,14 +109,15 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ 6758:
-/***/ ((module) => {
+/***/ 1085:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
-module.exports = function (i) {
-  return i[1];
-};
+if (true) {
+  module.exports = __webpack_require__(1197);
+} else {}
+
 
 /***/ }),
 
@@ -216,15 +163,70 @@ exports.jsxs = jsxProd;
 
 /***/ }),
 
-/***/ 1085:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 1740:
+/***/ ((module) => {
 
 
 
-if (true) {
-  module.exports = __webpack_require__(1197);
-} else {}
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+  var needLayer = typeof obj.layer !== "undefined";
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+  css += obj.css;
+  if (needLayer) {
+    css += "}";
+  }
+  if (obj.media) {
+    css += "}";
+  }
+  if (obj.supports) {
+    css += "}";
+  }
+  var sourceMap = obj.sourceMap;
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  }
 
+  // For old IE
+  /* istanbul ignore if  */
+  options.styleTagTransform(css, styleElement, options.options);
+}
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+  styleElement.parentNode.removeChild(styleElement);
+}
+
+/* istanbul ignore next  */
+function domAPI(options) {
+  if (typeof document === "undefined") {
+    return {
+      update: function update() {},
+      remove: function remove() {}
+    };
+  }
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+module.exports = domAPI;
 
 /***/ }),
 
@@ -318,6 +320,123 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ 3051:
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+module.exports = insertStyleElement;
+
+/***/ }),
+
+/***/ 3587:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   Om: () => (/* binding */ dot),
+/* harmony export */   Ri: () => (/* binding */ _2),
+/* harmony export */   S$: () => (/* binding */ _4),
+/* harmony export */   UM: () => (/* binding */ _1),
+/* harmony export */   fv: () => (/* binding */ _3),
+/* harmony export */   vu: () => (/* binding */ active)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6758);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(935);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.kLIGi {
+  --bar-color: #fff;
+  --bar-width: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.XoNs4 {
+  transition: transform 0.5s cubic-bezier(0.24, 0.14, 0.17, 1.07);
+}
+.x4UPo {
+  float: left;
+}
+.qYuQn {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.qYuQn .GU0qu {
+  display: inline-block;
+  margin: 0 5px;
+  width: var(--bar-width);
+  height: 4px;
+  border-radius: 2px;
+  background: var(--bar-color);
+  opacity: 0.3;
+  cursor: pointer;
+}
+.qYuQn .GU0qu.svhYU {
+  width: calc(var(--bar-width) + 8px);
+  opacity: 1;
+}
+`, ""]);
+// Exports
+var _1 = `kLIGi`;
+
+var _2 = `XoNs4`;
+
+var _3 = `x4UPo`;
+
+var _4 = `qYuQn`;
+
+var dot = `GU0qu`;
+var active = `svhYU`;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 3656:
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+module.exports = styleTagTransform;
+
+/***/ }),
+
+/***/ 6758:
+/***/ ((module) => {
+
+
+
+module.exports = function (i) {
+  return i[1];
+};
+
+/***/ }),
+
 /***/ 8128:
 /***/ ((module) => {
 
@@ -355,125 +474,6 @@ function insertBySelector(insert, style) {
   target.appendChild(style);
 }
 module.exports = insertBySelector;
-
-/***/ }),
-
-/***/ 3051:
-/***/ ((module) => {
-
-
-
-/* istanbul ignore next  */
-function insertStyleElement(options) {
-  var element = document.createElement("style");
-  options.setAttributes(element, options.attributes);
-  options.insert(element, options.options);
-  return element;
-}
-module.exports = insertStyleElement;
-
-/***/ }),
-
-/***/ 855:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-
-/* istanbul ignore next  */
-function setAttributesWithoutAttributes(styleElement) {
-  var nonce =  true ? __webpack_require__.nc : 0;
-  if (nonce) {
-    styleElement.setAttribute("nonce", nonce);
-  }
-}
-module.exports = setAttributesWithoutAttributes;
-
-/***/ }),
-
-/***/ 1740:
-/***/ ((module) => {
-
-
-
-/* istanbul ignore next  */
-function apply(styleElement, options, obj) {
-  var css = "";
-  if (obj.supports) {
-    css += "@supports (".concat(obj.supports, ") {");
-  }
-  if (obj.media) {
-    css += "@media ".concat(obj.media, " {");
-  }
-  var needLayer = typeof obj.layer !== "undefined";
-  if (needLayer) {
-    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
-  }
-  css += obj.css;
-  if (needLayer) {
-    css += "}";
-  }
-  if (obj.media) {
-    css += "}";
-  }
-  if (obj.supports) {
-    css += "}";
-  }
-  var sourceMap = obj.sourceMap;
-  if (sourceMap && typeof btoa !== "undefined") {
-    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
-  }
-
-  // For old IE
-  /* istanbul ignore if  */
-  options.styleTagTransform(css, styleElement, options.options);
-}
-function removeStyleElement(styleElement) {
-  // istanbul ignore if
-  if (styleElement.parentNode === null) {
-    return false;
-  }
-  styleElement.parentNode.removeChild(styleElement);
-}
-
-/* istanbul ignore next  */
-function domAPI(options) {
-  if (typeof document === "undefined") {
-    return {
-      update: function update() {},
-      remove: function remove() {}
-    };
-  }
-  var styleElement = options.insertStyleElement(options);
-  return {
-    update: function update(obj) {
-      apply(styleElement, options, obj);
-    },
-    remove: function remove() {
-      removeStyleElement(styleElement);
-    }
-  };
-}
-module.exports = domAPI;
-
-/***/ }),
-
-/***/ 3656:
-/***/ ((module) => {
-
-
-
-/* istanbul ignore next  */
-function styleTagTransform(css, styleElement) {
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = css;
-  } else {
-    while (styleElement.firstChild) {
-      styleElement.removeChild(styleElement.firstChild);
-    }
-    styleElement.appendChild(document.createTextNode(css));
-  }
-}
-module.exports = styleTagTransform;
 
 /***/ })
 
@@ -540,11 +540,6 @@ module.exports = styleTagTransform;
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ huxy_components_carousel)
-});
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
@@ -720,19 +715,10 @@ const resize = (element, delay = 60) => {
 };
 /* harmony default export */ const utils_resize = (resize);
 
-;// ../huxy/use/useCustomRef/index.jsx
-
-const useCustomRef = (initRef = null) => {
-  const ref = (0,external_react_namespaceObject.useRef)(initRef);
-  return () => ref;
-};
-/* harmony default export */ const use_useCustomRef = (useCustomRef);
-
 ;// ../huxy/use/useRaf/index.jsx
 
-
 const useRaf = (initState = {}) => {
-  const frame = use_useCustomRef(0)();
+  const frame = (0,external_react_namespaceObject.useRef)(0);
   const [state, setState] = (0,external_react_namespaceObject.useState)(initState);
   const setRaf = (0,external_react_namespaceObject.useCallback)((value) => {
     cancelAnimationFrame(frame.current);
@@ -817,12 +803,11 @@ var update = injectStylesIntoStyleTag_default()(carousel/* default */.Ay, option
 
 
 
-
 const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => {
   const [activeItem, setActiveItem] = (0,external_react_namespaceObject.useState)(active + 1);
   const [stop, setStop] = (0,external_react_namespaceObject.useState)(false);
   const container = (0,external_react_namespaceObject.useRef)();
-  const transition = use_useCustomRef("")();
+  const [transition, setTransition] = (0,external_react_namespaceObject.useState)("");
   const { width } = use_useEleResize(() => container);
   children = Array.isArray(children) ? children : [children];
   const first = children[0];
@@ -833,13 +818,11 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
     () => {
       let current = activeItem + 1;
       current = current === len ? 1 : current;
-      if (transition.current) {
-        transition.current = "";
-      }
+      setTransition("");
       setActiveItem(current);
       if (current === len - 1) {
         setTimeout(() => {
-          transition.current = "none";
+          setTransition("none");
           setActiveItem(1);
         }, 500);
       }
@@ -848,7 +831,7 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
   );
   const switchItem = (i, e) => {
     e.stopPropagation();
-    transition.current = "";
+    setTransition("");
     setActiveItem(i);
     (0,external_react_dom_namespaceObject.flushSync)(() => setStop(true));
     setStop(false);
@@ -856,7 +839,7 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
   const wrapStyles = {
     width: `${len * width}px`,
     transform: `translateX(${-width * activeItem}px)`,
-    transition: transition.current
+    transition
   };
   return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `${carousel/* huxy-carousel */.UM}${className ? ` ${className}` : ""}`, ...rest, ref: container, children: [
     /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: carousel/* huxy-carousel-wrap */.Ri, style: wrapStyles, children: list.map((child, i) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `${carousel/* carousel-item */.fv} ${activeItem === i ? carousel/* active */.vu : ""}`, style: { width: `${width}px` }, children: child }, `huxy-carousel-${i}`)) }),
@@ -865,5 +848,4 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
 };
 /* harmony default export */ const huxy_components_carousel = (Carousel);
 
-var __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { huxy_components_carousel as default };

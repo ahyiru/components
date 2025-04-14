@@ -1,24 +1,13 @@
 /******/ var __webpack_modules__ = ({
 
-/***/ 6770:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 1085:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
 
-const fixEle = (list) => (Value) => {
-  if (typeof Value === "function" || typeof Value?.render === "function") {
-    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Value, {});
-  }
-  if (typeof Value === "string") {
-    const Comp = list?.[Value];
-    return Comp ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Comp, {}) : /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("i", { className: Value });
-  }
-  return Value ?? null;
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fixEle);
+
+if (true) {
+  module.exports = __webpack_require__(1197);
+} else {}
 
 
 /***/ }),
@@ -65,14 +54,25 @@ __webpack_unused_export__ = jsxProd;
 
 /***/ }),
 
-/***/ 1085:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 6770:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
 
-
-if (true) {
-  module.exports = __webpack_require__(1197);
-} else {}
+const fixEle = (list) => (Value) => {
+  if (typeof Value === "function" || typeof Value?.render === "function") {
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Value, {});
+  }
+  if (typeof Value === "string") {
+    const Comp = list?.[Value];
+    return Comp ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Comp, {}) : /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("i", { className: Value });
+  }
+  return Value ?? null;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fixEle);
 
 
 /***/ })
@@ -126,11 +126,11 @@ var __webpack_exports__ = {};
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (fixIcon)
 /* harmony export */ });
-/* harmony import */ var fixIcon_huxy_components_fixEle_WEBPACK_IMPORTED_MODULE_0_ = __webpack_require__(6770);
+/* harmony import */ var _huxy_components_fixEle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6770);
 
-const fixIcon_fixIcons = (iconList) => (0,fixIcon_huxy_components_fixEle_WEBPACK_IMPORTED_MODULE_0_/* ["default"] */ .A)(iconList);
-const fixIcon_Icon = (iconList) => ({ icon, defaultIcon }) => icon ? fixIcon_fixIcons(iconList)(icon) : icon === false ? null : defaultIcon;
-/* harmony default export */ const fixIcon = (fixIcon_Icon);
+const fixIcons = (iconList) => (0,_huxy_components_fixEle__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(iconList);
+const Icon = (iconList) => ({ icon, defaultIcon }) => icon ? fixIcons(iconList)(icon) : icon === false ? null : defaultIcon;
+/* harmony default export */ const fixIcon = (Icon);
 
-var __webpack_exports__default = __webpack_exports__.A;
+var __webpack_exports__default = __webpack_exports__.A
 export { __webpack_exports__default as default };

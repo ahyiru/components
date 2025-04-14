@@ -66,5 +66,5 @@ class ErrorBoundary extends external_react_namespaceObject["default"].Component 
   }
 }
 
-var __webpack_exports__default = __webpack_exports__.A;
+var __webpack_exports__default = __webpack_exports__.A
 export { __webpack_exports__default as default };
