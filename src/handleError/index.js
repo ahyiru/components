@@ -8,7 +8,8 @@ import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -211,5 +212,5 @@ const HandleError = ({ children, report }) => {
 };
 /* harmony default export */ const handleError = (HandleError);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

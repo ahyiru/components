@@ -7,7 +7,8 @@
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -132,5 +133,5 @@ const fixIcons = (iconList) => (0,_huxy_components_fixEle__WEBPACK_IMPORTED_MODU
 const Icon = (iconList) => ({ icon, defaultIcon }) => icon ? fixIcons(iconList)(icon) : icon === false ? null : defaultIcon;
 /* harmony default export */ const fixIcon = (Icon);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

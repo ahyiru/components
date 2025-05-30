@@ -39,5 +39,5 @@ const external_react_dom_namespaceObject = x({ ["createPortal"]: () => (__WEBPAC
 const Portal = ({ children, mountNode = document.body }) => (0,external_react_dom_namespaceObject.createPortal)(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

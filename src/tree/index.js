@@ -115,7 +115,8 @@ module.exports = function (cssWithMappingToString) {
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -1564,14 +1565,6 @@ const useUpdate = () => {
 };
 /* harmony default export */ const use_useUpdate = (useUpdate);
 
-;// ../huxy/use/useCustomRef/index.jsx
-
-const useCustomRef = (initRef = null) => {
-  const ref = (0,external_react_namespaceObject.useRef)((val) => ({ current: val }));
-  return (0,external_react_namespaceObject.useCallback)((val = initRef) => ref.current(val), []);
-};
-/* harmony default export */ const use_useCustomRef = (useCustomRef);
-
 // EXTERNAL MODULE: ../huxy/components/renderTree/index.jsx + 1 modules
 var renderTree = __webpack_require__(1918);
 ;// ../huxy/components/tree/listRender.jsx
@@ -1645,7 +1638,6 @@ var update = injectStylesIntoStyleTag_default()(tree/* default */.A, options);
 
 
 
-
 const ListContauner = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("ul", { ...props });
 const getList = (isNormal, float) => isNormal ? listRender : ({ item, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)(ListContauner, { className: float === "right" ? "left" : "", ...rest });
 const Tree = (props) => {
@@ -1663,8 +1655,8 @@ const Tree = (props) => {
     className,
     ...rest
   } = props;
-  const timer = use_useCustomRef()();
-  const menuRef = use_useCustomRef()();
+  const timer = (0,external_react_namespaceObject.useRef)();
+  const menuRef = (0,external_react_namespaceObject.useRef)();
   (0,external_react_namespaceObject.useEffect)(() => () => clearTimeout(timer.current), []);
   const rerender = use_useUpdate();
   const isHorizontal = type === "horizontal";

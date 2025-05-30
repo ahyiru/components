@@ -7,7 +7,8 @@
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -108,5 +109,5 @@ var __webpack_exports__ = {};
 const str2Vue = (str, ...rest) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { "v-html": str, ...rest });
 /* harmony default export */ const components_str2Vue = (str2Vue);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

@@ -114,7 +114,8 @@ module.exports = function (cssWithMappingToString) {
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -635,5 +636,5 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.A, options)
 const Spinner = ({ global, absolute }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `spinner${global ? " global" : ""}${absolute ? " absolute" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("figure", { className: "spinning" }) });
 /* harmony default export */ const huxy_components_spinner = (Spinner);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

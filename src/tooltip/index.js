@@ -114,7 +114,8 @@ module.exports = function (cssWithMappingToString) {
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -952,5 +953,5 @@ var update = injectStylesIntoStyleTag_default()(tooltip/* default */.Ay, options
 const Tooltip = ({ title, placement = "topRight", children, ellipsis, className, ...rest }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: `${tooltip_namespaceObject[`huxy-tooltip-${placement}`]}${className ? ` ${className}` : ""}`, tooltip: title ?? children, ...rest, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: ellipsis ? tooltip/* ellipsis */.gO : "", children }) });
 /* harmony default export */ const huxy_components_tooltip = (Tooltip);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

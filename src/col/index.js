@@ -7,7 +7,8 @@
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -137,5 +138,5 @@ const Col = ({ span, offset, xl, lg, md, sm, xs, style, width, auto, offsetWidth
 };
 /* harmony default export */ const col = (Col);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

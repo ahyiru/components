@@ -7,7 +7,8 @@
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -140,5 +141,5 @@ ${info}`.replace(/\r|\n|\r\n/g, "<br/>");
 };
 /* harmony default export */ const loadError = (LoadError);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

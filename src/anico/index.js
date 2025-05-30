@@ -114,7 +114,8 @@ module.exports = function (cssWithMappingToString) {
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -711,5 +712,5 @@ const Anico = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className
 ) });
 /* harmony default export */ const huxy_components_anico = (Anico);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

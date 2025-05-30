@@ -116,7 +116,8 @@ module.exports = function (cssWithMappingToString) {
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -888,5 +889,5 @@ const Drawer = ({ open, close, footer, header, className, style, children, width
 };
 /* harmony default export */ const huxy_components_drawer = (Drawer);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

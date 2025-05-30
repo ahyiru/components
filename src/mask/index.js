@@ -9,7 +9,8 @@ import * as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__ from "react-dom";
 
 if (true) {
   module.exports = __webpack_require__(1197);
-} else {}
+} else // removed by dead control flow
+{}
 
 
 /***/ }),
@@ -229,5 +230,5 @@ const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, s
 };
 /* harmony default export */ const components_mask = (Mask);
 
-var __webpack_exports__default = __webpack_exports__.A
+const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };
