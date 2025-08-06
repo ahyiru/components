@@ -1,4 +1,4 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { useEffect, useRef, useState } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -569,11 +569,7 @@ var __webpack_exports__ = {};
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 ;// external "react"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_namespaceObject = x({ ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
+
 ;// ../huxy/utils/isBrowser.js
 const isBrowser = () => ![typeof window, typeof document].includes("undefined");
 /* harmony default export */ const utils_isBrowser = (isBrowser);
@@ -656,11 +652,11 @@ var update = injectStylesIntoStyleTag_default()(tabHeader/* default */.A, option
 
 const renderTabs = (value) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { padding: "6px 15px" }, children: value });
 const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ref, ...rest }) => {
-  const [active, setActive] = (0,external_react_namespaceObject.useState)(activekey ?? tabs[0]?.key);
-  const [pos, setPos] = (0,external_react_namespaceObject.useState)({});
-  const listRef = (0,external_react_namespaceObject.useRef)({});
-  const trackRef = (0,external_react_namespaceObject.useRef)();
-  (0,external_react_namespaceObject.useEffect)(() => {
+  const [active, setActive] = useState(activekey ?? tabs[0]?.key);
+  const [pos, setPos] = useState({});
+  const listRef = useRef({});
+  const trackRef = useRef();
+  useEffect(() => {
     const activeItem = listRef.current[active];
     activeItem && setTrackPos(activeItem);
   }, []);

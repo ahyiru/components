@@ -1,4 +1,4 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { useRef } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -761,11 +761,7 @@ var __webpack_exports__ = {};
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 ;// external "react"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_namespaceObject = x({ ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef) });
+
 // EXTERNAL MODULE: ../huxy/components/spinner/index.jsx + 1 modules
 var spinner = __webpack_require__(1034);
 ;// ../huxy/utils/hasProp.js
@@ -835,7 +831,7 @@ var update = injectStylesIntoStyleTag_default()(panel/* default */.Ay, options);
 
 const isValid = (plugins) => plugins?.filter?.((item) => typeof item === "function");
 const Panel = ({ loading, title, plugins, children, className, ref, ...rest }) => {
-  const panelRef = (0,external_react_namespaceObject.useRef)();
+  const panelRef = useRef();
   const validPlugin = isValid(plugins);
   const isValidPlugin = validPlugin?.length;
   const cls = className ? ` ${className}` : "";

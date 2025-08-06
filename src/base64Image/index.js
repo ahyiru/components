@@ -1,4 +1,4 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { useEffect, useState } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 1085:
@@ -83,34 +83,12 @@ __webpack_unused_export__ = jsxProd;
 /******/ }
 /******/ 
 /************************************************************************/
-/******/ /* webpack/runtime/define property getters */
-/******/ (() => {
-/******/ 	// define getter functions for harmony exports
-/******/ 	__webpack_require__.d = (exports, definition) => {
-/******/ 		for(var key in definition) {
-/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 			}
-/******/ 		}
-/******/ 	};
-/******/ })();
-/******/ 
-/******/ /* webpack/runtime/hasOwnProperty shorthand */
-/******/ (() => {
-/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ })();
-/******/ 
-/************************************************************************/
 var __webpack_exports__ = {};
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 ;// external "react"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_namespaceObject = x({ ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
+
 ;// ../huxy/utils/isUrl.js
 const isUrl = (url) => /^https?:\/\/[^\s/?.#]+\.[^\s]+/.test(url);
 /* harmony default export */ const utils_isUrl = (isUrl);
@@ -142,8 +120,8 @@ const loadBase64ByUrl = async (url) => {
 
 
 const useBase64 = (url) => {
-  const [dataUrl, setDataUrl] = (0,external_react_namespaceObject.useState)(url);
-  (0,external_react_namespaceObject.useEffect)(() => {
+  const [dataUrl, setDataUrl] = useState(url);
+  useEffect(() => {
     const getBase64 = async (url2) => {
       const base64 = await utils_loadBase64ByUrl(url2);
       setDataUrl(base64);

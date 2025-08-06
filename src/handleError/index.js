@@ -1,4 +1,4 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { default as default_0 } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 1085:
@@ -66,14 +66,10 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// external "react"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_namespaceObject = x({ ["default"]: () => (__WEBPACK_EXTERNAL_MODULE_react__["default"]) });
+
 ;// ../huxy/components/errorBoundary/index.jsx
 
-class ErrorBoundary extends external_react_namespaceObject["default"].Component {
+class ErrorBoundary extends default_0.Component {
   state = {
     error: null
   };

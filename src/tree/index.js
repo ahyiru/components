@@ -1,4 +1,4 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -1525,11 +1525,7 @@ var __webpack_exports__ = {};
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 ;// external "react"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_namespaceObject = x({ ["useCallback"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useCallback), ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
+
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
 var isArray = __webpack_require__(4828);
 ;// ../huxy/utils/getSelected.js
@@ -1560,8 +1556,8 @@ const getSelected = (arr, id, idKey = "id", childKey = "children") => {
 
 const incrementParameter = (num) => ++num;
 const useUpdate = () => {
-  const [, setState] = (0,external_react_namespaceObject.useState)(0);
-  return (0,external_react_namespaceObject.useCallback)(() => setState(incrementParameter), []);
+  const [, setState] = useState(0);
+  return useCallback(() => setState(incrementParameter), []);
 };
 /* harmony default export */ const use_useUpdate = (useUpdate);
 
@@ -1655,9 +1651,9 @@ const Tree = (props) => {
     className,
     ...rest
   } = props;
-  const timer = (0,external_react_namespaceObject.useRef)();
-  const menuRef = (0,external_react_namespaceObject.useRef)();
-  (0,external_react_namespaceObject.useEffect)(() => () => clearTimeout(timer.current), []);
+  const timer = useRef();
+  const menuRef = useRef();
+  useEffect(() => () => clearTimeout(timer.current), []);
   const rerender = use_useUpdate();
   const isHorizontal = type === "horizontal";
   const isCollapsed = !isHorizontal && collapsed;

@@ -1,4 +1,4 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { Children } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -1167,11 +1167,7 @@ var __webpack_exports__ = {};
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 ;// external "react"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_namespaceObject = x({ ["Children"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.Children) });
+
 // EXTERNAL MODULE: ../huxy/components/row/index.jsx + 1 modules
 var row = __webpack_require__(5975);
 // EXTERNAL MODULE: ../huxy/components/col/index.jsx
@@ -1183,7 +1179,7 @@ var col = __webpack_require__(3457);
 
 const Grid = ({ rowProps, colProps, children, Row = row/* default */.A, Col = col/* default */.A }) => {
   const newChild = [];
-  external_react_namespaceObject.Children.map(children, (child) => {
+  Children.map(children, (child) => {
     if (child) {
       if (child.type?.description === "react.fragment") {
         newChild.push(...child.props.children);

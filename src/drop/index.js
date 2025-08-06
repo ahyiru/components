@@ -1,5 +1,5 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__ from "react-dom";
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { createPortal } from "react-dom";
+import { useEffect, useRef, useState } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -585,14 +585,10 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// external "react-dom"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_dom_namespaceObject = x({ ["createPortal"]: () => (__WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.createPortal) });
+
 ;// ../huxy/components/portal/index.jsx
 
-const Portal = ({ children, mountNode = document.body }) => (0,external_react_dom_namespaceObject.createPortal)(children, mountNode);
+const Portal = ({ children, mountNode = document.body }) => createPortal(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
 
@@ -863,11 +859,7 @@ __webpack_require__.d(drop_namespaceObject, {
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 ;// external "react"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_namespaceObject = x({ ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
+
 ;// ../huxy/utils/hasProp.js
 const hasProp = (obj, prop) => Object.prototype.hasOwnProperty.call(obj ?? {}, prop);
 /* harmony default export */ const utils_hasProp = (hasProp);
@@ -884,7 +876,7 @@ const isRef = (ref) => {
 
 
 const useClickAway = (elRef, handleEvent, events = "click") => {
-  (0,external_react_namespaceObject.useEffect)(() => {
+  useEffect(() => {
     const handler = (event) => {
       const ele = typeof elRef === "function" ? elRef() : elRef;
       const el = utils_isRef(ele) ? ele.current : ele;
@@ -1128,8 +1120,8 @@ const dropInfo = (triggerEle, showEle, type = "horizontal") => {
 ;// ../huxy/use/useUpdateEffect/index.jsx
 
 const useUpdateEffect = (effect, deps = []) => {
-  const isMounted = (0,external_react_namespaceObject.useRef)(false);
-  (0,external_react_namespaceObject.useEffect)(() => {
+  const isMounted = useRef(false);
+  useEffect(() => {
     if (!isMounted.current) {
       isMounted.current = true;
     } else {
@@ -1143,7 +1135,7 @@ const useUpdateEffect = (effect, deps = []) => {
 
 
 const useDelayState = (state, delay = 450) => {
-  const [delayState, setDelayState] = (0,external_react_namespaceObject.useState)(state);
+  const [delayState, setDelayState] = useState(state);
   use_useUpdateEffect(() => {
     let timer;
     if (state || delay === 0) {
@@ -1226,12 +1218,12 @@ var update = injectStylesIntoStyleTag_default()(drop/* default */.Ay, options);
 
 
 const Drop = ({ trigger = "click", type, dropList, className, children, targetProps, ...rest }) => {
-  const [open, setOpen] = (0,external_react_namespaceObject.useState)(false);
-  const targetRef = (0,external_react_namespaceObject.useRef)();
-  const dropRef = (0,external_react_namespaceObject.useRef)();
-  const destroyFn = (0,external_react_namespaceObject.useRef)();
+  const [open, setOpen] = useState(false);
+  const targetRef = useRef();
+  const dropRef = useRef();
+  const destroyFn = useRef();
   use_useClickAway(targetRef, (e) => setOpen(false), [.../* @__PURE__ */ new Set(["click", trigger.toLowerCase()])]);
-  (0,external_react_namespaceObject.useEffect)(() => {
+  useEffect(() => {
     return () => destroyFn.current?.();
   }, []);
   const handler = (e) => {

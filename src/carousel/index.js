@@ -1,5 +1,5 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__ from "react-dom";
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
+import { flushSync } from "react-dom";
+import { useCallback, useEffect, useRef, useState } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -545,25 +545,17 @@ var __webpack_exports__ = {};
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 ;// external "react-dom"
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var y = (x) => (() => (x))
-const external_react_dom_namespaceObject = x({ ["flushSync"]: () => (__WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee__.flushSync) });
+
 ;// external "react"
-var external_react_x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
-} 
-var external_react_y = (x) => (() => (x))
-const external_react_namespaceObject = external_react_x({ ["useCallback"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useCallback), ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
+
 ;// ../huxy/use/useInterval/index.jsx
 
 const useInterval = (callback, delay) => {
-  const savedCallback = (0,external_react_namespaceObject.useRef)();
-  (0,external_react_namespaceObject.useEffect)(() => {
+  const savedCallback = useRef();
+  useEffect(() => {
     savedCallback.current = callback;
   }, [callback]);
-  (0,external_react_namespaceObject.useEffect)(() => {
+  useEffect(() => {
     if (delay) {
       const timer = setInterval(() => savedCallback.current(), delay);
       return () => clearInterval(timer);
@@ -719,13 +711,13 @@ const resize = (element, delay = 60) => {
 ;// ../huxy/use/useRaf/index.jsx
 
 const useRaf = (initState = {}) => {
-  const frame = (0,external_react_namespaceObject.useRef)(0);
-  const [state, setState] = (0,external_react_namespaceObject.useState)(initState);
-  const setRaf = (0,external_react_namespaceObject.useCallback)((value) => {
+  const frame = useRef(0);
+  const [state, setState] = useState(initState);
+  const setRaf = useCallback((value) => {
     cancelAnimationFrame(frame.current);
     frame.current = requestAnimationFrame(() => setState(value));
   }, []);
-  (0,external_react_namespaceObject.useEffect)(() => () => cancelAnimationFrame(frame.current), []);
+  useEffect(() => () => cancelAnimationFrame(frame.current), []);
   return [state, setRaf];
 };
 /* harmony default export */ const use_useRaf = (useRaf);
@@ -738,7 +730,7 @@ const useRaf = (initState = {}) => {
 
 const useEleResize = (ref = null, delay = 60) => {
   const [state, setState] = use_useRaf({});
-  (0,external_react_namespaceObject.useEffect)(() => {
+  useEffect(() => {
     const ele = typeof ref === "function" ? ref() : ref;
     const element = utils_isRef(ele) ? ele.current : ele;
     const { bind, destroy } = utils_resize(element, delay);
@@ -805,10 +797,10 @@ var update = injectStylesIntoStyleTag_default()(carousel/* default */.Ay, option
 
 
 const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => {
-  const [activeItem, setActiveItem] = (0,external_react_namespaceObject.useState)(active + 1);
-  const [stop, setStop] = (0,external_react_namespaceObject.useState)(false);
-  const container = (0,external_react_namespaceObject.useRef)();
-  const [transition, setTransition] = (0,external_react_namespaceObject.useState)("");
+  const [activeItem, setActiveItem] = useState(active + 1);
+  const [stop, setStop] = useState(false);
+  const container = useRef();
+  const [transition, setTransition] = useState("");
   const { width } = use_useEleResize(() => container);
   children = Array.isArray(children) ? children : [children];
   const first = children[0];
@@ -834,7 +826,7 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
     e.stopPropagation();
     setTransition("");
     setActiveItem(i);
-    (0,external_react_dom_namespaceObject.flushSync)(() => setStop(true));
+    flushSync(() => setStop(true));
     setStop(false);
   };
   const wrapStyles = {
