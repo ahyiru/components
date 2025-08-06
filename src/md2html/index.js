@@ -829,7 +829,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.huxy-doc-frame {
   padding: 10px 15px;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.012);
-  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-all;
   overflow: auto;
 }
