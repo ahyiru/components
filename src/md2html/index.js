@@ -991,6 +991,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes animate-drawer-right-in {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: #fff;
 }
 .W4gG3 .e3AWW .VSVwl {
   position: relative;
@@ -1241,9 +1242,8 @@ const mask = {
   background: "rgba(0, 0, 0, 0.5)",
   zIndex: 1e4
 };
-const body = document.body;
-const changeOverflow = (mountNode, delayOpen) => (mountNode ?? body).style.overflow = delayOpen ? "hidden" : "";
-const Mask = ({ open, close, delay = 300, children, mountNode, hasMask = true, style, className = "h-mask", relative }) => {
+const changeOverflow = (mountNode, delayOpen) => mountNode.style.overflow = delayOpen ? "hidden" : "";
+const Mask = ({ open, close, delay = 300, children, mountNode = document.body, hasMask = true, style, className = "h-mask", relative }) => {
   const [delayOpen] = use_useDelayState(open, delay);
   changeOverflow(mountNode, delayOpen);
   const position = relative ? "absolute" : "fixed";
