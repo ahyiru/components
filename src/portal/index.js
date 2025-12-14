@@ -1,4 +1,4 @@
-import { createPortal } from "react-dom";
+import { createPortal as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__ } from "react-dom";
 /******/ // The require scope
 /******/ var __webpack_require__ = {};
 /******/ 
@@ -23,17 +23,11 @@ import { createPortal } from "react-dom";
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ portal)
-});
-
 ;// external "react-dom"
 
 ;// ../huxy/components/portal/index.jsx
 
-const Portal = ({ children, mountNode = document.body }) => createPortal(children, mountNode);
+const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { portal as default };

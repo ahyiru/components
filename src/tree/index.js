@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback as __WEBPACK_EXTERNAL_MODULE_react_useCallback__, useEffect as __WEBPACK_EXTERNAL_MODULE_react_useEffect__, useRef as __WEBPACK_EXTERNAL_MODULE_react_useRef__, useState as __WEBPACK_EXTERNAL_MODULE_react_useState__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -1556,8 +1556,8 @@ const getSelected = (arr, id, idKey = "id", childKey = "children") => {
 
 const incrementParameter = (num) => ++num;
 const useUpdate = () => {
-  const [, setState] = useState(0);
-  return useCallback(() => setState(incrementParameter), []);
+  const [, setState] = __WEBPACK_EXTERNAL_MODULE_react_useState__(0);
+  return __WEBPACK_EXTERNAL_MODULE_react_useCallback__(() => setState(incrementParameter), []);
 };
 /* harmony default export */ const use_useUpdate = (useUpdate);
 
@@ -1651,9 +1651,9 @@ const Tree = (props) => {
     className,
     ...rest
   } = props;
-  const timer = useRef();
-  const menuRef = useRef();
-  useEffect(() => () => clearTimeout(timer.current), []);
+  const timer = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  const menuRef = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => () => clearTimeout(timer.current), []);
   const rerender = use_useUpdate();
   const isHorizontal = type === "horizontal";
   const isCollapsed = !isHorizontal && collapsed;

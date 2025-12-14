@@ -1,4 +1,4 @@
-import { default as default_0 } from "react";
+import { default as __WEBPACK_EXTERNAL_MODULE_react_default__ } from "react";
 /******/ // The require scope
 /******/ var __webpack_require__ = {};
 /******/ 
@@ -23,16 +23,11 @@ import { default as default_0 } from "react";
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ ErrorBoundary)
-});
-
 ;// external "react"
 
 ;// ../huxy/components/errorBoundary/index.jsx
 
-class ErrorBoundary extends default_0.Component {
+class ErrorBoundary extends __WEBPACK_EXTERNAL_MODULE_react_default__.Component {
   state = {
     error: null
   };
@@ -62,5 +57,4 @@ class ErrorBoundary extends default_0.Component {
   }
 }
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { ErrorBoundary as default };

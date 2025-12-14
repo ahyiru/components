@@ -1,5 +1,5 @@
-import { createPortal } from "react-dom";
-import { useEffect, useRef, useState } from "react";
+import { createPortal as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__ } from "react-dom";
+import { useEffect as __WEBPACK_EXTERNAL_MODULE_react_useEffect__, useRef as __WEBPACK_EXTERNAL_MODULE_react_useRef__, useState as __WEBPACK_EXTERNAL_MODULE_react_useState__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -588,7 +588,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// ../huxy/components/portal/index.jsx
 
-const Portal = ({ children, mountNode = document.body }) => createPortal(children, mountNode);
+const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
 
@@ -876,7 +876,7 @@ const isRef = (ref) => {
 
 
 const useClickAway = (elRef, handleEvent, events = "click") => {
-  useEffect(() => {
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     const handler = (event) => {
       const ele = typeof elRef === "function" ? elRef() : elRef;
       const el = utils_isRef(ele) ? ele.current : ele;
@@ -1120,8 +1120,8 @@ const dropInfo = (triggerEle, showEle, type = "horizontal") => {
 ;// ../huxy/use/useUpdateEffect/index.jsx
 
 const useUpdateEffect = (effect, deps = []) => {
-  const isMounted = useRef(false);
-  useEffect(() => {
+  const isMounted = __WEBPACK_EXTERNAL_MODULE_react_useRef__(false);
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     if (!isMounted.current) {
       isMounted.current = true;
     } else {
@@ -1135,7 +1135,7 @@ const useUpdateEffect = (effect, deps = []) => {
 
 
 const useDelayState = (state, delay = 450) => {
-  const [delayState, setDelayState] = useState(state);
+  const [delayState, setDelayState] = __WEBPACK_EXTERNAL_MODULE_react_useState__(state);
   use_useUpdateEffect(() => {
     let timer;
     if (state || delay === 0) {
@@ -1218,12 +1218,12 @@ var update = injectStylesIntoStyleTag_default()(drop/* default */.Ay, options);
 
 
 const Drop = ({ trigger = "click", type, dropList, className, children, targetProps, ...rest }) => {
-  const [open, setOpen] = useState(false);
-  const targetRef = useRef();
-  const dropRef = useRef();
-  const destroyFn = useRef();
+  const [open, setOpen] = __WEBPACK_EXTERNAL_MODULE_react_useState__(false);
+  const targetRef = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  const dropRef = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  const destroyFn = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
   use_useClickAway(targetRef, (e) => setOpen(false), [.../* @__PURE__ */ new Set(["click", trigger.toLowerCase()])]);
-  useEffect(() => {
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     return () => destroyFn.current?.();
   }, []);
   const handler = (e) => {

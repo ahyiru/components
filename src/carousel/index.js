@@ -1,5 +1,5 @@
-import { flushSync } from "react-dom";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { flushSync as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_flushSync__ } from "react-dom";
+import { useCallback as __WEBPACK_EXTERNAL_MODULE_react_useCallback__, useEffect as __WEBPACK_EXTERNAL_MODULE_react_useEffect__, useRef as __WEBPACK_EXTERNAL_MODULE_react_useRef__, useState as __WEBPACK_EXTERNAL_MODULE_react_useState__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -551,11 +551,11 @@ var jsx_runtime = __webpack_require__(1085);
 ;// ../huxy/use/useInterval/index.jsx
 
 const useInterval = (callback, delay) => {
-  const savedCallback = useRef();
-  useEffect(() => {
+  const savedCallback = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     savedCallback.current = callback;
   }, [callback]);
-  useEffect(() => {
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     if (delay) {
       const timer = setInterval(() => savedCallback.current(), delay);
       return () => clearInterval(timer);
@@ -711,13 +711,13 @@ const resize = (element, delay = 60) => {
 ;// ../huxy/use/useRaf/index.jsx
 
 const useRaf = (initState = {}) => {
-  const frame = useRef(0);
-  const [state, setState] = useState(initState);
-  const setRaf = useCallback((value) => {
+  const frame = __WEBPACK_EXTERNAL_MODULE_react_useRef__(0);
+  const [state, setState] = __WEBPACK_EXTERNAL_MODULE_react_useState__(initState);
+  const setRaf = __WEBPACK_EXTERNAL_MODULE_react_useCallback__((value) => {
     cancelAnimationFrame(frame.current);
     frame.current = requestAnimationFrame(() => setState(value));
   }, []);
-  useEffect(() => () => cancelAnimationFrame(frame.current), []);
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => () => cancelAnimationFrame(frame.current), []);
   return [state, setRaf];
 };
 /* harmony default export */ const use_useRaf = (useRaf);
@@ -730,7 +730,7 @@ const useRaf = (initState = {}) => {
 
 const useEleResize = (ref = null, delay = 60) => {
   const [state, setState] = use_useRaf({});
-  useEffect(() => {
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     const ele = typeof ref === "function" ? ref() : ref;
     const element = utils_isRef(ele) ? ele.current : ele;
     const { bind, destroy } = utils_resize(element, delay);
@@ -797,10 +797,10 @@ var update = injectStylesIntoStyleTag_default()(carousel/* default */.Ay, option
 
 
 const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => {
-  const [activeItem, setActiveItem] = useState(active + 1);
-  const [stop, setStop] = useState(false);
-  const container = useRef();
-  const [transition, setTransition] = useState("");
+  const [activeItem, setActiveItem] = __WEBPACK_EXTERNAL_MODULE_react_useState__(active + 1);
+  const [stop, setStop] = __WEBPACK_EXTERNAL_MODULE_react_useState__(false);
+  const container = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  const [transition, setTransition] = __WEBPACK_EXTERNAL_MODULE_react_useState__("");
   const { width } = use_useEleResize(() => container);
   children = Array.isArray(children) ? children : [children];
   const first = children[0];
@@ -826,7 +826,7 @@ const Carousel = ({ children, active = 0, delay = 5e3, className, ...rest }) => 
     e.stopPropagation();
     setTransition("");
     setActiveItem(i);
-    flushSync(() => setStop(true));
+    __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_flushSync__(() => setStop(true));
     setStop(false);
   };
   const wrapStyles = {

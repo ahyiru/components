@@ -1,5 +1,5 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
-import { createPortal } from "react-dom";
+import { createPortal as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__ } from "react-dom";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -255,7 +255,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// ../huxy/components/portal/index.jsx
 
-const Portal = ({ children, mountNode = document.body }) => createPortal(children, mountNode);
+const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
 
@@ -795,11 +795,6 @@ module.exports = insertBySelector;
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ huxy_components_drawer)
-});
-
 // NAMESPACE OBJECT: ../huxy/components/drawer/index.less
 var drawer_namespaceObject = {};
 __webpack_require__.r(drawer_namespaceObject);
@@ -885,5 +880,4 @@ const Drawer = ({ open, close, footer, header, className, style, children, width
 };
 /* harmony default export */ const huxy_components_drawer = (Drawer);
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { huxy_components_drawer as default };

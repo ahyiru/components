@@ -123,11 +123,6 @@ const isArray = (value) => utils_getType(value) === "array";
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ renderTree)
-});
-
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../huxy/utils/isArray.js + 1 modules
@@ -182,5 +177,4 @@ const render = ({ data = [], events = {}, List = DefList, Link = DefLink, leftIc
 };
 /* harmony default export */ const renderTree = (render);
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { renderTree as default };

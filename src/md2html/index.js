@@ -1,5 +1,5 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
-import { createPortal } from "react-dom";
+import { createPortal as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__ } from "react-dom";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -470,7 +470,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// ../huxy/components/portal/index.jsx
 
-const Portal = ({ children, mountNode = document.body }) => createPortal(children, mountNode);
+const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
 

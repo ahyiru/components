@@ -1,4 +1,4 @@
-import { Children } from "react";
+import { Children as __WEBPACK_EXTERNAL_MODULE_react_Children__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -1179,7 +1179,7 @@ var col = __webpack_require__(3457);
 
 const Grid = ({ rowProps, colProps, children, Row = row/* default */.A, Col = col/* default */.A }) => {
   const newChild = [];
-  Children.map(children, (child) => {
+  __WEBPACK_EXTERNAL_MODULE_react_Children__.map(children, (child) => {
     if (child) {
       if (child.type?.description === "react.fragment") {
         newChild.push(...child.props.children);

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect as __WEBPACK_EXTERNAL_MODULE_react_useEffect__, useState as __WEBPACK_EXTERNAL_MODULE_react_useState__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 1085:
@@ -83,6 +83,24 @@ __webpack_unused_export__ = jsxProd;
 /******/ }
 /******/ 
 /************************************************************************/
+/******/ /* webpack/runtime/define property getters */
+/******/ (() => {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 			}
+/******/ 		}
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ (() => {
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
+/************************************************************************/
 var __webpack_exports__ = {};
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -120,8 +138,8 @@ const loadBase64ByUrl = async (url) => {
 
 
 const useBase64 = (url) => {
-  const [dataUrl, setDataUrl] = useState(url);
-  useEffect(() => {
+  const [dataUrl, setDataUrl] = __WEBPACK_EXTERNAL_MODULE_react_useState__(url);
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     const getBase64 = async (url2) => {
       const base64 = await utils_loadBase64ByUrl(url2);
       setDataUrl(base64);

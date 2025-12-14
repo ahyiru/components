@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect as __WEBPACK_EXTERNAL_MODULE_react_useEffect__, useRef as __WEBPACK_EXTERNAL_MODULE_react_useRef__, useState as __WEBPACK_EXTERNAL_MODULE_react_useState__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 744:
@@ -1059,9 +1059,9 @@ const EllipsisTooltip = (props) => {
   const { children, style } = props;
   const isStringChild = typeof children === "string";
   const text = isStringChild ? children : children?.props?.title ?? children?.props?.children;
-  const spanRef = useRef();
-  const [ellipsis, setEllipsis] = useState(true);
-  useEffect(() => {
+  const spanRef = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  const [ellipsis, setEllipsis] = __WEBPACK_EXTERNAL_MODULE_react_useState__(true);
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     if (spanRef.current) {
       const { width: tWidth } = utils_getTextSize(text, null, spanRef.current.parentNode);
       const { width } = utils_getPosition(spanRef.current);

@@ -1044,11 +1044,6 @@ module.exports = insertBySelector;
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ huxy_components_row)
-});
-
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
@@ -1113,5 +1108,4 @@ const Row = ({ gutter = 10, className, overflow = "hidden", ref, ...rest }) => {
 };
 /* harmony default export */ const huxy_components_row = (Row);
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { huxy_components_row as default };

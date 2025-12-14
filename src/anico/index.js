@@ -630,11 +630,6 @@ module.exports = insertBySelector;
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ huxy_components_anico)
-});
-
 // NAMESPACE OBJECT: ../huxy/components/anico/index.less
 var anico_namespaceObject = {};
 __webpack_require__.r(anico_namespaceObject);
@@ -712,5 +707,4 @@ const Anico = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className
 ) });
 /* harmony default export */ const huxy_components_anico = (Anico);
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { huxy_components_anico as default };

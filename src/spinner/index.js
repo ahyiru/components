@@ -576,11 +576,6 @@ module.exports = insertBySelector;
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ huxy_components_spinner)
-});
-
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
 // EXTERNAL MODULE: ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
@@ -636,5 +631,4 @@ var update = injectStylesIntoStyleTag_default()(spinner/* default */.A, options)
 const Spinner = ({ global, absolute }) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: `spinner${global ? " global" : ""}${absolute ? " absolute" : ""}`, children: /* @__PURE__ */ (0,jsx_runtime.jsx)("figure", { className: "spinning" }) });
 /* harmony default export */ const huxy_components_spinner = (Spinner);
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { huxy_components_spinner as default };

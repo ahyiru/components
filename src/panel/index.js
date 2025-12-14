@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef as __WEBPACK_EXTERNAL_MODULE_react_useRef__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -831,7 +831,7 @@ var update = injectStylesIntoStyleTag_default()(panel/* default */.Ay, options);
 
 const isValid = (plugins) => plugins?.filter?.((item) => typeof item === "function");
 const Panel = ({ loading, title, plugins, children, className, ref, ...rest }) => {
-  const panelRef = useRef();
+  const panelRef = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
   const validPlugin = isValid(plugins);
   const isValidPlugin = validPlugin?.length;
   const cls = className ? ` ${className}` : "";

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect as __WEBPACK_EXTERNAL_MODULE_react_useEffect__, useRef as __WEBPACK_EXTERNAL_MODULE_react_useRef__, useState as __WEBPACK_EXTERNAL_MODULE_react_useState__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 855:
@@ -652,11 +652,11 @@ var update = injectStylesIntoStyleTag_default()(tabHeader/* default */.A, option
 
 const renderTabs = (value) => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { style: { padding: "6px 15px" }, children: value });
 const TabHeader = ({ activekey, tabs = [], switchTab, trackColor, flex, ref, ...rest }) => {
-  const [active, setActive] = useState(activekey ?? tabs[0]?.key);
-  const [pos, setPos] = useState({});
-  const listRef = useRef({});
-  const trackRef = useRef();
-  useEffect(() => {
+  const [active, setActive] = __WEBPACK_EXTERNAL_MODULE_react_useState__(activekey ?? tabs[0]?.key);
+  const [pos, setPos] = __WEBPACK_EXTERNAL_MODULE_react_useState__({});
+  const listRef = __WEBPACK_EXTERNAL_MODULE_react_useRef__({});
+  const trackRef = __WEBPACK_EXTERNAL_MODULE_react_useRef__();
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     const activeItem = listRef.current[active];
     activeItem && setTrackPos(activeItem);
   }, []);

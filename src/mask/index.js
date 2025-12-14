@@ -1,5 +1,5 @@
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
-import { createPortal } from "react-dom";
+import { createPortal as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__ } from "react-dom";
 /******/ var __webpack_modules__ = ({
 
 /***/ 1085:
@@ -81,7 +81,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// ../huxy/components/portal/index.jsx
 
-const Portal = ({ children, mountNode = document.body }) => createPortal(children, mountNode);
+const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__(children, mountNode);
 /* harmony default export */ const portal = (Portal);
 
 
@@ -133,11 +133,6 @@ const Portal = ({ children, mountNode = document.body }) => createPortal(childre
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ components_mask)
-});
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(1085);
@@ -225,5 +220,4 @@ const Mask = ({ open, close, delay = 300, children, mountNode = document.body, h
 };
 /* harmony default export */ const components_mask = (Mask);
 
-const __webpack_exports__default = __webpack_exports__.A;
-export { __webpack_exports__default as default };
+export { components_mask as default };

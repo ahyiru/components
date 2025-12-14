@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect as __WEBPACK_EXTERNAL_MODULE_react_useEffect__, useState as __WEBPACK_EXTERNAL_MODULE_react_useState__ } from "react";
 /******/ var __webpack_modules__ = ({
 
 /***/ 1085:
@@ -83,6 +83,24 @@ __webpack_unused_export__ = jsxProd;
 /******/ }
 /******/ 
 /************************************************************************/
+/******/ /* webpack/runtime/define property getters */
+/******/ (() => {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 			}
+/******/ 		}
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ (() => {
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
+/************************************************************************/
 var __webpack_exports__ = {};
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
@@ -154,8 +172,8 @@ const watchScreen = (callback) => {
 const defaultIcon = (props) => /* @__PURE__ */ (0,jsx_runtime.jsx)("i", { ...props, children: "..." });
 const FullPage = ({ panel, fullIcon = defaultIcon, exitIcon = defaultIcon, ...rest }) => {
   const container = utils_isRef(panel) ? panel.current : panel;
-  const [isFull, setIsFull] = useState();
-  useEffect(() => {
+  const [isFull, setIsFull] = __WEBPACK_EXTERNAL_MODULE_react_useState__();
+  __WEBPACK_EXTERNAL_MODULE_react_useEffect__(() => {
     const destroy = utils_watchScreen(() => {
       setIsFull((prev) => !prev);
     });
