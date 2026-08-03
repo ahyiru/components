@@ -1,20 +1,22 @@
 /******/ var __webpack_modules__ = ({
 
-/***/ 1085:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 877
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85);
+
+const str2React = (str, props) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { dangerouslySetInnerHTML: { __html: str }, ...props });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (str2React);
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
 
 
+/***/ },
 
-if (true) {
-  module.exports = __webpack_require__(1197);
-} else // removed by dead control flow
-{}
-
-
-/***/ }),
-
-/***/ 1197:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ 197
+(__unused_webpack_module, exports) {
 
 var __webpack_unused_export__;
 /**
@@ -53,36 +55,35 @@ exports.jsx = jsxProd;
 exports.jsxs = jsxProd;
 
 
-/***/ }),
+/***/ },
 
-/***/ 7877:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
-
-const str2React = (str, props) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { dangerouslySetInnerHTML: { __html: str }, ...props });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (str2React);
+/***/ 85
+(module, __unused_webpack_exports, __webpack_require__) {
 
 
-/***/ })
+
+if (true) {
+  module.exports = __webpack_require__(197);
+} else // removed by dead control flow
+{}
+
+
+/***/ }
 
 /******/ });
 /************************************************************************/
 /******/ // The module cache
-/******/ var __webpack_module_cache__ = {};
+/******/ const __webpack_module_cache__ = {};
 /******/ 
 /******/ // The require function
 /******/ function __webpack_require__(moduleId) {
 /******/ 	// Check if module is in cache
-/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	const cachedModule = __webpack_module_cache__[moduleId];
 /******/ 	if (cachedModule !== undefined) {
 /******/ 		return cachedModule.exports;
 /******/ 	}
 /******/ 	// Create a new module (and put it into the cache)
-/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 	const module = __webpack_module_cache__[moduleId] = {
 /******/ 		// no module.id needed
 /******/ 		// no module.loaded needed
 /******/ 		exports: {}
@@ -98,11 +99,26 @@ const str2React = (str, props) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_
 /************************************************************************/
 /******/ /* webpack/runtime/define property getters */
 /******/ (() => {
-/******/ 	// define getter functions for harmony exports
+/******/ 	// define getter/value functions for harmony exports
 /******/ 	__webpack_require__.d = (exports, definition) => {
-/******/ 		for(var key in definition) {
-/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 		if(Array.isArray(definition)) {
+/******/ 			var i = 0;
+/******/ 			while(i < definition.length) {
+/******/ 				var key = definition[i++];
+/******/ 				var binding = definition[i++];
+/******/ 				if(!__webpack_require__.o(exports, key)) {
+/******/ 					if(binding === 0) {
+/******/ 						Object.defineProperty(exports, key, { enumerable: true, value: definition[i++] });
+/******/ 					} else {
+/******/ 						Object.defineProperty(exports, key, { enumerable: true, get: binding });
+/******/ 					}
+/******/ 				} else if(binding === 0) { i++; }
+/******/ 			}
+/******/ 		} else {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
 /******/ 			}
 /******/ 		}
 /******/ 	};
@@ -114,12 +130,9 @@ const str2React = (str, props) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_
 /******/ })();
 /******/ 
 /************************************************************************/
-var __webpack_exports__ = {};
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (loadError)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1085);
-/* harmony import */ var _huxy_components_str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7877);
+let __webpack_exports__ = {};
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85);
+/* harmony import */ var _huxy_components_str2React__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(877);
 
 
 const LoadError = (props) => {
@@ -140,6 +153,10 @@ ${info}`.replace(/\r|\n|\r\n/g, "<br/>");
   ] });
 };
 /* harmony default export */ const loadError = (LoadError);
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ loadError
+/* harmony export */ ]);
 
 const __webpack_exports__default = __webpack_exports__.A;
 export { __webpack_exports__default as default };

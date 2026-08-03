@@ -1,22 +1,28 @@
+import { createPortal as __WEBPACK_EXTERNAL_MODULE_react_dom_20ef40a6_createPortal__ } from "react-dom";
 import * as __WEBPACK_EXTERNAL_MODULE_react__ from "react";
-import { createPortal as __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__ } from "react-dom";
 /******/ var __webpack_modules__ = ({
 
-/***/ 1085:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 826
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ portal)
+});
 
-if (true) {
-  module.exports = __webpack_require__(1197);
-} else // removed by dead control flow
-{}
+;// external "react-dom"
+
+;// ../huxy/components/portal/index.jsx
+
+const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_MODULE_react_dom_20ef40a6_createPortal__(children, mountNode);
+/* harmony default export */ const portal = (Portal);
 
 
-/***/ }),
+/***/ },
 
-/***/ 1197:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ 197
+(__unused_webpack_module, exports) {
 
 var __webpack_unused_export__;
 /**
@@ -55,52 +61,46 @@ exports.jsx = jsxProd;
 exports.jsxs = jsxProd;
 
 
-/***/ }),
+/***/ },
 
-/***/ 1649:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 85
+(module, __unused_webpack_exports, __webpack_require__) {
 
-var x = (y) => {
-	var x = {}; __webpack_require__.d(x, y); return x
+
+
+if (true) {
+  module.exports = __webpack_require__(197);
+} else // removed by dead control flow
+{}
+
+
+/***/ },
+
+/***/ 649
+(module, __unused_webpack_exports, __webpack_require__) {
+
+const x = (y) => {
+	const x = {}; __webpack_require__.d(x, y); return x
 } 
-var y = (x) => (() => (x))
+const y = (x) => (() => (x))
 module.exports = x({ ["Children"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.Children), ["cloneElement"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.cloneElement), ["isValidElement"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.isValidElement), ["useEffect"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useEffect), ["useRef"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useRef), ["useState"]: () => (__WEBPACK_EXTERNAL_MODULE_react__.useState) });
 
-/***/ }),
-
-/***/ 2147:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ portal)
-});
-
-;// external "react-dom"
-
-;// ../huxy/components/portal/index.jsx
-
-const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_MODULE_react_dom_7dac9eee_createPortal__(children, mountNode);
-/* harmony default export */ const portal = (Portal);
-
-
-/***/ })
+/***/ }
 
 /******/ });
 /************************************************************************/
 /******/ // The module cache
-/******/ var __webpack_module_cache__ = {};
+/******/ const __webpack_module_cache__ = {};
 /******/ 
 /******/ // The require function
 /******/ function __webpack_require__(moduleId) {
 /******/ 	// Check if module is in cache
-/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	const cachedModule = __webpack_module_cache__[moduleId];
 /******/ 	if (cachedModule !== undefined) {
 /******/ 		return cachedModule.exports;
 /******/ 	}
 /******/ 	// Create a new module (and put it into the cache)
-/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 	const module = __webpack_module_cache__[moduleId] = {
 /******/ 		// no module.id needed
 /******/ 		// no module.loaded needed
 /******/ 		exports: {}
@@ -116,11 +116,26 @@ const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_M
 /************************************************************************/
 /******/ /* webpack/runtime/define property getters */
 /******/ (() => {
-/******/ 	// define getter functions for harmony exports
+/******/ 	// define getter/value functions for harmony exports
 /******/ 	__webpack_require__.d = (exports, definition) => {
-/******/ 		for(var key in definition) {
-/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 		if(Array.isArray(definition)) {
+/******/ 			var i = 0;
+/******/ 			while(i < definition.length) {
+/******/ 				var key = definition[i++];
+/******/ 				var binding = definition[i++];
+/******/ 				if(!__webpack_require__.o(exports, key)) {
+/******/ 					if(binding === 0) {
+/******/ 						Object.defineProperty(exports, key, { enumerable: true, value: definition[i++] });
+/******/ 					} else {
+/******/ 						Object.defineProperty(exports, key, { enumerable: true, get: binding });
+/******/ 					}
+/******/ 				} else if(binding === 0) { i++; }
+/******/ 			}
+/******/ 		} else {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
 /******/ 			}
 /******/ 		}
 /******/ 	};
@@ -132,12 +147,11 @@ const Portal = ({ children, mountNode = document.body }) => __WEBPACK_EXTERNAL_M
 /******/ })();
 /******/ 
 /************************************************************************/
-var __webpack_exports__ = {};
 
 // EXTERNAL MODULE: ../../node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(1085);
+var jsx_runtime = __webpack_require__(85);
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(1649);
+var external_react_ = __webpack_require__(649);
 ;// ../huxy/use/useUpdateEffect/index.jsx
 
 const useUpdateEffect = (effect, deps = []) => {
@@ -171,7 +185,7 @@ const useDelayState = (state, delay = 450) => {
 /* harmony default export */ const use_useDelayState = (useDelayState);
 
 // EXTERNAL MODULE: ../huxy/components/portal/index.jsx + 1 modules
-var portal = __webpack_require__(2147);
+var portal = __webpack_require__(826);
 ;// ../huxy/components/mask/index.jsx
 
 
