@@ -1,1 +1,85 @@
-window.__HY__||(window.__HY__=new Set);if(!window.__HY__.has("cab66a")){let e=document.createElement("style");e.textContent="@keyframes before{0%{width:0.6rem;box-shadow:1.2rem -0.6rem #ff3e38,-1.2rem 0.6rem #318ffa}35%{width:3rem;box-shadow:0 -0.6rem #ff3e38,0 0.6rem #318ffa}70%{width:0.6rem;box-shadow:-1.2rem -0.6rem #ff3e38,1.2rem 0.6rem #318ffa}100%{box-shadow:1.2rem -0.6rem #ff3e38,-1.2rem 0.6rem #318ffa}}@keyframes after{0%{height:0.6rem;box-shadow:0.6rem 1.2rem #6ce581,-0.6rem -1.2rem #fecb2e}35%{height:3rem;box-shadow:0.6rem 0 #6ce581,-0.6rem 0 #fecb2e}70%{height:0.6rem;box-shadow:0.6rem -1.2rem #6ce581,-0.6rem 1.2rem #fecb2e}100%{box-shadow:0.6rem 1.2rem #6ce581,-0.6rem -1.2rem #fecb2e}}.spinner{position:relative;height:100%;min-height:100px;display:block;overflow:hidden;pointer-events:auto;top:0;left:0;right:0;bottom:0;z-index:9999;background-color:hsla(0,0%,72%,0.24)}.spinner.absolute{position:absolute;min-height:auto}.spinner.global{position:fixed;width:100vw;height:100vh}.spinner .spinning{width:3rem;height:3rem;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(165deg);margin:0}.spinner .spinning::before,.spinner .spinning::after{content:'';position:absolute;top:50%;left:50%;display:block;width:0.6rem;height:0.6rem;border-radius:0.3rem;transform:translate(-50%,-50%)}.spinner .spinning::before{animation:before 1.5s infinite}.spinner .spinning::after{animation:after 1.5s infinite}",document.head.appendChild(e),window.__HY__.add("cab66a")}import{jsx as r}from"react/jsx-runtime";var n=({global:e,absolute:i})=>r("div",{className:`spinner${e?" global":""}${i?" absolute":""}`,children:r("figure",{className:"spinning"})}),m=n;export{m as default};
+if(typeof document<"u"&&!window.__HUXY__?.has("cab66a")){window.__HUXY__=window.__HUXY__||new Set;let n=document.createElement("style");n.textContent=`@keyframes before {
+  0% {
+    width: 0.6rem;
+    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;
+  }
+  35% {
+    width: 3rem;
+    box-shadow: 0 -0.6rem #ff3e38, 0 0.6rem #318ffa;
+  }
+  70% {
+    width: 0.6rem;
+    box-shadow: -1.2rem -0.6rem #ff3e38, 1.2rem 0.6rem #318ffa;
+  }
+  100% {
+    box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.6rem;
+    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;
+  }
+  35% {
+    height: 3rem;
+    box-shadow: 0.6rem 0 #6ce581, -0.6rem 0 #fecb2e;
+  }
+  70% {
+    height: 0.6rem;
+    box-shadow: 0.6rem -1.2rem #6ce581, -0.6rem 1.2rem #fecb2e;
+  }
+  100% {
+    box-shadow: 0.6rem 1.2rem #6ce581, -0.6rem -1.2rem #fecb2e;
+  }
+}
+.spinner {
+  position: relative;
+  height: 100%;
+  min-height: 100px;
+  display: block;
+  overflow: hidden;
+  pointer-events: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: hsla(0, 0%, 72%, 0.24);
+}
+.spinner.absolute {
+  position: absolute;
+  min-height: auto;
+}
+.spinner.global {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.spinner .spinning {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(165deg);
+  margin: 0;
+}
+.spinner .spinning::before,
+.spinner .spinning::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  transform: translate(-50%, -50%);
+}
+.spinner .spinning::before {
+  animation: before 1.5s infinite;
+}
+.spinner .spinning::after {
+  animation: after 1.5s infinite;
+}
+`,document.head.appendChild(n),window.__HUXY__.add("cab66a")}import{jsx as e}from"react/jsx-runtime";var i=({global:n,absolute:r})=>e("div",{className:`spinner${n?" global":""}${r?" absolute":""}`,children:e("figure",{className:"spinning"})}),m=i;export{m as default};
