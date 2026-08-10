@@ -1,4 +1,4 @@
-import{useRef as U}from"react";if(typeof document<"u"&&!window.__HUXY__?.has("cab66a")){window.__HUXY__=window.__HUXY__||new Set;let n=document.createElement("style");n.textContent=`@keyframes before {
+import{useRef as $}from"react";if(typeof document<"u"&&!window.__HUXY__?.has("cab66a")){window.__HUXY__=window.__HUXY__||new Set;let n=document.createElement("style");n.textContent=`@keyframes before {
   0% {
     width: 0.6rem;
     box-shadow: 1.2rem -0.6rem #ff3e38, -1.2rem 0.6rem #318ffa;
@@ -82,7 +82,7 @@ import{useRef as U}from"react";if(typeof document<"u"&&!window.__HUXY__?.has("ca
 .spinner .spinning::after {
   animation: after 1.5s infinite;
 }
-`,document.head.appendChild(n),window.__HUXY__.add("cab66a")}import{jsx as p}from"react/jsx-runtime";var k=({global:n,absolute:e})=>p("div",{className:`spinner${n?" global":""}${e?" absolute":""}`,children:p("figure",{className:"spinning"})}),h=k;var H=(n,e)=>Object.prototype.hasOwnProperty.call(n??{},e),d=H;var P=n=>{let e=typeof n=="function"?n():n;return d(e,"current")},m=P;if(typeof document<"u"&&!window.__HUXY__?.has("07a33c")){window.__HUXY__=window.__HUXY__||new Set;let n=document.createElement("style");n.textContent=`.clear::after {
+`,document.head.appendChild(n),window.__HUXY__.add("cab66a")}import{jsx as l}from"react/jsx-runtime";var U=({global:n,absolute:e})=>l("div",{className:`spinner${n?" global":""}${e?" absolute":""}`,children:l("figure",{className:"spinning"})}),p=U;var X=(n,e)=>Object.prototype.hasOwnProperty.call(n??{},e),h=X;var Y=n=>{let e=typeof n=="function"?n():n;return h(e,"current")},d=Y;if(typeof document<"u"&&!window.__HUXY__?.has("07a33c")){window.__HUXY__=window.__HUXY__||new Set;let n=document.createElement("style");n.textContent=`.clear::after {
   clear: both;
   content: '';
   display: block;
@@ -155,4 +155,4 @@ import{useRef as U}from"react";if(typeof document<"u"&&!window.__HUXY__?.has("ca
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-`,document.head.appendChild(n),window.__HUXY__.add("07a33c")}var c="hy-07a33c-panel";var f="hy-07a33c-link";import{jsx as r,jsxs as b}from"react/jsx-runtime";var X=n=>n?.filter?.(e=>typeof e=="function"),Y=({loading:n,title:e,plugins:y,children:g,className:i,ref:t,...w})=>{let u=U(),o=X(y),s=o?.length,x=i?` ${i}`:"",l=m(()=>t)?t:u;return b("div",{className:`${c}${x}`,...w,ref:l,children:[(e||s)&&b("div",{className:void 0,children:[e&&r("h4",{className:void 0,children:e}),s&&r("div",{className:void 0,children:o.map((v,_)=>r("span",{className:`link ${f}`,children:r(v,{panel:l})},_))})]}),r("div",{className:void 0,children:g}),n&&r(h,{})]})},V=Y;export{V as default};
+`,document.head.appendChild(n),window.__HUXY__.add("07a33c")}var m="hy-07a33c-panel";var c="hy-07a33c-panel-body";var f="hy-07a33c-panel-header";var b="hy-07a33c-panel-title";var y="hy-07a33c-panel-plugins";var g="hy-07a33c-link";import{jsx as a,jsxs as w}from"react/jsx-runtime";var C=n=>n?.filter?.(e=>typeof e=="function"),z=({loading:n,title:e,plugins:u,children:x,className:r,ref:t,...v})=>{let _=$(),i=C(u),o=i?.length,k=r?` ${r}`:"",s=d(()=>t)?t:_;return w("div",{className:`${m}${k}`,...v,ref:s,children:[(e||o)&&w("div",{className:f,children:[e&&a("h4",{className:b,children:e}),o&&a("div",{className:y,children:i.map((H,P)=>a("span",{className:`link ${g}`,children:a(H,{panel:s})},P))})]}),a("div",{className:c,children:x}),n&&a(p,{})]})},D=z;export{D as default};
